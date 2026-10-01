@@ -1,0 +1,61 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair')
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in ['Stubble','Eyelashes','ArmHair','Eyebrows']}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/'FineHairFeaturesBefore.json').write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+connections=[];deleted=[]
+def prop(o,k,v):o.set_editor_property(k,v,notify)
+def lookup(p):return [n for n in ns.values() if n.get('parameter_name')==p]
+def link(src,out,target,pin):connections.append(lib.connect_material_expressions(src,out,target,input_pin(pin)))
+def feature(name,purpose,true,false):
+    o=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter)
+    prop(o,'parameter_name',name);prop(o,'default_value',False);prop(o,'group','00 Features / 输入功能')
+    prop(o,'desc','用途：'+purpose+' 输入：编译期布尔。范围／默认：母材质默认 false；实例按各自源输入设置。条件：仅影响这里明确列出的通道，其他功能独立。')
+    link(true[0],true[1],o,'True');link(false[0],false[1],o,'False');return o
+intensity=objects[lookup('BaseColorIntensity')[0]['id']]
+color=lib.create_material_expression(mat,unreal.MaterialExpressionVectorParameter)
+prop(color,'parameter_name','ConstantHairColor');prop(color,'default_value',unreal.LinearColor(.196,.157,.125,1));prop(color,'group','02 BaseColor / 基础色')
+prop(color,'desc','用途：常量细毛基础色。影响：RGB 分别乘 BaseColorIntensity，再进入源 Saturate 和饱和度增强。输入：float3 RGB，保持原常量数值并由当前 UE 颜色链解释。范围／默认：母材质默认 (0.196,0.157,0.125)，各实例数值保留；原作者滑杆范围未提供。条件：UseConstantColor=true；否则用 BaseColorTexture。')
+for channel,name in zip(['R','G','B'],['BaseColor_Value','BaseColor_Value_3','BaseColor_Value_4']):
+    replacement=feature('UseConstantColor','选择常量色或纹理色；本选择节点分别提供常量色通道或公共颜色强度。',(color,channel),(intensity,''))
+    for n in lookup(name):
+        for e in cs[n['id']]:link(replacement,'',objects[e['target_id']],e['target_input'])
+        deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+selector=lookup('UseEyebrows')[0]
+trueid=es[selector['id']]['True'][0];falseid=es[selector['id']]['False'][0]
+target=objects[falseid]
+def source(i,pin):
+    s,o=es[i][pin];return objects[s],pin_name(ns[s],o)
+half=lib.create_material_expression(mat,unreal.MaterialExpressionConstant);prop(half,'r',.5)
+one=lib.create_material_expression(mat,unreal.MaterialExpressionConstant);prop(one,'r',1.)
+controls={
+ 'BaseColor':('UseColorGrading','启用明暗与 overlay 染色，并由 AO 调制饱和度；False 使用基础纹理／常量色分支。',source(falseid,'BaseColor')),
+ 'Specular':('UseSpecularMask','使用 SpecularMask.G 调制镜面强度；False 使用 UE 默认 0.5。',(half,'')),
+ 'Roughness':('UseSourceRoughness','使用 BaseRoughness 的源输入链；False 使用 UE 默认 0.5。',(half,'')),
+ 'AmbientOcclusion':('UseConstantAO','使用 ConstantAO；False 使用 UE 默认 1。',(one,'')),
+ 'Metallic':('UseRoughnessForScattering','沿用当前 UE Hair 适配，将源粗糙度同时用作 Scatter 和 Backlit；False 分别使用 UEHairScatter 与 UEHairBacklit。',source(falseid,'Metallic')),
+ 'ClearCoat':('UseRoughnessForScattering','沿用当前 UE Hair 适配，将源粗糙度同时用作 Scatter 和 Backlit；False 分别使用 UEHairScatter 与 UEHairBacklit。',source(falseid,'ClearCoat'))}
+for pin,(name,purpose,false) in controls.items():
+    o=feature(name,purpose,source(trueid,pin),false);link(o,'',target,pin)
+connections.append(lib.connect_material_property(target,'',unreal.MaterialProperty.MP_MATERIAL_ATTRIBUTES))
+for i in [selector['id'],trueid]:deleted.append(ns[i]['object_path']);lib.delete_material_expression(mat,objects[i])
+mat.modify();lib.recompile_material(mat)
+for m,mi in instances.items():
+    v=old[m]
+    if m=='Stubble':lib.set_material_instance_scalar_parameter_value(mi,'BaseColorIntensity',v['scalar']['BaseColor_Value'])
+    rgb=[v['scalar'][n] for n in ['BaseColor_Value','BaseColor_Value_3','BaseColor_Value_4']]
+    lib.set_material_instance_vector_parameter_value(mi,'ConstantHairColor',unreal.LinearColor(*rgb,1))
+    for name in {c[0] for c in controls.values()}:lib.set_material_instance_static_switch_parameter_value(mi,name,v['switch']['UseEyebrows'],unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+    prop(mi,'scalar_parameter_values',[p for p in mi.get_editor_property('scalar_parameter_values') if str(p.parameter_info.name) not in ['BaseColor_Value','BaseColor_Value_3','BaseColor_Value_4']])
+    lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in instances}
+report={'graph':after,'values':new,'connections':connections,'deleted':deleted,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/'FineHairFeaturesAfter.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

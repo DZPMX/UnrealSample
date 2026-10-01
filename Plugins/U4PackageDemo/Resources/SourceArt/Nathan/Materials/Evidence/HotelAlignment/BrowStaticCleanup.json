@@ -1,0 +1,6 @@
+{
+  "before": "(StaticSwitchParameters=((Value=True,ParameterInfo=(Name=\"UseColorGrading\"),bOverride=True,ExpressionGUID=C0C29C8A479D4512D8F8589E843D273D),(Value=True,ParameterInfo=(Name=\"UseConstantAO\"),bOverride=True,ExpressionGUID=698037E94B229EBC99052A994F1F548D),(ParameterInfo=(Name=\"UseConstantColor\"),bOverride=True,ExpressionGUID=E2988B624A748019872F88A9BBCE57DF),(ParameterInfo=(Name=\"UseFixedCoverageNormalization\"),bOverride=True,ExpressionGUID=00FCE1584983CCD5B53300852B4210C3),(ParameterInfo=(Name=\"UseRawCoverage\"),bOverride=True,ExpressionGUID=2B11DFDA4D79D1DF0FB5B9B4926345FB),(Value=True,ParameterInfo=(Name=\"UseRoughnessForScattering\"),bOverride=True,ExpressionGUID=8B2FBFF4493B290A12336988F3FFDFF8),(Value=True,ParameterInfo=(Name=\"UseSourceRoughness\"),bOverride=True,ExpressionGUID=889449364731BE493EB00CA39C63DDC8),(Value=True,ParameterInfo=(Name=\"UseSpecularMask\"),bOverride=True,ExpressionGUID=E2560F5F4FF73C7F376B05A413A25A6D)),MaterialLayers=())",
+  "success": true,
+  "after": "(MaterialLayers=())",
+  "saved": true
+}

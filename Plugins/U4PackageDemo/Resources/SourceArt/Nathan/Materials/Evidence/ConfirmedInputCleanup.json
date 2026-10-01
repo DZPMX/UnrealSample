@@ -1,0 +1,44 @@
+[
+  {
+    "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked",
+    "connections": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "previous_values": {
+      "MI_Nathan_HairThinAlphaDithered": {
+        "SpecularLobes_Value": -1.0,
+        "SpecularLobes_Value_2": 1.0
+      },
+      "MI_Nathan_HairThinAlpha": {
+        "SpecularLobes_Value": 0.5,
+        "SpecularLobes_Value_2": 0.0
+      }
+    },
+    "layout_values": {
+      "MI_Nathan_HairThinAlphaDithered": false,
+      "MI_Nathan_HairThinAlpha": true
+    },
+    "formula_identity": {
+      "MI_Nathan_HairThinAlphaDithered": true,
+      "MI_Nathan_HairThinAlpha": true
+    },
+    "saved": true
+  },
+  {
+    "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye",
+    "deleted": [
+      "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye:MaterialExpressionScalarParameter_23",
+      "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye:MaterialExpressionAdd_80",
+      "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye:MaterialExpressionAdd_81",
+      "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye:MaterialExpressionSaturate_17"
+    ],
+    "reason": "g_lashAOStrength03 belongs to the old source roughness chain. That chain has no output consumers since the explicitly adopted UE Eye cornea roughness replacement. Project source/registry/Blueprint writer inspection found no Nathan writer for SourceCB_028.",
+    "formula_identity": true,
+    "saved": true
+  }
+]

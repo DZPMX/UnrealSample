@@ -1,0 +1,39 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "U4PackageDemo",
+  "Description": "Character rendering assets and client modules.",
+  "Category": "Project",
+  "CanContainContent": true,
+  "Plugins": [
+    {
+      "Name": "EnhancedInput",
+      "Enabled": true
+    },
+    {
+      "Name": "ACLPlugin",
+      "Enabled": true
+    },
+    {
+      "Name": "AnimationData",
+      "Enabled": true
+    },
+    {
+      "Name": "ControlRig",
+      "Enabled": true
+    }
+  ],
+  "Modules": [
+    {
+      "Name": "UnrealSample",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "UnrealSampleEditor",
+      "Type": "UncookedOnly",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

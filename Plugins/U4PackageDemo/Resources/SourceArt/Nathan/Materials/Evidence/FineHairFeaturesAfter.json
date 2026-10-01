@@ -1,0 +1,220 @@
+{
+  "values": {
+    "Stubble": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "BaseColorIntensity": 1.0,
+        "ColorSaturationBoost": 0.0,
+        "UEHairBacklit": 0.10000000149011612,
+        "UEHairScatter": 0.10000000149011612,
+        "CoverageNormalization": 1.0,
+        "ConstantAO": 0.8999999761581421,
+        "ColorLightness": 0.1899999976158142,
+        "BaseRoughness": 1.0,
+        "SpecularStrength": 0.0
+      },
+      "vector": {
+        "ColorOverlayTint": [
+          0.6430000066757202,
+          0.6430000066757202,
+          0.6430000066757202,
+          1.0
+        ],
+        "ConstantHairColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "texture": {
+        "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Beard/T_Nathan_stubble2_color.T_Nathan_stubble2_color",
+        "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/Beard/T_Nathan_stubble_trans.T_Nathan_stubble_trans",
+        "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseConstantColor": false,
+        "UseFixedCoverageNormalization": false,
+        "UseRawCoverage": false,
+        "UseColorGrading": false,
+        "UseSpecularMask": false,
+        "UseSourceRoughness": false,
+        "UseConstantAO": false,
+        "UseRoughnessForScattering": false
+      }
+    },
+    "Eyelashes": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "BaseColorIntensity": 1.0,
+        "ColorSaturationBoost": 0.10000000149011612,
+        "UEHairBacklit": 0.10000000149011612,
+        "UEHairScatter": 0.10000000149011612,
+        "CoverageNormalization": 1.0,
+        "ConstantAO": 0.8999999761581421,
+        "ColorLightness": 0.1899999976158142,
+        "BaseRoughness": 1.0,
+        "SpecularStrength": 0.0
+      },
+      "vector": {
+        "ColorOverlayTint": [
+          0.6430000066757202,
+          0.6430000066757202,
+          0.6430000066757202,
+          1.0
+        ],
+        "ConstantHairColor": [
+          0.19599999487400055,
+          0.15700000524520874,
+          0.125,
+          1.0
+        ]
+      },
+      "texture": {
+        "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Beard/T_Nathan_stubble2_color.T_Nathan_stubble2_color",
+        "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/EyeLash/T_Nathan_lash_id_2.T_Nathan_lash_id_2",
+        "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseConstantColor": true,
+        "UseFixedCoverageNormalization": true,
+        "UseRawCoverage": false,
+        "UseColorGrading": false,
+        "UseSpecularMask": false,
+        "UseSourceRoughness": false,
+        "UseConstantAO": false,
+        "UseRoughnessForScattering": false
+      }
+    },
+    "ArmHair": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "BaseColorIntensity": 1.0,
+        "ColorSaturationBoost": 0.0,
+        "UEHairBacklit": 0.10000000149011612,
+        "UEHairScatter": 0.10000000149011612,
+        "CoverageNormalization": 1.0,
+        "ConstantAO": 0.8999999761581421,
+        "ColorLightness": 0.1899999976158142,
+        "BaseRoughness": 1.0,
+        "SpecularStrength": 0.0
+      },
+      "vector": {
+        "ColorOverlayTint": [
+          0.6430000066757202,
+          0.6430000066757202,
+          0.6430000066757202,
+          1.0
+        ],
+        "ConstantHairColor": [
+          0.2980000078678131,
+          0.2590000033378601,
+          0.2240000069141388,
+          1.0
+        ]
+      },
+      "texture": {
+        "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Beard/T_Nathan_stubble2_color.T_Nathan_stubble2_color",
+        "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_hair_trans_mask.T_Nathan_arm_hair_trans_mask",
+        "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseConstantColor": true,
+        "UseFixedCoverageNormalization": false,
+        "UseRawCoverage": true,
+        "UseColorGrading": false,
+        "UseSpecularMask": false,
+        "UseSourceRoughness": false,
+        "UseConstantAO": false,
+        "UseRoughnessForScattering": false
+      }
+    },
+    "Eyebrows": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "BaseColorIntensity": 1.0,
+        "ColorSaturationBoost": 0.0,
+        "UEHairBacklit": 0.10000000149011612,
+        "UEHairScatter": 0.10000000149011612,
+        "CoverageNormalization": 1.0,
+        "ConstantAO": 0.8999999761581421,
+        "ColorLightness": 0.1899999976158142,
+        "BaseRoughness": 1.0,
+        "SpecularStrength": 0.0
+      },
+      "vector": {
+        "ColorOverlayTint": [
+          0.6430000066757202,
+          0.6430000066757202,
+          0.6430000066757202,
+          1.0
+        ],
+        "ConstantHairColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "texture": {
+        "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color.T_Nathan_new_brows2_color",
+        "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_trans.T_Nathan_new_brows_trans",
+        "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseConstantColor": false,
+        "UseFixedCoverageNormalization": false,
+        "UseRawCoverage": false,
+        "UseColorGrading": true,
+        "UseSpecularMask": true,
+        "UseSourceRoughness": true,
+        "UseConstantAO": true,
+        "UseRoughnessForScattering": true
+      }
+    }
+  },
+  "connections": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "deleted": [
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair:MaterialExpressionScalarParameter_0",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair:MaterialExpressionScalarParameter_3",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair:MaterialExpressionScalarParameter_4",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair:MaterialExpressionStaticSwitchParameter_5",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair:MaterialExpressionMakeMaterialAttributes_1"
+  ],
+  "instance_formula_identity": {
+    "Stubble": true,
+    "Eyelashes": true,
+    "ArmHair": true,
+    "Eyebrows": true
+  },
+  "saved": true
+}

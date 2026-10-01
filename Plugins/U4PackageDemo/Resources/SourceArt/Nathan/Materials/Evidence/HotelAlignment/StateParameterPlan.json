@@ -1,0 +1,910 @@
+{
+  "capture": "H:/RDCFiles/U4/5-frame18212.rdc",
+  "frame": 18212,
+  "story_source": "G:\\UnrealSample\\Saved\\Codex\\Elena_JawBinding_Trace_20260920\\dc1_unpsarc\\ss-u4\\ss-character-material-controller.bin",
+  "story_sha256": "18fc6a80174403bf0f3acc5720c621ebc5728550d026c5485d4ec741a66c6305",
+  "story": [
+    {
+      "offset": 3368,
+      "table_sid": "0x935e1db9",
+      "table_name": [
+        "*city-drake-dirtiness*"
+      ],
+      "records": [
+        {
+          "offset": 10404,
+          "chapter_sid": "0x49d573c2",
+          "chapter": [
+            "madagascar"
+          ],
+          "task_sid": "0x568fa4fe",
+          "task": [
+            "mad-trails-opening"
+          ],
+          "value": 0.30000001192092896
+        },
+        {
+          "offset": 10416,
+          "chapter_sid": "0x49d573c2",
+          "chapter": [
+            "madagascar"
+          ],
+          "task_sid": "0x5f4e20b9",
+          "task": [
+            "mad-trails-enemy-reveal"
+          ],
+          "value": 0.5
+        },
+        {
+          "offset": 10428,
+          "chapter_sid": "0x49d573c2",
+          "chapter": [
+            "madagascar"
+          ],
+          "task_sid": "0x2227fd01",
+          "task": [
+            "mad-volcano-watchtower-find-statue"
+          ],
+          "value": 0.8999999761581421
+        },
+        {
+          "offset": 10440,
+          "chapter_sid": "0x7e8fb6cd",
+          "chapter": [
+            "open-water"
+          ],
+          "task_sid": "0x8ce21b03",
+          "task": [
+            "ope-boat-intro-a"
+          ],
+          "value": 0.5
+        },
+        {
+          "offset": 10452,
+          "chapter_sid": "0x641c5160",
+          "chapter": [
+            "island"
+          ],
+          "task_sid": "0x70553b46",
+          "task": [
+            "isl-cliffs-cave-drake-awakens"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 10464,
+          "chapter_sid": "0x3869aa4e",
+          "chapter": [
+            "cave"
+          ],
+          "task_sid": "0x42f31b7d",
+          "task": [
+            "cav-libertalia-outro-a"
+          ],
+          "value": 0.699999988079071
+        },
+        {
+          "offset": 10476,
+          "chapter_sid": "0xbffa081b",
+          "chapter": [
+            "epilogue"
+          ],
+          "task_sid": "0xa949494c",
+          "task": [
+            "epi-office-elena-buys-salvage"
+          ],
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "offset": 1888,
+      "table_sid": "0x6ad6f778",
+      "table_name": [
+        "*city-drake-bloodiness-dry*"
+      ],
+      "records": [
+        {
+          "offset": 11044,
+          "chapter_sid": "0xd8404a7",
+          "chapter": [
+            "boat-intro"
+          ],
+          "task_sid": "0x98cdc387",
+          "task": [
+            "boa-boat-attack"
+          ],
+          "value": 0.44999998807907104
+        },
+        {
+          "offset": 11056,
+          "chapter_sid": "0xc7fe097f",
+          "chapter": [
+            "orphanage"
+          ],
+          "task_sid": "0x92cc5e08",
+          "task": [
+            "orp-intro"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 11068,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0x8692d57e",
+          "task": [
+            "cit-chase-escape-t-bone-start"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 11080,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0xafd3a1ad",
+          "task": [
+            "cit-hotel-mad-elena"
+          ],
+          "value": 0.6000000238418579
+        },
+        {
+          "offset": 11092,
+          "chapter_sid": "0x7e8fb6cd",
+          "chapter": [
+            "open-water"
+          ],
+          "task_sid": "0x8ce21b03",
+          "task": [
+            "ope-boat-intro-a"
+          ],
+          "value": 0.44999998807907104
+        },
+        {
+          "offset": 11104,
+          "chapter_sid": "0xbffa081b",
+          "chapter": [
+            "epilogue"
+          ],
+          "task_sid": "0xa949494c",
+          "task": [
+            "epi-office-elena-buys-salvage"
+          ],
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "offset": 1696,
+      "table_sid": "0xf7b34bed",
+      "table_name": [
+        "*drake-muddiness-head-max*"
+      ],
+      "records": [
+        {
+          "offset": 9968,
+          "chapter_sid": "0xd8404a7",
+          "chapter": [
+            "boat-intro"
+          ],
+          "task_sid": "0x98cdc387",
+          "task": [
+            "boa-boat-attack"
+          ],
+          "value": 0.4000000059604645
+        },
+        {
+          "offset": 9980,
+          "chapter_sid": "0xe8f0d267",
+          "chapter": [
+            "scotland"
+          ],
+          "task_sid": "0xafb0ae9b",
+          "task": [
+            "sco-hillside-intro"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 9992,
+          "chapter_sid": "0x49d573c2",
+          "chapter": [
+            "madagascar"
+          ],
+          "task_sid": "0x568fa4fe",
+          "task": [
+            "mad-trails-opening"
+          ],
+          "value": 0.4000000059604645
+        },
+        {
+          "offset": 10004,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0x588eba3c",
+          "task": [
+            "cit-market-arrival"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 10016,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0x1fa802fb",
+          "task": [
+            "cit-market-fight-exit"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 10028,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0xafd3a1ad",
+          "task": [
+            "cit-hotel-mad-elena"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 10040,
+          "chapter_sid": "0x7e8fb6cd",
+          "chapter": [
+            "open-water"
+          ],
+          "task_sid": "0x8ce21b03",
+          "task": [
+            "ope-boat-intro-a"
+          ],
+          "value": 0.4000000059604645
+        },
+        {
+          "offset": 10052,
+          "chapter_sid": "0x496e1251",
+          "chapter": [
+            "passage"
+          ],
+          "task_sid": "0x39ccccc8",
+          "task": [
+            "pas-explore-intro"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 10064,
+          "chapter_sid": "0x496e1251",
+          "chapter": [
+            "passage"
+          ],
+          "task_sid": "0xcf6aa56b",
+          "task": [
+            "pas-mud-pit"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 10076,
+          "chapter_sid": "0x296f7138",
+          "chapter": [
+            "ship-graveyard"
+          ],
+          "task_sid": "0xfd5cb91c",
+          "task": [
+            "shi-grave-post-fight"
+          ],
+          "value": 0.4000000059604645
+        }
+      ]
+    },
+    {
+      "offset": 1744,
+      "table_sid": "0xd181789d",
+      "table_name": [
+        "*drake-muddiness-max*"
+      ],
+      "records": [
+        {
+          "offset": 9788,
+          "chapter_sid": "0xd8404a7",
+          "chapter": [
+            "boat-intro"
+          ],
+          "task_sid": "0x98cdc387",
+          "task": [
+            "boa-boat-attack"
+          ],
+          "value": 0.5
+        },
+        {
+          "offset": 9800,
+          "chapter_sid": "0xe8f0d267",
+          "chapter": [
+            "scotland"
+          ],
+          "task_sid": "0xafb0ae9b",
+          "task": [
+            "sco-hillside-intro"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 9812,
+          "chapter_sid": "0x49d573c2",
+          "chapter": [
+            "madagascar"
+          ],
+          "task_sid": "0x568fa4fe",
+          "task": [
+            "mad-trails-opening"
+          ],
+          "value": 0.5
+        },
+        {
+          "offset": 9824,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0x588eba3c",
+          "task": [
+            "cit-market-arrival"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 9836,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0x1fa802fb",
+          "task": [
+            "cit-market-fight-exit"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 9848,
+          "chapter_sid": "0xef43106d",
+          "chapter": [
+            "city"
+          ],
+          "task_sid": "0xafd3a1ad",
+          "task": [
+            "cit-hotel-mad-elena"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 9860,
+          "chapter_sid": "0x7e8fb6cd",
+          "chapter": [
+            "open-water"
+          ],
+          "task_sid": "0x8ce21b03",
+          "task": [
+            "ope-boat-intro-a"
+          ],
+          "value": 0.5
+        },
+        {
+          "offset": 9872,
+          "chapter_sid": "0x496e1251",
+          "chapter": [
+            "passage"
+          ],
+          "task_sid": "0x39ccccc8",
+          "task": [
+            "pas-explore-intro"
+          ],
+          "value": 0.0
+        },
+        {
+          "offset": 9884,
+          "chapter_sid": "0x496e1251",
+          "chapter": [
+            "passage"
+          ],
+          "task_sid": "0xcf6aa56b",
+          "task": [
+            "pas-mud-pit"
+          ],
+          "value": 1.0
+        },
+        {
+          "offset": 9896,
+          "chapter_sid": "0x296f7138",
+          "chapter": [
+            "ship-graveyard"
+          ],
+          "task_sid": "0xfd5cb91c",
+          "task": [
+            "shi-grave-post-fight"
+          ],
+          "value": 0.5
+        }
+      ]
+    }
+  ],
+  "sequence": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100",
+  "range": [
+    0,
+    5731
+  ],
+  "rows": [
+    {
+      "part": "Belt",
+      "event": 45930,
+      "source_shader": "c59f9b9b99b3e59b4afbb166a1b80c362a0a6bea83d686fe1aa0dee41678f9e5",
+      "source_byte": 96,
+      "source_symbol": "g_dirtStrength04",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt.MI_Nathan_Belt",
+      "slots": [
+        34
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount + (Amount*Mask*0.7-Min*Amount))/(Max-Min)，保持顺序并 Saturate；Max=Min 的源除法未保护，不新增 epsilon。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "按当前有效功能分支参与计算。"
+        }
+      ]
+    },
+    {
+      "part": "Belt",
+      "event": 45930,
+      "source_shader": "c59f9b9b99b3e59b4afbb166a1b80c362a0a6bea83d686fe1aa0dee41678f9e5",
+      "source_byte": 132,
+      "source_symbol": "g_mudDynamicStrength04",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt.MI_Nathan_Belt",
+      "slots": [
+        34
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "自动状态先取 Min(平均值,本值)，再乘 MudColorCoverage.A。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "仅 MudAmount=0 的自动分支。"
+        }
+      ]
+    },
+    {
+      "part": "Pouch",
+      "event": 45940,
+      "source_shader": "f3687b6486bb5af54712edfcfe829a779771ba459e06b0767ab77f25abe92383",
+      "source_byte": 80,
+      "source_symbol": "g_dirtStrength04",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch.MI_Nathan_Pouch",
+      "slots": [
+        32
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount + (Amount*Mask*0.7-Min*Amount))/(Max-Min)，保持顺序并 Saturate；Max=Min 的源除法未保护，不新增 epsilon。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "按当前有效功能分支参与计算。"
+        }
+      ]
+    },
+    {
+      "part": "Pouch",
+      "event": 45940,
+      "source_shader": "f3687b6486bb5af54712edfcfe829a779771ba459e06b0767ab77f25abe92383",
+      "source_byte": 100,
+      "source_symbol": "g_mudDynamicStrength04",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch.MI_Nathan_Pouch",
+      "slots": [
+        32
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "自动状态先取 Min(平均值,本值)，再乘 MudColorCoverage.A。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "仅 MudAmount=0 的自动分支。"
+        }
+      ]
+    },
+    {
+      "part": "Watch",
+      "event": 46064,
+      "source_shader": "db15219dd56385f5a2145a6943b63dc4481f7c3f55f156cfd094cb24ae73e530",
+      "source_byte": 68,
+      "source_symbol": "g_dirtStrength05",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch.MI_Nathan_Watch",
+      "slots": [
+        37
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount + (Amount*Mask*0.7-Min*Amount))/(Max-Min)，保持顺序并 Saturate；Max=Min 的源除法未保护，不新增 epsilon。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "按当前有效功能分支参与计算。"
+        }
+      ]
+    },
+    {
+      "part": "Watch",
+      "event": 46064,
+      "source_shader": "db15219dd56385f5a2145a6943b63dc4481f7c3f55f156cfd094cb24ae73e530",
+      "source_byte": 104,
+      "source_symbol": "g_mudDynamicStrength05",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch.MI_Nathan_Watch",
+      "slots": [
+        37
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "自动状态先取 Min(平均值,本值)，再乘 MudColorCoverage.A。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "仅 MudAmount=0 的自动分支。"
+        }
+      ]
+    },
+    {
+      "part": "Holster",
+      "event": 46253,
+      "source_shader": "c25bca6031f525eb8a24180a101875d2fbc9bb34ec9ceb01be5ba6404be7b1cd",
+      "source_byte": 64,
+      "source_symbol": "g_dirtStrength04",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster.MI_Nathan_Holster",
+      "slots": [
+        22,
+        35
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount + (Amount*Mask*0.7-Min*Amount))/(Max-Min)，保持顺序并 Saturate；Max=Min 的源除法未保护，不新增 epsilon。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "按当前有效功能分支参与计算。"
+        }
+      ]
+    },
+    {
+      "part": "Holster",
+      "event": 46253,
+      "source_shader": "c25bca6031f525eb8a24180a101875d2fbc9bb34ec9ceb01be5ba6404be7b1cd",
+      "source_byte": 100,
+      "source_symbol": "g_mudDynamicStrength04",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster.MI_Nathan_Holster",
+      "slots": [
+        22,
+        35
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "自动状态先取 Min(平均值,本值)，再乘 MudColorCoverage.A。",
+          "contract": "无量纲标量；不新增输入 clamp，保留原偏移、乘法和最终 Saturate。",
+          "condition": "仅 MudAmount=0 的自动分支。"
+        }
+      ]
+    },
+    {
+      "part": "Boots",
+      "event": 46417,
+      "source_shader": "ee499c474d6c641ba164a17c3550ac3fac2e879038bfc29ee42a424fe4c2161c",
+      "source_byte": 80,
+      "source_symbol": "g_dirtStrength06",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots.MI_Nathan_Boots",
+      "slots": [
+        31
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount+(Amount*Mask*0.7-Min*Amount))/(Max-Min)，Saturate；Max=Min 源除法无保护。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "相应计算路径启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Boots",
+      "event": 46417,
+      "source_shader": "ee499c474d6c641ba164a17c3550ac3fac2e879038bfc29ee42a424fe4c2161c",
+      "source_byte": 132,
+      "source_symbol": "g_mudDynamicStrength06",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots.MI_Nathan_Boots",
+      "slots": [
+        31
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "动态泥状态上限",
+          "behavior": "捕获 G 两次均值先与本值取 Min，再乘泥 Alpha。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "MudAmount=0 时。"
+        }
+      ]
+    },
+    {
+      "part": "Arms",
+      "event": 46436,
+      "source_shader": "41ad0c4c5b103d1bf435a0e9ac6660575fc0d1f1763feeb458ca4eaa1a2ac671",
+      "source_byte": 60,
+      "source_symbol": "g_dirtStrength03",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms.MI_Nathan_Arms",
+      "slots": [
+        39,
+        40
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢输入量",
+          "behavior": "参与 (Max*0.3*Amount+(Amount*Mask*0.7-Min*Amount))/(Max-Min)，最后 Saturate；源未保护 Max=Min。",
+          "contract": "无量纲标量；不新增输入 clamp，保持原各阶段限制与求值顺序。",
+          "condition": "相应来源功能分支启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Arms",
+      "event": 46436,
+      "source_shader": "41ad0c4c5b103d1bf435a0e9ac6660575fc0d1f1763feeb458ca4eaa1a2ac671",
+      "source_byte": 116,
+      "source_symbol": "g_mudDynamicStrength03",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms.MI_Nathan_Arms",
+      "slots": [
+        39,
+        40
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "动态均值先与本值取 Min，再乘泥 Alpha。",
+          "contract": "无量纲标量；不新增输入 clamp，保持原各阶段限制与求值顺序。",
+          "condition": "MudAmount=0 时。"
+        }
+      ]
+    },
+    {
+      "part": "Shirt",
+      "event": 46503,
+      "source_shader": "4818adf6a0df62411b5eb5efd3ad5f75afa5eb9d781128c56a22e9237698b5c1",
+      "source_byte": 160,
+      "source_symbol": "g_dirtStrength06",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt.MI_Nathan_Shirt",
+      "slots": [
+        25
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount+(Amount*Mask*0.7-Min*Amount))/(Max-Min)，Saturate；Max=Min 源除法无保护。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "相应计算路径启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Shirt",
+      "event": 46503,
+      "source_shader": "4818adf6a0df62411b5eb5efd3ad5f75afa5eb9d781128c56a22e9237698b5c1",
+      "source_byte": 196,
+      "source_symbol": "g_mudDynamicStrength06",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt.MI_Nathan_Shirt",
+      "slots": [
+        25
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "动态泥状态上限",
+          "behavior": "捕获 G 两次均值先与本值取 Min，再乘泥 Alpha。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "MudAmount=0 时。"
+        }
+      ]
+    },
+    {
+      "part": "Face",
+      "event": 46513,
+      "source_shader": "d670d927925331b2aacc6a993c35fdac9277322856ba2de0f318c3e5d5129f61",
+      "source_byte": 100,
+      "source_symbol": "g_dirtStrength05",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face",
+      "slots": [
+        0,
+        1
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢输入量",
+          "behavior": "参与 (Max*0.3*Amount+(Amount*Mask*0.7-Min*Amount))/(Max-Min)，最后 Saturate；源未保护 Max=Min。",
+          "contract": "无量纲标量；不新增输入 clamp，保持原各阶段限制与求值顺序。",
+          "condition": "相应来源功能分支启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Face",
+      "event": 46513,
+      "source_shader": "d670d927925331b2aacc6a993c35fdac9277322856ba2de0f318c3e5d5129f61",
+      "source_byte": 120,
+      "source_symbol": "g_mudDynamicStrength05",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face",
+      "slots": [
+        0,
+        1
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "自动泥状态上限",
+          "behavior": "动态均值先与本值取 Min，再乘泥 Alpha。",
+          "contract": "无量纲标量；不新增输入 clamp，保持原各阶段限制与求值顺序。",
+          "condition": "MudAmount=0 时。"
+        }
+      ]
+    },
+    {
+      "part": "Face",
+      "event": 46513,
+      "source_shader": "d670d927925331b2aacc6a993c35fdac9277322856ba2de0f318c3e5d5129f61",
+      "source_byte": 196,
+      "source_symbol": "g_bruiseBlend102",
+      "parameter": "CutMaskRWeight",
+      "old_capture": 0.0,
+      "hotel_capture": 0.6000000238418579,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face",
+      "slots": [
+        0,
+        1
+      ],
+      "semantics": [
+        {
+          "name": "CutMaskRWeight",
+          "purpose": "切口遮罩 R 权重",
+          "behavior": "对应纹理通道乘权重后 Saturate；保留从高序通道到低序通道的非零选择顺序及最终 >0.001 有效判断。",
+          "contract": "无量纲标量；不新增输入 clamp，保持原各阶段限制与求值顺序。",
+          "condition": "相应来源功能分支启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Pants",
+      "event": 46532,
+      "source_shader": "532e72b2c520e86be595630c36f797cfdbad8946e434ad806dc03b5ddf32e0ee",
+      "source_byte": 96,
+      "source_symbol": "g_dirtStrength05",
+      "parameter": "DirtAmount",
+      "old_capture": 0.0,
+      "hotel_capture": 0.8999999761581421,
+      "ue_before": 0.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants.MI_Nathan_Pants",
+      "slots": [
+        29
+      ],
+      "semantics": [
+        {
+          "name": "DirtAmount",
+          "purpose": "污垢覆盖输入量",
+          "behavior": "参与 (Max*0.3*Amount+(Amount*Mask*0.7-Min*Amount))/(Max-Min)，Saturate；Max=Min 源除法无保护。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "相应计算路径启用时。"
+        }
+      ]
+    },
+    {
+      "part": "Pants",
+      "event": 46532,
+      "source_shader": "532e72b2c520e86be595630c36f797cfdbad8946e434ad806dc03b5ddf32e0ee",
+      "source_byte": 164,
+      "source_symbol": "g_mudDynamicStrength05",
+      "parameter": "DynamicMudLimit",
+      "old_capture": 1.0,
+      "hotel_capture": 0.0,
+      "ue_before": 1.0,
+      "material": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants.MI_Nathan_Pants",
+      "slots": [
+        29
+      ],
+      "semantics": [
+        {
+          "name": "DynamicMudLimit",
+          "purpose": "动态泥状态上限",
+          "behavior": "捕获 G 两次均值先与本值取 Min，再乘泥 Alpha。",
+          "contract": "标量；保留源运算次序与各阶段 clamp，不新增参数限制。",
+          "condition": "MudAmount=0 时。"
+        }
+      ]
+    }
+  ]
+}

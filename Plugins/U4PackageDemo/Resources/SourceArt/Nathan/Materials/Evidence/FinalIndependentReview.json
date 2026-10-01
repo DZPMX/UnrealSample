@@ -1,0 +1,1559 @@
+{
+  "asset_changes": {
+    "modified": [
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_ArmHair.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Arms.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Belt.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Boots.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Caruncle.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Chest.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eye.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eyebrows.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eyelashes.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Face.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairAlphaThin.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairAlphaThinDithered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThick.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThickCutoff.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThin.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinAlpha.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinAlphaDithered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMud.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudDithered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudSnow.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinNoShadow.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Holster.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HolsterBorder.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HolsterMetal.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Pants.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Pouch.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Ring.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Shirt.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Stubble.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Tears.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Teeth.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Tongue.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Watch.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_WatchLens.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Cloth.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Eye.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_FineHair.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaLayered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaMapped.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaPacked.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HolsterBorder.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HolsterMetal.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Ring.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_SurfaceAnatomy.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_SurfaceLayered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Tears.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_WatchLens.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Body\\T_Nathan_arm_sword_wound_blood2_blend.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_auction_nadine_fight_head_mask.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_cut_island_blend.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_blood_mask.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Hair\\T_Nathan_hair_thick_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Hair\\T_Nathan_hair_thin_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Hair\\T_Nathan_hair_thin_mud_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Hair\\T_Nathan_sully_hair_thin2_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\MaterialAdaptation\\T_Nathan_hair_thin_ao_mask_9BBBC49A_ColorData.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shirt\\T_Nathan_shirt_wound_blood_mask.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shirt\\T_Nathan_shirt_wound_rips_mask.uasset"
+    ],
+    "added": [],
+    "removed": [],
+    "mesh_slots_unchanged": true,
+    "profile_settings_unchanged": true,
+    "instance_parents_unchanged": true,
+    "scene_material_bindings_unchanged": true,
+    "scene_paths_before": [
+      "/Temp/Untitled_2.Untitled_2:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0"
+    ],
+    "scene_paths_after": [
+      "/Temp/Untitled_3.Untitled_3:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0"
+    ],
+    "dirty_content": [],
+    "dirty_maps": [
+      "/Temp/Untitled_3"
+    ],
+    "cross_character_dependencies": []
+  },
+  "graphs": {
+    "M_Nathan_Cloth": {
+      "nodes_by_class": {
+        "Constant": 53,
+        "TextureCoordinate": 3,
+        "ComponentMask": 12,
+        "OneMinus": 37,
+        "AppendVector": 41,
+        "ScalarParameter": 74,
+        "Add": 292,
+        "TextureSampleParameter2D": 68,
+        "Subtract": 57,
+        "Saturate": 51,
+        "If": 96,
+        "Multiply": 377,
+        "Divide": 12,
+        "StaticSwitchParameter": 44,
+        "Floor": 2,
+        "Truncate": 2,
+        "Power": 1,
+        "Min": 2,
+        "WorldPosition": 1,
+        "Constant3Vector": 2,
+        "Transform": 1,
+        "SquareRoot": 1,
+        "Abs": 1,
+        "Max": 2,
+        "MakeMaterialAttributes": 1,
+        "DeriveNormalZ": 1,
+        "LinearInterpolate": 193,
+        "VectorParameter": 6,
+        "NamedRerouteDeclaration": 267,
+        "NamedRerouteUsage": 340,
+        "Comment": 6
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 134,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_Eye": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "ScalarParameter": 9,
+        "Constant": 14,
+        "Multiply": 27,
+        "Subtract": 9,
+        "Add": 23,
+        "Divide": 1,
+        "Saturate": 7,
+        "If": 6,
+        "TextureCoordinate": 1,
+        "ComponentMask": 4,
+        "CameraVectorWS": 1,
+        "Transform": 1,
+        "TextureSampleParameter2D": 7,
+        "OneMinus": 3,
+        "AppendVector": 6,
+        "VertexNormalWS": 1,
+        "TangentOutput": 1,
+        "DeriveNormalZ": 1,
+        "LinearInterpolate": 9,
+        "VectorParameter": 1,
+        "NamedRerouteDeclaration": 35,
+        "NamedRerouteUsage": 39,
+        "Comment": 6
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 15,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_FineHair": {
+      "nodes_by_class": {
+        "Constant": 14,
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "OneMinus": 3,
+        "AppendVector": 9,
+        "ScalarParameter": 10,
+        "Add": 31,
+        "TextureSampleParameter2D": 5,
+        "Subtract": 16,
+        "Multiply": 33,
+        "StaticSwitchParameter": 14,
+        "Saturate": 12,
+        "TwoSidedSign": 1,
+        "Max": 1,
+        "Divide": 1,
+        "MaterialFunctionCall": 1,
+        "MakeMaterialAttributes": 1,
+        "Abs": 1,
+        "LinearInterpolate": 10,
+        "VectorParameter": 2,
+        "NamedRerouteDeclaration": 40,
+        "NamedRerouteUsage": 53,
+        "Comment": 8
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 23,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_HairKajiyaLayered": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "Constant": 20,
+        "Multiply": 207,
+        "TextureCoordinate": 2,
+        "ComponentMask": 4,
+        "OneMinus": 6,
+        "AppendVector": 15,
+        "ScalarParameter": 30,
+        "Add": 182,
+        "TextureSampleParameter2D": 21,
+        "StaticSwitchParameter": 54,
+        "Subtract": 118,
+        "Divide": 5,
+        "Saturate": 28,
+        "If": 58,
+        "Constant3Vector": 2,
+        "Max": 1,
+        "MaterialFunctionCall": 1,
+        "Transform": 2,
+        "KajiyaHairOutput": 1,
+        "Reroute": 1,
+        "Logarithm2": 1,
+        "Exponential2": 1,
+        "DeriveNormalZ": 1,
+        "VectorParameter": 3,
+        "NamedRerouteDeclaration": 131,
+        "NamedRerouteUsage": 178,
+        "Comment": 7
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 50,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_HairKajiyaMapped": {
+      "nodes_by_class": {
+        "TextureCoordinate": 3,
+        "ComponentMask": 6,
+        "OneMinus": 6,
+        "AppendVector": 15,
+        "Constant": 19,
+        "ScalarParameter": 12,
+        "Add": 89,
+        "TextureSampleParameter2D": 13,
+        "Subtract": 45,
+        "Multiply": 71,
+        "Saturate": 19,
+        "StaticSwitchParameter": 24,
+        "If": 4,
+        "Constant3Vector": 2,
+        "Max": 2,
+        "Divide": 1,
+        "MaterialFunctionCall": 1,
+        "MakeMaterialAttributes": 1,
+        "Transform": 2,
+        "KajiyaHairOutput": 1,
+        "Logarithm2": 1,
+        "Exponential2": 1,
+        "DeriveNormalZ": 1,
+        "VectorParameter": 1,
+        "NamedRerouteDeclaration": 66,
+        "NamedRerouteUsage": 92,
+        "Comment": 7
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 27,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_HairKajiyaPacked": {
+      "nodes_by_class": {
+        "TextureCoordinate": 2,
+        "ComponentMask": 4,
+        "OneMinus": 5,
+        "AppendVector": 13,
+        "Constant": 17,
+        "ScalarParameter": 9,
+        "Add": 60,
+        "TextureSampleParameter2D": 7,
+        "Subtract": 33,
+        "Multiply": 46,
+        "Saturate": 16,
+        "If": 2,
+        "Max": 1,
+        "Divide": 1,
+        "MaterialFunctionCall": 1,
+        "MakeMaterialAttributes": 1,
+        "StaticSwitchParameter": 9,
+        "Constant3Vector": 2,
+        "Transform": 2,
+        "KajiyaHairOutput": 1,
+        "Logarithm2": 1,
+        "Exponential2": 1,
+        "NamedRerouteDeclaration": 48,
+        "NamedRerouteUsage": 67,
+        "Comment": 7
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 14,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_HolsterBorder": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "ScalarParameter": 6,
+        "Constant": 8,
+        "Add": 34,
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "Multiply": 22,
+        "TextureSampleParameter2D": 1,
+        "OneMinus": 1,
+        "AppendVector": 4,
+        "Subtract": 6,
+        "Saturate": 7,
+        "Constant3Vector": 1,
+        "DeriveNormalZ": 1,
+        "VectorParameter": 1,
+        "NamedRerouteDeclaration": 21,
+        "NamedRerouteUsage": 33,
+        "Comment": 6
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 8,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_HolsterMetal": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "Constant": 4,
+        "Multiply": 11,
+        "Add": 7,
+        "ScalarParameter": 6,
+        "Saturate": 5,
+        "AppendVector": 4,
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "TextureSampleParameter2D": 2,
+        "OneMinus": 2,
+        "LinearInterpolate": 2,
+        "VectorParameter": 2,
+        "NamedRerouteDeclaration": 16,
+        "NamedRerouteUsage": 17,
+        "Comment": 4
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 9,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_Ring": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "ScalarParameter": 12,
+        "Constant": 10,
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "Multiply": 21,
+        "TextureSampleParameter2D": 7,
+        "OneMinus": 7,
+        "AppendVector": 9,
+        "Add": 15,
+        "If": 2,
+        "Min": 1,
+        "Subtract": 8,
+        "Divide": 1,
+        "Saturate": 7,
+        "LinearInterpolate": 11,
+        "NamedRerouteDeclaration": 32,
+        "NamedRerouteUsage": 38,
+        "Comment": 5
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 16,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_Skin": {
+      "nodes_by_class": {
+        "ScalarParameter": 74,
+        "TextureCoordinate": 2,
+        "ComponentMask": 13,
+        "OneMinus": 24,
+        "AppendVector": 27,
+        "Constant": 40,
+        "Add": 247,
+        "TextureSampleParameter2D": 58,
+        "Multiply": 279,
+        "If": 76,
+        "StaticSwitchParameter": 74,
+        "Subtract": 103,
+        "Saturate": 57,
+        "Divide": 22,
+        "Power": 2,
+        "Min": 1,
+        "Frac": 2,
+        "Constant3Vector": 4,
+        "Transform": 3,
+        "SquareRoot": 5,
+        "Abs": 1,
+        "MakeMaterialAttributes": 1,
+        "DeriveNormalZ": 1,
+        "LinearInterpolate": 180,
+        "VectorParameter": 7,
+        "NamedRerouteDeclaration": 250,
+        "NamedRerouteUsage": 319,
+        "Comment": 8
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 122,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_SurfaceAnatomy": {
+      "nodes_by_class": {
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "OneMinus": 2,
+        "AppendVector": 5,
+        "Constant": 9,
+        "ScalarParameter": 6,
+        "Add": 24,
+        "TextureSampleParameter2D": 6,
+        "StaticSwitchParameter": 12,
+        "Saturate": 6,
+        "Multiply": 22,
+        "Subtract": 1,
+        "Constant3Vector": 1,
+        "MakeMaterialAttributes": 1,
+        "DeriveNormalZ": 1,
+        "LinearInterpolate": 9,
+        "VectorParameter": 1,
+        "NamedRerouteDeclaration": 38,
+        "NamedRerouteUsage": 45,
+        "Comment": 6
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 14,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_SurfaceLayered": {
+      "nodes_by_class": {
+        "Constant": 34,
+        "TextureCoordinate": 3,
+        "ComponentMask": 6,
+        "OneMinus": 24,
+        "AppendVector": 27,
+        "ScalarParameter": 43,
+        "Add": 216,
+        "TextureSampleParameter2D": 40,
+        "Subtract": 113,
+        "If": 68,
+        "Saturate": 25,
+        "Multiply": 265,
+        "StaticSwitchParameter": 148,
+        "Divide": 5,
+        "Abs": 1,
+        "Min": 1,
+        "Constant3Vector": 1,
+        "MakeMaterialAttributes": 1,
+        "DeriveNormalZ": 1,
+        "LinearInterpolate": 202,
+        "VectorParameter": 6,
+        "NamedRerouteDeclaration": 168,
+        "NamedRerouteUsage": 259,
+        "Comment": 7
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 90,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[03] 法线与方向",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[06] 环境遮蔽",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[07] 共享表面计算",
+          "CommentColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_Tears": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "Constant": 11,
+        "Multiply": 10,
+        "Add": 13,
+        "ScalarParameter": 7,
+        "Saturate": 7,
+        "AppendVector": 4,
+        "Subtract": 1,
+        "TextureCoordinate": 1,
+        "ComponentMask": 2,
+        "TextureSampleParameter2D": 2,
+        "OneMinus": 2,
+        "Max": 2,
+        "Divide": 1,
+        "If": 1,
+        "LinearInterpolate": 2,
+        "VectorParameter": 2,
+        "NamedRerouteDeclaration": 20,
+        "NamedRerouteUsage": 22,
+        "Comment": 5
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 10,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    },
+    "M_Nathan_WatchLens": {
+      "nodes_by_class": {
+        "MakeMaterialAttributes": 1,
+        "Constant": 10,
+        "ScalarParameter": 5,
+        "Multiply": 2,
+        "Saturate": 5,
+        "AppendVector": 2,
+        "Add": 8,
+        "Max": 2,
+        "Divide": 1,
+        "If": 1,
+        "NamedRerouteDeclaration": 10,
+        "NamedRerouteUsage": 11,
+        "Comment": 5
+      },
+      "duplicate_producer_groups": [],
+      "parameter_count": 5,
+      "layout_panels": [
+        {
+          "Text": "[00] 最终输出",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[01] 公共输入与采样",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[02] 基础色",
+          "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[04] 镜面与粗糙度",
+          "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        },
+        {
+          "Text": "[05] 覆盖率",
+          "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+          "FontSize": "28",
+          "bCommentBubbleVisible_InDetailsPanel": "True",
+          "bColorCommentBubble": "True",
+          "bGroupMode": "True"
+        }
+      ]
+    }
+  },
+  "evidence_checks": {
+    "CSEExecution.json": {
+      "rows": 13,
+      "results": [
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        }
+      ]
+    },
+    "PostParameterCSEExecution.json": {
+      "rows": 14,
+      "results": [
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        }
+      ]
+    },
+    "PostFeatureCSEExecution.json": {
+      "rows": 3,
+      "results": [
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        }
+      ]
+    },
+    "SemanticInputCSEExecution.json": {
+      "rows": 3,
+      "results": [
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        },
+        {
+          "identical_expanded_output_graph": true,
+          "saved": true
+        }
+      ]
+    },
+    "LayoutExecution.json": {
+      "rows": 14,
+      "results": [
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        }
+      ]
+    },
+    "MetadataAuditFix.json": {
+      "rows": 14,
+      "results": [
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        },
+        {
+          "expanded_formula_identity": true,
+          "saved": true
+        }
+      ]
+    }
+  },
+  "script_syntax": {
+    "adjust_layout_output.py": true,
+    "anatomy_reuse.py": true,
+    "apply_functional_features.py": true,
+    "apply_readable_layout.py": true,
+    "capture_repair_audit.py": true,
+    "cleanup_confirmed_inputs.py": true,
+    "cleanup_finehair_orphans.py": true,
+    "cse_graphs.py": true,
+    "deliver_material_records.py": true,
+    "export_writer_graphs.py": true,
+    "extract_shader_metadata.py": true,
+    "finehair_features.py": true,
+    "finish_layout_pilot.py": true,
+    "fix_audit_metadata.py": true,
+    "fix_hair_color.py": true,
+    "fix_mask_sampling.py": true,
+    "graph_tools.py": true,
+    "hair_layered_features.py": true,
+    "hair_mapped_features.py": true,
+    "inspect_material_audit_api.py": true,
+    "inspect_static_overrides.py": true,
+    "inspect_writers.py": true,
+    "instance_graph_proof.py": true,
+    "map_current_parameters.py": true,
+    "native_graphs.py": true,
+    "native_patterns.py": true,
+    "navigate_material_graph.py": true,
+    "open_layout_review.py": true,
+    "parameter_migration.py": true,
+    "parameter_proof.py": true,
+    "parse_shader_bindings.py": true,
+    "plan_readable_layout.py": true,
+    "prepare.py": true,
+    "prepare_cloth_features.py": true,
+    "prepare_cloth_parameters.py": true,
+    "prepare_eye_parameters.py": true,
+    "prepare_finehair_parameters.py": true,
+    "prepare_hair_color.py": true,
+    "prepare_hair_layered_parameters.py": true,
+    "prepare_hair_mapped_parameters.py": true,
+    "prepare_hair_packed_parameters.py": true,
+    "prepare_layout_semantics.py": true,
+    "prepare_readable_parameters.py": true,
+    "prepare_skin_features.py": true,
+    "prepare_skin_parameters.py": true,
+    "prepare_surface_features.py": true,
+    "prepare_surface_parameters.py": true,
+    "read_compiled_material_stats.py": true,
+    "read_shader_bytes.py": true,
+    "read_state.py": true,
+    "recover_parameter_readback.py": true,
+    "repair_cse_pilot_pins.py": true,
+    "review_final_assets.py": true,
+    "show_feature_context.py": true,
+    "show_graph.py": true,
+    "show_layout_pending.py": true,
+    "show_parameters.py": true,
+    "skin_layer_parameters.py": true,
+    "surface_layer_parameters.py": true,
+    "sync_hair_manifest.py": true,
+    "sync_mask_manifest.py": true
+  },
+  "interface_problems": [],
+  "bad_reroute_bindings": {},
+  "counts": {
+    "materials": 14,
+    "instances": 34,
+    "textures": 226,
+    "profiles": 4,
+    "slots": 41,
+    "parameters": 537,
+    "modified_assets": 59,
+    "remaining_duplicate_producers": 0
+  }
+}

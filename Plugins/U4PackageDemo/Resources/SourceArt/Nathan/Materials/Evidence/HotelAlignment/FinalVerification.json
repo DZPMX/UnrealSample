@@ -1,0 +1,447 @@
+{
+  "runtime": {
+    "frames": [
+      0,
+      286,
+      287,
+      1157,
+      1923,
+      3257,
+      4500,
+      5730,
+      5731,
+      0,
+      1156
+    ],
+    "checked_scalar_values": 286,
+    "errors": [],
+    "normal_bindings": [
+      {
+        "frame": 0,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_535"
+      },
+      {
+        "frame": 0,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_535"
+      },
+      {
+        "frame": 0,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_534"
+      },
+      {
+        "frame": 0,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_536"
+      },
+      {
+        "frame": 0,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_536"
+      },
+      {
+        "frame": 286,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_544"
+      },
+      {
+        "frame": 286,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_544"
+      },
+      {
+        "frame": 286,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_543"
+      },
+      {
+        "frame": 286,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_545"
+      },
+      {
+        "frame": 286,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_545"
+      },
+      {
+        "frame": 287,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_562"
+      },
+      {
+        "frame": 287,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_562"
+      },
+      {
+        "frame": 287,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_561"
+      },
+      {
+        "frame": 287,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_563"
+      },
+      {
+        "frame": 287,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_563"
+      },
+      {
+        "frame": 1157,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_571"
+      },
+      {
+        "frame": 1157,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_571"
+      },
+      {
+        "frame": 1157,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_570"
+      },
+      {
+        "frame": 1157,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_572"
+      },
+      {
+        "frame": 1157,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_572"
+      },
+      {
+        "frame": 1923,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_589"
+      },
+      {
+        "frame": 1923,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_589"
+      },
+      {
+        "frame": 1923,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_588"
+      },
+      {
+        "frame": 1923,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_590"
+      },
+      {
+        "frame": 1923,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_590"
+      },
+      {
+        "frame": 3257,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_607"
+      },
+      {
+        "frame": 3257,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_607"
+      },
+      {
+        "frame": 3257,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_606"
+      },
+      {
+        "frame": 3257,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_608"
+      },
+      {
+        "frame": 3257,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_608"
+      },
+      {
+        "frame": 4500,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_625"
+      },
+      {
+        "frame": 4500,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_625"
+      },
+      {
+        "frame": 4500,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_624"
+      },
+      {
+        "frame": 4500,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_626"
+      },
+      {
+        "frame": 4500,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_626"
+      },
+      {
+        "frame": 5730,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_634"
+      },
+      {
+        "frame": 5730,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_634"
+      },
+      {
+        "frame": 5730,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_633"
+      },
+      {
+        "frame": 5730,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_635"
+      },
+      {
+        "frame": 5730,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_635"
+      },
+      {
+        "frame": 5731,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_640"
+      },
+      {
+        "frame": 5731,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_640"
+      },
+      {
+        "frame": 5731,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_639"
+      },
+      {
+        "frame": 5731,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_641"
+      },
+      {
+        "frame": 5731,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_641"
+      },
+      {
+        "frame": 0,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_652"
+      },
+      {
+        "frame": 0,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_652"
+      },
+      {
+        "frame": 0,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_651"
+      },
+      {
+        "frame": 0,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_653"
+      },
+      {
+        "frame": 0,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_653"
+      },
+      {
+        "frame": 1156,
+        "slot": 0,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_670"
+      },
+      {
+        "frame": 1156,
+        "slot": 1,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_670"
+      },
+      {
+        "frame": 1156,
+        "slot": 25,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_669"
+      },
+      {
+        "frame": 1156,
+        "slot": 39,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_671"
+      },
+      {
+        "frame": 1156,
+        "slot": 40,
+        "class_name": "TextureRenderTarget2D",
+        "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_671"
+      }
+    ],
+    "all_normals_are_render_targets": true,
+    "final_frame": 1156,
+    "script_error": null,
+    "dirty_content": [],
+    "dirty_maps": []
+  },
+  "graphs": {
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine": {
+      "duplicate_producers": [],
+      "parameter_description_issues": [],
+      "bad_routes": [],
+      "parameter_count": 16
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth": {
+      "duplicate_producers": [],
+      "parameter_description_issues": [],
+      "bad_routes": [],
+      "parameter_count": 134
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin": {
+      "duplicate_producers": [],
+      "parameter_description_issues": [],
+      "bad_routes": [],
+      "parameter_count": 122
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered": {
+      "duplicate_producers": [],
+      "parameter_description_issues": [],
+      "bad_routes": [],
+      "parameter_count": 90
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring": {
+      "duplicate_producers": [],
+      "parameter_description_issues": [],
+      "bad_routes": [],
+      "parameter_count": 16
+    }
+  },
+  "scripts": {
+    "apply_brow_fix.py": "syntax_ok",
+    "apply_color_domains.py": "syntax_ok",
+    "apply_state_tracks.py": "syntax_ok",
+    "audit_consumed_constants.py": "syntax_ok",
+    "audit_forward.py": "syntax_ok",
+    "capture_after_brow.py": "syntax_ok",
+    "capture_after_color.py": "syntax_ok",
+    "capture_after_skin.py": "syntax_ok",
+    "capture_buffers.py": "syntax_ok",
+    "capture_candidates.py": "syntax_ok",
+    "check_bridge.py": "syntax_ok",
+    "cleanup_review_findings.py": "syntax_ok",
+    "clear_brow_static.py": "syntax_ok",
+    "compare_capture_inputs.py": "syntax_ok",
+    "compare_gbuffer.py": "syntax_ok",
+    "debug_brow.py": "syntax_ok",
+    "debug_shirt.py": "syntax_ok",
+    "finish_brow_and_read_stats.py": "syntax_ok",
+    "finish_verification.py": "syntax_ok",
+    "fix_skin_profiles.py": "syntax_ok",
+    "inspect_appearance_ue.py": "syntax_ok",
+    "inspect_brow_orphans.py": "syntax_ok",
+    "inspect_color_data.py": "syntax_ok",
+    "inspect_domains.py": "syntax_ok",
+    "inspect_visible_roots.py": "syntax_ok",
+    "match_textures.py": "syntax_ok",
+    "prepare_brow_fix.py": "syntax_ok",
+    "prepare_color_plan.py": "syntax_ok",
+    "prepare_color_ue.py": "syntax_ok",
+    "prepare_review_followup.py": "syntax_ok",
+    "prepare_state_plan.py": "syntax_ok",
+    "probe_cloth_fuzz.py": "syntax_ok",
+    "probe_shirt_trace.py": "syntax_ok",
+    "rd_schema.py": "syntax_ok",
+    "read_final.py": "syntax_ok",
+    "read_lighting_decode.py": "syntax_ok",
+    "read_source_color.py": "syntax_ok",
+    "read_ue_current.py": "syntax_ok",
+    "review_compact.py": "syntax_ok",
+    "review_sequence_full.py": "syntax_ok",
+    "review_whole_change.py": "syntax_ok",
+    "set_comparison_frame.py": "syntax_ok",
+    "verify_state_after.py": "syntax_ok",
+    "verify_state_tracks.py": "syntax_ok",
+    "visualize_buffers.py": "syntax_ok"
+  },
+  "sequence": {
+    "removed_objects": [],
+    "changed_keys": [
+      "Possessables(3BBE86E04C598EE3024F91A462E15A5A)",
+      "ObjectBindings(3BBE86E04C598EE3024F91A462E15A5A)",
+      "Signature",
+      "ObjectsToDisplayNames",
+      "BindingReferences",
+      "Signature"
+    ],
+    "previous_bindings_preserved": true
+  }
+}

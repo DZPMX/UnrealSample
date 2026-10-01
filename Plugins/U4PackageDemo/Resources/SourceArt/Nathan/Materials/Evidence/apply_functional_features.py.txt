@@ -1,0 +1,41 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+plan=json.loads((root/json.loads((root/'FeatureSelection.json').read_text())['plan']).read_text(encoding='utf-8'))
+family=plan['family'];mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_'+family)
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in plan['instances']}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/(family+'FunctionalFeaturesBefore.json')).write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+by_path={n['object_path']:n for n in ns.values()};connections=[];settings={m:{} for m in instances};changes=[]
+for p in plan['nodes']:
+ n=by_path.get(p['path'])
+ if n is None:continue
+ o=objects[n['id']]
+ if p['invert']:
+  for pin,other in [('True','False'),('False','True')]:
+   s,index=es[n['id']][other]
+   connections.append(lib.connect_material_expressions(objects[s],pin_name(ns[s],index),o,pin))
+ o.set_editor_property('parameter_name',p['name'],notify)
+ for m in instances:settings[m][p['name']]=not old[m]['switch'][p['old']] if p['invert'] else old[m]['switch'][p['old']]
+ changes.append(p)
+# Existing selectors of the same feature receive identical, complete tooltips.
+current,objs=read_graph(mat)
+for n in current['expressions']:
+ name=n.get('parameter_name')
+ if n['class']!='StaticSwitchParameter' or name not in plan['features']:continue
+ f=plan['features'][name];o=objs[n['id']]
+ o.set_editor_property('default_value',f['default'],notify);o.set_editor_property('group','00 Features / 输入功能',notify)
+ o.set_editor_property('desc','用途：'+f['title']+'。影响：'+f['behavior']+' 输入：编译期布尔。范围／默认：母材质默认 '+str(f['default']).lower()+'；各实例保留已核对的源组合。条件：对应输入布局和层次；新增混合组合不冒充原作已存在的变体。',notify)
+mat.modify();lib.recompile_material(mat)
+for m,mi in instances.items():
+ for name,value in settings[m].items():lib.set_material_instance_static_switch_parameter_value(mi,name,value,unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+ lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in instances}
+report={'graph':after,'values':new,'settings':settings,'changes':changes,'connections':connections,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/(family+'FunctionalFeaturesAfter.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'family':family,'changes':len(changes),'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

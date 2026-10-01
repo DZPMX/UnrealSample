@@ -1,0 +1,276 @@
+{
+  "instances": {
+    "count": 1,
+    "default_riderduck_pid": 4508,
+    "instances": [
+      {
+        "riderduck_pid": 4508,
+        "started_at": 1790332503.985968,
+        "extension_version": "0.7.1",
+        "protocol": 2,
+        "heartbeat_age_seconds": 0.00550532341003418,
+        "active_method": null,
+        "active_phase": "idle",
+        "capture_loaded_cached": false,
+        "capture_file_cached": ""
+      }
+    ],
+    "ignored_endpoint_errors": []
+  },
+  "ping": {
+    "server_version": "0.7.1",
+    "server_protocol": 2,
+    "extension_version": "0.7.1",
+    "endpoint_protocol": 2,
+    "protocol_compatible": true,
+    "riderduck_pid": 4508,
+    "extension_heartbeat_alive": true,
+    "heartbeat_age_seconds": 0.07658791542053223,
+    "active_method": null,
+    "active_request_id": null,
+    "active_phase": "idle",
+    "active_duration_seconds": null,
+    "ui_inflight": false,
+    "ui_timed_out": false,
+    "capture_loaded_cached": false
+  },
+  "diagnostics": {
+    "server_version": "0.7.1",
+    "server_protocol": 2,
+    "endpoint_path": "C:\\Users\\Dz\\AppData\\Roaming\\qriderduck\\riderduck-debug-mcp-4508-32c3464c8f8a6712\\endpoint.json",
+    "legacy_endpoint_path": "C:\\Users\\Dz\\AppData\\Roaming\\qriderduck\\riderduck-debug-mcp.json",
+    "endpoint_protocol": 2,
+    "protocol_compatible": true,
+    "extension_version": "0.7.1",
+    "riderduck_pid": 4508,
+    "endpoint_started_at": 1790332503.985968,
+    "heartbeat_file": "C:\\Users\\Dz\\AppData\\Roaming\\qriderduck\\riderduck-debug-mcp-4508-32c3464c8f8a6712\\heartbeat.json",
+    "heartbeat_age_seconds": 0.13112878799438477,
+    "extension_heartbeat_alive": true,
+    "heartbeat": {
+      "protocol": 2,
+      "extension_version": "0.7.1",
+      "pid": 4508,
+      "heartbeat_at": 1790334392.7969527,
+      "active_request_id": null,
+      "active_method": null,
+      "active_phase": "idle",
+      "active_duration_seconds": null,
+      "ui_inflight": false,
+      "ui_timed_out": false,
+      "last_ui_completed_at": 0.0,
+      "last_completed_at": 0.0,
+      "last_duration_seconds": null,
+      "last_error": null,
+      "capture_loaded_cached": false,
+      "capture_file_cached": "",
+      "shader_debug_sessions": 0,
+      "artifact_workspaces": 0
+    },
+    "heartbeat_error": null,
+    "queue": {
+      "pending_count": 0,
+      "processing_count": 0,
+      "response_count": 0,
+      "pending_files": [],
+      "processing_files": []
+    }
+  },
+  "status": {
+    "connected": true,
+    "bridge_protocol": 2,
+    "extension_version": "0.7.1",
+    "riderduck_pid": 4508,
+    "capture_loaded": true,
+    "capture_loading": false,
+    "capture_file": "H:/RDCFiles/U4/5-frame18212.rdc",
+    "selected_event_id": 52508,
+    "current_event_id": 52508,
+    "shader_debug_sessions": 0,
+    "shader_debug_session_limit": 8,
+    "shader_debug_cached_step_limit": 50000,
+    "shader_debug_idle_seconds": 900.0,
+    "agent_artifact_workspaces": 0,
+    "registered_agent_mesh_sources": 0,
+    "ui_timeouts_seconds": {
+      "load_capture": 300.0,
+      "status": 15.0,
+      "current_action": 15.0,
+      "selected_actions": 15.0,
+      "list_actions": 30.0,
+      "begin_shader_debug": 180.0,
+      "shader_debug_steps": 180.0,
+      "end_shader_debug": 30.0,
+      "trace_resource_range": 180.0,
+      "read_texture": 120.0,
+      "texture_info": 120.0,
+      "read_typed_resource": 120.0,
+      "descriptor_table": 120.0,
+      "dump_resource_range": 180.0,
+      "discard_agent_artifact_workspace": 30.0,
+      "pixel_history": 180.0,
+      "inspect_events": 180.0,
+      "compare_events": 180.0,
+      "begin_agent_mesh_export": 60.0
+    },
+    "default_ui_timeout_seconds": 60.0,
+    "api": {
+      "pipeline_type": "D3D12",
+      "local_renderer": "D3D12",
+      "vendor": "nVidia",
+      "remote_replay": false,
+      "degraded": false,
+      "shader_debugging": true,
+      "pixel_history": true,
+      "rgp_capture": false
+    },
+    "frame": {
+      "frame_number": 18212,
+      "capture_time_utc": 0,
+      "compressed_file_size": 2589317186,
+      "uncompressed_file_size": 7256498432,
+      "persistent_size": 961283712,
+      "initial_data_size": 6283751616,
+      "statistics_recorded": false,
+      "root_action_count": 186,
+      "total_action_count": 1663,
+      "buffer_count": 433,
+      "texture_count": 1065,
+      "resource_count": 3196
+    },
+    "current_action": {
+      "event_id": 52508,
+      "action_id": 1340,
+      "name": "DrawIndexedInstanced(6, 1)",
+      "flags": "Instanced|Indexed|Drawcall",
+      "is_draw": true,
+      "is_dispatch": false,
+      "is_mesh_dispatch": false,
+      "is_copy": false,
+      "is_resolve": false,
+      "is_indexed": true,
+      "is_instanced": true,
+      "is_indirect": false,
+      "num_indices": 6,
+      "num_instances": 1,
+      "base_vertex": 0,
+      "index_offset": 0,
+      "vertex_offset": 0,
+      "instance_offset": 0,
+      "draw_index": 0,
+      "dispatch_dimension": [
+        0,
+        0,
+        0
+      ],
+      "dispatch_threads_dimension": [
+        0,
+        0,
+        0
+      ],
+      "dispatch_base": [
+        0,
+        0,
+        0
+      ],
+      "copy_source": "ResourceId::0",
+      "copy_source_subresource": {
+        "mip": 0,
+        "slice": 0,
+        "sample": 0
+      },
+      "copy_destination": "ResourceId::0",
+      "copy_destination_subresource": {
+        "mip": 0,
+        "slice": 0,
+        "sample": 0
+      },
+      "outputs": [
+        "ResourceId::2789",
+        "ResourceId::0",
+        "ResourceId::0",
+        "ResourceId::0",
+        "ResourceId::0",
+        "ResourceId::0",
+        "ResourceId::0",
+        "ResourceId::0"
+      ],
+      "depth_output": "ResourceId::0",
+      "children": 0,
+      "previous_event_id": 52492,
+      "next_event_id": 52510
+    }
+  },
+  "selected_actions": {
+    "capture_loaded": true,
+    "selected_event_id": 52508,
+    "current_event_id": 52508,
+    "event_ids": [
+      52508
+    ],
+    "actions": [
+      {
+        "event_id": 52508,
+        "action_id": 1340,
+        "name": "DrawIndexedInstanced(6, 1)",
+        "flags": "Instanced|Indexed|Drawcall",
+        "is_draw": true,
+        "is_dispatch": false,
+        "is_mesh_dispatch": false,
+        "is_copy": false,
+        "is_resolve": false,
+        "is_indexed": true,
+        "is_instanced": true,
+        "is_indirect": false,
+        "num_indices": 6,
+        "num_instances": 1,
+        "base_vertex": 0,
+        "index_offset": 0,
+        "vertex_offset": 0,
+        "instance_offset": 0,
+        "draw_index": 0,
+        "dispatch_dimension": [
+          0,
+          0,
+          0
+        ],
+        "dispatch_threads_dimension": [
+          0,
+          0,
+          0
+        ],
+        "dispatch_base": [
+          0,
+          0,
+          0
+        ],
+        "copy_source": "ResourceId::0",
+        "copy_source_subresource": {
+          "mip": 0,
+          "slice": 0,
+          "sample": 0
+        },
+        "copy_destination": "ResourceId::0",
+        "copy_destination_subresource": {
+          "mip": 0,
+          "slice": 0,
+          "sample": 0
+        },
+        "outputs": [
+          "ResourceId::2789",
+          "ResourceId::0",
+          "ResourceId::0",
+          "ResourceId::0",
+          "ResourceId::0",
+          "ResourceId::0",
+          "ResourceId::0",
+          "ResourceId::0"
+        ],
+        "depth_output": "ResourceId::0",
+        "children": 0,
+        "previous_event_id": 52492,
+        "next_event_id": 52510
+      }
+    ]
+  }
+}

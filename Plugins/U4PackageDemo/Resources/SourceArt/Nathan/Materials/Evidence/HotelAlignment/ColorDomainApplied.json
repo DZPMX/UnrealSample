@@ -1,0 +1,199 @@
+{
+  "textures": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color.T_Nathan_boots_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color.T_Nathan_island_pants_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color.T_Nathan_arm_clean_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color.T_Nathan_new_head_sunburns_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color.T_Nathan_head_cut_island_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color.T_Nathan_island_belt_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color.T_Nathan_holster_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color.T_Nathan_pouch_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData",
+      "before": true,
+      "after": false,
+      "saved": true
+    }
+  ],
+  "materials": [
+    {
+      "family": "Cloth",
+      "sampling": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_94",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_95",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_110",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_118",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_120",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_129",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_239"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionExponential2_0"
+      ],
+      "saved": true
+    },
+    {
+      "family": "Skin",
+      "sampling": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_300",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_301",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_302",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_303",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_309",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_314",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_317",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_319",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_331",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_438"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionExponential2_0"
+      ],
+      "saved": true
+    },
+    {
+      "family": "SurfaceLayered",
+      "sampling": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_77",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_78",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_103",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_106",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_107",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_110",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_201"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionExponential2_0"
+      ],
+      "saved": true
+    },
+    {
+      "family": "Ring",
+      "sampling": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_7",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_8",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_11",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_13"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "new_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionExponential2_0"
+      ],
+      "saved": true
+    }
+  ]
+}

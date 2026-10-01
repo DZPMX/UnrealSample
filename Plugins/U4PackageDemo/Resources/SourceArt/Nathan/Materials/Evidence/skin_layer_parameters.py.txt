@@ -1,0 +1,99 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_Skin')
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+original=json.loads((root/'M_Nathan_Skin_NativeAfter.json').read_text());indices={n['object_path']:j for j,n in enumerate(original['expressions'])}
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in ['Face','Chest','Arms']}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/'SkinLayerParametersBefore.json').write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+connections=[];deleted=[];created={};writes={m:{} for m in instances}
+def prop(o,k,v):o.set_editor_property(k,v,notify)
+def link(s,out,d,p):connections.append(lib.connect_material_expressions(s,out,d,input_pin(p)))
+def lookup(name):return [n for n in ns.values() if n.get('parameter_name')==name]
+def existing(name):return objects[lookup(name)[0]['id']]
+def scalar(name,value,purpose,behavior,group='07 Layers / 表面覆盖'):
+ o=lib.create_material_expression(mat,unreal.MaterialExpressionScalarParameter);prop(o,'parameter_name',name);prop(o,'default_value',value);prop(o,'group',group)
+ prop(o,'desc','用途：'+purpose+'。影响：'+behavior+' 输入：无量纲标量。范围／默认：母材质默认 '+str(value)+'；原作滑杆范围未提供，保留各阶段限制及特殊值。条件：仅对应功能分支和有效层权重参与。')
+ created[name]=o;return o
+def vector(name,value,purpose):
+ o=lib.create_material_expression(mat,unreal.MaterialExpressionVectorParameter);prop(o,'parameter_name',name);prop(o,'default_value',unreal.LinearColor(*value,1.));prop(o,'group','07 Layers / 表面覆盖')
+ prop(o,'desc','用途：'+purpose+'。影响：下层颜色逐通道乘本 RGB 后按本层覆盖权重混合，1 为中性。输入：float3 RGB，保持现有颜色域。范围／默认：母材质默认 '+str(value)+'，最终 BaseColor Saturate；Alpha 未使用。条件：对应覆盖层有效时，层顺序保持。')
+ created[name]=o;return o
+features={
+ 'UseSweatOverlay':('汗膜表面覆盖','True 此覆盖阶段读取汗膜范围、染色和粗糙度；False 读取新血迹颜色／粗糙度，镜面阶段读取黏液范围。'),
+ 'UseSwordWoundOverlay':('剑伤覆盖阶段','True 使用剑伤分布与染色、高光；False 使用水膜分布及对应参数。'),
+ 'UseSandWeatherInputs':('含砂天气层参数次序','True 对应污垢、泥、湿润、砂的原高光顺序；False 对应血流、污垢、泥、湿润的原顺序。'),
+ 'UseFingerMicroMask':('指部微细节输入布局','True 使用指部遮罩的微细节与 AO 编码支路；False 使用普通微细节支路。')}
+def choose(feature,t,f,to='',fo=''):
+ o=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter);purpose,behavior=features[feature]
+ prop(o,'parameter_name',feature);prop(o,'default_value',False);prop(o,'group','00 Features / 输入功能')
+ prop(o,'desc','用途：'+purpose+'。影响：'+behavior+' 输入：编译期布尔。范围／默认：母材质默认 false，实例保持源有效组合。条件：配套输入布局；未证明任意功能组合均与源有效组合等价。')
+ link(t,to,o,'True');link(f,fo,o,'False');return o
+def replace(name,new,filter_index=None):
+ for n in lookup(name):
+  for e in cs[n['id']]:
+   if filter_index is None or indices[ns[e['target_id']]['object_path']]==filter_index:link(new,'',objects[e['target_id']],e['target_input'])
+  if filter_index is None:deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+def assign(name,m,value):writes[m][name]=value
+for oldname,sweat,goop,title in [('SourceCB_172','SweatRangeMax','GoopRangeMax','汗膜范围上端点'),('SourceCB_168','SweatRangeMin','GoopRangeMin','汗膜范围下端点'),('SourceCB_176','SweatOverlayAmount','GoopAmount','汗膜覆盖输入量')]:
+ o=scalar(sweat,old['Arms']['scalar'][oldname],title,'参与原 0.3/0.7 范围公式和 >0.001 有效判断；Max=Min 源没有除法保护。')
+ replace(oldname,choose('UseSweatOverlay',o,existing(goop)))
+ for m in instances:assign(sweat,m,old['Arms']['scalar'][oldname])
+for names,true_name,false_name,purposes,feature in [
+ (['BaseColor_Value_2','BaseColor_Value_4','BaseColor_Value_6'],'SweatTint','BloodTint',['汗膜染色','新血迹染色'],'UseSweatOverlay'),
+ (['BaseColor_Value_3','BaseColor_Value_5','BaseColor_Value_7'],'SwordWoundTint','WaterTint',['剑伤染色','水膜染色'],'UseSwordWoundOverlay')]:
+ tv=[old['Arms']['scalar'][x] for x in names];fv=[old['Face']['scalar'][x] for x in names]
+ t=vector(true_name,tv,purposes[0]);f=vector(false_name,fv,purposes[1])
+ for oldname,ch in zip(names,'RGB'):replace(oldname,choose(feature,t,f,ch,ch))
+ for m in instances:assign(true_name,m,tv);assign(false_name,m,fv)
+for oldname,true_name,false_name,title_true,title_false,feature in [
+ ('Roughness_Value','SweatRoughness','BloodRoughness','汗膜粗糙度','新血迹粗糙度','UseSweatOverlay'),
+ ('Roughness_Value_2','SwordWoundRoughness','WaterRoughness','剑伤粗糙度','水膜粗糙度','UseSwordWoundOverlay'),
+ ('Specular_Value_4','SweatSpecular','GoopSpecular','汗膜高光','黏液高光','UseSweatOverlay'),
+ ('Specular_Value_5','SwordWoundSpecular','WaterSpecular','剑伤高光','水膜高光','UseSwordWoundOverlay')]:
+ tv=old['Arms']['scalar'][oldname];fv=old['Face']['scalar'][oldname]
+ t=scalar(true_name,tv,title_true,'按对应覆盖权重替换下层参数，保留末端 Saturate。')
+ f=scalar(false_name,fv,title_false,'按对应覆盖权重替换下层参数，保留末端 Saturate。')
+ replace(oldname,choose(feature,t,f))
+ for m in instances:assign(true_name,m,tv);assign(false_name,m,fv)
+bead=scalar('SweatBeadSpecular',old['Face']['scalar']['Specular_Value'],'汗珠高光','汗珠分布有效时向本值混合；不同于表层汗膜或源第二皮肤高光端点。')
+replace('Specular_Value',choose('UseSweatOverlay',existing('SecondarySpecular'),bead))
+assign('SecondarySpecular','Arms',old['Arms']['scalar']['Specular_Value'])
+for m in instances:assign('SweatBeadSpecular',m,old['Face']['scalar']['Specular_Value'])
+for name,value,purpose in [('DirtSpecular',.1,'污垢高光'),('MudSpecular',.2,'泥高光'),('WetnessSpecular',.4,'湿润高光'),('BloodFlowSpecular',.5,'血流高光')]:
+ scalar(name,value,purpose,'按该层有效覆盖权重混合；保持天气层顺序和最终 Saturate。','07 Layers / 天气高光')
+replace('Specular_Value_2',choose('UseSandWeatherInputs',created['MudSpecular'],created['DirtSpecular']))
+replace('Specular_Value_3',choose('UseSandWeatherInputs',created['WetnessSpecular'],created['MudSpecular']))
+reference=scalar('UEProfileRadiusReference',old['Face']['scalar']['Opacity_Value'],'UE Profile 归一化参考尺度','作为 SubsurfaceBlurSize 的除数，再乘源散射强度开方；它不是透明度，也不能当高光值。0 会产生原未保护除法。','09 UE Adaptation / 次表面适配')
+replace('Opacity_Value',reference,1238)
+replace('Opacity_Value',choose('UseSandWeatherInputs',created['DirtSpecular'],created['BloodFlowSpecular']),1570)
+for n in lookup('Opacity_Value'):deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+for m in instances:
+ assign('UEProfileRadiusReference',m,old[m]['scalar']['Opacity_Value'])
+ if m=='Arms':
+  assign('DirtSpecular',m,old[m]['scalar']['Opacity_Value']);assign('MudSpecular',m,old[m]['scalar']['Specular_Value_2']);assign('WetnessSpecular',m,old[m]['scalar']['Specular_Value_3'])
+ else:
+  assign('BloodFlowSpecular',m,old[m]['scalar']['Opacity_Value']);assign('DirtSpecular',m,old[m]['scalar']['Specular_Value_2']);assign('MudSpecular',m,old[m]['scalar']['Specular_Value_3'])
+constants={}
+for v in [-1.,1.]:
+ o=lib.create_material_expression(mat,unreal.MaterialExpressionConstant);prop(o,'r',v);prop(o,'desc','源 AO 编码固定偏移；与输入布局一起选择，不是可编辑的强度。');constants[v]=o
+replace('AmbientOcclusion_Value',choose('UseFingerMicroMask',constants[-1.],constants[1.]))
+replace('AmbientOcclusion_Value_2',choose('UseFingerMicroMask',constants[1.],constants[-1.]))
+mat.modify();lib.recompile_material(mat)
+removed={'SourceCB_172','SourceCB_176','SourceCB_168','Opacity_Value','Roughness_Value','Roughness_Value_2','Specular_Value','Specular_Value_2','Specular_Value_3','Specular_Value_4','Specular_Value_5','AmbientOcclusion_Value','AmbientOcclusion_Value_2'}|{'BaseColor_Value_'+str(i) for i in range(2,8)}
+for m,mi in instances.items():
+ for name in features:lib.set_material_instance_static_switch_parameter_value(mi,name,m=='Arms',unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+ for name,value in writes[m].items():
+  if isinstance(value,list):lib.set_material_instance_vector_parameter_value(mi,name,unreal.LinearColor(*value,1.))
+  else:lib.set_material_instance_scalar_parameter_value(mi,name,value)
+ prop(mi,'scalar_parameter_values',[p for p in mi.get_editor_property('scalar_parameter_values') if str(p.parameter_info.name) not in removed])
+ lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in instances}
+report={'graph':after,'values':new,'connections':connections,'deleted':deleted,'writes':writes,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/'SkinLayerParametersAfter.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

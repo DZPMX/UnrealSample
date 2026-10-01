@@ -1,0 +1,310 @@
+[
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Mesh/elena-hair-cloth",
+    "RelativeFilename": "../../../../Uncharted4/fbx_out/elena-hair-cloth.fbx",
+    "Timestamp": "1780584716",
+    "FileMD5": "9af5c4ebef56a500a1dcea4f032a5490",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Mesh/elena-head",
+    "RelativeFilename": "../../../../Uncharted4/fbx_out/elena-head.fbx",
+    "Timestamp": "1780584717",
+    "FileMD5": "c3014c6027b9b7225eb082415d7d8e31",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Brow/T_Elena_Brows_Mask",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Brows_Mask.tga",
+    "Timestamp": "1780169581",
+    "FileMD5": "99f4084b057574d06ff5620c824544d7",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Brow/T_Elena_Brows_N",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Brows_N.tga",
+    "Timestamp": "1780168214",
+    "FileMD5": "4dded1d79767afbc93f322dfa0d225aa",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Caruncle/T_Elena_Caruncle_D",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Caruncle_D.tga",
+    "Timestamp": "1780230740",
+    "FileMD5": "44854c1dacc1b263dd850d910c82ebfc",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Caruncle/T_Elena_Caruncle_N",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Caruncle_N.tga",
+    "Timestamp": "1780230779",
+    "FileMD5": "417cb9485415616868a0086685c5c426",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Eye/T_Elena_Eye_D",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Eye_D.tga",
+    "Timestamp": "1780235905",
+    "FileMD5": "316f4a60ec61fb7664add2dcff4ed437",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Eye/T_Elena_Eye_Teard_D",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Eye_Teard_D.tga",
+    "Timestamp": "1780235927",
+    "FileMD5": "002d3792599fc62fcc2cacc392f65d9f",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/EyeLash/T_Elena_EyeLash_Mask",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_EyeLash_Mask.tga",
+    "Timestamp": "1780211746",
+    "FileMD5": "21451732cfc485df04e915acce4cf316",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N1",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N1.tga",
+    "Timestamp": "1779630845",
+    "FileMD5": "5db2192dc27b6d162ef594d25a904656",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N2",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N2.tga",
+    "Timestamp": "1779630857",
+    "FileMD5": "cf85dde163ce930324ad206db9accee0",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N3",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N3.tga",
+    "Timestamp": "1779630868",
+    "FileMD5": "28469146616f175f17b0deccf1b2e938",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N4",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N4.tga",
+    "Timestamp": "1779630876",
+    "FileMD5": "5cadc80f995567f0d5636ffe84ca8537",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N5",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N5.tga",
+    "Timestamp": "1779630883",
+    "FileMD5": "9165a6643552dd2861fa76a045df3d96",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N6",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N6.tga",
+    "Timestamp": "1779630892",
+    "FileMD5": "4cca255c21706ee47b3bcf4abfa9c04c",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N7",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N7.tga",
+    "Timestamp": "1779630900",
+    "FileMD5": "d6a4a960f8f82b4c270657f2f0ea08f4",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Cascade_N8",
+    "RelativeFilename": "C:/Users/Dz/Desktop/T_Elena_Cascade_N8.tga",
+    "Timestamp": "1779630908",
+    "FileMD5": "ede7f56a421d41447967f7a00bbaaeca",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Dirt_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Dirt_Mask.tga",
+    "Timestamp": "1776593176",
+    "FileMD5": "fb31ad34338b7aa834379546b1eac79c",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face+Distortion_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face+Distortion_Mask.tga",
+    "Timestamp": "1776593890",
+    "FileMD5": "ea08d1d24c9ae92305b33e5f65907900",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_AO_Normal_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_AO_Normal_Mask.tga",
+    "Timestamp": "1776594316",
+    "FileMD5": "579ea085a95642a228555fd4e6487513",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_Bloody_D",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_Bloody_D.tga",
+    "Timestamp": "1776592055",
+    "FileMD5": "4b109371981e14a56b7d18b46671d8aa",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_Bloody_N",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_Bloody_N.tga",
+    "Timestamp": "1776592694",
+    "FileMD5": "946bd97bdf6958cbe38dce5cea193306",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_D",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_D.tga",
+    "Timestamp": "1776591027",
+    "FileMD5": "0185f454813920b4b03a56ecec9eff90",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_Detail_N",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_Detail_N.tga",
+    "Timestamp": "1776592518",
+    "FileMD5": "0dab34bb67d3014e8f62e59ae99ab193",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_N",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_N.tga",
+    "Timestamp": "1776592333",
+    "FileMD5": "aaa6f81234ce766b8b6f5ab824d24727",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_Smooth_N",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_Smooth_N.tga",
+    "Timestamp": "1776592598",
+    "FileMD5": "ea680a4d588766004491cbfaf33985b4",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Face_Thickness_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Face_Thickness_Mask.tga",
+    "Timestamp": "1776593106",
+    "FileMD5": "40a95b895257a4fd57ede0573a649d34",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Mud_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Mud_Mask.tga",
+    "Timestamp": "1776593164",
+    "FileMD5": "f71e7f2b2fc221858eff0661f2804ff8",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Profile_Black",
+    "RelativeFilename": "../../../../../Desktop/T_Default_BlackColor.tga",
+    "Timestamp": "1746208601",
+    "FileMD5": "1d140c3d7137537af1c9322bafe6c51b",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Spec_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Spec_Mask.tga",
+    "Timestamp": "1776593255",
+    "FileMD5": "4285d067c86ed810c8bd639b553729ba",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Tear_Mask",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Tear_Mask.tga",
+    "Timestamp": "1776592132",
+    "FileMD5": "49bdfa60b58b26307bfb5208a3162e1f",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Face/T_Elena_Tear_N",
+    "RelativeFilename": "H:/Unchart4Character/T_Elena_Tear_N.tga",
+    "Timestamp": "1776592184",
+    "FileMD5": "d80f959b58de4bff30d40fa596b2bc31",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_2UAO",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_ShadowMask.tga",
+    "Timestamp": "1780412238",
+    "FileMD5": "b05fc1c11a8ce3d6bf3d1911fdb4076f",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_2UAO_1",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_2UAO.tga",
+    "Timestamp": "1780840843",
+    "FileMD5": "880f7bb03fedf9c676d137a4682db723",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_2UAO_2",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_2UAO_2.tga",
+    "Timestamp": "1780841187",
+    "FileMD5": "1a78a1b0c379b5fbbb7f24078092d446",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_Alpha_1",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_Alpha_1_.tga",
+    "Timestamp": "1780846757",
+    "FileMD5": "132df4e3a2d6a60187ddc145492bc8bc",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_Alpha_2",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_Alpha_2_.tga",
+    "Timestamp": "1780842068",
+    "FileMD5": "62099fb33358febd0c66a64a8cb16995",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_D1",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_D.tga",
+    "Timestamp": "1780412162",
+    "FileMD5": "f7d1ab87a93122db9949a391a98a6ada",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_D1_KajiyaUNorm",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_D.tga",
+    "Timestamp": "1780412162",
+    "FileMD5": "f7d1ab87a93122db9949a391a98a6ada",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_D_2",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_D_2.tga",
+    "Timestamp": "1780841177",
+    "FileMD5": "604d6ac6c6ea26ed17a014c5a78b4913",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_D_2_KajiyaUNorm",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_D_2.tga",
+    "Timestamp": "1780841177",
+    "FileMD5": "604d6ac6c6ea26ed17a014c5a78b4913",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_Elena_Hair_NR",
+    "RelativeFilename": "C:/Users/Dz/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939/T_Elena_Hair_M.tga",
+    "Timestamp": "1780412315",
+    "FileMD5": "925a618d436c8e81cfc9f6d4d3cf50fd",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/Demo/Character/Elena/Textures/Hair/T_HairCoverageThreshold_16",
+    "RelativeFilename": "../../../../../SourceArt/Elena/Hair/T_HairCoverageThreshold_16.png",
+    "Timestamp": "1788630643",
+    "FileMD5": "9ef114a60b7d7196bd0720e63658bf0e",
+    "DisplayLabelName": ""
+  },
+  {
+    "asset": "/U4PackageDemo/MainMaterial/DefaultTextures/T_Default_Normal",
+    "RelativeFilename": "../../../../../Desktop/T_DefaultNormal.tga",
+    "Timestamp": "1746208529",
+    "FileMD5": "f2775403da3f4b061f036ab535061a57",
+    "DisplayLabelName": ""
+  }
+]

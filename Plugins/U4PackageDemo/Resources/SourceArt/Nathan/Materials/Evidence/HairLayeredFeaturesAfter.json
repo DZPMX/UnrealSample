@@ -1,0 +1,514 @@
+{
+  "values": {
+    "HairThinMudDithered": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "SnowMaskUVScale": 2.0,
+        "CleanLayerRangeMax": 1.0,
+        "CleanLayerAmount": 1.0,
+        "CleanLayerRangeMin": 0.0,
+        "SnowAO": 0.800000011920929,
+        "BaseColorIntensity": 1.0,
+        "WetnessAmount": 0.0,
+        "MudNormalStrength": 2.0,
+        "SnowOpacity": 1.0,
+        "MudCoverageNormalization": 1.0,
+        "CleanCoverageNormalization": 0.550000011920929,
+        "MudBaseRoughness": 0.20999999344348907,
+        "MudFiberRoughness": 0.33000001311302185,
+        "CleanHairRoughness": 0.3199999928474426,
+        "MudBaseSpecular": 1.0,
+        "MudFiberSpecular": 0.550000011920929,
+        "CleanHairSpecular": 0.5,
+        "MudFiberBacklitStrength": 0.5,
+        "CleanHairBacklitStrength": 0.5,
+        "MudFiberPrimaryShift": 0.1599999964237213,
+        "MudFiberShiftVariation": 2.700000047683716,
+        "CleanHairPrimaryShift": -0.11999999731779099,
+        "CleanHairShiftVariation": 2.609999895095825,
+        "MudFiberSecondaryShift": 0.550000011920929,
+        "CleanHairSecondaryShift": 0.11999999731779099,
+        "SnowLayerRangeMax": 1.0,
+        "SnowLayerRangeMin": 0.3400000035762787,
+        "SnowLayerAmount": 0.0,
+        "SnowCoverageNormalization": 0.20000000298023224
+      },
+      "vector": {
+        "MudBaseTint": [
+          0.675000011920929,
+          0.6549999713897705,
+          0.6549999713897705,
+          1.0
+        ],
+        "MudFiberTint": [
+          0.3449999988079071,
+          0.3370000123977661,
+          0.3370000123977661,
+          1.0
+        ],
+        "SnowColor": [
+          0.722000002861023,
+          0.722000002861023,
+          0.722000002861023,
+          1.0
+        ]
+      },
+      "texture": {
+        "MudLayerMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_blend_AFD68A65.T_Nathan_hair_thin_mud_blend_AFD68A65",
+        "SnowMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_blend.T_Nathan_hair_thin_snow_blend",
+        "MudAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mud_mask_0FEB7C17.T_Nathan_hair_thin_ao_mud_mask_0FEB7C17",
+        "CleanAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mask_46A3CF50.T_Nathan_hair_thin_ao_mask_46A3CF50",
+        "MudBaseColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color.T_Nathan_hair_thin_mud_color",
+        "CleanHairColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color.T_Nathan_hair_thin_color",
+        "CapturedWetMudState": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_CaptureWetMudMask.T_Nathan_CaptureWetMudMask",
+        "SnowNormalRG": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_normal.T_Nathan_hair_thin_snow_normal",
+        "MudCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_alpha.T_Nathan_hair_thin_mud_alpha",
+        "CleanCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_blend.T_Nathan_hair_thin_blend",
+        "ShiftSpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseDedicatedSnowMask": false,
+        "UseMudFiberLayer": true,
+        "UseSnowOverlay": true,
+        "UseMudFiberBacklighting": true,
+        "UseForwardInputEncoding": false,
+        "UseCleanHairLobesOnly": false
+      }
+    },
+    "HairThinMud": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "SnowMaskUVScale": 2.0,
+        "CleanLayerRangeMax": 1.0,
+        "CleanLayerAmount": 1.0,
+        "CleanLayerRangeMin": 0.0,
+        "SnowAO": 0.800000011920929,
+        "BaseColorIntensity": 1.0,
+        "WetnessAmount": 0.0,
+        "MudNormalStrength": 2.0,
+        "SnowOpacity": 1.0,
+        "MudCoverageNormalization": 1.0,
+        "CleanCoverageNormalization": 1.0,
+        "MudBaseRoughness": 0.20999999344348907,
+        "MudFiberRoughness": 0.33000001311302185,
+        "CleanHairRoughness": 0.3199999928474426,
+        "MudBaseSpecular": 1.0,
+        "MudFiberSpecular": 0.550000011920929,
+        "CleanHairSpecular": 0.5,
+        "MudFiberBacklitStrength": 0.5,
+        "CleanHairBacklitStrength": 0.5,
+        "MudFiberPrimaryShift": 0.1599999964237213,
+        "MudFiberShiftVariation": 2.700000047683716,
+        "CleanHairPrimaryShift": -0.11999999731779099,
+        "CleanHairShiftVariation": 2.609999895095825,
+        "MudFiberSecondaryShift": 0.550000011920929,
+        "CleanHairSecondaryShift": 0.11999999731779099,
+        "SnowLayerRangeMax": 1.0,
+        "SnowLayerRangeMin": 0.0,
+        "SnowLayerAmount": 1.0,
+        "SnowCoverageNormalization": 1.0
+      },
+      "vector": {
+        "MudBaseTint": [
+          0.675000011920929,
+          0.6549999713897705,
+          0.6549999713897705,
+          1.0
+        ],
+        "MudFiberTint": [
+          0.3449999988079071,
+          0.3370000123977661,
+          0.3370000123977661,
+          1.0
+        ],
+        "SnowColor": [
+          0.722000002861023,
+          0.722000002861023,
+          0.722000002861023,
+          1.0
+        ]
+      },
+      "texture": {
+        "MudLayerMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_blend_CD42EF0D.T_Nathan_hair_thin_mud_blend_CD42EF0D",
+        "SnowMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_blend.T_Nathan_hair_thin_snow_blend",
+        "MudAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mud_mask_0FEB7C17.T_Nathan_hair_thin_ao_mud_mask_0FEB7C17",
+        "CleanAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mask_46A3CF50.T_Nathan_hair_thin_ao_mask_46A3CF50",
+        "MudBaseColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color.T_Nathan_hair_thin_mud_color",
+        "CleanHairColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color.T_Nathan_hair_thin_color",
+        "CapturedWetMudState": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_CaptureWetMudMask.T_Nathan_CaptureWetMudMask",
+        "SnowNormalRG": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_normal.T_Nathan_hair_thin_snow_normal",
+        "MudCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_alpha.T_Nathan_hair_thin_mud_alpha",
+        "CleanCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_blend.T_Nathan_hair_thin_blend",
+        "ShiftSpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseDedicatedSnowMask": false,
+        "UseMudFiberLayer": true,
+        "UseSnowOverlay": false,
+        "UseMudFiberBacklighting": true,
+        "UseForwardInputEncoding": true,
+        "UseCleanHairLobesOnly": false
+      }
+    },
+    "HairThinMudSnow": {
+      "scalar": {
+        "TextureMipBias": -1.5,
+        "SnowMaskUVScale": 2.0,
+        "CleanLayerRangeMax": 1.0,
+        "CleanLayerAmount": 1.0,
+        "CleanLayerRangeMin": 0.0,
+        "SnowAO": 0.800000011920929,
+        "BaseColorIntensity": 1.0,
+        "WetnessAmount": 0.0,
+        "MudNormalStrength": 2.0,
+        "SnowOpacity": 1.0,
+        "MudCoverageNormalization": 1.0,
+        "CleanCoverageNormalization": 1.0,
+        "MudBaseRoughness": 0.20999999344348907,
+        "MudFiberRoughness": 0.33000001311302185,
+        "CleanHairRoughness": 0.3199999928474426,
+        "MudBaseSpecular": 1.0,
+        "MudFiberSpecular": 0.550000011920929,
+        "CleanHairSpecular": 0.5,
+        "MudFiberBacklitStrength": 0.5,
+        "CleanHairBacklitStrength": 0.5,
+        "MudFiberPrimaryShift": 0.1599999964237213,
+        "MudFiberShiftVariation": 2.700000047683716,
+        "CleanHairPrimaryShift": -0.11999999731779099,
+        "CleanHairShiftVariation": 2.609999895095825,
+        "MudFiberSecondaryShift": 0.550000011920929,
+        "CleanHairSecondaryShift": 0.11999999731779099,
+        "SnowLayerRangeMax": 0.7900000214576721,
+        "SnowLayerRangeMin": 0.23999999463558197,
+        "SnowLayerAmount": 0.0,
+        "SnowCoverageNormalization": 0.5
+      },
+      "vector": {
+        "MudBaseTint": [
+          0.675000011920929,
+          0.6549999713897705,
+          0.6549999713897705,
+          1.0
+        ],
+        "MudFiberTint": [
+          0.3449999988079071,
+          0.3370000123977661,
+          0.3370000123977661,
+          1.0
+        ],
+        "SnowColor": [
+          0.6669999957084656,
+          0.6510000228881836,
+          0.6269999742507935,
+          1.0
+        ]
+      },
+      "texture": {
+        "MudLayerMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_blend_AFD68A65.T_Nathan_hair_thin_mud_blend_AFD68A65",
+        "SnowMask": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_blend.T_Nathan_hair_thin_snow_blend",
+        "MudAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mud_mask_07F8FEF9.T_Nathan_hair_thin_ao_mud_mask_07F8FEF9",
+        "CleanAO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_ao_mask_46A3CF50.T_Nathan_hair_thin_ao_mask_46A3CF50",
+        "MudBaseColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color.T_Nathan_hair_thin_mud_color",
+        "CleanHairColor": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color.T_Nathan_hair_thin_color",
+        "CapturedWetMudState": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_CaptureWetMudMask.T_Nathan_CaptureWetMudMask",
+        "SnowNormalRG": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_snow_normal.T_Nathan_hair_thin_snow_normal",
+        "MudCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_alpha.T_Nathan_hair_thin_mud_alpha",
+        "CleanCoverageTexture": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_blend.T_Nathan_hair_thin_blend",
+        "ShiftSpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+      },
+      "switch": {
+        "UseDedicatedSnowMask": true,
+        "UseMudFiberLayer": false,
+        "UseSnowOverlay": true,
+        "UseMudFiberBacklighting": false,
+        "UseForwardInputEncoding": true,
+        "UseCleanHairLobesOnly": true
+      }
+    }
+  },
+  "connections": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "deleted": [
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_64",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_69",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_65",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_105",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_137",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_0",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_127",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionScalarParameter_132"
+  ],
+  "switches": {
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_39": {
+      "name": "UseDedicatedSnowMask",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_40": {
+      "name": "UseDedicatedSnowMask",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_41": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_42": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_43": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_44": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_45": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_46": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_47": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_48": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_49": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_50": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_51": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_52": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_53": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_54": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_55": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_56": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_57": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_58": {
+      "name": "UseSnowOverlay",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_59": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_60": {
+      "name": "UseMudFiberLayer",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_61": {
+      "name": "UseMudFiberBacklighting",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_62": {
+      "name": "UseMudFiberBacklighting",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_63": {
+      "name": "UseMudFiberBacklighting",
+      "inverted": true
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_64": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_65": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_66": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_67": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_68": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_69": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_70": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_71": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_72": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_73": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_74": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_75": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_76": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_77": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_0": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_1": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_2": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_3": {
+      "name": "UseForwardInputEncoding",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_4": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_5": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_6": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    },
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionStaticSwitchParameter_7": {
+      "name": "UseCleanHairLobesOnly",
+      "inverted": false
+    }
+  },
+  "instance_formula_identity": {
+    "HairThinMudDithered": true,
+    "HairThinMud": true,
+    "HairThinMudSnow": true
+  },
+  "saved": true
+}

@@ -1,0 +1,45 @@
+{
+  "before_restore": {
+    "frame": 1156,
+    "camera_lock": true
+  },
+  "requested_original": {
+    "frame": 349,
+    "camera_lock": false
+  },
+  "restored": true,
+  "normal_bindings": [
+    {
+      "slot": 0,
+      "texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_676",
+      "class_name": "TextureRenderTarget2D"
+    },
+    {
+      "slot": 1,
+      "texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_676",
+      "class_name": "TextureRenderTarget2D"
+    },
+    {
+      "slot": 25,
+      "texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_675",
+      "class_name": "TextureRenderTarget2D"
+    },
+    {
+      "slot": 39,
+      "texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_677",
+      "class_name": "TextureRenderTarget2D"
+    },
+    {
+      "slot": 40,
+      "texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_677",
+      "class_name": "TextureRenderTarget2D"
+    }
+  ],
+  "after_restore": {
+    "frame": 349,
+    "camera_lock": false
+  },
+  "brow_shader_stats": "<Struct 'MaterialStatistics' (0x0000026A613238C0) {num_vertex_shader_instructions: 293, num_pixel_shader_instructions: 251, num_samplers: 5, num_vertex_texture_samples: 3, num_pixel_texture_samples: 13, num_virtual_texture_samples: 0, num_uv_scalars: 2, num_interpolator_scalars: 0}>",
+  "dirty_content": [],
+  "dirty_maps": []
+}

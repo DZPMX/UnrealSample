@@ -1,0 +1,98 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered')
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+original=json.loads((root/'M_Nathan_HairKajiyaLayered_NativeAfter.json').read_text())
+indices={n['object_path']:j for j,n in enumerate(original['expressions'])}
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in ['HairThinMudDithered','HairThinMud','HairThinMudSnow']}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/'HairLayeredFeaturesBefore.json').write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+connections=[];deleted=[];switches={};created={}
+def prop(o,k,v):o.set_editor_property(k,v,notify)
+def lookup(p):return [n for n in ns.values() if n.get('parameter_name')==p]
+def link(src,out,dst,pin):connections.append(lib.connect_material_expressions(src,out,dst,input_pin(pin)))
+descriptions={
+ 'UseSnowOverlay':('雪覆盖层','True 在湿润后叠加雪颜色、AO、法线、透明覆盖和覆盖归一化；False 保留泥/清洁层组合。',True),
+ 'UseDedicatedSnowMask':('独立雪遮罩采样','True 从 SnowMask.R 及 SnowMaskUVScale 取雪分布；False 从 MudLayerMask.G 取雪分布；仅雪覆盖链使用。',False),
+ 'UseMudFiberLayer':('泥发丝表面层','True 在泥基础和清洁层之间加入泥发丝的染色、AO、粗糙度、第一瓣镜面及饱和度变化；False 保留泥基础与清洁层。法线层保持自身原混合。',True),
+ 'UseMudFiberBacklighting':('泥发丝背光分层','True 采用泥发丝与清洁层依次混合的背光算法；False 使用清洁层的独立背光强度和权重。',True),
+ 'UseForwardInputEncoding':('来源前向高光载荷','True 按前向来源读取两瓣强度、Shift 和独立第二粗糙度；False 按 GBuffer 来源读取。保留编码偏移和 clamp 顺序；不会切换 UE Blend Pass。',False),
+ 'UseCleanHairLobesOnly':('仅清洁发丝的双瓣算法','True 排除泥发丝高光层，采用仅清洁发丝的分层载荷及对应双瓣解码；False 使用包含泥发丝的双瓣算法。该来源配置使用前向载荷。',False)}
+def metadata(o,name):
+    purpose,behavior,default=descriptions[name]
+    prop(o,'parameter_name',name);prop(o,'default_value',default);prop(o,'group','00 Features / 输入功能')
+    prop(o,'desc','用途：'+purpose+'。影响：'+behavior+' 输入：编译期布尔。范围／默认：母材质默认 '+str(default).lower()+'，当前实例保留源组合。条件：仅控制上述计算；其他功能独立，不能替代渲染 Pass 设置。')
+for n in ns.values():
+    if n['class']!='StaticSwitchParameter':continue
+    index=indices[n['object_path']];o=objects[n['id']];invert=False
+    if n['parameter_name']=='UseHairThinMud':
+        if index<900:name='UseSnowOverlay';invert=True
+        else:name='UseForwardInputEncoding'
+    else:
+        if index in [23,28]:name='UseDedicatedSnowMask'
+        elif index in [834,877,901]:name='UseMudFiberBacklighting';invert=True
+        elif index<900:name='UseMudFiberLayer';invert=True
+        else:name='UseCleanHairLobesOnly'
+    if invert:
+        for pin,other in [('True','False'),('False','True')]:
+            s,out=es[n['id']][other];link(objects[s],pin_name(ns[s],out),o,pin)
+    metadata(o,name);switches[n['object_path']]={'name':name,'inverted':invert}
+def scalar(name,value,purpose,behavior,group='07 Layers / 雪层'):
+    o=lib.create_material_expression(mat,unreal.MaterialExpressionScalarParameter)
+    prop(o,'parameter_name',name);prop(o,'default_value',value);prop(o,'group',group)
+    prop(o,'desc','用途：'+purpose+'。影响：'+behavior+' 输入：无量纲标量。范围／默认：母材质默认 '+str(value)+'；原作者滑杆范围未提供，保留源各阶段 Saturate、有效阈值及求值顺序。条件：相应功能分支启用。')
+    created[name]=o;return o
+def existing(name):return objects[lookup(name)[0]['id']]
+def choose(feature,true,false):
+    o=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter);metadata(o,feature)
+    link(true,'',o,'True');link(false,'',o,'False');return o
+def replace(oldname,new):
+    for n in lookup(oldname):
+        for e in cs[n['id']]:link(new,'',objects[e['target_id']],e['target_input'])
+        deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+for oldname,snow,clean,purpose in [
+ ('AmbientOcclusion_Value','SnowLayerRangeMax','CleanLayerRangeMax','雪覆盖范围上端点'),
+ ('AmbientOcclusion_Value_3','SnowLayerRangeMin','CleanLayerRangeMin','雪覆盖范围下端点'),
+ ('AmbientOcclusion_Value_2','SnowLayerAmount','CleanLayerAmount','雪覆盖输入量')]:
+    v=old['HairThinMudDithered']['scalar'][oldname]
+    o=scalar(snow,v,purpose,'雪权重按 (Max*0.3*Amount + (Amount*Mask*0.7-Min*Amount))/(Max-Min) 计算；保留 Saturate 和 >0.001 有效判断。Max=Min 时源除法没有 epsilon 保护；Amount=0 是零覆盖输入，不是动态哨兵。')
+    replace(oldname,choose('UseSnowOverlay',o,existing(clean)))
+snowdenom=scalar('SnowCoverageNormalization',old['HairThinMudDithered']['scalar']['OpacityMask_Value_3'],'雪层覆盖归一化分母','按雪权重替换下层分母，最终 max(...,1e-7)，覆盖相除后 Saturate；不是硬裁剪阈值。','05 Coverage / 覆盖')
+replace('OpacityMask_Value_3',choose('UseSnowOverlay',snowdenom,existing('CleanCoverageNormalization')))
+replace('SpecularLobes_Value_3',choose('UseForwardInputEncoding',existing('CleanHairPrimaryShift'),existing('CleanHairSecondaryShift')))
+for n in lookup('SecondaryShift'):
+    for e in cs[n['id']]:
+        destination=indices[ns[e['target_id']]['object_path']]
+        name='MudFiberSecondaryShift' if destination==1051 else 'CleanHairSecondaryShift'
+        link(existing(name),'',objects[e['target_id']],e['target_input'])
+    deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+constants={}
+for value in [-1.,0.,.5,1.]:
+    o=lib.create_material_expression(mat,unreal.MaterialExpressionConstant);prop(o,'r',value);prop(o,'desc','来源 Shift 载荷固定编码偏移；不作为可独立调整的作者参数。');constants[value]=o
+replace('SpecularLobes_Value',choose('UseForwardInputEncoding',constants[0.],constants[1.]))
+replace('SpecularLobes_Value_2',choose('UseForwardInputEncoding',constants[.5],constants[-1.]))
+mat.modify();lib.recompile_material(mat)
+for m,mi in instances.items():
+    is_mud=m=='HairThinMud';is_snow=m=='HairThinMudSnow'
+    settings={'UseSnowOverlay':not is_mud,'UseDedicatedSnowMask':is_snow,'UseMudFiberLayer':not is_snow,'UseMudFiberBacklighting':not is_snow,'UseForwardInputEncoding':is_mud or is_snow,'UseCleanHairLobesOnly':is_snow}
+    for name,value in settings.items():lib.set_material_instance_static_switch_parameter_value(mi,name,value,unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+    for oldname,newname in [('AmbientOcclusion_Value','SnowLayerRangeMax'),('AmbientOcclusion_Value_3','SnowLayerRangeMin'),('AmbientOcclusion_Value_2','SnowLayerAmount'),('OpacityMask_Value_3','SnowCoverageNormalization')]:
+        lib.set_material_instance_scalar_parameter_value(mi,newname,old[m]['scalar'][oldname])
+    if is_mud:
+        lib.set_material_instance_scalar_parameter_value(mi,'CleanCoverageNormalization',old[m]['scalar']['OpacityMask_Value_3'])
+        lib.set_material_instance_scalar_parameter_value(mi,'CleanHairPrimaryShift',old[m]['scalar']['SpecularLobes_Value_3'])
+        lib.set_material_instance_scalar_parameter_value(mi,'MudFiberSecondaryShift',old[m]['scalar']['SecondaryShift'])
+    elif is_snow:lib.set_material_instance_scalar_parameter_value(mi,'CleanHairSecondaryShift',old[m]['scalar']['SecondaryShift'])
+    else:lib.set_material_instance_scalar_parameter_value(mi,'CleanHairSecondaryShift',old[m]['scalar']['SpecularLobes_Value_3'])
+    removednames=['AmbientOcclusion_Value','AmbientOcclusion_Value_2','AmbientOcclusion_Value_3','OpacityMask_Value_3','SpecularLobes_Value','SpecularLobes_Value_2','SpecularLobes_Value_3','SecondaryShift']
+    prop(mi,'scalar_parameter_values',[p for p in mi.get_editor_property('scalar_parameter_values') if str(p.parameter_info.name) not in removednames])
+    lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in instances}
+report={'graph':after,'values':new,'connections':connections,'deleted':deleted,'switches':switches,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/'HairLayeredFeaturesAfter.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

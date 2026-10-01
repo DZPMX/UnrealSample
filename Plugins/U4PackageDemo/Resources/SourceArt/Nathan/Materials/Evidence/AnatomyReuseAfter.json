@@ -1,0 +1,188 @@
+{
+  "connections": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "translation": {
+    "BaseColor_Value": [
+      "BaseColorIntensity",
+      0
+    ],
+    "Roughness_Value": [
+      "BaseRoughness",
+      0
+    ],
+    "Specular_Value": [
+      "SpecularStrength",
+      0
+    ],
+    "SourceCB_020": [
+      "ConstantAO",
+      0
+    ],
+    "SourceCB_012": [
+      "ColorSaturationOffset",
+      0
+    ],
+    "AmbientOcclusion_Texture": [
+      "AO_NormalGB",
+      0
+    ],
+    "SourceCB_000": [
+      "BaseColorTint",
+      1
+    ],
+    "SourceCB_000_2": [
+      "BaseColorTint",
+      1
+    ],
+    "SourceCB_004_2": [
+      "BaseColorTint",
+      2
+    ],
+    "SourceCB_004": [
+      "BaseColorTint",
+      2
+    ],
+    "SourceCB_008_2": [
+      "BaseColorTint",
+      3
+    ],
+    "SourceCB_008": [
+      "BaseColorTint",
+      3
+    ],
+    "BaseColor_Texture": [
+      "BaseColorTexture",
+      0
+    ],
+    "caruncle_color": [
+      "BaseColorTexture",
+      0
+    ],
+    "teeth_normal": [
+      "NormalTexture",
+      0
+    ],
+    "tongue_bent_normal": [
+      "NormalTexture",
+      0
+    ]
+  },
+  "switch_nodes": {
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_0": "UseConstantAO",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_1": "UseColorSaturation",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_2": "UseColorSaturation",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_3": "UseColorSaturation",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_4": "UseNormalBA",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_5": "UsePackedAONormalGB",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_6": "UseNormalBA",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_7": "UsePackedAONormalGB",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_8": "UseNormalBA",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_9": "UsePackedAONormalGB",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_10": "UseNormalBA",
+    "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy:MaterialExpressionStaticSwitchParameter_11": "UsePackedAONormalGB"
+  },
+  "readback": [
+    {
+      "instance": "Teeth",
+      "actual": {
+        "scalar": {
+          "BaseColorIntensity": 1.0,
+          "BaseRoughness": 0.18000000715255737,
+          "SpecularStrength": 0.6600000262260437,
+          "ConstantAO": 0.4699999988079071,
+          "ColorSaturationOffset": -0.47999998927116394
+        },
+        "texture": {
+          "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Teeth/T_Nathan_teeth_color_2.T_Nathan_teeth_color_2",
+          "NormalTexture": "/Game/Demo/Character/Nathan/Textures/Teeth/T_Nathan_teeth_normal.T_Nathan_teeth_normal",
+          "AO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Teeth/T_Nathan_elena_teeth_ao.T_Nathan_elena_teeth_ao"
+        },
+        "switch": {
+          "UseConstantAO": false,
+          "UseNormalBA": false,
+          "UseColorSaturation": false,
+          "UsePackedAONormalGB": false
+        },
+        "color": [
+          0.8240000009536743,
+          0.7609999775886536,
+          0.7369999885559082
+        ]
+      },
+      "matches": true,
+      "saved": true
+    },
+    {
+      "instance": "Tongue",
+      "actual": {
+        "scalar": {
+          "BaseColorIntensity": 1.0,
+          "BaseRoughness": 0.6000000238418579,
+          "SpecularStrength": 0.0,
+          "ConstantAO": 0.4699999988079071,
+          "ColorSaturationOffset": -0.47999998927116394
+        },
+        "texture": {
+          "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Tongue/T_Nathan_example_teeth_tongue_color.T_Nathan_example_teeth_tongue_color",
+          "NormalTexture": "/Game/Demo/Character/Nathan/Textures/Tongue/T_Nathan_tongue_bent_normal.T_Nathan_tongue_bent_normal",
+          "AO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Teeth/T_Nathan_elena_teeth_ao.T_Nathan_elena_teeth_ao"
+        },
+        "switch": {
+          "UseConstantAO": true,
+          "UseNormalBA": true,
+          "UseColorSaturation": false,
+          "UsePackedAONormalGB": false
+        },
+        "color": [
+          0.9800000190734863,
+          0.7879999876022339,
+          0.6819999814033508
+        ]
+      },
+      "matches": true,
+      "saved": true
+    },
+    {
+      "instance": "Caruncle",
+      "actual": {
+        "scalar": {
+          "BaseColorIntensity": 1.0,
+          "BaseRoughness": 0.14000000059604645,
+          "SpecularStrength": 0.3100000023841858,
+          "ConstantAO": 0.4699999988079071,
+          "ColorSaturationOffset": -0.47999998927116394
+        },
+        "texture": {
+          "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Caruncle/T_Nathan_caruncle_color.T_Nathan_caruncle_color",
+          "NormalTexture": "/Game/Demo/Character/Nathan/Textures/Teeth/T_Nathan_teeth_normal.T_Nathan_teeth_normal",
+          "AO_NormalGB": "/Game/Demo/Character/Nathan/Textures/Caruncle/T_Nathan_caruncle_ao.T_Nathan_caruncle_ao"
+        },
+        "switch": {
+          "UseConstantAO": false,
+          "UseNormalBA": false,
+          "UseColorSaturation": true,
+          "UsePackedAONormalGB": true
+        },
+        "color": [
+          0.6779999732971191,
+          0.6779999732971191,
+          0.6779999732971191
+        ]
+      },
+      "matches": true,
+      "saved": true
+    }
+  ],
+  "formula_identity_per_source_layout": {
+    "Teeth": true,
+    "Tongue": true,
+    "Caruncle": true
+  },
+  "saved": true
+}

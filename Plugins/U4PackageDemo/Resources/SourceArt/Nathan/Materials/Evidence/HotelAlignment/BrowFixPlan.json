@@ -1,0 +1,2765 @@
+{
+  "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine",
+  "instance": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows",
+  "source_event": 51910,
+  "source_shader": "Capture/51910_Pixel.txt",
+  "source_parameter_byte_mapping": {
+    "0": [
+      "ColorOverlayTint",
+      "02 BaseColor",
+      "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+    ],
+    "4": [
+      "ColorOverlayTint",
+      "02 BaseColor",
+      "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+    ],
+    "8": [
+      "ColorOverlayTint",
+      "02 BaseColor",
+      "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+    ],
+    "12": [
+      "ColorLightness",
+      "02 BaseColor",
+      "以 abs(x) 混合原颜色与 0.5*x+0.5，再参与 RGB 染色；不是线性亮度倍率。"
+    ],
+    "16": [
+      "NormalStrength",
+      "03 Normal",
+      "对解码后的切线 XY 进行缩放，随后重建正 Z；大值受 Z 的 saturate 限制。"
+    ],
+    "20": [
+      "SpecularStrength",
+      "04 Specular",
+      "同时缩放 SpecularMask.G 和 B，两者分别驱动第一和第二高光瓣；0 关闭这两瓣。"
+    ],
+    "24": [
+      "BaseRoughness",
+      "04 Specular",
+      "同时驱动两瓣指数 exp2(9-10*r)，输入按源路径 saturate；不驱动散射或背光。"
+    ],
+    "28": [
+      "CoverageNormalization",
+      "05 Coverage",
+      "覆盖纹理 R 除以 max(x,1e-7) 后 saturate；随后源裁剪阈值 0.05。"
+    ],
+    "32": [
+      "ConstantAO",
+      "06 Occlusion",
+      "经 saturate 后用于原高光可见度、环境遮挡和编码颜色饱和度处理。"
+    ],
+    "36": [
+      "ShiftVariation",
+      "04 Specular",
+      "缩放 (SpecularMask.R-0.5)*0.2 并加入两瓣偏移；不修改法线。"
+    ],
+    "40": [
+      "PrimaryLobeShift",
+      "04 Specular",
+      "第一瓣偏移；加上随机纹理变化后乘 0.5、加 0.5、saturate，再减 0.5 传入 Kajiya。"
+    ],
+    "44": [
+      "SecondaryLobeShift",
+      "04 Specular",
+      "第二瓣偏移；保留原两次抵消偏移、saturate，再减 0.5 传入 Kajiya。"
+    ],
+    "48": [
+      "BaseColorIntensity",
+      "02 BaseColor",
+      "原全局编码色倍率之后的材质颜色强度；在 clamp 和最终 gamma-2.2 解码之前。"
+    ]
+  },
+  "textures": {
+    "Texture2D12": {
+      "name": "BaseColorTexture",
+      "description": "编码域 RGB；按 UNorm 采样，颜色处理结束后转线性。",
+      "path": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color",
+      "srgb": false,
+      "source_view_type": "UNorm"
+    },
+    "Texture2D13": {
+      "name": "NormalRG",
+      "description": "RG=编码切线法线 XY；线性读取，B/A 不使用。",
+      "path": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_normal",
+      "srgb": false,
+      "source_view_type": "UNorm"
+    },
+    "Texture2D14": {
+      "name": "CoverageTexture",
+      "description": "R=覆盖率；线性读取，其他通道不使用。",
+      "path": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_trans",
+      "srgb": false,
+      "source_view_type": "UNorm"
+    },
+    "Texture2D15": {
+      "name": "SpecularMask",
+      "description": "R=两瓣偏移变化，G/B=第一/第二瓣强度；线性读取，UV 缩放 1.5。",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask",
+      "srgb": false,
+      "source_view_type": "UNorm"
+    }
+  },
+  "nodes": {
+    "n0": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 48,
+      "value": 1.0,
+      "sources": [
+        {
+          "ssa": "_256",
+          "line": 209,
+          "expression": "extractvalue _255, 0"
+        }
+      ]
+    },
+    "n1": {
+      "op": "constant",
+      "args": [],
+      "value": 1.0,
+      "sources": [
+        {
+          "ssa": "_209",
+          "line": 162,
+          "expression": "extractvalue _207, 2"
+        }
+      ]
+    },
+    "n2": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 0,
+      "value": 0.6430000066757202,
+      "sources": [
+        {
+          "ssa": "_241",
+          "line": 194,
+          "expression": "extractvalue _240, 0"
+        }
+      ]
+    },
+    "n3": {
+      "op": "input",
+      "args": [],
+      "semantic": "TEXCOORD0.x",
+      "sources": [
+        {
+          "ssa": "_192",
+          "line": 145,
+          "expression": "_IN.TEXCOORD0.x"
+        }
+      ]
+    },
+    "n4": {
+      "op": "input",
+      "args": [],
+      "semantic": "TEXCOORD0.y",
+      "sources": [
+        {
+          "ssa": "_193",
+          "line": 146,
+          "expression": "_IN.TEXCOORD0.y"
+        }
+      ]
+    },
+    "n5": {
+      "op": "constant",
+      "args": [],
+      "value": 0.0
+    },
+    "n6": {
+      "op": "sample",
+      "args": [
+        "n3",
+        "n4",
+        "n5"
+      ],
+      "resource": "Texture2D12",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_372",
+          "line": 332,
+          "expression": "_149.Sample(_164, _192, _193, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n7": {
+      "op": "component",
+      "args": [
+        "n6"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_373",
+          "line": 333,
+          "expression": "extractvalue _372, 0"
+        }
+      ]
+    },
+    "n8": {
+      "op": "sample",
+      "args": [
+        "n5",
+        "n5",
+        "n5"
+      ],
+      "resource": "Texture2D12",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_368",
+          "line": 328,
+          "expression": "_149.Sample(_164, 0.000000, 0.000000, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n9": {
+      "op": "component",
+      "args": [
+        "n8"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_369",
+          "line": 329,
+          "expression": "extractvalue _368, 0"
+        }
+      ]
+    },
+    "n10": {
+      "op": "-",
+      "args": [
+        "n9",
+        "n7"
+      ],
+      "sources": [
+        {
+          "ssa": "_376",
+          "line": 336,
+          "expression": "_369 - _373"
+        }
+      ]
+    },
+    "n11": {
+      "op": "*",
+      "args": [
+        "n10",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_379",
+          "line": 339,
+          "expression": "_376 * 0.000000"
+        }
+      ]
+    },
+    "n12": {
+      "op": "+",
+      "args": [
+        "n7",
+        "n11"
+      ],
+      "sources": [
+        {
+          "ssa": "_382",
+          "line": 342,
+          "expression": "_373 + _379"
+        }
+      ]
+    },
+    "n13": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 12,
+      "value": 0.1899999976158142,
+      "sources": [
+        {
+          "ssa": "_244",
+          "line": 197,
+          "expression": "extractvalue _240, 3"
+        }
+      ]
+    },
+    "n14": {
+      "op": "abs",
+      "args": [
+        "n13"
+      ],
+      "sources": [
+        {
+          "ssa": "_387",
+          "line": 347,
+          "expression": "abs(_244)"
+        }
+      ]
+    },
+    "n15": {
+      "op": "constant",
+      "args": [],
+      "value": 0.5
+    },
+    "n16": {
+      "op": "*",
+      "args": [
+        "n13",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_385",
+          "line": 345,
+          "expression": "_244 * 0.500000"
+        }
+      ]
+    },
+    "n17": {
+      "op": "+",
+      "args": [
+        "n16",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_386",
+          "line": 346,
+          "expression": "_385 + 0.500000"
+        }
+      ]
+    },
+    "n18": {
+      "op": "-",
+      "args": [
+        "n17",
+        "n12"
+      ],
+      "sources": [
+        {
+          "ssa": "_388",
+          "line": 348,
+          "expression": "_386 - _382"
+        }
+      ]
+    },
+    "n19": {
+      "op": "*",
+      "args": [
+        "n14",
+        "n18"
+      ],
+      "sources": [
+        {
+          "ssa": "_391",
+          "line": 351,
+          "expression": "_387 * _388"
+        }
+      ]
+    },
+    "n20": {
+      "op": "+",
+      "args": [
+        "n12",
+        "n19"
+      ],
+      "sources": [
+        {
+          "ssa": "_394",
+          "line": 354,
+          "expression": "_382 + _391"
+        }
+      ]
+    },
+    "n21": {
+      "op": "*",
+      "args": [
+        "n2",
+        "n20"
+      ],
+      "sources": [
+        {
+          "ssa": "_397",
+          "line": 357,
+          "expression": "_241 * _394"
+        }
+      ]
+    },
+    "n22": {
+      "op": "constant",
+      "args": [],
+      "value": 2.0
+    },
+    "n23": {
+      "op": "*",
+      "args": [
+        "n21",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_400",
+          "line": 360,
+          "expression": "_397 * 2.00000"
+        }
+      ]
+    },
+    "n24": {
+      "op": "+",
+      "args": [
+        "n23",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_403",
+          "line": 363,
+          "expression": "_400 + 0.000000"
+        }
+      ]
+    },
+    "n25": {
+      "op": "-",
+      "args": [
+        "n24",
+        "n24"
+      ],
+      "sources": [
+        {
+          "ssa": "_440",
+          "line": 400,
+          "expression": "_403 - _403"
+        }
+      ]
+    },
+    "n26": {
+      "op": "+",
+      "args": [
+        "n24",
+        "n25"
+      ],
+      "sources": [
+        {
+          "ssa": "_443",
+          "line": 403,
+          "expression": "_403 + _440"
+        }
+      ]
+    },
+    "n27": {
+      "op": "*",
+      "args": [
+        "n1",
+        "n26"
+      ],
+      "sources": [
+        {
+          "ssa": "_455",
+          "line": 415,
+          "expression": "_209 * _443"
+        }
+      ]
+    },
+    "n28": {
+      "op": "*",
+      "args": [
+        "n0",
+        "n27"
+      ],
+      "sources": [
+        {
+          "ssa": "_458",
+          "line": 418,
+          "expression": "_256 * _455"
+        }
+      ]
+    },
+    "n29": {
+      "op": "sat",
+      "args": [
+        "n28"
+      ],
+      "sources": [
+        {
+          "ssa": "_461",
+          "line": 421,
+          "expression": "sat(_458)"
+        }
+      ]
+    },
+    "n30": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 4,
+      "value": 0.6430000066757202,
+      "sources": [
+        {
+          "ssa": "_242",
+          "line": 195,
+          "expression": "extractvalue _240, 1"
+        }
+      ]
+    },
+    "n31": {
+      "op": "component",
+      "args": [
+        "n6"
+      ],
+      "index": 1,
+      "sources": [
+        {
+          "ssa": "_374",
+          "line": 334,
+          "expression": "extractvalue _372, 1"
+        }
+      ]
+    },
+    "n32": {
+      "op": "component",
+      "args": [
+        "n8"
+      ],
+      "index": 1,
+      "sources": [
+        {
+          "ssa": "_370",
+          "line": 330,
+          "expression": "extractvalue _368, 1"
+        }
+      ]
+    },
+    "n33": {
+      "op": "-",
+      "args": [
+        "n32",
+        "n31"
+      ],
+      "sources": [
+        {
+          "ssa": "_377",
+          "line": 337,
+          "expression": "_370 - _374"
+        }
+      ]
+    },
+    "n34": {
+      "op": "*",
+      "args": [
+        "n33",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_380",
+          "line": 340,
+          "expression": "_377 * 0.000000"
+        }
+      ]
+    },
+    "n35": {
+      "op": "+",
+      "args": [
+        "n31",
+        "n34"
+      ],
+      "sources": [
+        {
+          "ssa": "_383",
+          "line": 343,
+          "expression": "_374 + _380"
+        }
+      ]
+    },
+    "n36": {
+      "op": "-",
+      "args": [
+        "n17",
+        "n35"
+      ],
+      "sources": [
+        {
+          "ssa": "_389",
+          "line": 349,
+          "expression": "_386 - _383"
+        }
+      ]
+    },
+    "n37": {
+      "op": "*",
+      "args": [
+        "n14",
+        "n36"
+      ],
+      "sources": [
+        {
+          "ssa": "_392",
+          "line": 352,
+          "expression": "_387 * _389"
+        }
+      ]
+    },
+    "n38": {
+      "op": "+",
+      "args": [
+        "n35",
+        "n37"
+      ],
+      "sources": [
+        {
+          "ssa": "_395",
+          "line": 355,
+          "expression": "_383 + _392"
+        }
+      ]
+    },
+    "n39": {
+      "op": "*",
+      "args": [
+        "n30",
+        "n38"
+      ],
+      "sources": [
+        {
+          "ssa": "_398",
+          "line": 358,
+          "expression": "_242 * _395"
+        }
+      ]
+    },
+    "n40": {
+      "op": "*",
+      "args": [
+        "n39",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_401",
+          "line": 361,
+          "expression": "_398 * 2.00000"
+        }
+      ]
+    },
+    "n41": {
+      "op": "+",
+      "args": [
+        "n40",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_404",
+          "line": 364,
+          "expression": "_401 + 0.000000"
+        }
+      ]
+    },
+    "n42": {
+      "op": "-",
+      "args": [
+        "n41",
+        "n41"
+      ],
+      "sources": [
+        {
+          "ssa": "_441",
+          "line": 401,
+          "expression": "_404 - _404"
+        }
+      ]
+    },
+    "n43": {
+      "op": "+",
+      "args": [
+        "n41",
+        "n42"
+      ],
+      "sources": [
+        {
+          "ssa": "_444",
+          "line": 404,
+          "expression": "_404 + _441"
+        }
+      ]
+    },
+    "n44": {
+      "op": "*",
+      "args": [
+        "n1",
+        "n43"
+      ],
+      "sources": [
+        {
+          "ssa": "_456",
+          "line": 416,
+          "expression": "_209 * _444"
+        }
+      ]
+    },
+    "n45": {
+      "op": "*",
+      "args": [
+        "n0",
+        "n44"
+      ],
+      "sources": [
+        {
+          "ssa": "_459",
+          "line": 419,
+          "expression": "_256 * _456"
+        }
+      ]
+    },
+    "n46": {
+      "op": "sat",
+      "args": [
+        "n45"
+      ],
+      "sources": [
+        {
+          "ssa": "_462",
+          "line": 422,
+          "expression": "sat(_459)"
+        }
+      ]
+    },
+    "n47": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 8,
+      "value": 0.6430000066757202,
+      "sources": [
+        {
+          "ssa": "_243",
+          "line": 196,
+          "expression": "extractvalue _240, 2"
+        }
+      ]
+    },
+    "n48": {
+      "op": "component",
+      "args": [
+        "n6"
+      ],
+      "index": 2,
+      "sources": [
+        {
+          "ssa": "_375",
+          "line": 335,
+          "expression": "extractvalue _372, 2"
+        }
+      ]
+    },
+    "n49": {
+      "op": "component",
+      "args": [
+        "n8"
+      ],
+      "index": 2,
+      "sources": [
+        {
+          "ssa": "_371",
+          "line": 331,
+          "expression": "extractvalue _368, 2"
+        }
+      ]
+    },
+    "n50": {
+      "op": "-",
+      "args": [
+        "n49",
+        "n48"
+      ],
+      "sources": [
+        {
+          "ssa": "_378",
+          "line": 338,
+          "expression": "_371 - _375"
+        }
+      ]
+    },
+    "n51": {
+      "op": "*",
+      "args": [
+        "n50",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_381",
+          "line": 341,
+          "expression": "_378 * 0.000000"
+        }
+      ]
+    },
+    "n52": {
+      "op": "+",
+      "args": [
+        "n48",
+        "n51"
+      ],
+      "sources": [
+        {
+          "ssa": "_384",
+          "line": 344,
+          "expression": "_375 + _381"
+        }
+      ]
+    },
+    "n53": {
+      "op": "-",
+      "args": [
+        "n17",
+        "n52"
+      ],
+      "sources": [
+        {
+          "ssa": "_390",
+          "line": 350,
+          "expression": "_386 - _384"
+        }
+      ]
+    },
+    "n54": {
+      "op": "*",
+      "args": [
+        "n14",
+        "n53"
+      ],
+      "sources": [
+        {
+          "ssa": "_393",
+          "line": 353,
+          "expression": "_387 * _390"
+        }
+      ]
+    },
+    "n55": {
+      "op": "+",
+      "args": [
+        "n52",
+        "n54"
+      ],
+      "sources": [
+        {
+          "ssa": "_396",
+          "line": 356,
+          "expression": "_384 + _393"
+        }
+      ]
+    },
+    "n56": {
+      "op": "*",
+      "args": [
+        "n47",
+        "n55"
+      ],
+      "sources": [
+        {
+          "ssa": "_399",
+          "line": 359,
+          "expression": "_243 * _396"
+        }
+      ]
+    },
+    "n57": {
+      "op": "*",
+      "args": [
+        "n56",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_402",
+          "line": 362,
+          "expression": "_399 * 2.00000"
+        }
+      ]
+    },
+    "n58": {
+      "op": "+",
+      "args": [
+        "n57",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_405",
+          "line": 365,
+          "expression": "_402 + 0.000000"
+        }
+      ]
+    },
+    "n59": {
+      "op": "-",
+      "args": [
+        "n58",
+        "n58"
+      ],
+      "sources": [
+        {
+          "ssa": "_442",
+          "line": 402,
+          "expression": "_405 - _405"
+        }
+      ]
+    },
+    "n60": {
+      "op": "+",
+      "args": [
+        "n58",
+        "n59"
+      ],
+      "sources": [
+        {
+          "ssa": "_445",
+          "line": 405,
+          "expression": "_405 + _442"
+        }
+      ]
+    },
+    "n61": {
+      "op": "*",
+      "args": [
+        "n1",
+        "n60"
+      ],
+      "sources": [
+        {
+          "ssa": "_457",
+          "line": 417,
+          "expression": "_209 * _445"
+        }
+      ]
+    },
+    "n62": {
+      "op": "*",
+      "args": [
+        "n0",
+        "n61"
+      ],
+      "sources": [
+        {
+          "ssa": "_460",
+          "line": 420,
+          "expression": "_256 * _457"
+        }
+      ]
+    },
+    "n63": {
+      "op": "sat",
+      "args": [
+        "n62"
+      ],
+      "sources": [
+        {
+          "ssa": "_463",
+          "line": 423,
+          "expression": "sat(_460)"
+        }
+      ]
+    },
+    "n64": {
+      "op": "constant",
+      "args": [],
+      "value": 0.3
+    },
+    "n65": {
+      "op": "constant",
+      "args": [],
+      "value": 0.59
+    },
+    "n66": {
+      "op": "constant",
+      "args": [],
+      "value": 0.11
+    },
+    "n67": {
+      "op": "*",
+      "args": [
+        "n29",
+        "n64"
+      ]
+    },
+    "n68": {
+      "op": "*",
+      "args": [
+        "n46",
+        "n65"
+      ]
+    },
+    "n69": {
+      "op": "+",
+      "args": [
+        "n67",
+        "n68"
+      ]
+    },
+    "n70": {
+      "op": "*",
+      "args": [
+        "n63",
+        "n66"
+      ]
+    },
+    "n71": {
+      "op": "+",
+      "args": [
+        "n69",
+        "n70"
+      ],
+      "sources": [
+        {
+          "ssa": "_504",
+          "line": 471,
+          "expression": "dot({_461, _462, _463}, {0.300000, 0.590000, 0.110000})"
+        }
+      ]
+    },
+    "n72": {
+      "op": "-",
+      "args": [
+        "n71",
+        "n29"
+      ],
+      "sources": [
+        {
+          "ssa": "_506",
+          "line": 473,
+          "expression": "_504 - _461"
+        }
+      ]
+    },
+    "n73": {
+      "op": "constant",
+      "args": [],
+      "value": -0.0
+    },
+    "n74": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 32,
+      "value": 0.8999999761581421,
+      "sources": [
+        {
+          "ssa": "_251",
+          "line": 204,
+          "expression": "extractvalue _250, 0"
+        }
+      ]
+    },
+    "n75": {
+      "op": "constant",
+      "args": [],
+      "value": -1.0
+    },
+    "n76": {
+      "op": "+",
+      "args": [
+        "n74",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_410",
+          "line": 370,
+          "expression": "_251 + -1.00000"
+        }
+      ]
+    },
+    "n77": {
+      "op": "+",
+      "args": [
+        "n76",
+        "n1"
+      ],
+      "sources": [
+        {
+          "ssa": "_411",
+          "line": 371,
+          "expression": "_410 + 1.00000"
+        }
+      ]
+    },
+    "n78": {
+      "op": "-",
+      "args": [
+        "n77",
+        "n77"
+      ],
+      "sources": [
+        {
+          "ssa": "_446",
+          "line": 406,
+          "expression": "_411 - _411"
+        }
+      ]
+    },
+    "n79": {
+      "op": "+",
+      "args": [
+        "n77",
+        "n78"
+      ],
+      "sources": [
+        {
+          "ssa": "_447",
+          "line": 407,
+          "expression": "_411 + _446"
+        }
+      ]
+    },
+    "n80": {
+      "op": "sat",
+      "args": [
+        "n79"
+      ],
+      "sources": [
+        {
+          "ssa": "_466",
+          "line": 426,
+          "expression": "sat(_447)"
+        }
+      ]
+    },
+    "n81": {
+      "op": "-",
+      "args": [
+        "n1",
+        "n80"
+      ],
+      "sources": [
+        {
+          "ssa": "_502",
+          "line": 469,
+          "expression": "1.00000 - _466"
+        }
+      ]
+    },
+    "n82": {
+      "op": "*",
+      "args": [
+        "n81",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_503",
+          "line": 470,
+          "expression": "_502 * 0.500000"
+        }
+      ]
+    },
+    "n83": {
+      "op": "-",
+      "args": [
+        "n73",
+        "n82"
+      ],
+      "sources": [
+        {
+          "ssa": "_505",
+          "line": 472,
+          "expression": "-0.000000 - _503"
+        }
+      ]
+    },
+    "n84": {
+      "op": "*",
+      "args": [
+        "n72",
+        "n83"
+      ],
+      "sources": [
+        {
+          "ssa": "_509",
+          "line": 476,
+          "expression": "_506 * _505"
+        }
+      ]
+    },
+    "n85": {
+      "op": "+",
+      "args": [
+        "n29",
+        "n84"
+      ],
+      "sources": [
+        {
+          "ssa": "_512",
+          "line": 479,
+          "expression": "_461 + _509"
+        }
+      ]
+    },
+    "n86": {
+      "op": "-",
+      "args": [
+        "n71",
+        "n46"
+      ],
+      "sources": [
+        {
+          "ssa": "_507",
+          "line": 474,
+          "expression": "_504 - _462"
+        }
+      ]
+    },
+    "n87": {
+      "op": "*",
+      "args": [
+        "n86",
+        "n83"
+      ],
+      "sources": [
+        {
+          "ssa": "_510",
+          "line": 477,
+          "expression": "_507 * _505"
+        }
+      ]
+    },
+    "n88": {
+      "op": "+",
+      "args": [
+        "n46",
+        "n87"
+      ],
+      "sources": [
+        {
+          "ssa": "_513",
+          "line": 480,
+          "expression": "_462 + _510"
+        }
+      ]
+    },
+    "n89": {
+      "op": "-",
+      "args": [
+        "n71",
+        "n63"
+      ],
+      "sources": [
+        {
+          "ssa": "_508",
+          "line": 475,
+          "expression": "_504 - _463"
+        }
+      ]
+    },
+    "n90": {
+      "op": "*",
+      "args": [
+        "n89",
+        "n83"
+      ],
+      "sources": [
+        {
+          "ssa": "_511",
+          "line": 478,
+          "expression": "_508 * _505"
+        }
+      ]
+    },
+    "n91": {
+      "op": "+",
+      "args": [
+        "n63",
+        "n90"
+      ],
+      "sources": [
+        {
+          "ssa": "_514",
+          "line": 481,
+          "expression": "_463 + _511"
+        }
+      ]
+    },
+    "n92": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 24,
+      "value": 1.0,
+      "sources": [
+        {
+          "ssa": "_248",
+          "line": 201,
+          "expression": "extractvalue _245, 2"
+        }
+      ]
+    },
+    "n93": {
+      "op": "constant",
+      "args": [],
+      "value": -0.5
+    },
+    "n94": {
+      "op": "+",
+      "args": [
+        "n92",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_408",
+          "line": 368,
+          "expression": "_248 + -0.500000"
+        }
+      ]
+    },
+    "n95": {
+      "op": "+",
+      "args": [
+        "n94",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_409",
+          "line": 369,
+          "expression": "_408 + 0.500000"
+        }
+      ]
+    },
+    "n96": {
+      "op": "sat",
+      "args": [
+        "n95"
+      ],
+      "sources": [
+        {
+          "ssa": "_464",
+          "line": 424,
+          "expression": "sat(_409)"
+        }
+      ]
+    },
+    "n97": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 20,
+      "value": 0.0,
+      "sources": [
+        {
+          "ssa": "_247",
+          "line": 200,
+          "expression": "extractvalue _245, 1"
+        }
+      ]
+    },
+    "n98": {
+      "op": "+",
+      "args": [
+        "n97",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_406",
+          "line": 366,
+          "expression": "_247 + -0.500000"
+        }
+      ]
+    },
+    "n99": {
+      "op": "+",
+      "args": [
+        "n98",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_407",
+          "line": 367,
+          "expression": "_406 + 0.500000"
+        }
+      ]
+    },
+    "n100": {
+      "op": "constant",
+      "args": [],
+      "value": 1.5
+    },
+    "n101": {
+      "op": "*",
+      "args": [
+        "n3",
+        "n100"
+      ],
+      "sources": [
+        {
+          "ssa": "_423",
+          "line": 383,
+          "expression": "_192 * 1.50000"
+        }
+      ]
+    },
+    "n102": {
+      "op": "*",
+      "args": [
+        "n4",
+        "n100"
+      ],
+      "sources": [
+        {
+          "ssa": "_424",
+          "line": 384,
+          "expression": "_193 * 1.50000"
+        }
+      ]
+    },
+    "n103": {
+      "op": "sample",
+      "args": [
+        "n101",
+        "n102",
+        "n5"
+      ],
+      "resource": "Texture2D15",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_425",
+          "line": 385,
+          "expression": "_146.Sample(_164, _423, _424, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n104": {
+      "op": "component",
+      "args": [
+        "n103"
+      ],
+      "index": 1,
+      "sources": [
+        {
+          "ssa": "_427",
+          "line": 387,
+          "expression": "extractvalue _425, 1"
+        }
+      ]
+    },
+    "n105": {
+      "op": "*",
+      "args": [
+        "n99",
+        "n104"
+      ],
+      "sources": [
+        {
+          "ssa": "_428",
+          "line": 388,
+          "expression": "_407 * _427"
+        }
+      ]
+    },
+    "n106": {
+      "op": "-",
+      "args": [
+        "n105",
+        "n99"
+      ],
+      "sources": [
+        {
+          "ssa": "_448",
+          "line": 408,
+          "expression": "_428 - _407"
+        }
+      ]
+    },
+    "n107": {
+      "op": "+",
+      "args": [
+        "n99",
+        "n106"
+      ],
+      "sources": [
+        {
+          "ssa": "_449",
+          "line": 409,
+          "expression": "_407 + _448"
+        }
+      ]
+    },
+    "n108": {
+      "op": "sat",
+      "args": [
+        "n107"
+      ],
+      "sources": [
+        {
+          "ssa": "_465",
+          "line": 425,
+          "expression": "sat(_449)"
+        }
+      ]
+    },
+    "n109": {
+      "op": "+",
+      "args": [
+        "n95",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_451",
+          "line": 411,
+          "expression": "_409 + 0.000000"
+        }
+      ]
+    },
+    "n110": {
+      "op": "sat",
+      "args": [
+        "n109"
+      ],
+      "sources": [
+        {
+          "ssa": "_467",
+          "line": 427,
+          "expression": "sat(_451)"
+        }
+      ]
+    },
+    "n111": {
+      "op": "component",
+      "args": [
+        "n103"
+      ],
+      "index": 2,
+      "sources": [
+        {
+          "ssa": "_429",
+          "line": 389,
+          "expression": "extractvalue _425, 2"
+        }
+      ]
+    },
+    "n112": {
+      "op": "*",
+      "args": [
+        "n99",
+        "n111"
+      ],
+      "sources": [
+        {
+          "ssa": "_430",
+          "line": 390,
+          "expression": "_407 * _429"
+        }
+      ]
+    },
+    "n113": {
+      "op": "+",
+      "args": [
+        "n112",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_450",
+          "line": 410,
+          "expression": "_430 + 0.000000"
+        }
+      ]
+    },
+    "n114": {
+      "op": "sat",
+      "args": [
+        "n113"
+      ],
+      "sources": [
+        {
+          "ssa": "_468",
+          "line": 428,
+          "expression": "sat(_450)"
+        }
+      ]
+    },
+    "n115": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 40,
+      "value": 0.0,
+      "sources": [
+        {
+          "ssa": "_253",
+          "line": 206,
+          "expression": "extractvalue _250, 2"
+        }
+      ]
+    },
+    "n116": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 36,
+      "value": 0.2199999988079071,
+      "sources": [
+        {
+          "ssa": "_252",
+          "line": 205,
+          "expression": "extractvalue _250, 1"
+        }
+      ]
+    },
+    "n117": {
+      "op": "component",
+      "args": [
+        "n103"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_426",
+          "line": 386,
+          "expression": "extractvalue _425, 0"
+        }
+      ]
+    },
+    "n118": {
+      "op": "+",
+      "args": [
+        "n117",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_431",
+          "line": 391,
+          "expression": "_426 + -0.500000"
+        }
+      ]
+    },
+    "n119": {
+      "op": "constant",
+      "args": [],
+      "value": 0.2
+    },
+    "n120": {
+      "op": "*",
+      "args": [
+        "n118",
+        "n119"
+      ],
+      "sources": [
+        {
+          "ssa": "_432",
+          "line": 392,
+          "expression": "_431 * 0.200000"
+        }
+      ]
+    },
+    "n121": {
+      "op": "*",
+      "args": [
+        "n116",
+        "n120"
+      ],
+      "sources": [
+        {
+          "ssa": "_433",
+          "line": 393,
+          "expression": "_252 * _432"
+        }
+      ]
+    },
+    "n122": {
+      "op": "+",
+      "args": [
+        "n115",
+        "n121"
+      ],
+      "sources": [
+        {
+          "ssa": "_434",
+          "line": 394,
+          "expression": "_253 + _433"
+        }
+      ]
+    },
+    "n123": {
+      "op": "*",
+      "args": [
+        "n122",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_435",
+          "line": 395,
+          "expression": "_434 * 0.500000"
+        }
+      ]
+    },
+    "n124": {
+      "op": "+",
+      "args": [
+        "n123",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_436",
+          "line": 396,
+          "expression": "_435 + 0.500000"
+        }
+      ]
+    },
+    "n125": {
+      "op": "+",
+      "args": [
+        "n124",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_452",
+          "line": 412,
+          "expression": "_436 + 0.000000"
+        }
+      ]
+    },
+    "n126": {
+      "op": "sat",
+      "args": [
+        "n125"
+      ],
+      "sources": [
+        {
+          "ssa": "_469",
+          "line": 429,
+          "expression": "sat(_452)"
+        }
+      ]
+    },
+    "n127": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 44,
+      "value": 0.0,
+      "sources": [
+        {
+          "ssa": "_254",
+          "line": 207,
+          "expression": "extractvalue _250, 3"
+        }
+      ]
+    },
+    "n128": {
+      "op": "+",
+      "args": [
+        "n127",
+        "n121"
+      ],
+      "sources": [
+        {
+          "ssa": "_437",
+          "line": 397,
+          "expression": "_254 + _433"
+        }
+      ]
+    },
+    "n129": {
+      "op": "*",
+      "args": [
+        "n128",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_438",
+          "line": 398,
+          "expression": "_437 * 0.500000"
+        }
+      ]
+    },
+    "n130": {
+      "op": "+",
+      "args": [
+        "n129",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_439",
+          "line": 399,
+          "expression": "_438 + 0.500000"
+        }
+      ]
+    },
+    "n131": {
+      "op": "+",
+      "args": [
+        "n130",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_453",
+          "line": 413,
+          "expression": "_439 + -1.00000"
+        }
+      ]
+    },
+    "n132": {
+      "op": "+",
+      "args": [
+        "n131",
+        "n1"
+      ],
+      "sources": [
+        {
+          "ssa": "_454",
+          "line": 414,
+          "expression": "_453 + 1.00000"
+        }
+      ]
+    },
+    "n133": {
+      "op": "sat",
+      "args": [
+        "n132"
+      ],
+      "sources": [
+        {
+          "ssa": "_470",
+          "line": 430,
+          "expression": "sat(_454)"
+        }
+      ]
+    },
+    "n134": {
+      "op": "sample",
+      "args": [
+        "n3",
+        "n4",
+        "n5"
+      ],
+      "resource": "Texture2D14",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_414",
+          "line": 374,
+          "expression": "_147.Sample(_164, _192, _193, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n135": {
+      "op": "component",
+      "args": [
+        "n134"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_415",
+          "line": 375,
+          "expression": "extractvalue _414, 0"
+        }
+      ]
+    },
+    "n136": {
+      "op": "sample",
+      "args": [
+        "n5",
+        "n5",
+        "n5"
+      ],
+      "resource": "Texture2D14",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_412",
+          "line": 372,
+          "expression": "_147.Sample(_164, 0.000000, 0.000000, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n137": {
+      "op": "component",
+      "args": [
+        "n136"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_413",
+          "line": 373,
+          "expression": "extractvalue _412, 0"
+        }
+      ]
+    },
+    "n138": {
+      "op": "-",
+      "args": [
+        "n137",
+        "n135"
+      ],
+      "sources": [
+        {
+          "ssa": "_416",
+          "line": 376,
+          "expression": "_413 - _415"
+        }
+      ]
+    },
+    "n139": {
+      "op": "*",
+      "args": [
+        "n138",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_417",
+          "line": 377,
+          "expression": "_416 * 0.000000"
+        }
+      ]
+    },
+    "n140": {
+      "op": "+",
+      "args": [
+        "n135",
+        "n139"
+      ],
+      "sources": [
+        {
+          "ssa": "_418",
+          "line": 378,
+          "expression": "_415 + _417"
+        }
+      ]
+    },
+    "n141": {
+      "op": "+",
+      "args": [
+        "n140",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_419",
+          "line": 379,
+          "expression": "_418 + -1.00000"
+        }
+      ]
+    },
+    "n142": {
+      "op": "+",
+      "args": [
+        "n141",
+        "n1"
+      ],
+      "sources": [
+        {
+          "ssa": "_420",
+          "line": 380,
+          "expression": "_419 + 1.00000"
+        }
+      ]
+    },
+    "n143": {
+      "op": "sat",
+      "args": [
+        "n142"
+      ],
+      "sources": [
+        {
+          "ssa": "_471",
+          "line": 431,
+          "expression": "sat(_420)"
+        }
+      ]
+    },
+    "n144": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 28,
+      "value": 1.0,
+      "sources": [
+        {
+          "ssa": "_249",
+          "line": 202,
+          "expression": "extractvalue _245, 3"
+        }
+      ]
+    },
+    "n145": {
+      "op": "constant",
+      "args": [],
+      "value": -0.2
+    },
+    "n146": {
+      "op": "+",
+      "args": [
+        "n144",
+        "n145"
+      ],
+      "sources": [
+        {
+          "ssa": "_421",
+          "line": 381,
+          "expression": "_249 + -0.200000"
+        }
+      ]
+    },
+    "n147": {
+      "op": "+",
+      "args": [
+        "n146",
+        "n119"
+      ],
+      "sources": [
+        {
+          "ssa": "_422",
+          "line": 382,
+          "expression": "_421 + 0.200000"
+        }
+      ]
+    },
+    "n148": {
+      "op": "constant",
+      "args": [],
+      "value": 1e-07
+    },
+    "n149": {
+      "op": "max",
+      "args": [
+        "n147",
+        "n148"
+      ],
+      "sources": [
+        {
+          "ssa": "_472",
+          "line": 432,
+          "expression": "max(_422, 1.00000e-07)"
+        }
+      ]
+    },
+    "n150": {
+      "op": "/",
+      "args": [
+        "n143",
+        "n149"
+      ],
+      "sources": [
+        {
+          "ssa": "_473",
+          "line": 433,
+          "expression": "_471 / _472"
+        }
+      ]
+    },
+    "n151": {
+      "op": "sat",
+      "args": [
+        "n150"
+      ],
+      "sources": [
+        {
+          "ssa": "_474",
+          "line": 434,
+          "expression": "sat(_473)"
+        }
+      ]
+    },
+    "n152": {
+      "op": "parameter",
+      "args": [],
+      "cb": "cbuffer1",
+      "byte": 16,
+      "value": 1.0,
+      "sources": [
+        {
+          "ssa": "_246",
+          "line": 199,
+          "expression": "extractvalue _245, 0"
+        }
+      ]
+    },
+    "n153": {
+      "op": "sample",
+      "args": [
+        "n3",
+        "n4",
+        "n5"
+      ],
+      "resource": "Texture2D13",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_338",
+          "line": 298,
+          "expression": "_148.Sample(_164, _192, _193, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n154": {
+      "op": "component",
+      "args": [
+        "n153"
+      ],
+      "index": 1,
+      "sources": [
+        {
+          "ssa": "_340",
+          "line": 300,
+          "expression": "extractvalue _338, 1"
+        }
+      ]
+    },
+    "n155": {
+      "op": "sample",
+      "args": [
+        "n5",
+        "n5",
+        "n5"
+      ],
+      "resource": "Texture2D13",
+      "mode": "Sample",
+      "sampler": "sampler0",
+      "sources": [
+        {
+          "ssa": "_335",
+          "line": 295,
+          "expression": "_148.Sample(_164, 0.000000, 0.000000, Offset = {0, 0})"
+        }
+      ]
+    },
+    "n156": {
+      "op": "component",
+      "args": [
+        "n155"
+      ],
+      "index": 1,
+      "sources": [
+        {
+          "ssa": "_337",
+          "line": 297,
+          "expression": "extractvalue _335, 1"
+        }
+      ]
+    },
+    "n157": {
+      "op": "-",
+      "args": [
+        "n156",
+        "n154"
+      ],
+      "sources": [
+        {
+          "ssa": "_342",
+          "line": 302,
+          "expression": "_337 - _340"
+        }
+      ]
+    },
+    "n158": {
+      "op": "*",
+      "args": [
+        "n157",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_344",
+          "line": 304,
+          "expression": "_342 * 0.000000"
+        }
+      ]
+    },
+    "n159": {
+      "op": "+",
+      "args": [
+        "n154",
+        "n158"
+      ],
+      "sources": [
+        {
+          "ssa": "_346",
+          "line": 306,
+          "expression": "_340 + _344"
+        }
+      ]
+    },
+    "n160": {
+      "op": "*",
+      "args": [
+        "n159",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_348",
+          "line": 308,
+          "expression": "_346 * 2.00000"
+        }
+      ]
+    },
+    "n161": {
+      "op": "+",
+      "args": [
+        "n160",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_350",
+          "line": 310,
+          "expression": "_348 + -1.00000"
+        }
+      ]
+    },
+    "n162": {
+      "op": "component",
+      "args": [
+        "n153"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_339",
+          "line": 299,
+          "expression": "extractvalue _338, 0"
+        }
+      ]
+    },
+    "n163": {
+      "op": "component",
+      "args": [
+        "n155"
+      ],
+      "index": 0,
+      "sources": [
+        {
+          "ssa": "_336",
+          "line": 296,
+          "expression": "extractvalue _335, 0"
+        }
+      ]
+    },
+    "n164": {
+      "op": "-",
+      "args": [
+        "n163",
+        "n162"
+      ],
+      "sources": [
+        {
+          "ssa": "_341",
+          "line": 301,
+          "expression": "_336 - _339"
+        }
+      ]
+    },
+    "n165": {
+      "op": "*",
+      "args": [
+        "n164",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_343",
+          "line": 303,
+          "expression": "_341 * 0.000000"
+        }
+      ]
+    },
+    "n166": {
+      "op": "+",
+      "args": [
+        "n162",
+        "n165"
+      ],
+      "sources": [
+        {
+          "ssa": "_345",
+          "line": 305,
+          "expression": "_339 + _343"
+        }
+      ]
+    },
+    "n167": {
+      "op": "*",
+      "args": [
+        "n166",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_347",
+          "line": 307,
+          "expression": "_345 * 2.00000"
+        }
+      ]
+    },
+    "n168": {
+      "op": "+",
+      "args": [
+        "n167",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_349",
+          "line": 309,
+          "expression": "_347 + -1.00000"
+        }
+      ]
+    },
+    "n169": {
+      "op": "*",
+      "args": [
+        "n73",
+        "n161"
+      ]
+    },
+    "n170": {
+      "op": "+",
+      "args": [
+        "n169",
+        "n168"
+      ],
+      "sources": [
+        {
+          "ssa": "_351",
+          "line": 311,
+          "expression": "mad(-0.000000, _350, _349)"
+        }
+      ]
+    },
+    "n171": {
+      "op": "*",
+      "args": [
+        "n170",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_354",
+          "line": 314,
+          "expression": "_351 * 0.500000"
+        }
+      ]
+    },
+    "n172": {
+      "op": "+",
+      "args": [
+        "n171",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_356",
+          "line": 316,
+          "expression": "_354 + 0.500000"
+        }
+      ]
+    },
+    "n173": {
+      "op": "+",
+      "args": [
+        "n172",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_358",
+          "line": 318,
+          "expression": "_356 + -0.500000"
+        }
+      ]
+    },
+    "n174": {
+      "op": "*",
+      "args": [
+        "n152",
+        "n173"
+      ],
+      "sources": [
+        {
+          "ssa": "_360",
+          "line": 320,
+          "expression": "_246 * _358"
+        }
+      ]
+    },
+    "n175": {
+      "op": "+",
+      "args": [
+        "n174",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_362",
+          "line": 322,
+          "expression": "_360 + 0.500000"
+        }
+      ]
+    },
+    "n176": {
+      "op": "+",
+      "args": [
+        "n175",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_364",
+          "line": 324,
+          "expression": "_362 + -0.500000"
+        }
+      ]
+    },
+    "n177": {
+      "op": "+",
+      "args": [
+        "n176",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_366",
+          "line": 326,
+          "expression": "_364 + 0.500000"
+        }
+      ]
+    },
+    "n178": {
+      "op": "*",
+      "args": [
+        "n177",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_479",
+          "line": 446,
+          "expression": "_366 * 2.00000"
+        }
+      ]
+    },
+    "n179": {
+      "op": "+",
+      "args": [
+        "n178",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_481",
+          "line": 448,
+          "expression": "_479 + -1.00000"
+        }
+      ]
+    },
+    "n180": {
+      "op": "*",
+      "args": [
+        "n168",
+        "n5"
+      ],
+      "sources": [
+        {
+          "ssa": "_352",
+          "line": 312,
+          "expression": "_349 * 0.000000"
+        }
+      ]
+    },
+    "n181": {
+      "op": "*",
+      "args": [
+        "n1",
+        "n161"
+      ]
+    },
+    "n182": {
+      "op": "+",
+      "args": [
+        "n181",
+        "n180"
+      ],
+      "sources": [
+        {
+          "ssa": "_353",
+          "line": 313,
+          "expression": "mad(1.00000, _350, _352)"
+        }
+      ]
+    },
+    "n183": {
+      "op": "*",
+      "args": [
+        "n182",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_355",
+          "line": 315,
+          "expression": "_353 * 0.500000"
+        }
+      ]
+    },
+    "n184": {
+      "op": "+",
+      "args": [
+        "n183",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_357",
+          "line": 317,
+          "expression": "_355 + 0.500000"
+        }
+      ]
+    },
+    "n185": {
+      "op": "+",
+      "args": [
+        "n184",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_359",
+          "line": 319,
+          "expression": "_357 + -0.500000"
+        }
+      ]
+    },
+    "n186": {
+      "op": "*",
+      "args": [
+        "n152",
+        "n185"
+      ],
+      "sources": [
+        {
+          "ssa": "_361",
+          "line": 321,
+          "expression": "_246 * _359"
+        }
+      ]
+    },
+    "n187": {
+      "op": "+",
+      "args": [
+        "n186",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_363",
+          "line": 323,
+          "expression": "_361 + 0.500000"
+        }
+      ]
+    },
+    "n188": {
+      "op": "+",
+      "args": [
+        "n187",
+        "n93"
+      ],
+      "sources": [
+        {
+          "ssa": "_365",
+          "line": 325,
+          "expression": "_363 + -0.500000"
+        }
+      ]
+    },
+    "n189": {
+      "op": "+",
+      "args": [
+        "n188",
+        "n15"
+      ],
+      "sources": [
+        {
+          "ssa": "_367",
+          "line": 327,
+          "expression": "_365 + 0.500000"
+        }
+      ]
+    },
+    "n190": {
+      "op": "*",
+      "args": [
+        "n189",
+        "n22"
+      ],
+      "sources": [
+        {
+          "ssa": "_480",
+          "line": 447,
+          "expression": "_367 * 2.00000"
+        }
+      ]
+    },
+    "n191": {
+      "op": "+",
+      "args": [
+        "n190",
+        "n75"
+      ],
+      "sources": [
+        {
+          "ssa": "_482",
+          "line": 449,
+          "expression": "_480 + -1.00000"
+        }
+      ]
+    },
+    "n192": {
+      "op": "*",
+      "args": [
+        "n179",
+        "n179"
+      ]
+    },
+    "n193": {
+      "op": "*",
+      "args": [
+        "n191",
+        "n191"
+      ]
+    },
+    "n194": {
+      "op": "+",
+      "args": [
+        "n192",
+        "n193"
+      ],
+      "sources": [
+        {
+          "ssa": "_483",
+          "line": 450,
+          "expression": "dot({_481, _482}, {_481, _482})"
+        }
+      ]
+    },
+    "n195": {
+      "op": "-",
+      "args": [
+        "n1",
+        "n194"
+      ],
+      "sources": [
+        {
+          "ssa": "_484",
+          "line": 451,
+          "expression": "1.00000 - _483"
+        }
+      ]
+    },
+    "n196": {
+      "op": "sat",
+      "args": [
+        "n195"
+      ],
+      "sources": [
+        {
+          "ssa": "_485",
+          "line": 452,
+          "expression": "sat(_484)"
+        }
+      ]
+    },
+    "n197": {
+      "op": "sqrt",
+      "args": [
+        "n196"
+      ],
+      "sources": [
+        {
+          "ssa": "_486",
+          "line": 453,
+          "expression": "sqrt(_485)"
+        }
+      ]
+    }
+  },
+  "roots": {
+    "BaseColor": [
+      "n85",
+      "n88",
+      "n91"
+    ],
+    "Roughness": [
+      "n96"
+    ],
+    "Specular": [
+      "n108"
+    ],
+    "AmbientOcclusion": [
+      "n80"
+    ],
+    "Scatter": [
+      "n110"
+    ],
+    "SecondaryWeight": [
+      "n114"
+    ],
+    "PrimaryShift": [
+      "n126"
+    ],
+    "SecondaryShift": [
+      "n133"
+    ],
+    "Opacity": [
+      "n151"
+    ],
+    "Normal": [
+      "n179",
+      "n191",
+      "n197"
+    ]
+  },
+  "operation": "Restore source encoded color processing followed by saturate/log2/*2.2/exp2/saturate. Restore tangent normal and both lobes using existing Kajiya output. Original Scatter root is proven secondary roughness, not backlit; source backlit is constant zero.",
+  "limits": [
+    "Existing Kajiya environment adapter differs from source ambient path.",
+    "UE masked temporal coverage remains adaptation to original continuous alpha.",
+    "No new renderer or engine source changes."
+  ],
+  "backups": [
+    {
+      "path": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eyebrows.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeBrowFix\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eyebrows.uasset",
+      "sha256": "6b47f68e7175e0e86d9479857afa7ae00a26f2be6a60f2a94e1f90f304b709d7"
+    },
+    {
+      "path": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Brow\\T_Nathan_new_brows2_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeBrowFix\\Content\\Demo\\Character\\Nathan\\Textures\\Brow\\T_Nathan_new_brows2_color.uasset",
+      "sha256": "1b85666e3248705b133d28b3562d096ff46344af459a05e02e544dcdfb1e65d3"
+    }
+  ]
+}

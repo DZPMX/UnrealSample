@@ -1,0 +1,38 @@
+{
+  "profiles": [
+    {
+      "name": "Face",
+      "source_event": 46513,
+      "source_nominal_primary": 0.63,
+      "source_nominal_secondary": 0.452,
+      "old_ratio": 0.3174603283405304,
+      "new_ratio": 0.7174603343009949,
+      "before": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.025208,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.317460,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "after": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.025208,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.717460,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "saved": true
+    },
+    {
+      "name": "Chest",
+      "source_event": 46542,
+      "source_nominal_primary": 0.68,
+      "source_nominal_secondary": 0.47200000000000003,
+      "old_ratio": 0.29411765933036804,
+      "new_ratio": 0.6941176652908325,
+      "before": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.020166,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.294118,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "after": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.020166,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.694118,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "saved": true
+    },
+    {
+      "name": "Arms",
+      "source_event": 46436,
+      "source_nominal_primary": 0.66,
+      "source_nominal_secondary": 0.464,
+      "old_ratio": 0.3636363744735718,
+      "new_ratio": 0.7030302882194519,
+      "before": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.012456,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.363636,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "after": "(SurfaceAlbedo=(R=0.910580,G=0.338275,B=0.271800,A=1.000000),MeanFreePathColor=(R=0.988582,G=1.000000,B=0.754981,A=1.000000),MeanFreePathDistance=0.012456,WorldUnitScale=0.100000,bEnableBurley=True,bEnableMeanFreePath=True,Tint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),ScatterRadius=1.200000,SubsurfaceColor=(R=0.480000,G=0.410000,B=0.280000,A=1.000000),FalloffColor=(R=1.000000,G=0.370000,B=0.300000,A=1.000000),BoundaryColorBleed=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),Implementation=SIH_AFIS,ExtinctionScale=1.000000,NormalScale=0.080000,ScatteringDistribution=0.930000,IOR=1.550000,Roughness0=1.000000,Roughness1=0.703030,LobeMix=0.150000,TransmissionTintColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))",
+      "saved": true
+    }
+  ],
+  "limits": "Corrects the previously wrong dry baseline. UE fixed ratio still does not reproduce per-pixel source wetness mask or independent second specular strength. LobeMix=0.15, Roughness0 and all SSS radius/kernel settings are unchanged."
+}

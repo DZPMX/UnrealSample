@@ -1,0 +1,227 @@
+{
+  "targets": [
+    "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color",
+    "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color",
+    "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color",
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color",
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color",
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color",
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color",
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color",
+    "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color",
+    "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData",
+    "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color",
+    "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color",
+    "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color",
+    "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color",
+    "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color",
+    "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color",
+    "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color"
+  ],
+  "changes": [
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color",
+      "before": true,
+      "after": false
+    },
+    {
+      "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\DerivedImports.json",
+      "path": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData",
+      "before": true,
+      "after": false
+    }
+  ]
+}

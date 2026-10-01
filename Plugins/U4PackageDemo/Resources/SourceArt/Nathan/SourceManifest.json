@@ -1,0 +1,5454 @@
+[
+  {
+    "file": "proto.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 4036,
+      "md5": "6523badc7f84c76e74a0123f9d1f1d4f",
+      "block_index": 98302,
+      "size": 424448,
+      "offset": 1710151622,
+      "name": "proto.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "b5c9b050284b28b2514dfed9beaa0857114922ce4c2fbef758b285eaf855fb2f",
+    "unpacked_equal": true,
+    "types": {
+      "JOINT_HIERARCHY": 1,
+      "COLLISION_DATA_FOREGROUND": 1,
+      "SKELETON_FLIPDATA": 1,
+      "ARTGROUP_DATA": 1,
+      "VRAM_DESC": 1,
+      "PAK_LOGIN_TABLE": 1,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "TEXTURE_TABLE": 1,
+      "LEVEL_PATS_2": 1,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "VRAM_DESC_TABLE": 1,
+      "COLLISION_DATA_BACKGROUND": 20
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 350696,
+        "entry_marker": 74565,
+        "offset": 8736,
+        "name": "skel.proto",
+        "type": "JOINT_HIERARCHY",
+        "field_10": 294468
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 350634,
+        "entry_marker": 74565,
+        "offset": 307008,
+        "name": "collision.proto",
+        "type": "COLLISION_DATA_FOREGROUND",
+        "field_10": 1692
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 350656,
+        "entry_marker": 74565,
+        "offset": 356320,
+        "name": "skel.characters/hero/actors/proto/proto",
+        "type": "SKELETON_FLIPDATA",
+        "field_10": 630
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 350650,
+        "entry_marker": 74565,
+        "offset": 356992,
+        "name": "proto",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357408,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 64
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357504,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 48
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357600,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357696,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 9,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357760,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 10,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357824,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 11,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357952,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 12,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 357984,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 13,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358016,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 14,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358048,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 15,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358080,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 16,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358112,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 17,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358144,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 18,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358176,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 19,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358208,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 20,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358240,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 21,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358272,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 22,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358304,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 23,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358336,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 24,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358368,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 25,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358400,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 26,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358432,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 27,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358464,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 28,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358496,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 29,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358528,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      },
+      {
+        "page": 0,
+        "entry_index": 30,
+        "entry_name_raw": 350416,
+        "entry_marker": 74565,
+        "offset": 358560,
+        "name": "",
+        "type": "COLLISION_DATA_BACKGROUND",
+        "field_10": 0
+      }
+    ]
+  },
+  {
+    "file": "hero-island.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 2341,
+      "md5": "b47bc6423aff1f062c1a6afe82d033c0",
+      "block_index": 56696,
+      "size": 13015136,
+      "offset": 1141502624,
+      "name": "hero-island.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "05c7d464b68a7237eba418fbd0ef5951ad43d6f6b2d943ac3522591aa0dd1ad8",
+    "unpacked_equal": true,
+    "types": {
+      "EFFECT": 15,
+      "TEXTURE_TABLE": 1,
+      "EFFECT_TABLE": 1,
+      "VRAM_DESC_TABLE": 1,
+      "VRAM_DESC": 112,
+      "PAK_LOGIN_TABLE": 1,
+      "ARTGROUP_DATA": 1,
+      "GEOMETRY_1": 1,
+      "FOREGROUND_SECTION_2": 4,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "SOUND_BANK_TABLE": 1,
+      "LEVEL_BOUNDING_BOX_DATA": 4,
+      "LEVEL_PATS_2": 1,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "TAG_VEC4": 4,
+      "COLLISION_DATA_EMPTY": 1,
+      "TAG_FLOAT": 3,
+      "TAG_INT": 4
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 73920,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 127312
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 201264,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 109184
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 310480,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 102960
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 413472,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 89328
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 502832,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 82752
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 585616,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 79840
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 665488,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 78704
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 744224,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 78672
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 822928,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 78224
+      },
+      {
+        "page": 0,
+        "entry_index": 9,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 901184,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 77920
+      },
+      {
+        "page": 0,
+        "entry_index": 10,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 979136,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 72592
+      },
+      {
+        "page": 0,
+        "entry_index": 11,
+        "entry_name_raw": 1048268,
+        "entry_marker": 74565,
+        "offset": 1121000,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 928
+      },
+      {
+        "page": 1,
+        "entry_index": 0,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1124416,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71360
+      },
+      {
+        "page": 1,
+        "entry_index": 1,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1195808,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71312
+      },
+      {
+        "page": 1,
+        "entry_index": 2,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1380960,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 51552
+      },
+      {
+        "page": 1,
+        "entry_index": 3,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1608584,
+        "name": "",
+        "type": "EFFECT_TABLE",
+        "field_10": 22979
+      },
+      {
+        "page": 1,
+        "entry_index": 4,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1663840,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 11872
+      },
+      {
+        "page": 1,
+        "entry_index": 5,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1918792,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 904
+      },
+      {
+        "page": 1,
+        "entry_index": 6,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1930448,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 235
+      },
+      {
+        "page": 1,
+        "entry_index": 7,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1930720,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 235
+      },
+      {
+        "page": 1,
+        "entry_index": 8,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1930992,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 9,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1931264,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 10,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1931536,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 11,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1931808,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 12,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1932080,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 13,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1932352,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 14,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1932624,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 15,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1932896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 234
+      },
+      {
+        "page": 1,
+        "entry_index": 16,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1933168,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 17,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1933440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 18,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1933712,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 19,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1933984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 20,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1934256,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 21,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1934528,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 22,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1934800,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 23,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1935072,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 233
+      },
+      {
+        "page": 1,
+        "entry_index": 24,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1935344,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 232
+      },
+      {
+        "page": 1,
+        "entry_index": 25,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1935608,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 232
+      },
+      {
+        "page": 1,
+        "entry_index": 26,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1935872,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 232
+      },
+      {
+        "page": 1,
+        "entry_index": 27,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1936136,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 232
+      },
+      {
+        "page": 1,
+        "entry_index": 28,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1936400,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 230
+      },
+      {
+        "page": 1,
+        "entry_index": 29,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1936664,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 230
+      },
+      {
+        "page": 1,
+        "entry_index": 30,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1936928,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 224
+      },
+      {
+        "page": 1,
+        "entry_index": 31,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1937184,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 220
+      },
+      {
+        "page": 1,
+        "entry_index": 32,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1937440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 215
+      },
+      {
+        "page": 1,
+        "entry_index": 33,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1937688,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 212
+      },
+      {
+        "page": 1,
+        "entry_index": 34,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1937936,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 212
+      },
+      {
+        "page": 1,
+        "entry_index": 35,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1938184,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 206
+      },
+      {
+        "page": 1,
+        "entry_index": 36,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1938424,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 206
+      },
+      {
+        "page": 1,
+        "entry_index": 37,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1938664,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 205
+      },
+      {
+        "page": 1,
+        "entry_index": 38,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1938904,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 205
+      },
+      {
+        "page": 1,
+        "entry_index": 39,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1939144,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 1,
+        "entry_index": 40,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1939384,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 1,
+        "entry_index": 41,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1939624,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 1,
+        "entry_index": 42,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1939864,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 1,
+        "entry_index": 43,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1940104,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 44,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1940344,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 45,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1940584,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 46,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1940824,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 47,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1941064,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 48,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1941304,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 49,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1941544,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 50,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1941784,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 51,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1942024,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 1,
+        "entry_index": 52,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1942264,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 53,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1942504,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 54,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1942744,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 55,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1942984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 56,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1943224,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 57,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1943464,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 58,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1943704,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 1,
+        "entry_index": 59,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1943944,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 1,
+        "entry_index": 60,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1944176,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 1,
+        "entry_index": 61,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1944408,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 1,
+        "entry_index": 62,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1944640,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 1,
+        "entry_index": 63,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1944872,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 1,
+        "entry_index": 64,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1945104,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 1,
+        "entry_index": 65,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1945336,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 1,
+        "entry_index": 66,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1945568,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 1,
+        "entry_index": 67,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1945800,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 1,
+        "entry_index": 68,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1946496,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 1,
+        "entry_index": 69,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1946728,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 1,
+        "entry_index": 70,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1947192,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 1,
+        "entry_index": 71,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1947424,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 72,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1947656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 73,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1947888,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 74,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1948120,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 75,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1948352,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 76,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1948584,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 77,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1948816,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 1,
+        "entry_index": 78,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1949048,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 79,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1949280,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 80,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1949512,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 81,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1949744,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 82,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1949976,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 83,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1950208,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 1,
+        "entry_index": 84,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1950440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 1,
+        "entry_index": 85,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1950672,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 1,
+        "entry_index": 86,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1950904,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 1,
+        "entry_index": 87,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1951136,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 1,
+        "entry_index": 88,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1951368,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 1,
+        "entry_index": 89,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1951600,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 1,
+        "entry_index": 90,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1951832,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 1,
+        "entry_index": 91,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1952064,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 1,
+        "entry_index": 92,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1952296,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 193
+      },
+      {
+        "page": 1,
+        "entry_index": 93,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1952528,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 193
+      },
+      {
+        "page": 1,
+        "entry_index": 94,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1952760,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 1,
+        "entry_index": 95,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1952984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 1,
+        "entry_index": 96,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1953208,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 1,
+        "entry_index": 97,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1953432,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 1,
+        "entry_index": 98,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1953656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 1,
+        "entry_index": 99,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1953880,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 1,
+        "entry_index": 100,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1954104,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 101,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1954328,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 102,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1954552,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 103,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1954776,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 104,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1955000,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 105,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1955224,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 1,
+        "entry_index": 106,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1955448,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 189
+      },
+      {
+        "page": 1,
+        "entry_index": 107,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1955672,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 188
+      },
+      {
+        "page": 1,
+        "entry_index": 108,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1955896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 187
+      },
+      {
+        "page": 1,
+        "entry_index": 109,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1956120,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 185
+      },
+      {
+        "page": 1,
+        "entry_index": 110,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1956344,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 185
+      },
+      {
+        "page": 1,
+        "entry_index": 111,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1956568,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 184
+      },
+      {
+        "page": 1,
+        "entry_index": 112,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1956784,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 183
+      },
+      {
+        "page": 1,
+        "entry_index": 113,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1957000,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 182
+      },
+      {
+        "page": 1,
+        "entry_index": 114,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1957216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 181
+      },
+      {
+        "page": 1,
+        "entry_index": 115,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1957432,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 180
+      },
+      {
+        "page": 1,
+        "entry_index": 116,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1957648,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 179
+      },
+      {
+        "page": 1,
+        "entry_index": 117,
+        "entry_name_raw": 849881,
+        "entry_marker": 74565,
+        "offset": 1957864,
+        "name": "hero-island",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 1,
+        "entry_index": 118,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1958064,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 1,
+        "entry_index": 119,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1958256,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 1,
+        "entry_index": 120,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1958448,
+        "name": "",
+        "type": "GEOMETRY_1",
+        "field_10": 112
+      },
+      {
+        "page": 1,
+        "entry_index": 121,
+        "entry_name_raw": 849910,
+        "entry_marker": 74565,
+        "offset": 1962008,
+        "name": "hero-island-lod2",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 59
+      },
+      {
+        "page": 1,
+        "entry_index": 122,
+        "entry_name_raw": 849927,
+        "entry_marker": 74565,
+        "offset": 1962104,
+        "name": "hero-island-lod3",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 59
+      },
+      {
+        "page": 1,
+        "entry_index": 123,
+        "entry_name_raw": 849893,
+        "entry_marker": 74565,
+        "offset": 1962200,
+        "name": "hero-island-lod1",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 59
+      },
+      {
+        "page": 1,
+        "entry_index": 124,
+        "entry_name_raw": 849881,
+        "entry_marker": 74565,
+        "offset": 1963008,
+        "name": "hero-island",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 54
+      },
+      {
+        "page": 1,
+        "entry_index": 125,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1964056,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 52
+      },
+      {
+        "page": 1,
+        "entry_index": 126,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1965808,
+        "name": "",
+        "type": "SOUND_BANK_TABLE",
+        "field_10": 48
+      },
+      {
+        "page": 1,
+        "entry_index": 127,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1968400,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 1,
+        "entry_index": 128,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1968480,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 1,
+        "entry_index": 129,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1968560,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 1,
+        "entry_index": 130,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1968640,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 1,
+        "entry_index": 131,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1969336,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 1,
+        "entry_index": 132,
+        "entry_name_raw": 849600,
+        "entry_marker": 74565,
+        "offset": 1969400,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 1,
+        "entry_index": 133,
+        "entry_name_raw": 850028,
+        "entry_marker": 74565,
+        "offset": 1969656,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 1,
+        "entry_index": 134,
+        "entry_name_raw": 850028,
+        "entry_marker": 74565,
+        "offset": 1969704,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 1,
+        "entry_index": 135,
+        "entry_name_raw": 850028,
+        "entry_marker": 74565,
+        "offset": 1969752,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 1,
+        "entry_index": 136,
+        "entry_name_raw": 849859,
+        "entry_marker": 74565,
+        "offset": 1969800,
+        "name": "collision.hero-island",
+        "type": "COLLISION_DATA_EMPTY",
+        "field_10": 16
+      },
+      {
+        "page": 1,
+        "entry_index": 137,
+        "entry_name_raw": 850028,
+        "entry_marker": 74565,
+        "offset": 1969848,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 1,
+        "entry_index": 138,
+        "entry_name_raw": 849944,
+        "entry_marker": 74565,
+        "offset": 1969976,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 139,
+        "entry_name_raw": 850012,
+        "entry_marker": 74565,
+        "offset": 1970016,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 140,
+        "entry_name_raw": 850012,
+        "entry_marker": 74565,
+        "offset": 1970056,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 141,
+        "entry_name_raw": 850012,
+        "entry_marker": 74565,
+        "offset": 1970096,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 142,
+        "entry_name_raw": 849944,
+        "entry_marker": 74565,
+        "offset": 1970136,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 143,
+        "entry_name_raw": 849944,
+        "entry_marker": 74565,
+        "offset": 1970176,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 1,
+        "entry_index": 144,
+        "entry_name_raw": 850012,
+        "entry_marker": 74565,
+        "offset": 1970216,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      }
+    ]
+  },
+  {
+    "file": "hero-island-head.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 2337,
+      "md5": "3513645101715d764823a1e21524c46c",
+      "block_index": 56285,
+      "size": 15177472,
+      "offset": 1134372674,
+      "name": "hero-island-head.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "eb59d511d88cecea8559f81c811e793511bb845afbcb89a40cbbab80c7279da5",
+    "unpacked_equal": true,
+    "types": {
+      "EFFECT": 30,
+      "VRAM_DESC": 88,
+      "EFFECT_TABLE": 1,
+      "TEXTURE_TABLE": 1,
+      "VRAM_DESC_TABLE": 1,
+      "PAK_LOGIN_TABLE": 1,
+      "ARTGROUP_DATA": 1,
+      "GEOMETRY_1": 1,
+      "FOREGROUND_SECTION_2": 4,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "LEVEL_BOUNDING_BOX_DATA": 4,
+      "LEVEL_PATS_2": 1,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "TAG_VEC4": 4,
+      "COLLISION_DATA_EMPTY": 1,
+      "TAG_INT": 4,
+      "TAG_FLOAT": 3
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 127600,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 117104
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 244736,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 116912
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 361680,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 111712
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 473424,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 111472
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 584928,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 111424
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 696384,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 111008
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 807424,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 110656
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 918112,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 107984
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 1048236,
+        "entry_marker": 74565,
+        "offset": 1026128,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 105680
+      },
+      {
+        "page": 1,
+        "entry_index": 0,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1175968,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 104272
+      },
+      {
+        "page": 1,
+        "entry_index": 1,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1280272,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 102992
+      },
+      {
+        "page": 1,
+        "entry_index": 2,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1383296,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 102784
+      },
+      {
+        "page": 1,
+        "entry_index": 3,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1486112,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 101088
+      },
+      {
+        "page": 1,
+        "entry_index": 4,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1587232,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 96496
+      },
+      {
+        "page": 1,
+        "entry_index": 5,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1683760,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 96272
+      },
+      {
+        "page": 1,
+        "entry_index": 6,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1780064,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 96080
+      },
+      {
+        "page": 1,
+        "entry_index": 7,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1876176,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 94832
+      },
+      {
+        "page": 1,
+        "entry_index": 8,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 1971040,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 94368
+      },
+      {
+        "page": 1,
+        "entry_index": 9,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 2065440,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 87984
+      },
+      {
+        "page": 1,
+        "entry_index": 10,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 2153456,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 70352
+      },
+      {
+        "page": 1,
+        "entry_index": 11,
+        "entry_name_raw": 1048332,
+        "entry_marker": 74565,
+        "offset": 2223840,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 2,
+        "entry_index": 0,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2306368,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 75216
+      },
+      {
+        "page": 2,
+        "entry_index": 1,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2381616,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 75216
+      },
+      {
+        "page": 2,
+        "entry_index": 2,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2456864,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 75024
+      },
+      {
+        "page": 2,
+        "entry_index": 3,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2531920,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 72560
+      },
+      {
+        "page": 2,
+        "entry_index": 4,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2604512,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71424
+      },
+      {
+        "page": 2,
+        "entry_index": 5,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2675968,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71280
+      },
+      {
+        "page": 2,
+        "entry_index": 6,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2747280,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 70704
+      },
+      {
+        "page": 2,
+        "entry_index": 7,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2818016,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 69424
+      },
+      {
+        "page": 2,
+        "entry_index": 8,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 2887472,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 69408
+      },
+      {
+        "page": 2,
+        "entry_index": 9,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 3097904,
+        "name": "",
+        "type": "EFFECT_TABLE",
+        "field_10": 21600
+      },
+      {
+        "page": 2,
+        "entry_index": 10,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 3180688,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 11872
+      },
+      {
+        "page": 2,
+        "entry_index": 11,
+        "entry_name_raw": 1047948,
+        "entry_marker": 74565,
+        "offset": 3271712,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 250
+      },
+      {
+        "page": 3,
+        "entry_index": 0,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3314256,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 736
+      },
+      {
+        "page": 3,
+        "entry_index": 1,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3315024,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 712
+      },
+      {
+        "page": 3,
+        "entry_index": 2,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3317896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 249
+      },
+      {
+        "page": 3,
+        "entry_index": 3,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3318184,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 249
+      },
+      {
+        "page": 3,
+        "entry_index": 4,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3318472,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 249
+      },
+      {
+        "page": 3,
+        "entry_index": 5,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3318760,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 249
+      },
+      {
+        "page": 3,
+        "entry_index": 6,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3319048,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 3,
+        "entry_index": 7,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3319328,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 3,
+        "entry_index": 8,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3319608,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 3,
+        "entry_index": 9,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3319888,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 3,
+        "entry_index": 10,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3320168,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 3,
+        "entry_index": 11,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3320448,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 244
+      },
+      {
+        "page": 3,
+        "entry_index": 12,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3320728,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 244
+      },
+      {
+        "page": 3,
+        "entry_index": 13,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3321008,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 244
+      },
+      {
+        "page": 3,
+        "entry_index": 14,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3321288,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 244
+      },
+      {
+        "page": 3,
+        "entry_index": 15,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3321568,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 243
+      },
+      {
+        "page": 3,
+        "entry_index": 16,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3321848,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 243
+      },
+      {
+        "page": 3,
+        "entry_index": 17,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3322128,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 229
+      },
+      {
+        "page": 3,
+        "entry_index": 18,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3322392,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 225
+      },
+      {
+        "page": 3,
+        "entry_index": 19,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3322656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 220
+      },
+      {
+        "page": 3,
+        "entry_index": 20,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3322912,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 218
+      },
+      {
+        "page": 3,
+        "entry_index": 21,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3323168,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 217
+      },
+      {
+        "page": 3,
+        "entry_index": 22,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3323424,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 217
+      },
+      {
+        "page": 3,
+        "entry_index": 23,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3323680,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 216
+      },
+      {
+        "page": 3,
+        "entry_index": 24,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3323928,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 212
+      },
+      {
+        "page": 3,
+        "entry_index": 25,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3324176,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 206
+      },
+      {
+        "page": 3,
+        "entry_index": 26,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3324416,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 206
+      },
+      {
+        "page": 3,
+        "entry_index": 27,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3324656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 205
+      },
+      {
+        "page": 3,
+        "entry_index": 28,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3324896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 3,
+        "entry_index": 29,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3325136,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 3,
+        "entry_index": 30,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3325376,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 204
+      },
+      {
+        "page": 3,
+        "entry_index": 31,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3325616,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 32,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3325856,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 33,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3326096,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 34,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3326336,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 35,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3326576,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 36,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3326816,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 37,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3327056,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 38,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3327296,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 39,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3327536,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 40,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3327776,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 203
+      },
+      {
+        "page": 3,
+        "entry_index": 41,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3328016,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 3,
+        "entry_index": 42,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3328256,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 3,
+        "entry_index": 43,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3328496,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 3,
+        "entry_index": 44,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3328736,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 3,
+        "entry_index": 45,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3328976,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 3,
+        "entry_index": 46,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3329216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 47,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3329456,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 48,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3329696,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 49,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3329936,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 50,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3330176,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 51,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3330416,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 52,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3330656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 3,
+        "entry_index": 53,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3330896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 3,
+        "entry_index": 54,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3331128,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 3,
+        "entry_index": 55,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3331360,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 3,
+        "entry_index": 56,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3331592,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 3,
+        "entry_index": 57,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3331824,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 3,
+        "entry_index": 58,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3332056,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 3,
+        "entry_index": 59,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3332288,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 3,
+        "entry_index": 60,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3332520,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 3,
+        "entry_index": 61,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3332752,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 3,
+        "entry_index": 62,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3332984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 3,
+        "entry_index": 63,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3333216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 3,
+        "entry_index": 64,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3333448,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 3,
+        "entry_index": 65,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3333680,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 3,
+        "entry_index": 66,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3333912,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 3,
+        "entry_index": 67,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3334144,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 3,
+        "entry_index": 68,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3334376,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 3,
+        "entry_index": 69,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3334608,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 3,
+        "entry_index": 70,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3334840,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 3,
+        "entry_index": 71,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3335072,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 3,
+        "entry_index": 72,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3335304,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 193
+      },
+      {
+        "page": 3,
+        "entry_index": 73,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3335536,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 193
+      },
+      {
+        "page": 3,
+        "entry_index": 74,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3335768,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 3,
+        "entry_index": 75,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3335992,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 186
+      },
+      {
+        "page": 3,
+        "entry_index": 76,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3336216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 185
+      },
+      {
+        "page": 3,
+        "entry_index": 77,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3336440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 184
+      },
+      {
+        "page": 3,
+        "entry_index": 78,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3336656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 183
+      },
+      {
+        "page": 3,
+        "entry_index": 79,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3336872,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 183
+      },
+      {
+        "page": 3,
+        "entry_index": 80,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3337088,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 182
+      },
+      {
+        "page": 3,
+        "entry_index": 81,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3337304,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 182
+      },
+      {
+        "page": 3,
+        "entry_index": 82,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3337520,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 181
+      },
+      {
+        "page": 3,
+        "entry_index": 83,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3337736,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 180
+      },
+      {
+        "page": 3,
+        "entry_index": 84,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3337952,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 179
+      },
+      {
+        "page": 3,
+        "entry_index": 85,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3338168,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 178
+      },
+      {
+        "page": 3,
+        "entry_index": 86,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3338384,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 178
+      },
+      {
+        "page": 3,
+        "entry_index": 87,
+        "entry_name_raw": 79347,
+        "entry_marker": 74565,
+        "offset": 3338600,
+        "name": "hero-island-head",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 3,
+        "entry_index": 88,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3339000,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 3,
+        "entry_index": 89,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3339192,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 3,
+        "entry_index": 90,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3339384,
+        "name": "",
+        "type": "GEOMETRY_1",
+        "field_10": 112
+      },
+      {
+        "page": 3,
+        "entry_index": 91,
+        "entry_name_raw": 79364,
+        "entry_marker": 74565,
+        "offset": 3342120,
+        "name": "hero-island-head-lod1",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 64
+      },
+      {
+        "page": 3,
+        "entry_index": 92,
+        "entry_name_raw": 79386,
+        "entry_marker": 74565,
+        "offset": 3342216,
+        "name": "hero-island-head-lod2",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 64
+      },
+      {
+        "page": 3,
+        "entry_index": 93,
+        "entry_name_raw": 79408,
+        "entry_marker": 74565,
+        "offset": 3342408,
+        "name": "hero-island-head-lod3",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 64
+      },
+      {
+        "page": 3,
+        "entry_index": 94,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3342600,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 60
+      },
+      {
+        "page": 3,
+        "entry_index": 95,
+        "entry_name_raw": 79347,
+        "entry_marker": 74565,
+        "offset": 3342696,
+        "name": "hero-island-head",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 59
+      },
+      {
+        "page": 3,
+        "entry_index": 96,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3347104,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 3,
+        "entry_index": 97,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3347184,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 3,
+        "entry_index": 98,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3347264,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 3,
+        "entry_index": 99,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3347344,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 3,
+        "entry_index": 100,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3347896,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 3,
+        "entry_index": 101,
+        "entry_name_raw": 79084,
+        "entry_marker": 74565,
+        "offset": 3348024,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 3,
+        "entry_index": 102,
+        "entry_name_raw": 79515,
+        "entry_marker": 74565,
+        "offset": 3348408,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 3,
+        "entry_index": 103,
+        "entry_name_raw": 79515,
+        "entry_marker": 74565,
+        "offset": 3348456,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 3,
+        "entry_index": 104,
+        "entry_name_raw": 79320,
+        "entry_marker": 74565,
+        "offset": 3348504,
+        "name": "collision.hero-island-head",
+        "type": "COLLISION_DATA_EMPTY",
+        "field_10": 16
+      },
+      {
+        "page": 3,
+        "entry_index": 105,
+        "entry_name_raw": 79515,
+        "entry_marker": 74565,
+        "offset": 3348552,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 3,
+        "entry_index": 106,
+        "entry_name_raw": 79515,
+        "entry_marker": 74565,
+        "offset": 3348600,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 3,
+        "entry_index": 107,
+        "entry_name_raw": 79499,
+        "entry_marker": 74565,
+        "offset": 3348728,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 108,
+        "entry_name_raw": 79499,
+        "entry_marker": 74565,
+        "offset": 3348768,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 109,
+        "entry_name_raw": 79430,
+        "entry_marker": 74565,
+        "offset": 3348808,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 110,
+        "entry_name_raw": 79430,
+        "entry_marker": 74565,
+        "offset": 3348848,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 111,
+        "entry_name_raw": 79430,
+        "entry_marker": 74565,
+        "offset": 3348888,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 112,
+        "entry_name_raw": 79499,
+        "entry_marker": 74565,
+        "offset": 3348928,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 3,
+        "entry_index": 113,
+        "entry_name_raw": 79499,
+        "entry_marker": 74565,
+        "offset": 3348968,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      }
+    ]
+  },
+  {
+    "file": "hero-island-shirt.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 2340,
+      "md5": "bc5c0b72ae5d67ee4c12d12d0e83aa9e",
+      "block_index": 56616,
+      "size": 5222416,
+      "offset": 1140296766,
+      "name": "hero-island-shirt.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "c2a6b0dc6b6f8701c97bcb7a351587900d3cbfcd122ef6c5565a3ee29be058e4",
+    "unpacked_equal": true,
+    "types": {
+      "EFFECT": 2,
+      "EFFECT_TABLE": 1,
+      "TEXTURE_TABLE": 1,
+      "VRAM_DESC_TABLE": 1,
+      "VRAM_DESC": 50,
+      "PAK_LOGIN_TABLE": 1,
+      "ARTGROUP_DATA": 1,
+      "GEOMETRY_1": 1,
+      "FOREGROUND_SECTION_2": 4,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "LEVEL_BOUNDING_BOX_DATA": 4,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "LEVEL_PATS_2": 1,
+      "TAG_VEC4": 4,
+      "COLLISION_DATA_EMPTY": 1,
+      "TAG_FLOAT": 3,
+      "TAG_INT": 4
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 23744,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 127872
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 178632,
+        "name": "",
+        "type": "EFFECT_TABLE",
+        "field_10": 18855
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 257632,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 11872
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 317968,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 432
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 318432,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 408
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 320088,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 320376,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 320664,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 320952,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 9,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 321240,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 10,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 321528,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 252
+      },
+      {
+        "page": 0,
+        "entry_index": 11,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 321816,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 12,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 322096,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 13,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 322376,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 14,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 322656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 15,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 322936,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 16,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 323216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 17,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 323496,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 18,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 323776,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 19,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 324056,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 20,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 324336,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 21,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 324616,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 245
+      },
+      {
+        "page": 0,
+        "entry_index": 22,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 324896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 23,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 325168,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 24,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 325440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 25,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 325712,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 26,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 325984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 27,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 326256,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 240
+      },
+      {
+        "page": 0,
+        "entry_index": 28,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 326528,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 227
+      },
+      {
+        "page": 0,
+        "entry_index": 29,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 326792,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 216
+      },
+      {
+        "page": 0,
+        "entry_index": 30,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 327040,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 209
+      },
+      {
+        "page": 0,
+        "entry_index": 31,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 327288,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 207
+      },
+      {
+        "page": 0,
+        "entry_index": 32,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 327528,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 205
+      },
+      {
+        "page": 0,
+        "entry_index": 33,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 327768,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 34,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 328000,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 35,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 328232,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 36,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 328464,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 37,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 328696,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 0,
+        "entry_index": 38,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 328928,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 198
+      },
+      {
+        "page": 0,
+        "entry_index": 39,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 329160,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 40,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 329392,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 41,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 329624,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 0,
+        "entry_index": 42,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 329856,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 0,
+        "entry_index": 43,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 330088,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 0,
+        "entry_index": 44,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 330320,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 0,
+        "entry_index": 45,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 330544,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 0,
+        "entry_index": 46,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 330768,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 0,
+        "entry_index": 47,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 330992,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 0,
+        "entry_index": 48,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 331216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 189
+      },
+      {
+        "page": 0,
+        "entry_index": 49,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 331440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 186
+      },
+      {
+        "page": 0,
+        "entry_index": 50,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 331664,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 185
+      },
+      {
+        "page": 0,
+        "entry_index": 51,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 331888,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 183
+      },
+      {
+        "page": 0,
+        "entry_index": 52,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 332104,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 180
+      },
+      {
+        "page": 0,
+        "entry_index": 53,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 332320,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 179
+      },
+      {
+        "page": 0,
+        "entry_index": 54,
+        "entry_name_raw": 318576,
+        "entry_marker": 74565,
+        "offset": 332536,
+        "name": "hero-island-shirt",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 0,
+        "entry_index": 55,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 332736,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 0,
+        "entry_index": 56,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 332928,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 0,
+        "entry_index": 57,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 333120,
+        "name": "",
+        "type": "GEOMETRY_1",
+        "field_10": 112
+      },
+      {
+        "page": 0,
+        "entry_index": 58,
+        "entry_name_raw": 318594,
+        "entry_marker": 74565,
+        "offset": 336600,
+        "name": "hero-island-shirt-lod1",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 65
+      },
+      {
+        "page": 0,
+        "entry_index": 59,
+        "entry_name_raw": 318640,
+        "entry_marker": 74565,
+        "offset": 336704,
+        "name": "hero-island-shirt-lod3",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 65
+      },
+      {
+        "page": 0,
+        "entry_index": 60,
+        "entry_name_raw": 318617,
+        "entry_marker": 74565,
+        "offset": 336808,
+        "name": "hero-island-shirt-lod2",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 65
+      },
+      {
+        "page": 0,
+        "entry_index": 61,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 337104,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 60
+      },
+      {
+        "page": 0,
+        "entry_index": 62,
+        "entry_name_raw": 318576,
+        "entry_marker": 74565,
+        "offset": 337200,
+        "name": "hero-island-shirt",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 60
+      },
+      {
+        "page": 0,
+        "entry_index": 63,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 338768,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 64,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 338848,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 65,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 338928,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 66,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 339008,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 67,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 339424,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 68,
+        "entry_name_raw": 318292,
+        "entry_marker": 74565,
+        "offset": 339488,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 69,
+        "entry_name_raw": 318746,
+        "entry_marker": 74565,
+        "offset": 339792,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 70,
+        "entry_name_raw": 318746,
+        "entry_marker": 74565,
+        "offset": 339840,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 71,
+        "entry_name_raw": 318746,
+        "entry_marker": 74565,
+        "offset": 339888,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 72,
+        "entry_name_raw": 318746,
+        "entry_marker": 74565,
+        "offset": 339936,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 73,
+        "entry_name_raw": 318548,
+        "entry_marker": 74565,
+        "offset": 339984,
+        "name": "collision.hero-island-shirt",
+        "type": "COLLISION_DATA_EMPTY",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 74,
+        "entry_name_raw": 318663,
+        "entry_marker": 74565,
+        "offset": 340112,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 75,
+        "entry_name_raw": 318730,
+        "entry_marker": 74565,
+        "offset": 340152,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 76,
+        "entry_name_raw": 318730,
+        "entry_marker": 74565,
+        "offset": 340192,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 77,
+        "entry_name_raw": 318663,
+        "entry_marker": 74565,
+        "offset": 340232,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 78,
+        "entry_name_raw": 318730,
+        "entry_marker": 74565,
+        "offset": 340272,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 79,
+        "entry_name_raw": 318663,
+        "entry_marker": 74565,
+        "offset": 340312,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 80,
+        "entry_name_raw": 318730,
+        "entry_marker": 74565,
+        "offset": 340352,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      }
+    ]
+  },
+  {
+    "file": "hero-island-holster.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 2339,
+      "md5": "be3f9f7719bbeacac2adbc04e260e57c",
+      "block_index": 56569,
+      "size": 3072752,
+      "offset": 1139599144,
+      "name": "hero-island-holster.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "02c87e6bf15c2b1f905127e3f9098e07f4c9013702fb812ecaead8b3258fa6a1",
+    "unpacked_equal": true,
+    "types": {
+      "EFFECT": 4,
+      "EFFECT_TABLE": 1,
+      "PAK_LOGIN_TABLE": 1,
+      "VRAM_DESC": 21,
+      "TEXTURE_TABLE": 1,
+      "VRAM_DESC_TABLE": 1,
+      "ARTGROUP_DATA": 1,
+      "GEOMETRY_1": 1,
+      "FOREGROUND_SECTION_2": 4,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "LEVEL_BOUNDING_BOX_DATA": 4,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "LEVEL_PATS_2": 1,
+      "COLLISION_DATA_EMPTY": 1,
+      "TAG_VEC4": 4,
+      "TAG_FLOAT": 3,
+      "TAG_INT": 4
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 23552,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 79840
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 103424,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 74288
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 177744,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71360
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 249136,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71312
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 339184,
+        "name": "",
+        "type": "EFFECT_TABLE",
+        "field_10": 16515
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 521552,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 216
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 521800,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 522040,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 522280,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 0,
+        "entry_index": 9,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 522520,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 10,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 522752,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 11,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 522984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 0,
+        "entry_index": 12,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 523216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 0,
+        "entry_index": 13,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 523448,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 0,
+        "entry_index": 14,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 523680,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 0,
+        "entry_index": 15,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 523912,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 16,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 524144,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 17,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 524376,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 0,
+        "entry_index": 18,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 524608,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 0,
+        "entry_index": 19,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 524840,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 0,
+        "entry_index": 20,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 525064,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 0,
+        "entry_index": 21,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 525288,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 0,
+        "entry_index": 22,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 525512,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 0,
+        "entry_index": 23,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 525736,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 189
+      },
+      {
+        "page": 0,
+        "entry_index": 24,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 525960,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 188
+      },
+      {
+        "page": 0,
+        "entry_index": 25,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 526184,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 180
+      },
+      {
+        "page": 0,
+        "entry_index": 26,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 526400,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 179
+      },
+      {
+        "page": 0,
+        "entry_index": 27,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 526616,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 176
+      },
+      {
+        "page": 0,
+        "entry_index": 28,
+        "entry_name_raw": 510810,
+        "entry_marker": 74565,
+        "offset": 527032,
+        "name": "hero-island-holster",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 0,
+        "entry_index": 29,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 527424,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 0,
+        "entry_index": 30,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 527952,
+        "name": "",
+        "type": "GEOMETRY_1",
+        "field_10": 112
+      },
+      {
+        "page": 0,
+        "entry_index": 31,
+        "entry_name_raw": 510880,
+        "entry_marker": 74565,
+        "offset": 528928,
+        "name": "hero-island-holster-lod3",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 67
+      },
+      {
+        "page": 0,
+        "entry_index": 32,
+        "entry_name_raw": 510855,
+        "entry_marker": 74565,
+        "offset": 529032,
+        "name": "hero-island-holster-lod2",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 67
+      },
+      {
+        "page": 0,
+        "entry_index": 33,
+        "entry_name_raw": 510830,
+        "entry_marker": 74565,
+        "offset": 529136,
+        "name": "hero-island-holster-lod1",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 67
+      },
+      {
+        "page": 0,
+        "entry_index": 34,
+        "entry_name_raw": 510810,
+        "entry_marker": 74565,
+        "offset": 529432,
+        "name": "hero-island-holster",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 62
+      },
+      {
+        "page": 0,
+        "entry_index": 35,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 529528,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 60
+      },
+      {
+        "page": 0,
+        "entry_index": 36,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 530912,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 37,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 530992,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 38,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 531136,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 39,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 531216,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 40,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 531632,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 41,
+        "entry_name_raw": 510524,
+        "entry_marker": 74565,
+        "offset": 531696,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 42,
+        "entry_name_raw": 510780,
+        "entry_marker": 74565,
+        "offset": 532368,
+        "name": "collision.hero-island-holster",
+        "type": "COLLISION_DATA_EMPTY",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 43,
+        "entry_name_raw": 510988,
+        "entry_marker": 74565,
+        "offset": 532416,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 44,
+        "entry_name_raw": 510988,
+        "entry_marker": 74565,
+        "offset": 532464,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 45,
+        "entry_name_raw": 510988,
+        "entry_marker": 74565,
+        "offset": 532512,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 46,
+        "entry_name_raw": 510988,
+        "entry_marker": 74565,
+        "offset": 532560,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 47,
+        "entry_name_raw": 510905,
+        "entry_marker": 74565,
+        "offset": 532648,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 48,
+        "entry_name_raw": 510972,
+        "entry_marker": 74565,
+        "offset": 532688,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 49,
+        "entry_name_raw": 510972,
+        "entry_marker": 74565,
+        "offset": 532728,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 50,
+        "entry_name_raw": 510905,
+        "entry_marker": 74565,
+        "offset": 532768,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 51,
+        "entry_name_raw": 510972,
+        "entry_marker": 74565,
+        "offset": 532808,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 52,
+        "entry_name_raw": 510905,
+        "entry_marker": 74565,
+        "offset": 532848,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 53,
+        "entry_name_raw": 510972,
+        "entry_marker": 74565,
+        "offset": 532888,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      }
+    ]
+  },
+  {
+    "file": "hero-island-holster-game.pak",
+    "archive": "F:\\SteamLibrary\\steamapps\\common\\Uncharted Legacy of Thieves Collection\\Uncharted4_data\\build\\pc\\uncharted4\\actor77.psarc",
+    "entry": {
+      "index": 2338,
+      "md5": "d2c9b9b6e91c4b88236bfc3821aa5923",
+      "block_index": 56517,
+      "size": 3359024,
+      "offset": 1138738932,
+      "name": "hero-island-holster-game.pak",
+      "name_md5_matches": true
+    },
+    "sha256": "12c27da12b3a194416d653bb5148eefb0617aed619768f6bd95260394d6a5932",
+    "unpacked_equal": true,
+    "types": {
+      "EFFECT": 4,
+      "EFFECT_TABLE": 1,
+      "PAK_LOGIN_TABLE": 1,
+      "VRAM_DESC": 21,
+      "TEXTURE_TABLE": 1,
+      "VRAM_DESC_TABLE": 1,
+      "ARTGROUP_DATA": 1,
+      "GEOMETRY_1": 1,
+      "FOREGROUND_SECTION_2": 4,
+      "PACKAGE_ITEM_LOOKUP": 1,
+      "LEVEL_BOUNDING_BOX_DATA": 4,
+      "LEVEL_PATS_2": 1,
+      "LEVEL_FLOOR_PATS_2": 1,
+      "TAG_VEC4": 4,
+      "COLLISION_DATA_EMPTY": 1,
+      "TAG_INT": 4,
+      "TAG_FLOAT": 3
+    },
+    "objects": [
+      {
+        "page": 0,
+        "entry_index": 0,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 23568,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 79840
+      },
+      {
+        "page": 0,
+        "entry_index": 1,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 103440,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 74288
+      },
+      {
+        "page": 0,
+        "entry_index": 2,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 177760,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71360
+      },
+      {
+        "page": 0,
+        "entry_index": 3,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 249152,
+        "name": "",
+        "type": "EFFECT",
+        "field_10": 71312
+      },
+      {
+        "page": 0,
+        "entry_index": 4,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 339120,
+        "name": "",
+        "type": "EFFECT_TABLE",
+        "field_10": 16515
+      },
+      {
+        "page": 0,
+        "entry_index": 5,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 520928,
+        "name": "",
+        "type": "PAK_LOGIN_TABLE",
+        "field_10": 216
+      },
+      {
+        "page": 0,
+        "entry_index": 6,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 521176,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 202
+      },
+      {
+        "page": 0,
+        "entry_index": 7,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 521416,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 0,
+        "entry_index": 8,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 521656,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 201
+      },
+      {
+        "page": 0,
+        "entry_index": 9,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 521896,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 10,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 522128,
+        "name": "",
+        "type": "TEXTURE_TABLE",
+        "field_10": 200
+      },
+      {
+        "page": 0,
+        "entry_index": 11,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 522360,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 0,
+        "entry_index": 12,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 522592,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 199
+      },
+      {
+        "page": 0,
+        "entry_index": 13,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 522824,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 0,
+        "entry_index": 14,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 523056,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 197
+      },
+      {
+        "page": 0,
+        "entry_index": 15,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 523288,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 16,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 523520,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 196
+      },
+      {
+        "page": 0,
+        "entry_index": 17,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 523752,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 195
+      },
+      {
+        "page": 0,
+        "entry_index": 18,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 523984,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 194
+      },
+      {
+        "page": 0,
+        "entry_index": 19,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 524216,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 192
+      },
+      {
+        "page": 0,
+        "entry_index": 20,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 524440,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 191
+      },
+      {
+        "page": 0,
+        "entry_index": 21,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 524664,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 0,
+        "entry_index": 22,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 524888,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 190
+      },
+      {
+        "page": 0,
+        "entry_index": 23,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 525112,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 189
+      },
+      {
+        "page": 0,
+        "entry_index": 24,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 525336,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 188
+      },
+      {
+        "page": 0,
+        "entry_index": 25,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 525560,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 180
+      },
+      {
+        "page": 0,
+        "entry_index": 26,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 525776,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 179
+      },
+      {
+        "page": 0,
+        "entry_index": 27,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 526200,
+        "name": "",
+        "type": "VRAM_DESC_TABLE",
+        "field_10": 176
+      },
+      {
+        "page": 0,
+        "entry_index": 28,
+        "entry_name_raw": 510287,
+        "entry_marker": 74565,
+        "offset": 526408,
+        "name": "hero-island-holster-game",
+        "type": "ARTGROUP_DATA",
+        "field_10": 168
+      },
+      {
+        "page": 0,
+        "entry_index": 29,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 526800,
+        "name": "",
+        "type": "VRAM_DESC",
+        "field_10": 157
+      },
+      {
+        "page": 0,
+        "entry_index": 30,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 527328,
+        "name": "",
+        "type": "GEOMETRY_1",
+        "field_10": 112
+      },
+      {
+        "page": 0,
+        "entry_index": 31,
+        "entry_name_raw": 510312,
+        "entry_marker": 74565,
+        "offset": 527472,
+        "name": "hero-island-holster-game-lod1",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 72
+      },
+      {
+        "page": 0,
+        "entry_index": 32,
+        "entry_name_raw": 510342,
+        "entry_marker": 74565,
+        "offset": 527576,
+        "name": "hero-island-holster-game-lod2",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 72
+      },
+      {
+        "page": 0,
+        "entry_index": 33,
+        "entry_name_raw": 510372,
+        "entry_marker": 74565,
+        "offset": 528408,
+        "name": "hero-island-holster-game-lod3",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 72
+      },
+      {
+        "page": 0,
+        "entry_index": 34,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 528616,
+        "name": "",
+        "type": "PACKAGE_ITEM_LOOKUP",
+        "field_10": 68
+      },
+      {
+        "page": 0,
+        "entry_index": 35,
+        "entry_name_raw": 510287,
+        "entry_marker": 74565,
+        "offset": 528720,
+        "name": "hero-island-holster-game",
+        "type": "FOREGROUND_SECTION_2",
+        "field_10": 67
+      },
+      {
+        "page": 0,
+        "entry_index": 36,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 530320,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 37,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 530400,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 38,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 530480,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 39,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 530624,
+        "name": "",
+        "type": "LEVEL_BOUNDING_BOX_DATA",
+        "field_10": 40
+      },
+      {
+        "page": 0,
+        "entry_index": 40,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 531328,
+        "name": "",
+        "type": "LEVEL_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 41,
+        "entry_name_raw": 509996,
+        "entry_marker": 74565,
+        "offset": 531392,
+        "name": "",
+        "type": "LEVEL_FLOOR_PATS_2",
+        "field_10": 32
+      },
+      {
+        "page": 0,
+        "entry_index": 42,
+        "entry_name_raw": 510485,
+        "entry_marker": 74565,
+        "offset": 531856,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 43,
+        "entry_name_raw": 510485,
+        "entry_marker": 74565,
+        "offset": 531904,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 44,
+        "entry_name_raw": 510485,
+        "entry_marker": 74565,
+        "offset": 531952,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 45,
+        "entry_name_raw": 510485,
+        "entry_marker": 74565,
+        "offset": 532000,
+        "name": "vis_sphere",
+        "type": "TAG_VEC4",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 46,
+        "entry_name_raw": 510252,
+        "entry_marker": 74565,
+        "offset": 532048,
+        "name": "collision.hero-island-holster-game",
+        "type": "COLLISION_DATA_EMPTY",
+        "field_10": 16
+      },
+      {
+        "page": 0,
+        "entry_index": 47,
+        "entry_name_raw": 510469,
+        "entry_marker": 74565,
+        "offset": 532136,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 48,
+        "entry_name_raw": 510402,
+        "entry_marker": 74565,
+        "offset": 532176,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 49,
+        "entry_name_raw": 510469,
+        "entry_marker": 74565,
+        "offset": 532216,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 50,
+        "entry_name_raw": 510402,
+        "entry_marker": 74565,
+        "offset": 532256,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 51,
+        "entry_name_raw": 510469,
+        "entry_marker": 74565,
+        "offset": 532296,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 52,
+        "entry_name_raw": 510402,
+        "entry_marker": 74565,
+        "offset": 532336,
+        "name": "lod_distance",
+        "type": "TAG_FLOAT",
+        "field_10": 4
+      },
+      {
+        "page": 0,
+        "entry_index": 53,
+        "entry_name_raw": 510469,
+        "entry_marker": 74565,
+        "offset": 532376,
+        "name": "vis_joint_index",
+        "type": "TAG_INT",
+        "field_10": 4
+      }
+    ]
+  }
+]

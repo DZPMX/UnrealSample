@@ -1,0 +1,415 @@
+{
+  "family": "Cloth",
+  "instances": [
+    "Shirt",
+    "Pants",
+    "Boots"
+  ],
+  "features": {
+    "UseTearAO": {
+      "title": "破损布料的 AO",
+      "behavior": "True 用 TearBloodMask.R 的范围权重混合破损 AO，再加入织线微 AO；False 用分阶段破口与 FabricLayerMask 的 AO 支路。",
+      "default": false
+    },
+    "UseLeatherFabricAO": {
+      "title": "皮革与织物分层 AO",
+      "behavior": "True 按 RGB 分层遮罩组合基础、皮革和织物 AO；False 使用破口／破损织物及缝线 AO。",
+      "default": false
+    },
+    "UseRangeBloodMask": {
+      "title": "范围式血迹遮罩",
+      "behavior": "True 使用 TearBloodMask.G 的 Amount/Min/Max 公式；False 使用 BloodStagesMask 的 A>B>G>R 非零优先级及范围归一化。",
+      "default": false
+    },
+    "UseFabricAgingColor": {
+      "title": "织物老化染色算法",
+      "behavior": "True 使用原亮度乘 4 后 Floor/Truncate 的四档权重和三频不规则遮罩；False 使用细频与宽频颜色扰动。原分档属于真实老化算法，保留。",
+      "default": false
+    },
+    "UseStitchedDirtColor": {
+      "title": "缝线与污垢颜色输入",
+      "behavior": "True 使用缝线及污垢混合结果进入天气层；False 使用汗液覆盖造成的暗化颜色。",
+      "default": false
+    },
+    "UseTintedWeatherColor": {
+      "title": "天气贴图染色",
+      "behavior": "True 为泥／砂颜色乘对应 RGB Tint 和原强度；False 直接使用对应天气贴图颜色。",
+      "default": false
+    },
+    "UseLeatherFabricColor": {
+      "title": "皮革与织物分层颜色",
+      "behavior": "True 采用 RGB 层遮罩的皮革老化、织物、金属及天气颜色；False 采用破口／破损、血迹与汗液织物颜色。",
+      "default": false
+    },
+    "UseTearClothCoverage": {
+      "title": "破损布料的 Cloth 覆盖",
+      "behavior": "True 使用 TearBloodMask.R 对应的 Cloth 覆盖；False 使用分阶段破口和 FabricLayerMask 的覆盖。后续保留泥、湿润、砂、血迹覆盖衰减，输出是 UE Cloth 遮罩。",
+      "default": false
+    },
+    "UseLayeredClothCoverage": {
+      "title": "分层表面的 Cloth 覆盖",
+      "behavior": "True 按皮革／织物／金属层及天气计算 Cloth 遮罩；False 使用破口／破损及血迹的 Cloth 遮罩。",
+      "default": false
+    },
+    "UseMetalLayer": {
+      "title": "金属层覆盖",
+      "behavior": "True 从 RGB 层遮罩 B 与 Metallic 计算金属输出；False 保留原缝线零金属基底。",
+      "default": false
+    },
+    "UseScaledStitchNormal": {
+      "title": "缩放缝线法线",
+      "behavior": "True 以 0.5 为中心缩放缝线 XY 后叠加；False 先按缝线 B 将 XY 向 0.5 混合。",
+      "default": false
+    },
+    "UsePackedTearNormal": {
+      "title": "打包的破损布料法线",
+      "behavior": "True 使用 AO 贴图 GB 基础／破损法线、细节、微织线、老化与褶皱；False 使用独立 RG、捕获法线和布料风动支路。",
+      "default": false
+    },
+    "UseLeatherFabricNormal": {
+      "title": "皮革与织物分层法线",
+      "behavior": "True 组合基础、皮革老化和微织物法线后应用平方泥权重；False 使用布料法线及原泥／湿润恢复次序。",
+      "default": false
+    },
+    "UseUniformFabricRoughness": {
+      "title": "统一织物粗糙度",
+      "behavior": "True 使用单一基础粗糙度，破损阶段沿用该值；False 在基础、织物和破口固定值之间混合。天气及血迹层随后参与。",
+      "default": false
+    },
+    "UseLayeredSurfaceRoughness": {
+      "title": "皮革织物金属粗糙度",
+      "behavior": "True 按层遮罩混合基础、老化皮革、织物、金属及天气；False 使用统一／遮罩式织物及血迹粗糙度。",
+      "default": false
+    },
+    "UseFabricVariationSpecular": {
+      "title": "织物变化遮罩高光",
+      "behavior": "True 以 FabricVariationMask.G 调制高光，破损阶段沿用该值；False 使用基础、织物与破口固定值。",
+      "default": false
+    },
+    "UseLayeredSurfaceSpecular": {
+      "title": "皮革织物分层高光",
+      "behavior": "True 组合基础、皮革、织物变化与天气高光；False 使用破口／破损布料及血迹高光。",
+      "default": false
+    },
+    "UseRGBScatterMasks": {
+      "title": "RGB 层遮罩的散射权重",
+      "behavior": "True 从 LeatherFabricMetalMask 的 G/R 获取织物与皮革权重；False 从 FabricLayerMask 与破口分布获取权重。",
+      "default": false
+    },
+    "UseUniformFabricScatter": {
+      "title": "统一织物散射",
+      "behavior": "True 使用 1-FabricScatter 的统一织物散射支路；False 保留遮罩式织物／皮革权重。最终乘基础色送 UE Cloth SubsurfaceColor。",
+      "default": false
+    }
+  },
+  "nodes": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_0",
+      "old": "UsePants",
+      "name": "UseTearAO",
+      "invert": false,
+      "native_index": 127
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_1",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricAO",
+      "invert": false,
+      "native_index": 194
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_2",
+      "old": "UsePants",
+      "name": "UseRangeBloodMask",
+      "invert": false,
+      "native_index": 310
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_3",
+      "old": "UsePants",
+      "name": "UseFabricAgingColor",
+      "invert": false,
+      "native_index": 410
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_8",
+      "old": "UsePants",
+      "name": "UseFabricAgingColor",
+      "invert": false,
+      "native_index": 710
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_13",
+      "old": "UsePants",
+      "name": "UseFabricAgingColor",
+      "invert": false,
+      "native_index": 758
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_4",
+      "old": "UsePants",
+      "name": "UseStitchedDirtColor",
+      "invert": false,
+      "native_index": 458
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_9",
+      "old": "UsePants",
+      "name": "UseStitchedDirtColor",
+      "invert": false,
+      "native_index": 720
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_14",
+      "old": "UsePants",
+      "name": "UseStitchedDirtColor",
+      "invert": false,
+      "native_index": 767
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_5",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 509
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_6",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 534
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_10",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 724
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_11",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 729
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_15",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 771
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_16",
+      "old": "UsePants",
+      "name": "UseTintedWeatherColor",
+      "invert": false,
+      "native_index": 776
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_7",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricColor",
+      "invert": false,
+      "native_index": 696
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_12",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricColor",
+      "invert": false,
+      "native_index": 743
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_17",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricColor",
+      "invert": false,
+      "native_index": 790
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_18",
+      "old": "UsePants",
+      "name": "UseTearClothCoverage",
+      "invert": false,
+      "native_index": 796
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_19",
+      "old": "UseBoots",
+      "name": "UseLayeredClothCoverage",
+      "invert": false,
+      "native_index": 818
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_20",
+      "old": "UseBoots",
+      "name": "UseMetalLayer",
+      "invert": false,
+      "native_index": 826
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_21",
+      "old": "UsePants",
+      "name": "UseScaledStitchNormal",
+      "invert": false,
+      "native_index": 833
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_22",
+      "old": "UsePants",
+      "name": "UseScaledStitchNormal",
+      "invert": false,
+      "native_index": 836
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_28",
+      "old": "UsePants",
+      "name": "UseScaledStitchNormal",
+      "invert": false,
+      "native_index": 1244
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_29",
+      "old": "UsePants",
+      "name": "UseScaledStitchNormal",
+      "invert": false,
+      "native_index": 1247
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_23",
+      "old": "UsePants",
+      "name": "UsePackedTearNormal",
+      "invert": false,
+      "native_index": 1153
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_30",
+      "old": "UsePants",
+      "name": "UsePackedTearNormal",
+      "invert": false,
+      "native_index": 1341
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_24",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1216
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_25",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1219
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_26",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1222
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_27",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1225
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_31",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1372
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_32",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1373
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_33",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1375
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_34",
+      "old": "UseBoots",
+      "name": "UseLeatherFabricNormal",
+      "invert": false,
+      "native_index": 1377
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_35",
+      "old": "UsePants",
+      "name": "UseUniformFabricRoughness",
+      "invert": false,
+      "native_index": 1400
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_36",
+      "old": "UsePants",
+      "name": "UseUniformFabricRoughness",
+      "invert": false,
+      "native_index": 1401
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_37",
+      "old": "UseBoots",
+      "name": "UseLayeredSurfaceRoughness",
+      "invert": false,
+      "native_index": 1427
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_38",
+      "old": "UsePants",
+      "name": "UseFabricVariationSpecular",
+      "invert": false,
+      "native_index": 1444
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_39",
+      "old": "UsePants",
+      "name": "UseFabricVariationSpecular",
+      "invert": false,
+      "native_index": 1445
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_40",
+      "old": "UseBoots",
+      "name": "UseLayeredSurfaceSpecular",
+      "invert": false,
+      "native_index": 1466
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_41",
+      "old": "UseBoots",
+      "name": "UseRGBScatterMasks",
+      "invert": false,
+      "native_index": 1468
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_42",
+      "old": "UseBoots",
+      "name": "UseRGBScatterMasks",
+      "invert": false,
+      "native_index": 1476
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionStaticSwitchParameter_43",
+      "old": "UsePants",
+      "name": "UseUniformFabricScatter",
+      "invert": false,
+      "native_index": 1493
+    }
+  ]
+}

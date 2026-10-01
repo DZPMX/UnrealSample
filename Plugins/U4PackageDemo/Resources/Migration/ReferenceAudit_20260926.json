@@ -1,0 +1,179 @@
+{
+  "plugin_packages": 1258,
+  "classes": {
+    "LevelSequence": 2,
+    "AnimBlueprint": 2,
+    "AnimBlueprintGeneratedClass": 2,
+    "AnimSequence": 718,
+    "ElenaRigData": 1,
+    "PoseAsset": 1,
+    "World": 1,
+    "MapBuildDataRegistry": 1,
+    "MaterialParameterCollection": 1,
+    "Material": 54,
+    "Texture2D": 356,
+    "VolumeTexture": 1,
+    "TextureCube": 33,
+    "MaterialFunction": 2,
+    "MaterialInstanceConstant": 55,
+    "SubsurfaceProfile": 5,
+    "Blueprint": 1,
+    "BlueprintGeneratedClass": 1,
+    "SkeletalMesh": 12,
+    "Skeleton": 12
+  },
+  "missing_files": [],
+  "old_game_references": [],
+  "missing_dependencies": [],
+  "redirectors": [],
+  "animations_without_skeleton": [],
+  "dependency_differences": [
+    {
+      "package": "/U4PackageDemo/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview",
+      "kind": "hard",
+      "removed": [
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Base",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Box1",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Box2",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Box3",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Box4",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Box5",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Composite",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down1",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down2",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down3",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down4",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down5",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Down6",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_Extract",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_GaussianX",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_GaussianY",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_MergeCoarse",
+        "/Game/Demo/Character/Elena/Cinematics/Lighting/M_PP_Elena_Hotel_Bloom_MergeFine"
+      ],
+      "added": []
+    },
+    {
+      "package": "/U4PackageDemo/Demo/Character/Elena/Material/M_Caruncle",
+      "kind": "soft",
+      "removed": [
+        "/Game/Demo/Character/Elena/Mesh/ElenaHead"
+      ],
+      "added": []
+    }
+  ],
+  "load_errors": [],
+  "old_content_packages_remaining": [],
+  "loaded_modules": {
+    "UnrealSample": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Binaries\\Win64\\UnrealEditor-UnrealSample.dll",
+    "UnrealSampleEditor": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Binaries\\Win64\\UnrealEditor-UnrealSampleEditor.dll"
+  },
+  "loaded_package_count": 1258,
+  "source_code_review": [
+    {
+      "source": "Source/UnrealSample",
+      "destination": "Plugins/U4PackageDemo/Source/UnrealSample",
+      "files": 14,
+      "changed": [],
+      "missing": [],
+      "old_directory_exists": false
+    },
+    {
+      "source": "Source/UnrealSampleEditor",
+      "destination": "Plugins/U4PackageDemo/Source/UnrealSampleEditor",
+      "files": 4,
+      "changed": [],
+      "missing": [],
+      "old_directory_exists": false
+    },
+    {
+      "source": "SourceArt/Elena",
+      "destination": "Plugins/U4PackageDemo/Resources/SourceArt/Elena",
+      "files": 28,
+      "changed": [],
+      "missing": [],
+      "old_directory_exists": false
+    },
+    {
+      "source": "SourceArt/Nathan",
+      "destination": "Plugins/U4PackageDemo/Resources/SourceArt/Nathan",
+      "files": 509,
+      "changed": [
+        "README_zh.md",
+        "TextureManifest.json",
+        "Materials\\MaterialInterface.json",
+        "Materials\\README_zh.md"
+      ],
+      "missing": [],
+      "old_directory_exists": false
+    },
+    {
+      "source": "SourceArt/Rendering",
+      "destination": "Plugins/U4PackageDemo/Resources/SourceArt/Rendering",
+      "files": 9,
+      "changed": [],
+      "missing": [],
+      "old_directory_exists": false
+    }
+  ],
+  "text_review": [
+    {
+      "file": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Resources\\SourceArt\\Nathan\\README_zh.md",
+      "only_approved_path_changes": true
+    },
+    {
+      "file": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Resources\\SourceArt\\Nathan\\TextureManifest.json",
+      "only_approved_path_changes": true
+    },
+    {
+      "file": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Resources\\SourceArt\\Nathan\\Materials\\README_zh.md",
+      "only_approved_path_changes": true
+    },
+    {
+      "file": "G:\\UnrealSample\\Plugins\\U4PackageDemo\\Resources\\SourceArt\\Nathan\\Materials\\MaterialInterface.json",
+      "only_approved_path_changes": true
+    }
+  ],
+  "editor_path_review": {
+    "file": "G:\\UnrealSample\\Saved\\Config\\WindowsEditor\\EditorPerProjectUserSettings.ini",
+    "old_asset_path_count": 154,
+    "old_path_count_after": 0,
+    "new_internal_prefix": "/U4PackageDemo/Demo/Character",
+    "new_virtual_prefix": "/All/Plugins/U4PackageDemo/Demo/Character",
+    "removed_missing_map_history": [
+      "MRUItem1=/U4PackageDemo/Demo/Character/CharacterRendering",
+      "MRUItem2=/U4PackageDemo/Demo/Character/Elena/Cinematics/L_Elena_Hotel070_Preview",
+      "CommandLineMapCache=/U4PackageDemo/Demo/Character/CharacterRendering,../../../../UnrealSample/Plugins/U4PackageDemo/Content/Demo/Character/CharacterRendering.umap"
+    ],
+    "mru_count": 10
+  },
+  "scene_object_comparison": {
+    "normalized_world_diff_lines": 0,
+    "face_changes": "Only the invalid BindingReferences row and the sequence Signature changed."
+  },
+  "verification_scope": {
+    "compilation": false,
+    "PIE": false,
+    "GPU_render_comparison": false,
+    "final_descriptors_used": true,
+    "commandlet_errors": 0,
+    "preexisting_NIL_matrix_warnings": 26
+  },
+  "import_paths_updated": 469,
+  "missing_original_import_sources": 44,
+  "independent_final_review": {
+    "module_declarations_preserved": true,
+    "only_requested_project_descriptor_changes": true,
+    "missing_plugin_dependencies": [],
+    "old_active_directories_present": [],
+    "disk_asset_files": 1258,
+    "cpp_and_data_hash_mismatches": [],
+    "python_parse_errors": [],
+    "current_texture_manifest_missing_assets": [],
+    "current_texture_manifest_missing_sources": [],
+    "plugin_descriptor_git_ignored": false,
+    "current_editor_old_path_count": 0,
+    "shared_default_original_import_record_identical": true,
+    "shared_default_matching_original_files": []
+  }
+}

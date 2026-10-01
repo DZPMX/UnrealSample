@@ -3,14 +3,11 @@
 	"EngineAssociation": "{4D1995AC-4AE6-90C4-C496-5F85C9F1AAD8}",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "UnrealSample",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
 	"Plugins": [
+    {
+      "Name": "U4PackageDemo",
+      "Enabled": true
+    },
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true,

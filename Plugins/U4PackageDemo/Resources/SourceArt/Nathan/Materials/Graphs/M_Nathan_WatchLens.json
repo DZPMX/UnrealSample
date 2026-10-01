@@ -1,0 +1,1717 @@
+{
+  "material": {
+    "blend_mode": "BLEND_Translucent",
+    "shading_model": "MSM_DefaultLit",
+    "two_sided": false
+  },
+  "expressions": [
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "class": "MakeMaterialAttributes",
+      "class_full": "MaterialExpressionMakeMaterialAttributes",
+      "pos_x": 680,
+      "pos_y": 140,
+      "properties": {
+        "Desc": "UE native shading inputs; original source operations before GBuffer encoding"
+      },
+      "inputs": [
+        "BaseColor",
+        "Metallic",
+        "Specular",
+        "Roughness",
+        "Anisotropy",
+        "EmissiveColor",
+        "Opacity",
+        "OpacityMask",
+        "Normal",
+        "Tangent",
+        "WorldPositionOffset",
+        "SubsurfaceColor",
+        "ClearCoat",
+        "ClearCoatRoughness",
+        "AmbientOcclusion",
+        "Refraction",
+        "CustomizedUVs_0",
+        "CustomizedUVs_1",
+        "CustomizedUVs_2",
+        "CustomizedUVs_3",
+        "CustomizedUVs_4",
+        "CustomizedUVs_5",
+        "CustomizedUVs_6",
+        "CustomizedUVs_7",
+        "PixelDepthOffset",
+        "ShadingModel",
+        "Displacement"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_10",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 1730,
+      "properties": {
+        "R": "0.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_10",
+      "precise": {
+        "R": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_5",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 1950,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：最终基础色整体倍率。影响：在末端 Saturate 前乘到基础色 RGB；0 得到黑色。当前镜片基础色固定为 0，有限输入下此倍率不产生可见变化。 输入：无量纲标量；仅结果 clamp 到 0–1，参数本身不新增限制。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColorIntensity",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_5",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_2",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 3990,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _299: _298 * _232"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_2",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 1240,
+      "pos_y": 3990,
+      "properties": {
+        "Desc": "U4 32401: _301: sat(_299)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_2",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 1800,
+      "pos_y": 3990,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_3",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 2360,
+      "pos_y": 3990,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_6",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2230,
+      "properties": {
+        "DefaultValue": "0.120000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：基础粗糙度输入。影响：输入现有粗糙度链，最终结果 Saturate 到 0–1。 输入：无量纲标量；保留源 -0.5/+0.5 运算及后续分层。 范围／默认：本母材质默认：0.11999999731779099。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseRoughness",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_6",
+      "precise": {
+        "DefaultValue": 0.11999999731779099
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_11",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 5070,
+      "properties": {
+        "R": "-0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_11",
+      "precise": {
+        "R": -0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_8",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 5070,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _292: _228 + -0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_8",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_12",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 5290,
+      "properties": {
+        "R": "0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_12",
+      "precise": {
+        "R": 0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_9",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 5070,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _293: _292 + 0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_9",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_6",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 1800,
+      "pos_y": 5070,
+      "properties": {
+        "Desc": "U4 32401: _302: sat(_293)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_6",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_7",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2510,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：基础镜面反射输入。影响：提高输入会提高当前 UE Specular；保留现有源重映射和末端 Saturate。 输入：无量纲标量；输出限制 0–1；UE Default Lit 光照属于已采用的适配。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "SpecularStrength",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_7",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_10",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 5290,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _290: _227 + -0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_10",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_11",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 5290,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _291: _290 + 0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_11",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_7",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 1800,
+      "pos_y": 5290,
+      "properties": {
+        "Desc": "U4 32401: _303: sat(_291)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_7",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_8",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2790,
+      "properties": {
+        "DefaultValue": "0.010000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：镜片原始透明覆盖率。影响：经过原 -1/+1 偏移链、max(值,0.001)、Saturate 后，再除以 OpacityNormalization。 输入：无量纲标量；输出还受 0.05 裁剪影响，不能把 0 当作完全关闭的保证。 范围／默认：本母材质默认：0.009999999776482582。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "Opacity",
+      "group": "05 Coverage / 覆盖",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_8",
+      "precise": {
+        "DefaultValue": 0.009999999776482582
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_13",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 6590,
+      "properties": {
+        "R": "-1.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_13",
+      "precise": {
+        "R": -1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_12",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 6590,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _294: _229 + -1.00000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_12",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_14",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 6810,
+      "properties": {
+        "R": "1.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_14",
+      "precise": {
+        "R": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_13",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6590,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _295: _294 + 1.00000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_13",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_15",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 7030,
+      "properties": {
+        "R": "0.001000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_15",
+      "precise": {
+        "R": 0.0010000000474974513
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_2",
+      "class": "Max",
+      "class_full": "MaterialExpressionMax",
+      "pos_x": 1800,
+      "pos_y": 6590,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _300: max(_295, 0.00100000)"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_2",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_8",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2360,
+      "pos_y": 6590,
+      "properties": {
+        "Desc": "U4 32401: _304: sat(_300)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_8",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_9",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3070,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：透明覆盖率的归一化分母。影响：覆盖率除以 max(本输入经过原偏移链的结果, 1e-7)，然后 Saturate；增大通常降低覆盖率。它不是后面的 0.05 丢弃阈值。 输入：无量纲标量；保留 -0.2/+0.2 的原顺序；未新增限制。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：当前透明路径；归一化后小于 0.05 的覆盖率置零，等于阈值时保留。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityNormalization",
+      "group": "05 Coverage / 覆盖",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_9",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_16",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 7250,
+      "properties": {
+        "R": "-0.200000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_16",
+      "precise": {
+        "R": -0.20000000298023224
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_14",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 6810,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _296: _230 + -0.200000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_14",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_17",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 7470,
+      "properties": {
+        "R": "0.200000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_17",
+      "precise": {
+        "R": 0.20000000298023224
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_15",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6810,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _297: _296 + 0.200000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_15",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_18",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 7690,
+      "properties": {
+        "R": "0.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_18",
+      "precise": {
+        "R": 1.0000000116860974e-07
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_3",
+      "class": "Max",
+      "class_full": "MaterialExpressionMax",
+      "pos_x": 1800,
+      "pos_y": 6810,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32401: _305: max(_297, 1.00000e-07)"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_3",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionDivide_1",
+      "class": "Divide",
+      "class_full": "MaterialExpressionDivide",
+      "pos_x": 2920,
+      "pos_y": 6590,
+      "properties": {
+        "ConstA": "1.000000",
+        "ConstB": "2.000000",
+        "Desc": "U4 32401: _306: _304 / _305"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionDivide_1",
+      "precise": {
+        "ConstA": 1.0,
+        "ConstB": 2.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_9",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 3480,
+      "pos_y": 6590,
+      "properties": {
+        "Desc": "U4 32401: _307: sat(_306)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_9",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_19",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 7910,
+      "properties": {
+        "R": "0.050000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_19",
+      "precise": {
+        "R": 0.05000000074505806
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "class": "If",
+      "class_full": "MaterialExpressionIf",
+      "pos_x": 4040,
+      "pos_y": 6590,
+      "properties": {
+        "EqualsThreshold": "0.000000",
+        "ConstB": "0.000000"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "AGreaterThanB",
+        "AEqualsB",
+        "ALessThanB"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "precise": {
+        "ConstB": 0.0,
+        "EqualsThreshold": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_3",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 4600,
+      "pos_y": 6590,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_3",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_0",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2920,
+      "pos_y": 3990,
+      "properties": {
+        "Name": "L_Final_BaseColor",
+        "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_0",
+      "precise": {},
+      "variable_guid": "0B1D8E3648A44CB6316A2FABB588F061"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_1",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2360,
+      "pos_y": 5290,
+      "properties": {
+        "Name": "L_Final_Specular",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_1",
+      "precise": {},
+      "variable_guid": "4E79881C45F6E45A33F7698FE90A1065"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_2",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2360,
+      "pos_y": 5070,
+      "properties": {
+        "Name": "L_Final_Roughness",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_2",
+      "precise": {},
+      "variable_guid": "83B762A14ADD84791CC0009A8329F900"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_3",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 5160,
+      "pos_y": 6590,
+      "properties": {
+        "Name": "L_Final_Opacity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_3",
+      "precise": {},
+      "variable_guid": "1F7AC7634EAB50EEE51C0FAA319845BA"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_4",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 1730,
+      "properties": {
+        "Name": "C_0",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_4",
+      "precise": {},
+      "variable_guid": "9BD82F1E407862D403538F97C8891751"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_5",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 1950,
+      "properties": {
+        "Name": "P_BaseColorIntensity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_5",
+      "precise": {},
+      "variable_guid": "CEC3FCC04FACDEF687C1FB963D3F9281"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_6",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2170,
+      "properties": {
+        "Name": "P_BaseRoughness",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_6",
+      "precise": {},
+      "variable_guid": "0BD89AE54A6A52F2706FD2AAE8721B5E"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_7",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2390,
+      "properties": {
+        "Name": "P_SpecularStrength",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_7",
+      "precise": {},
+      "variable_guid": "DC3B35A746BB78D0A97CB9953348FDCE"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_8",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2610,
+      "properties": {
+        "Name": "P_Opacity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_8",
+      "precise": {},
+      "variable_guid": "2623B08A4351B102917B52996720C93D"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_9",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2830,
+      "properties": {
+        "Name": "P_OpacityNormalization",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_9",
+      "precise": {},
+      "variable_guid": "F42735674DB53548932DE59118C7DB8E"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_0",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 140,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_0",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_0",
+      "declaration_guid": "0B1D8E3648A44CB6316A2FABB588F061"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_1",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 360,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_1",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_1",
+      "declaration_guid": "4E79881C45F6E45A33F7698FE90A1065"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_2",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 580,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_2",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_2",
+      "declaration_guid": "83B762A14ADD84791CC0009A8329F900"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_3",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 800,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_3",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_3",
+      "declaration_guid": "1F7AC7634EAB50EEE51C0FAA319845BA"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_4",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 3990,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_4",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_4",
+      "declaration_guid": "9BD82F1E407862D403538F97C8891751"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_5",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 4210,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_5",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_5",
+      "declaration_guid": "CEC3FCC04FACDEF687C1FB963D3F9281"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_6",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 5510,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_6",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_6",
+      "declaration_guid": "0BD89AE54A6A52F2706FD2AAE8721B5E"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_7",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 5730,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_7",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_7",
+      "declaration_guid": "DC3B35A746BB78D0A97CB9953348FDCE"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_8",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8130,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_8",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_8",
+      "declaration_guid": "2623B08A4351B102917B52996720C93D"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_9",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8350,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_9",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_9",
+      "declaration_guid": "F42735674DB53548932DE59118C7DB8E"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_10",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8570,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_10",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_4",
+      "declaration_guid": "9BD82F1E407862D403538F97C8891751"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_0",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 0,
+      "properties": {
+        "Text": "[00] 最终输出",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_0",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_1",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 1590,
+      "properties": {
+        "Text": "[01] 公共输入与采样",
+        "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_2",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 3850,
+      "properties": {
+        "Text": "[02] 基础色",
+        "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_3",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 4930,
+      "properties": {
+        "Text": "[04] 镜面与粗糙度",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_4",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 6450,
+      "properties": {
+        "Text": "[05] 覆盖率",
+        "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionComment_4",
+      "precise": {}
+    }
+  ],
+  "connections": [
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_0",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "BaseColor"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Specular"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Roughness"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Opacity"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_2",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_2",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_2",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_2",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_3",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_3",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_8",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_8",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_9",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_9",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_6",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_10",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_10",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_11",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_11",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_12",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_12",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_13",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_13",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_2",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_2",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_14",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_14",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_15",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_15",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAdd_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_3",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_3",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionDivide_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMax_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionDivide_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionDivide_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_9",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "target_input": "AGreaterThanB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "target_input": "AEqualsB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteUsage_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "target_input": "ALessThanB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_3",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionIf_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_3",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionAppendVector_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_0",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_1",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionSaturate_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_2",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMultiply_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionConstant_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_4",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_5",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_6",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionScalarParameter_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionNamedRerouteDeclaration_9",
+      "target_input": "Input"
+    }
+  ],
+  "output_connections": [],
+  "attributes_root": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens:MaterialExpressionMakeMaterialAttributes_1"
+}

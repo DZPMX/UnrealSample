@@ -1,0 +1,3294 @@
+{
+  "material": {
+    "blend_mode": "BLEND_Translucent",
+    "shading_model": "MSM_DefaultLit",
+    "two_sided": false
+  },
+  "expressions": [
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "class": "MakeMaterialAttributes",
+      "class_full": "MaterialExpressionMakeMaterialAttributes",
+      "pos_x": 680,
+      "pos_y": 140,
+      "properties": {
+        "Desc": "UE native shading inputs; original source operations before GBuffer encoding"
+      },
+      "inputs": [
+        "BaseColor",
+        "Metallic",
+        "Specular",
+        "Roughness",
+        "Anisotropy",
+        "EmissiveColor",
+        "Opacity",
+        "OpacityMask",
+        "Normal",
+        "Tangent",
+        "WorldPositionOffset",
+        "SubsurfaceColor",
+        "ClearCoat",
+        "ClearCoatRoughness",
+        "AmbientOcclusion",
+        "Refraction",
+        "CustomizedUVs_0",
+        "CustomizedUVs_1",
+        "CustomizedUVs_2",
+        "CustomizedUVs_3",
+        "CustomizedUVs_4",
+        "CustomizedUVs_5",
+        "CustomizedUVs_6",
+        "CustomizedUVs_7",
+        "PixelDepthOffset",
+        "ShadingModel",
+        "Displacement"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_11",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 1730,
+      "properties": {
+        "R": "1.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_11",
+      "precise": {
+        "R": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_12",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 6330,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _331: _243 * _247"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_12",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 1950,
+      "properties": {
+        "R": "0.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "precise": {
+        "R": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_16",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6330,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _334: _331 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_16",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_13",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 6330,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _357: _192 * _334"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_13",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_15",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2170,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：最终基础色整体倍率。影响：在末端 Saturate 前乘到基础色 RGB；0 得到黑色。 输入：无量纲标量；仅结果 clamp 到 0–1，参数本身不新增限制。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColorIntensity",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_15",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_14",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 6330,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _360: _357 * _257"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_14",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_7",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 6330,
+      "properties": {
+        "Desc": "U4 32316: _364: sat(_360)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_7",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_15",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 6550,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _332: _244 * _248"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_15",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_17",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6550,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _335: _332 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_17",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_16",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 6550,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _358: _192 * _335"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_16",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_17",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 6550,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _361: _358 * _257"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_17",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_8",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 6550,
+      "properties": {
+        "Desc": "U4 32316: _365: sat(_361)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_8",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_18",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 6770,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _333: _245 * _249"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_18",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_18",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6770,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _336: _333 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_18",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_19",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 6770,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _359: _192 * _336"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_19",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_20",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 6770,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _362: _359 * _257"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_20",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_9",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 6770,
+      "properties": {
+        "Desc": "U4 32316: _366: sat(_362)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_9",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_4",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 3480,
+      "pos_y": 6330,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_4",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_5",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 4040,
+      "pos_y": 6330,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_5",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_20",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2450,
+      "properties": {
+        "DefaultValue": "0.080000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：基础粗糙度输入。影响：输入现有粗糙度链，最终结果 Saturate 到 0–1。当前源后续满权重项把结果替换为 0.09，所以有限输入下调整此项不产生可见粗糙度变化；保留该源输入，不伪装成有效强度。 输入：无量纲标量；保留源 -0.5/+0.5 运算及后续分层。 范围／默认：本母材质默认：0.07999999821186066。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseRoughness",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_20",
+      "precise": {
+        "DefaultValue": 0.07999999821186066
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_13",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 8950,
+      "properties": {
+        "R": "-0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_13",
+      "precise": {
+        "R": -0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_19",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 8950,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _339: _252 + -0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_19",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_14",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 9170,
+      "properties": {
+        "R": "0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_14",
+      "precise": {
+        "R": 0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 8950,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _340: _339 + 0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_15",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 9390,
+      "properties": {
+        "R": "0.090000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_15",
+      "precise": {
+        "R": 0.09000000357627869
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSubtract_3",
+      "class": "Subtract",
+      "class_full": "MaterialExpressionSubtract",
+      "pos_x": 1800,
+      "pos_y": 8950,
+      "properties": {
+        "ConstA": "1.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _355: 0.0900000 - _340"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSubtract_3",
+      "precise": {
+        "ConstA": 1.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_21",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 2360,
+      "pos_y": 8950,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _356: _340 + _355"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_21",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_10",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 8950,
+      "properties": {
+        "Desc": "U4 32316: _367: sat(_356)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_10",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_21",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2730,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：基础镜面反射输入。影响：提高输入会提高当前 UE Specular；保留现有源重映射和末端 Saturate。 输入：无量纲标量；输出限制 0–1；UE Default Lit 光照属于已采用的适配。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "SpecularStrength",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_21",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_22",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 9170,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _337: _250 + -0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_22",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_23",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 9170,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _338: _337 + 0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_23",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_11",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 1800,
+      "pos_y": 9170,
+      "properties": {
+        "Desc": "U4 32316: _368: sat(_338)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_11",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_22",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3010,
+      "properties": {
+        "DefaultValue": "0.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：OpacityTexture.R 覆盖率重映射（纹理值为 0 的端点）。影响：纹理 R 在两个端点间插值，再经过 max(值,0.001)、Saturate 和 OpacityNormalization。 输入：无量纲标量；端点不排序；不是编辑器滑杆合法范围。 范围／默认：本母材质默认：0.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityAtBlack",
+      "group": "05 Coverage / 覆盖",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_22",
+      "precise": {
+        "DefaultValue": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_23",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3290,
+      "properties": {
+        "DefaultValue": "0.190000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：OpacityTexture.R 覆盖率重映射（纹理值为 1 的端点）。影响：纹理 R 在两个端点间插值，再经过 max(值,0.001)、Saturate 和 OpacityNormalization。 输入：无量纲标量；端点不排序；不是编辑器滑杆合法范围。 范围／默认：本母材质默认：0.1899999976158142。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityAtWhite",
+      "group": "05 Coverage / 覆盖",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_23",
+      "precise": {
+        "DefaultValue": 0.1899999976158142
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureCoordinate_1",
+      "class": "TextureCoordinate",
+      "class_full": "MaterialExpressionTextureCoordinate",
+      "pos_x": 120,
+      "pos_y": 3570,
+      "properties": {
+        "CoordinateIndex": "0",
+        "UTiling": "1.000000",
+        "VTiling": "1.000000",
+        "UnMirrorU": "False",
+        "UnMirrorV": "False",
+        "Desc": "UE internal UV0 equals source UV; FBX export adds its own V flip"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureCoordinate_1",
+      "precise": {
+        "UTiling": 1.0,
+        "VTiling": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_2",
+      "class": "ComponentMask",
+      "class_full": "MaterialExpressionComponentMask",
+      "pos_x": 680,
+      "pos_y": 3710,
+      "properties": {
+        "R": "True",
+        "G": "False",
+        "B": "False",
+        "A": "False",
+        "Desc": "U4 32316: _177: _IN.TEXCOORD0.x"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_3",
+      "class": "ComponentMask",
+      "class_full": "MaterialExpressionComponentMask",
+      "pos_x": 680,
+      "pos_y": 3930,
+      "properties": {
+        "R": "False",
+        "G": "True",
+        "B": "False",
+        "A": "False",
+        "Desc": "U4 32316: _178: _IN.TEXCOORD0.y"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_2",
+      "class": "TextureSampleParameter2D",
+      "class_full": "MaterialExpressionTextureSampleParameter2D",
+      "pos_x": 2360,
+      "pos_y": 1950,
+      "properties": {
+        "SortPriority": "0",
+        "MipValueMode": "TMVM_MipBias",
+        "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+        "GatherMode": "TGM_None",
+        "AutomaticViewMipBias": "False",
+        "ChannelNames": "()",
+        "ConstCoordinate": "0",
+        "ConstMipValue": "-1",
+        "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Tear/T_Nathan_tear_env_539BD705.T_Nathan_tear_env_539BD705'",
+        "SamplerType": "SAMPLERTYPE_LinearColor",
+        "IsDefaultMeshpaintTexture": "False",
+        "Desc": "用途：泪膜覆盖率变化。影响：R 驱动透明端点插值；G/B/A 在当前输入图未使用。 输入：线性数据纹理；名称中的 env 不代表本图拿它当环境光；保留两个不同坐标的采样。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Tear/T_Nathan_tear_env_539BD705.T_Nathan_tear_env_539BD705'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityTexture",
+      "group": "01 Textures / 贴图",
+      "inputs": [
+        "Coordinates",
+        "MipBias",
+        "Apply View MipBias"
+      ],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_3",
+      "class": "OneMinus",
+      "class_full": "MaterialExpressionOneMinus",
+      "pos_x": 1240,
+      "pos_y": 1950,
+      "properties": {},
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_6",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 1800,
+      "pos_y": 2150,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_6",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_24",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3790,
+      "properties": {
+        "DefaultValue": "-1.500000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：所有源 sampler0 的显式纹理 mip 偏移。影响：负值倾向更清晰的 mip，正值倾向更粗的 mip；不会改变纹理 UV 或颜色空间。 输入：标量，单位为 mip 级；源采样器捕获 bias=-1.5；不新增 clamp。 范围／默认：本母材质默认：-1.5。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：仅用于已连接的 MipBias 采样；显式 SampleLevel 仍由原 Level 输入控制。"
+      },
+      "is_parameter": true,
+      "parameter_name": "TextureMipBias",
+      "group": "01 Textures / 采样",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_24",
+      "precise": {
+        "DefaultValue": -1.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 3050,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_3",
+      "class": "TextureSampleParameter2D",
+      "class_full": "MaterialExpressionTextureSampleParameter2D",
+      "pos_x": 1800,
+      "pos_y": 1730,
+      "properties": {
+        "SortPriority": "0",
+        "MipValueMode": "TMVM_MipBias",
+        "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+        "GatherMode": "TGM_None",
+        "AutomaticViewMipBias": "False",
+        "ChannelNames": "()",
+        "ConstCoordinate": "0",
+        "ConstMipValue": "-1",
+        "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Tear/T_Nathan_tear_env_539BD705.T_Nathan_tear_env_539BD705'",
+        "SamplerType": "SAMPLERTYPE_LinearColor",
+        "IsDefaultMeshpaintTexture": "False",
+        "Desc": "用途：泪膜覆盖率变化。影响：R 驱动透明端点插值；G/B/A 在当前输入图未使用。 输入：线性数据纹理；名称中的 env 不代表本图拿它当环境光；保留两个不同坐标的采样。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Tear/T_Nathan_tear_env_539BD705.T_Nathan_tear_env_539BD705'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityTexture",
+      "group": "01 Textures / 贴图",
+      "inputs": [
+        "Coordinates",
+        "MipBias",
+        "Apply View MipBias"
+      ],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_4",
+      "class": "OneMinus",
+      "class_full": "MaterialExpressionOneMinus",
+      "pos_x": 680,
+      "pos_y": 1950,
+      "properties": {},
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_4",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_7",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 1240,
+      "pos_y": 1730,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_7",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_16",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 10690,
+      "properties": {
+        "R": "-1.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_16",
+      "precise": {
+        "R": -1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_28",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1800,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _351: _350 + -1.00000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_28",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_29",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 2360,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _352: _351 + 1.00000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_29",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_17",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 10910,
+      "properties": {
+        "R": "0.001000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_17",
+      "precise": {
+        "R": 0.0010000000474974513
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_2",
+      "class": "Max",
+      "class_full": "MaterialExpressionMax",
+      "pos_x": 2920,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _363: max(_352, 0.00100000)"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_2",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_12",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 3480,
+      "pos_y": 10690,
+      "properties": {
+        "Desc": "U4 32316: _369: sat(_363)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_12",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_25",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 4070,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "20",
+        "Desc": "用途：透明覆盖率的归一化分母。影响：覆盖率除以 max(本输入经过原偏移链的结果, 1e-7)，然后 Saturate；增大通常降低覆盖率。它不是后面的 0.05 丢弃阈值。 输入：无量纲标量；保留 -0.2/+0.2 的原顺序；未新增限制。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：当前透明路径；归一化后小于 0.05 的覆盖率置零，等于阈值时保留。"
+      },
+      "is_parameter": true,
+      "parameter_name": "OpacityNormalization",
+      "group": "05 Coverage / 覆盖",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_25",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_18",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 11130,
+      "properties": {
+        "R": "-0.200000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_18",
+      "precise": {
+        "R": -0.20000000298023224
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_30",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _353: _255 + -0.200000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_30",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_19",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 11350,
+      "properties": {
+        "R": "0.200000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_19",
+      "precise": {
+        "R": 0.20000000298023224
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_31",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _354: _353 + 0.200000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_31",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_20",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 11570,
+      "properties": {
+        "R": "0.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_20",
+      "precise": {
+        "R": 1.0000000116860974e-07
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_3",
+      "class": "Max",
+      "class_full": "MaterialExpressionMax",
+      "pos_x": 1800,
+      "pos_y": 10910,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 32316: _370: max(_354, 1.00000e-07)"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_3",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionDivide_1",
+      "class": "Divide",
+      "class_full": "MaterialExpressionDivide",
+      "pos_x": 4040,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "1.000000",
+        "ConstB": "2.000000",
+        "Desc": "U4 32316: _371: _369 / _370"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionDivide_1",
+      "precise": {
+        "ConstA": 1.0,
+        "ConstB": 2.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_13",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 4600,
+      "pos_y": 10690,
+      "properties": {
+        "Desc": "U4 32316: _372: sat(_371)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_13",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_21",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 11790,
+      "properties": {
+        "R": "0.050000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_21",
+      "precise": {
+        "R": 0.05000000074505806
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "class": "If",
+      "class_full": "MaterialExpressionIf",
+      "pos_x": 5160,
+      "pos_y": 10690,
+      "properties": {
+        "EqualsThreshold": "0.000000",
+        "ConstB": "0.000000"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "AGreaterThanB",
+        "AEqualsB",
+        "ALessThanB"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "precise": {
+        "ConstB": 0.0,
+        "EqualsThreshold": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_23",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 5720,
+      "pos_y": 10690,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_23",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "class": "LinearInterpolate",
+      "class_full": "MaterialExpressionLinearInterpolate",
+      "pos_x": 680,
+      "pos_y": 10910,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "ConstAlpha": "0.500000",
+        "Desc": "UE 内置插值；Alpha 和外围 clamp 保持源连接。 U4 32316: _347: _344 + _346"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "class": "LinearInterpolate",
+      "class_full": "MaterialExpressionLinearInterpolate",
+      "pos_x": 1240,
+      "pos_y": 10910,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "ConstAlpha": "0.500000",
+        "Desc": "UE 内置插值；Alpha 和外围 clamp 保持源连接。 U4 32316: _350: _253 + _349"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_0",
+      "class": "VectorParameter",
+      "class_full": "MaterialExpressionVectorParameter",
+      "pos_x": 120,
+      "pos_y": 4350,
+      "properties": {
+        "DefaultValue": "(R=1.000000,G=1.000000,B=1.000000,A=1.000000)",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "ChannelNames": "()",
+        "SortPriority": "20",
+        "Desc": "用途：泪膜 RGB 染色倍率。影响：三个分量分别参与现有 RGB 乘法；改变对应通道，最终颜色按现有 Saturate 限制到 0–1。 输入：float3 RGB；保持导入时的数值约定，UE BaseColor 按线性解释；不在参数迁移时添加或移除颜色转换。 范围／默认：本母材质默认：[1.0, 1.0, 1.0]。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColorTint",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_0",
+      "precise": {
+        "DefaultValue": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_1",
+      "class": "VectorParameter",
+      "class_full": "MaterialExpressionVectorParameter",
+      "pos_x": 120,
+      "pos_y": 4630,
+      "properties": {
+        "DefaultValue": "(R=0.502000,G=0.502000,B=0.502000,A=1.000000)",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "ChannelNames": "()",
+        "SortPriority": "0",
+        "Desc": "用途：泪膜基础 RGB 颜色。影响：三个分量分别参与现有 RGB 乘法；改变对应通道，最终颜色按现有 Saturate 限制到 0–1。 输入：float3 RGB；保持导入时的数值约定，UE BaseColor 按线性解释；不在参数迁移时添加或移除颜色转换。 范围／默认：本母材质默认：[0.5019999742507935, 0.5019999742507935, 0.5019999742507935]。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColor",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_1",
+      "precise": {
+        "DefaultValue": [
+          0.5019999742507935,
+          0.5019999742507935,
+          0.5019999742507935,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_0",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 4600,
+      "pos_y": 6330,
+      "properties": {
+        "Name": "L_Final_BaseColor",
+        "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_0",
+      "precise": {},
+      "variable_guid": "B4DC9C6540DB796B3253D8964A62C77A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_1",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2360,
+      "pos_y": 9170,
+      "properties": {
+        "Name": "L_Final_Specular",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_1",
+      "precise": {},
+      "variable_guid": "1D3956D744C4B84B5973309D979C5B31"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_2",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 3480,
+      "pos_y": 8950,
+      "properties": {
+        "Name": "L_Final_Roughness",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_2",
+      "precise": {},
+      "variable_guid": "3436AC674A8822989135B2885DA85C51"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_3",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 6280,
+      "pos_y": 10690,
+      "properties": {
+        "Name": "L_Final_Opacity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_3",
+      "precise": {},
+      "variable_guid": "6B90BE364FABBF8A11CAECB93EEC7634"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_4",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4370,
+      "properties": {
+        "Name": "P_BaseColorTint_R",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_4",
+      "precise": {},
+      "variable_guid": "A62882204B7FFB9713A5D6B8791E4CE4"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_5",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 5030,
+      "properties": {
+        "Name": "P_BaseColor_R",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_5",
+      "precise": {},
+      "variable_guid": "F4C4F7E74D0BBA6E33E2B79B70819990"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_6",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2170,
+      "properties": {
+        "Name": "C_0",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_6",
+      "precise": {},
+      "variable_guid": "0CF9B7514C492011756131A2EC833AA7"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_7",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 1730,
+      "properties": {
+        "Name": "C_1",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_7",
+      "precise": {},
+      "variable_guid": "E3BF719B44824D38449CAE9A27354983"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_8",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2390,
+      "properties": {
+        "Name": "P_BaseColorIntensity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_8",
+      "precise": {},
+      "variable_guid": "A49E4FB941D166D5AB62E195A7535DF9"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_9",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4590,
+      "properties": {
+        "Name": "P_BaseColorTint_G",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_9",
+      "precise": {},
+      "variable_guid": "E2CC8FD64D92C778E5AA56A8017E4A65"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_10",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 5250,
+      "properties": {
+        "Name": "P_BaseColor_G",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_10",
+      "precise": {},
+      "variable_guid": "803DB3C84E1F6404119846905F80FB36"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_11",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4810,
+      "properties": {
+        "Name": "P_BaseColorTint_B",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_11",
+      "precise": {},
+      "variable_guid": "59EDF2234290AEC23F161A87A3C64534"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_12",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 5470,
+      "properties": {
+        "Name": "P_BaseColor_B",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_12",
+      "precise": {},
+      "variable_guid": "5C6F53A4472C26B801548FB8620F3A71"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_13",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2610,
+      "properties": {
+        "Name": "P_BaseRoughness",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_13",
+      "precise": {},
+      "variable_guid": "0ADF11FA4D3B964B79AB3DBEC591F279"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_14",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2830,
+      "properties": {
+        "Name": "P_SpecularStrength",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_14",
+      "precise": {},
+      "variable_guid": "F5FF58F146B68ABC4D0351866A38C096"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_15",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4150,
+      "properties": {
+        "Name": "P_OpacityNormalization",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_15",
+      "precise": {},
+      "variable_guid": "C2557D974B5822394C64B5815E9A5301"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_16",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2920,
+      "pos_y": 1730,
+      "properties": {
+        "Name": "S_OpacityTexture_R_UV0",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_16",
+      "precise": {},
+      "variable_guid": "5361C0484FCE91D8F9E31DB38D90983B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_17",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2360,
+      "pos_y": 1730,
+      "properties": {
+        "Name": "S_OpacityTexture_R_FixedUV01",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_17",
+      "precise": {},
+      "variable_guid": "098464A649EBCD371DC2C08B26AFCAB8"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_18",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 3270,
+      "properties": {
+        "Name": "P_OpacityAtBlack",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_18",
+      "precise": {},
+      "variable_guid": "BD4E629C426DCEFBCE578E9EE2DE7787"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_19",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 3490,
+      "properties": {
+        "Name": "P_OpacityAtWhite",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_19",
+      "precise": {},
+      "variable_guid": "B6AC761C42C41B31C26A058CFFC4200B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_0",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 140,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_0",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_0",
+      "declaration_guid": "B4DC9C6540DB796B3253D8964A62C77A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_1",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 360,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_1",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_1",
+      "declaration_guid": "1D3956D744C4B84B5973309D979C5B31"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_2",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 580,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_2",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_2",
+      "declaration_guid": "3436AC674A8822989135B2885DA85C51"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_3",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 800,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_3",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_3",
+      "declaration_guid": "6B90BE364FABBF8A11CAECB93EEC7634"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_4",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6330,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_4",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_4",
+      "declaration_guid": "A62882204B7FFB9713A5D6B8791E4CE4"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_5",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6550,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_5",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_5",
+      "declaration_guid": "F4C4F7E74D0BBA6E33E2B79B70819990"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_6",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6770,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_6",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_6",
+      "declaration_guid": "0CF9B7514C492011756131A2EC833AA7"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_7",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6990,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_7",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_7",
+      "declaration_guid": "E3BF719B44824D38449CAE9A27354983"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_8",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7210,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_8",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_8",
+      "declaration_guid": "A49E4FB941D166D5AB62E195A7535DF9"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_9",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7430,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_9",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_9",
+      "declaration_guid": "E2CC8FD64D92C778E5AA56A8017E4A65"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_10",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7650,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_10",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_10",
+      "declaration_guid": "803DB3C84E1F6404119846905F80FB36"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_11",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7870,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_11",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_11",
+      "declaration_guid": "59EDF2234290AEC23F161A87A3C64534"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_12",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8090,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_12",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_12",
+      "declaration_guid": "5C6F53A4472C26B801548FB8620F3A71"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_13",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9610,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_13",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_13",
+      "declaration_guid": "0ADF11FA4D3B964B79AB3DBEC591F279"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_14",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9830,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_14",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_14",
+      "declaration_guid": "F5FF58F146B68ABC4D0351866A38C096"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_15",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 12010,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_15",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_7",
+      "declaration_guid": "E3BF719B44824D38449CAE9A27354983"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_16",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 12230,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_16",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_15",
+      "declaration_guid": "C2557D974B5822394C64B5815E9A5301"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_17",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 12450,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_17",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_6",
+      "declaration_guid": "0CF9B7514C492011756131A2EC833AA7"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_18",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 12670,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_18",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_16",
+      "declaration_guid": "5361C0484FCE91D8F9E31DB38D90983B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_19",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 12890,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_19",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_17",
+      "declaration_guid": "098464A649EBCD371DC2C08B26AFCAB8"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_20",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 13110,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_20",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_18",
+      "declaration_guid": "BD4E629C426DCEFBCE578E9EE2DE7787"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_21",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 13330,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_21",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_19",
+      "declaration_guid": "B6AC761C42C41B31C26A058CFFC4200B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_0",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 0,
+      "properties": {
+        "Text": "[00] 最终输出",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_0",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_1",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 1590,
+      "properties": {
+        "Text": "[01] 公共输入与采样",
+        "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_2",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 6190,
+      "properties": {
+        "Text": "[02] 基础色",
+        "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_3",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 8810,
+      "properties": {
+        "Text": "[04] 镜面与粗糙度",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_4",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 10550,
+      "properties": {
+        "Text": "[05] 覆盖率",
+        "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComment_4",
+      "precise": {}
+    }
+  ],
+  "connections": [
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_0",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "BaseColor"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Specular"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Roughness"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Opacity"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_12",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_12",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_16",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_16",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_13",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_13",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_14",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_14",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_15",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_15",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_17",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_17",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_16",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_16",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_17",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_17",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_18",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_18",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_18",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_18",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_19",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_19",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_20",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_20",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_9",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_4",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_4",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_5",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_5",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_19",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_19",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSubtract_3",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSubtract_3",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_21",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSubtract_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_21",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_10",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_22",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_22",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_22",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_23",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_23",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_23",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_11",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureCoordinate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_2",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureCoordinate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_2",
+      "target_input": "Coordinates"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_2",
+      "target_input": "MipBias"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionComponentMask_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_6",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_6",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_24",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_3",
+      "target_input": "Coordinates"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_24",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_3",
+      "target_input": "MipBias"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_4",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_7",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionOneMinus_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_7",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_28",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_28",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_28",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_29",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_29",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_29",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_2",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_2",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_12",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_30",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_30",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_30",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_31",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_31",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAdd_31",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_3",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_3",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionDivide_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMax_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionDivide_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionDivide_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_13",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "target_input": "AGreaterThanB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "target_input": "AEqualsB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "target_input": "ALessThanB"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_23",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionIf_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_23",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "target_input": "Alpha"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteUsage_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_0",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionLinearInterpolate_1",
+      "target_input": "Alpha"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionAppendVector_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_0",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_1",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionSaturate_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_2",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMultiply_23",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_0",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_4",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_1",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_5",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_6",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionConstant_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_0",
+      "source_output_index": 2,
+      "source_output_name": "G",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_9",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_1",
+      "source_output_index": 2,
+      "source_output_name": "G",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_10",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_0",
+      "source_output_index": 3,
+      "source_output_name": "B",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_11",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionVectorParameter_1",
+      "source_output_index": 3,
+      "source_output_name": "B",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_12",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_13",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_14",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_25",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_15",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_2",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_16",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionTextureSampleParameter2D_3",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_17",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_22",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_18",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionScalarParameter_23",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionNamedRerouteDeclaration_19",
+      "target_input": "Input"
+    }
+  ],
+  "output_connections": [],
+  "attributes_root": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears:MaterialExpressionMakeMaterialAttributes_1"
+}

@@ -1,0 +1,1550 @@
+{
+  "scope": "Restore source UNorm color/data views for four material families (including Ring because its shared mud color input is affected). Preserve source encoded grading/layers and decode final BaseColor once before native UE shading; no GBuffer quantization. Shared hair already decodes late.",
+  "families": {
+    "Cloth": {
+      "parameters": [
+        "BaseColorTexture",
+        "MudColorCoverage",
+        "SandColorNormalRG"
+      ],
+      "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth",
+      "instances": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots.MI_Nathan_Boots",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants.MI_Nathan_Pants",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt.MI_Nathan_Shirt"
+      ]
+    },
+    "Skin": {
+      "parameters": [
+        "BaseColorTexture",
+        "CutColorTexture",
+        "BloodColorTexture",
+        "MudColorCoverage",
+        "SandColorNormalRG"
+      ],
+      "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin",
+      "instances": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms.MI_Nathan_Arms",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face"
+      ]
+    },
+    "SurfaceLayered": {
+      "parameters": [
+        "BaseColorTexture",
+        "MudColorCoverage",
+        "SandColorNormalRG"
+      ],
+      "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered",
+      "instances": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt.MI_Nathan_Belt",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster.MI_Nathan_Holster",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch.MI_Nathan_Pouch",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch.MI_Nathan_Watch"
+      ]
+    },
+    "Ring": {
+      "parameters": [
+        "MetalColorRoughness",
+        "MudColorCoverage"
+      ],
+      "material": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring",
+      "instances": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring"
+      ]
+    }
+  },
+  "textures": {
+    "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color.T_Nathan_boots_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots"
+      ],
+      "uses": [
+        [
+          "Cloth",
+          "Boots",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch"
+      ],
+      "uses": [
+        [
+          "Cloth",
+          "Boots",
+          "MudColorCoverage"
+        ],
+        [
+          "Cloth",
+          "Pants",
+          "MudColorCoverage"
+        ],
+        [
+          "Cloth",
+          "Shirt",
+          "MudColorCoverage"
+        ],
+        [
+          "Skin",
+          "Arms",
+          "MudColorCoverage"
+        ],
+        [
+          "Skin",
+          "Chest",
+          "MudColorCoverage"
+        ],
+        [
+          "Skin",
+          "Face",
+          "MudColorCoverage"
+        ],
+        [
+          "SurfaceLayered",
+          "Belt",
+          "MudColorCoverage"
+        ],
+        [
+          "SurfaceLayered",
+          "Holster",
+          "MudColorCoverage"
+        ],
+        [
+          "SurfaceLayered",
+          "Pouch",
+          "MudColorCoverage"
+        ],
+        [
+          "SurfaceLayered",
+          "Watch",
+          "MudColorCoverage"
+        ],
+        [
+          "Ring",
+          "Ring",
+          "MudColorCoverage"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch"
+      ],
+      "uses": [
+        [
+          "Cloth",
+          "Boots",
+          "SandColorNormalRG"
+        ],
+        [
+          "Cloth",
+          "Pants",
+          "SandColorNormalRG"
+        ],
+        [
+          "Cloth",
+          "Shirt",
+          "SandColorNormalRG"
+        ],
+        [
+          "Skin",
+          "Arms",
+          "SandColorNormalRG"
+        ],
+        [
+          "Skin",
+          "Chest",
+          "SandColorNormalRG"
+        ],
+        [
+          "Skin",
+          "Face",
+          "SandColorNormalRG"
+        ],
+        [
+          "SurfaceLayered",
+          "Belt",
+          "SandColorNormalRG"
+        ],
+        [
+          "SurfaceLayered",
+          "Holster",
+          "SandColorNormalRG"
+        ],
+        [
+          "SurfaceLayered",
+          "Pouch",
+          "SandColorNormalRG"
+        ],
+        [
+          "SurfaceLayered",
+          "Watch",
+          "SandColorNormalRG"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color.T_Nathan_island_pants_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants"
+      ],
+      "uses": [
+        [
+          "Cloth",
+          "Pants",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt"
+      ],
+      "uses": [
+        [
+          "Cloth",
+          "Shirt",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color.T_Nathan_arm_clean_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Arms",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Arms",
+          "CutColorTexture"
+        ],
+        [
+          "Skin",
+          "Face",
+          "CutColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Arms",
+          "BloodColorTexture"
+        ],
+        [
+          "Skin",
+          "Chest",
+          "BloodColorTexture"
+        ],
+        [
+          "Skin",
+          "Face",
+          "BloodColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color.T_Nathan_new_head_sunburns_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Chest",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color.T_Nathan_head_cut_island_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Chest",
+          "CutColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face"
+      ],
+      "uses": [
+        [
+          "Skin",
+          "Face",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color.T_Nathan_island_belt_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt"
+      ],
+      "uses": [
+        [
+          "SurfaceLayered",
+          "Belt",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color.T_Nathan_holster_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster"
+      ],
+      "uses": [
+        [
+          "SurfaceLayered",
+          "Holster",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color.T_Nathan_pouch_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch"
+      ],
+      "uses": [
+        [
+          "SurfaceLayered",
+          "Pouch",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered",
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch"
+      ],
+      "uses": [
+        [
+          "SurfaceLayered",
+          "Watch",
+          "BaseColorTexture"
+        ]
+      ]
+    },
+    "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData": {
+      "before_srgb": true,
+      "after_srgb": false,
+      "referencers": [
+        "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring"
+      ],
+      "uses": [
+        [
+          "Ring",
+          "Ring",
+          "MetalColorRoughness"
+        ]
+      ]
+    }
+  },
+  "source_evidence": {
+    "Boots": {
+      "event": 29586,
+      "source_dag_sha256": "46f6a6621a80715060b9aa3ec4fa901cbc9c16e5e7c6020863bf988dc6540472",
+      "roots": {
+        "BaseColor": [
+          967,
+          968,
+          969
+        ],
+        "Specular": [
+          971
+        ],
+        "Roughness": [
+          970
+        ],
+        "Metallic": [
+          972
+        ],
+        "AmbientOcclusion": [
+          973
+        ],
+        "Normal": [
+          980,
+          981,
+          985
+        ],
+        "Cloth": [
+          974
+        ],
+        "Sheen": [
+          975
+        ],
+        "Transmission": [
+          976
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shoes/T_Nathan_boots_color.T_Nathan_boots_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D1",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69740F0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948489"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D17",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6949830>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D15",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6949730>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Pants": {
+      "event": 29615,
+      "source_dag_sha256": "6c77674d8a51c80642e0d269ed636e13d4f72c980a09a2ab2073f0383930e36b",
+      "roots": {
+        "BaseColor": [
+          1059,
+          1060,
+          1061
+        ],
+        "Specular": [
+          1063
+        ],
+        "Roughness": [
+          1062
+        ],
+        "Metallic": [
+          1064
+        ],
+        "AmbientOcclusion": [
+          1065
+        ],
+        "Normal": [
+          1072,
+          1073,
+          1077
+        ],
+        "Cloth": [
+          1066
+        ],
+        "Sheen": [
+          1067
+        ],
+        "Transmission": [
+          1068
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Pants/T_Nathan_island_pants_color.T_Nathan_island_pants_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D2",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69378B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948673"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D19",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C696FF70>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D17",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6982AF0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Shirt": {
+      "event": 29483,
+      "source_dag_sha256": "4f31d1ccd62b70ad3059eaae90324df60f43c6c80aabfba9bd253d1c4dc5da44",
+      "roots": {
+        "BaseColor": [
+          1382,
+          1383,
+          1384
+        ],
+        "Specular": [
+          1386
+        ],
+        "Roughness": [
+          1385
+        ],
+        "Metallic": [
+          1387
+        ],
+        "AmbientOcclusion": [
+          1388
+        ],
+        "Normal": [
+          1395,
+          1396,
+          1400
+        ],
+        "Cloth": [
+          1389
+        ],
+        "Sheen": [
+          1390
+        ],
+        "Transmission": [
+          1391
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D18",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69697B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948569"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D41",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C697CD30>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D39",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C697C8B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Arms": {
+      "event": 29502,
+      "source_dag_sha256": "4fe368a2c0d9d35f04d168af29f95844553008af4553b3746c03fcd4e3dccf9d",
+      "roots": {
+        "BaseColor": [
+          979,
+          980,
+          981
+        ],
+        "Specular": [
+          983
+        ],
+        "Roughness": [
+          982
+        ],
+        "Metallic": [
+          984
+        ],
+        "AmbientOcclusion": [
+          985
+        ],
+        "Normal": [
+          991,
+          992,
+          996
+        ],
+        "Subsurface": [
+          986
+        ],
+        "SecondaryRoughness": [
+          987
+        ],
+        "SecondaryWeight": [
+          988
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_clean_color.T_Nathan_arm_clean_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D18",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69624B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948650"
+          },
+          "srgb": true
+        },
+        "CutColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color",
+          "parameter": "CutColorTexture",
+          "binding": null,
+          "srgb": true
+        },
+        "BloodColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color",
+          "parameter": "BloodColorTexture",
+          "binding": null,
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D32",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6982AF0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D30",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6982EB0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Chest": {
+      "event": 29625,
+      "source_dag_sha256": "8a9f311af5fbdfd0fc1c3c169cded5b582026aeaee7ad15326932d3411c13136",
+      "roots": {
+        "BaseColor": [
+          886,
+          887,
+          888
+        ],
+        "Specular": [
+          890
+        ],
+        "Roughness": [
+          889
+        ],
+        "Metallic": [
+          891
+        ],
+        "AmbientOcclusion": [
+          892
+        ],
+        "Normal": [
+          900,
+          901,
+          905
+        ],
+        "Subsurface": [
+          893
+        ],
+        "SSBlurSize": [
+          894
+        ],
+        "Thickness": [
+          895
+        ],
+        "SecondaryRoughness": [
+          896
+        ],
+        "SecondaryWeight": [
+          897
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_sunburns_color.T_Nathan_new_head_sunburns_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D2",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6937A30>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948697"
+          },
+          "srgb": true
+        },
+        "CutColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_color.T_Nathan_head_cut_island_color",
+          "parameter": "CutColorTexture",
+          "binding": {
+            "binding": "Texture2D6",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6931BB0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948521"
+          },
+          "srgb": true
+        },
+        "BloodColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color",
+          "parameter": "BloodColorTexture",
+          "binding": {
+            "binding": "Texture2D18",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C696F670>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951329"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D20",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6945A70>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": null,
+          "srgb": true
+        }
+      }
+    },
+    "Face": {
+      "event": 29596,
+      "source_dag_sha256": "cc8664b81d4a7055f09c56f5f3ffb78bf9f27ccc54f8fd54c8298620cd7b74fd",
+      "roots": {
+        "BaseColor": [
+          1371,
+          1372,
+          1373
+        ],
+        "Specular": [
+          1375
+        ],
+        "Roughness": [
+          1374
+        ],
+        "Metallic": [
+          1376
+        ],
+        "AmbientOcclusion": [
+          1377
+        ],
+        "Normal": [
+          1385,
+          1386,
+          1390
+        ],
+        "Subsurface": [
+          1378
+        ],
+        "SSBlurSize": [
+          1379
+        ],
+        "Thickness": [
+          1380
+        ],
+        "SecondaryRoughness": [
+          1381
+        ],
+        "SecondaryWeight": [
+          1382
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D18",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C693B130>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948696"
+          },
+          "srgb": true
+        },
+        "CutColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color",
+          "parameter": "CutColorTexture",
+          "binding": {
+            "binding": "Texture2D24",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C693D7F0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948526"
+          },
+          "srgb": true
+        },
+        "BloodColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color",
+          "parameter": "BloodColorTexture",
+          "binding": {
+            "binding": "Texture2D41",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6945470>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951329"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D43",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6945C70>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": null,
+          "srgb": true
+        }
+      }
+    },
+    "Belt": {
+      "event": 29454,
+      "source_dag_sha256": "cbc698f4697a6cfd00eed718db176ada43ccd9305183d30b57fa6533c250393b",
+      "roots": {
+        "BaseColor": [
+          871,
+          872,
+          873
+        ],
+        "Specular": [
+          875
+        ],
+        "Roughness": [
+          874
+        ],
+        "Metallic": [
+          876
+        ],
+        "AmbientOcclusion": [
+          877
+        ],
+        "Normal": [
+          880,
+          881,
+          885
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Belt/T_Nathan_island_belt_color.T_Nathan_island_belt_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D2",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69379B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948672"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D17",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C695D6F0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D15",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C695AD30>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Holster": {
+      "event": 29464,
+      "source_dag_sha256": "5c9412af231f616c566eb0c0de3c9b15d7fb991f950e5b72acbe011beecb61d1",
+      "roots": {
+        "BaseColor": [
+          853,
+          854,
+          855
+        ],
+        "Specular": [
+          857
+        ],
+        "Roughness": [
+          856
+        ],
+        "Metallic": [
+          858
+        ],
+        "AmbientOcclusion": [
+          859
+        ],
+        "Normal": [
+          862,
+          863,
+          867
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Holster/T_Nathan_holster_color.T_Nathan_holster_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D2",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C694A070>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948530"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D19",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69524F0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D17",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6952FB0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Pouch": {
+      "event": 29539,
+      "source_dag_sha256": "6662bfe53a2ce1e13b4d4e2fbbda455425c7167fd865a225a17f0ca5fd3f9542",
+      "roots": {
+        "BaseColor": [
+          703,
+          704,
+          705
+        ],
+        "Specular": [
+          707
+        ],
+        "Roughness": [
+          706
+        ],
+        "Metallic": [
+          708
+        ],
+        "AmbientOcclusion": [
+          709
+        ],
+        "Normal": [
+          712,
+          713,
+          717
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Pouch/T_Nathan_pouch_color.T_Nathan_pouch_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D2",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C697B1F0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948598"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D13",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6945430>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": null,
+          "srgb": true
+        }
+      }
+    },
+    "Watch": {
+      "event": 29435,
+      "source_dag_sha256": "59d095d9f82c044663ae3aeeb14c7c2b4da7038ff812d6bfefb540065bd80253",
+      "roots": {
+        "BaseColor": [
+          874,
+          875,
+          876
+        ],
+        "Specular": [
+          878
+        ],
+        "Roughness": [
+          877
+        ],
+        "Metallic": [
+          879
+        ],
+        "AmbientOcclusion": [
+          880
+        ],
+        "Normal": [
+          883,
+          884,
+          888
+        ]
+      },
+      "parameters": {
+        "BaseColorTexture": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color",
+          "parameter": "BaseColorTexture",
+          "binding": {
+            "binding": "Texture2D5",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6937030>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC1",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::948603"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D19",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C694ADF0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        },
+        "SandColorNormalRG": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color",
+          "parameter": "SandColorNormalRG",
+          "binding": {
+            "binding": "Texture2D17",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C694A470>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951337"
+          },
+          "srgb": true
+        }
+      }
+    },
+    "Ring": {
+      "event": 29549,
+      "source_dag_sha256": "4a1dcc6ea5fdac9f208d2906779fcdf3bf63b28544690a4d7d07654d292ef0cd",
+      "roots": {
+        "BaseColor": [
+          280,
+          281,
+          282
+        ],
+        "Specular": [
+          284
+        ],
+        "Roughness": [
+          283
+        ],
+        "Metallic": [
+          285
+        ]
+      },
+      "parameters": {
+        "MetalColorRoughness": {
+          "path": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData",
+          "parameter": "MetalColorRoughness",
+          "binding": {
+            "binding": "Texture2D1",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C69696B0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC7",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951317"
+          },
+          "srgb": true
+        },
+        "MudColorCoverage": {
+          "path": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color",
+          "parameter": "MudColorCoverage",
+          "binding": {
+            "binding": "Texture2D3",
+            "view": {
+              "name": "<Swig Object of type 'ResourceFormat *' at 0x00000237C6969FB0>",
+              "component_type": "UNorm",
+              "component_count": 4,
+              "component_byte_width": 0,
+              "resource_format_type": "BC3",
+              "bgra_order": false,
+              "special": true
+            },
+            "rid": "ResourceId::951333"
+          },
+          "srgb": true
+        }
+      }
+    }
+  },
+  "backup": [
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shoes\\T_Nathan_boots_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Shoes\\T_Nathan_boots_color.uasset",
+      "sha256": "b30b75a9a2f7aef7bf92598aba5c5821cfbb9cf4cbab2fcab24dbee0cbb77436"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_mud_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_mud_color.uasset",
+      "sha256": "607df6928691721d3330822c95d25584b573ade4a9b234e8f56a233b8f6f60f3"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_sand_dry_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_sand_dry_color.uasset",
+      "sha256": "076e5465b56afed4088d189eeaaefa8451a2795f337061b9b08169fc6278c2d1"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Pants\\T_Nathan_island_pants_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Pants\\T_Nathan_island_pants_color.uasset",
+      "sha256": "860bcf12958e3cf56482d418f32f3479dd95b8efbb3f53705af2eded10828cc7"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shirt\\T_Nathan_island_shirt_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Shirt\\T_Nathan_island_shirt_color.uasset",
+      "sha256": "e2e5f4f279fc6496807a011fb2a2e148859e161e0e955bb06b92b581167acd2b"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Body\\T_Nathan_arm_clean_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Body\\T_Nathan_arm_clean_color.uasset",
+      "sha256": "f618d17b560dedb50c8f551fea2624f9449fab555ac43c2460183f196158dc46"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_demo_cut_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_demo_cut_color.uasset",
+      "sha256": "ee19a1baf2bdd3e5ab28810eca2db4a3d8da5e71916e60b5a3f30a9a3dd5581d"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_blood_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_blood_color.uasset",
+      "sha256": "7cbd43604afee72f68150b868ee3bd01052ea3c431e2390403eb1000dfeed9f1"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_sunburns_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_sunburns_color.uasset",
+      "sha256": "5f7cdfcfada447af2fc20dba6ffba49ec5bccb33331b7a6a5f860a64083a435a"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_cut_island_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_cut_island_color.uasset",
+      "sha256": "35dd8b8b84413087119ab9ad009a66d90d5ba5fa6f834d9f7fbd3e9a51483d9c"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_clean_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_clean_color.uasset",
+      "sha256": "0415118f9c789fb36973d6668325277dc79991c821ea7dd2b90e0d8afde256ac"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Belt\\T_Nathan_island_belt_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Belt\\T_Nathan_island_belt_color.uasset",
+      "sha256": "ce6e1c9f5bba93fd2163c355b8ffc058916289d4897eba71a1025291359cec73"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Holster\\T_Nathan_holster_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Holster\\T_Nathan_holster_color.uasset",
+      "sha256": "6c5548ea69639615cfb9814da9d374431afd64f88373e5784872ae5eea4672cd"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Pouch\\T_Nathan_pouch_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Pouch\\T_Nathan_pouch_color.uasset",
+      "sha256": "a55071808cf536f0dd6c6380a18c350f7c4b596ff0a55d3494b8bd0564e5ba8e"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Watch\\T_Nathan_os_drake_wristwatch_color.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\Watch\\T_Nathan_os_drake_wristwatch_color.uasset",
+      "sha256": "edb81b600783399b2690594d231bddb96f7250e73b05fcf76c501b3e8e88b6aa"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\MaterialAdaptation\\T_Nathan_iron_color_075_ColorData.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Textures\\MaterialAdaptation\\T_Nathan_iron_color_075_ColorData.uasset",
+      "sha256": "9010e5afa4df5ee944fd4f3f7e6e8037cc8fa1131eaede366e1b0b5abb871d45"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Cloth.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Cloth.uasset",
+      "sha256": "4f32ec13634f78ba4790157cf2a2df9a36a0e858549b00b8d81e358565033f88"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset",
+      "sha256": "0142de5955fb4c4cc4337dbb99b3e3e7c39a6e13d634269e5449d6be5edc48ca"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_SurfaceLayered.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_SurfaceLayered.uasset",
+      "sha256": "30a5b7dc655e1872bb41af3feebee63139021d8cebc0e5ce2f7b5b06244d69fb"
+    },
+    {
+      "file": "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Ring.uasset",
+      "backup": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Hotel_MaterialAlignment_20260925\\BeforeColorDomain\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Ring.uasset",
+      "sha256": "988949ea6bd6a51194ea8c369ea6530e631ae1caeebe961d793591bf7c4cdb40"
+    }
+  ],
+  "consumer": "Capture/51307_Compute.txt lines 206-236: uint GBuffer0 low/high bytes, /255, log2 * 2.2 exp2; Capture/51315_Compute.txt corroborates.",
+  "limitations": [
+    "Native UE BRDF/SSS/cloth remains an adaptation.",
+    "Q8 quantization remains omitted at user request.",
+    "Source mip generation/filtering vs UE recompression remain unverified."
+  ]
+}

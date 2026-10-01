@@ -1,0 +1,134 @@
+{
+  "original_frame": -9,
+  "dirty_before": [],
+  "dirty_maps_before": [],
+  "sequence": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100",
+  "binding": "3BBE86E04C598EE3024F91A462E15A5A",
+  "tracks": [
+    {
+      "slot": 0,
+      "part": "Face",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_2",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_2.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0,
+        "CutMaskRWeight": 0.6000000238418579
+      }
+    },
+    {
+      "slot": 1,
+      "part": "Face",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_6",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_6.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0,
+        "CutMaskRWeight": 0.6000000238418579
+      }
+    },
+    {
+      "slot": 22,
+      "part": "Holster",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_8",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_8.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 25,
+      "part": "Shirt",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_10",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_10.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 29,
+      "part": "Pants",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_12",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_12.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 31,
+      "part": "Boots",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_14",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_14.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 32,
+      "part": "Pouch",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_16",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_16.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 34,
+      "part": "Belt",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_18",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_18.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 35,
+      "part": "Holster",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_20",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_20.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 37,
+      "part": "Watch",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_22",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_22.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 39,
+      "part": "Arms",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_24",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_24.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    },
+    {
+      "slot": 40,
+      "part": "Arms",
+      "track": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_26",
+      "section": "/Game/Demo/Character/Elena/Cinematics/LS_Elena_Hotel060_100.LS_Elena_Hotel060_100:MovieScene_0.MovieSceneComponentMaterialTrack_26.MovieSceneComponentMaterialParameterSection_0",
+      "parameters": {
+        "DirtAmount": 0.8999999761581421,
+        "DynamicMudLimit": 0.0
+      }
+    }
+  ],
+  "ticks_per_frame": 800.0,
+  "saved": true,
+  "frame_after": -9
+}

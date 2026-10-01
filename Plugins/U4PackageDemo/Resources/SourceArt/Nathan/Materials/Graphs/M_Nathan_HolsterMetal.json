@@ -1,0 +1,2464 @@
+{
+  "material": {
+    "blend_mode": "BLEND_Opaque",
+    "shading_model": "MSM_DefaultLit",
+    "two_sided": false
+  },
+  "expressions": [
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1",
+      "class": "MakeMaterialAttributes",
+      "class_full": "MaterialExpressionMakeMaterialAttributes",
+      "pos_x": 680,
+      "pos_y": 140,
+      "properties": {
+        "Desc": "UE native shading inputs; original source operations before GBuffer encoding"
+      },
+      "inputs": [
+        "BaseColor",
+        "Metallic",
+        "Specular",
+        "Roughness",
+        "Anisotropy",
+        "EmissiveColor",
+        "Opacity",
+        "OpacityMask",
+        "Normal",
+        "Tangent",
+        "WorldPositionOffset",
+        "SubsurfaceColor",
+        "ClearCoat",
+        "ClearCoatRoughness",
+        "AmbientOcclusion",
+        "Refraction",
+        "CustomizedUVs_0",
+        "CustomizedUVs_1",
+        "CustomizedUVs_2",
+        "CustomizedUVs_3",
+        "CustomizedUVs_4",
+        "CustomizedUVs_5",
+        "CustomizedUVs_6",
+        "CustomizedUVs_7",
+        "PixelDepthOffset",
+        "ShadingModel",
+        "Displacement"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_4",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 5670,
+      "properties": {
+        "R": "1.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_4",
+      "precise": {
+        "R": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_13",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 5670,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _167: _119 * _123"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_13",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 1730,
+      "properties": {
+        "R": "0.000000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "precise": {
+        "R": 0.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_10",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 5670,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _170: _167 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_10",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_14",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 5670,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _186: _94 * _170"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_14",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_14",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 1950,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：最终基础色整体倍率。影响：在末端 Saturate 前乘到基础色 RGB；0 得到黑色。 输入：无量纲标量；仅结果 clamp 到 0–1，参数本身不新增限制。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColorIntensity",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_14",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_15",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 5670,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _189: _186 * _130"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_15",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_5",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 5670,
+      "properties": {
+        "Desc": "U4 29444: _192: sat(_189)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_5",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_16",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 5890,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _168: _120 * _124"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_16",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_11",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 5890,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _171: _168 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_11",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_17",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 5890,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _187: _94 * _171"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_17",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_18",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 5890,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _190: _187 * _130"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_18",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_6",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 5890,
+      "properties": {
+        "Desc": "U4 29444: _193: sat(_190)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_6",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_19",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 680,
+      "pos_y": 6110,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _169: _121 * _125"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_19",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_12",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1240,
+      "pos_y": 6110,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _172: _169 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_12",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_20",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1800,
+      "pos_y": 6110,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _188: _94 * _172"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_20",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_21",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 2360,
+      "pos_y": 6110,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _191: _188 * _130"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_21",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_7",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 6110,
+      "properties": {
+        "Desc": "U4 29444: _194: sat(_191)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_7",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_4",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 3480,
+      "pos_y": 5670,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_4",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_5",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 4040,
+      "pos_y": 5670,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_5",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_19",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2230,
+      "properties": {
+        "DefaultValue": "0.190000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：RoughnessTexture.R 重映射（纹理值为 0 的端点）。影响：按纹理 R 在两个端点之间插值；端点不排序，最终 Saturate。 输入：无量纲标量；端点可以相等，不存在范围除法。 范围／默认：本母材质默认：0.1899999976158142。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "RoughnessAtBlack",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_19",
+      "precise": {
+        "DefaultValue": 0.1899999976158142
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_20",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 2510,
+      "properties": {
+        "DefaultValue": "0.710000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "20",
+        "Desc": "用途：RoughnessTexture.R 重映射（纹理值为 1 的端点）。影响：按纹理 R 在两个端点之间插值；端点不排序，最终 Saturate。 输入：无量纲标量；端点可以相等，不存在范围除法。 范围／默认：本母材质默认：0.7099999785423279。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "RoughnessAtWhite",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_20",
+      "precise": {
+        "DefaultValue": 0.7099999785423279
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureCoordinate_1",
+      "class": "TextureCoordinate",
+      "class_full": "MaterialExpressionTextureCoordinate",
+      "pos_x": 120,
+      "pos_y": 2790,
+      "properties": {
+        "CoordinateIndex": "0",
+        "UTiling": "1.000000",
+        "VTiling": "1.000000",
+        "UnMirrorU": "False",
+        "UnMirrorV": "False",
+        "Desc": "UE internal UV0 equals source UV; FBX export adds its own V flip"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureCoordinate_1",
+      "precise": {
+        "UTiling": 1.0,
+        "VTiling": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_2",
+      "class": "ComponentMask",
+      "class_full": "MaterialExpressionComponentMask",
+      "pos_x": 680,
+      "pos_y": 3050,
+      "properties": {
+        "R": "True",
+        "G": "False",
+        "B": "False",
+        "A": "False"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_3",
+      "class": "ComponentMask",
+      "class_full": "MaterialExpressionComponentMask",
+      "pos_x": 680,
+      "pos_y": 3270,
+      "properties": {
+        "R": "False",
+        "G": "True",
+        "B": "False",
+        "A": "False"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_21",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3010,
+      "properties": {
+        "DefaultValue": "30.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：粗糙度纹理的 UV0 平铺倍率。影响：同时缩放 U/V；源 VS 的 g_uvScaleA 在当前 UE 图中按同一倍率应用，随后保留 V 坐标适配。 输入：无量纲标量；0 采样固定 UV，负数反向平铺。 范围／默认：本母材质默认：30.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "RoughnessUVScale",
+      "group": "01 Textures / 采样",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_21",
+      "precise": {
+        "DefaultValue": 30.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_22",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1240,
+      "pos_y": 1950,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _77: _IN.ATTR18.x"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_22",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_23",
+      "class": "Multiply",
+      "class_full": "MaterialExpressionMultiply",
+      "pos_x": 1240,
+      "pos_y": 2170,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _78: _IN.ATTR18.y"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_23",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_2",
+      "class": "TextureSampleParameter2D",
+      "class_full": "MaterialExpressionTextureSampleParameter2D",
+      "pos_x": 2920,
+      "pos_y": 1730,
+      "properties": {
+        "SortPriority": "0",
+        "MipValueMode": "TMVM_MipBias",
+        "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+        "GatherMode": "TGM_None",
+        "AutomaticViewMipBias": "False",
+        "ChannelNames": "()",
+        "ConstCoordinate": "0",
+        "ConstMipValue": "-1",
+        "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_smooth_plaster_blend.T_Nathan_smooth_plaster_blend'",
+        "SamplerType": "SAMPLERTYPE_LinearColor",
+        "IsDefaultMeshpaintTexture": "False",
+        "Desc": "用途：金属表面粗糙度变化。影响：R 驱动两端点插值；G/B/A 在本材质未使用。 输入：线性数据纹理；LinearColor 采样；保留 UV 采样与固定坐标采样的不同条件。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_smooth_plaster_blend.T_Nathan_smooth_plaster_blend'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "RoughnessTexture",
+      "group": "01 Textures / 贴图",
+      "inputs": [
+        "Coordinates",
+        "MipBias",
+        "Apply View MipBias"
+      ],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_3",
+      "class": "OneMinus",
+      "class_full": "MaterialExpressionOneMinus",
+      "pos_x": 1800,
+      "pos_y": 1730,
+      "properties": {},
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_6",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 2360,
+      "pos_y": 1730,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_6",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_22",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3290,
+      "properties": {
+        "DefaultValue": "-1.500000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "10",
+        "Desc": "用途：所有源 sampler0 的显式纹理 mip 偏移。影响：负值倾向更清晰的 mip，正值倾向更粗的 mip；不会改变纹理 UV 或颜色空间。 输入：标量，单位为 mip 级；源采样器捕获 bias=-1.5；不新增 clamp。 范围／默认：本母材质默认：-1.5。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：仅用于已连接的 MipBias 采样；显式 SampleLevel 仍由原 Level 输入控制。"
+      },
+      "is_parameter": true,
+      "parameter_name": "TextureMipBias",
+      "group": "01 Textures / 采样",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_22",
+      "precise": {
+        "DefaultValue": -1.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 2610,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_3",
+      "class": "TextureSampleParameter2D",
+      "class_full": "MaterialExpressionTextureSampleParameter2D",
+      "pos_x": 1800,
+      "pos_y": 1950,
+      "properties": {
+        "SortPriority": "0",
+        "MipValueMode": "TMVM_MipBias",
+        "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+        "GatherMode": "TGM_None",
+        "AutomaticViewMipBias": "False",
+        "ChannelNames": "()",
+        "ConstCoordinate": "0",
+        "ConstMipValue": "-1",
+        "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_smooth_plaster_blend.T_Nathan_smooth_plaster_blend'",
+        "SamplerType": "SAMPLERTYPE_LinearColor",
+        "IsDefaultMeshpaintTexture": "False",
+        "Desc": "用途：金属表面粗糙度变化。影响：R 驱动两端点插值；G/B/A 在本材质未使用。 输入：线性数据纹理；LinearColor 采样；保留 UV 采样与固定坐标采样的不同条件。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_smooth_plaster_blend.T_Nathan_smooth_plaster_blend'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "RoughnessTexture",
+      "group": "01 Textures / 贴图",
+      "inputs": [
+        "Coordinates",
+        "MipBias",
+        "Apply View MipBias"
+      ],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_3",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_4",
+      "class": "OneMinus",
+      "class_full": "MaterialExpressionOneMinus",
+      "pos_x": 680,
+      "pos_y": 1730,
+      "properties": {},
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_4",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_7",
+      "class": "AppendVector",
+      "class_full": "MaterialExpressionAppendVector",
+      "pos_x": 1240,
+      "pos_y": 1730,
+      "properties": {},
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_7",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_6",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 8290,
+      "properties": {
+        "R": "-0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_6",
+      "precise": {
+        "R": -0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_17",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 1800,
+      "pos_y": 8510,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _184: _183 + -0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_17",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_7",
+      "class": "Constant",
+      "class_full": "MaterialExpressionConstant",
+      "pos_x": 120,
+      "pos_y": 8510,
+      "properties": {
+        "R": "0.500000"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_7",
+      "precise": {
+        "R": 0.5
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_18",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 2360,
+      "pos_y": 8290,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _185: _184 + 0.500000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_18",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_8",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 2920,
+      "pos_y": 8290,
+      "properties": {
+        "Desc": "U4 29444: _195: sat(_185)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_8",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_23",
+      "class": "ScalarParameter",
+      "class_full": "MaterialExpressionScalarParameter",
+      "pos_x": 120,
+      "pos_y": 3570,
+      "properties": {
+        "DefaultValue": "1.000000",
+        "ControlType": "Numeric",
+        "SliderMin": "0.000000",
+        "SliderMax": "0.000000",
+        "Enumeration": "None",
+        "EnumerationIndex": "0",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "SortPriority": "0",
+        "Desc": "用途：金属度。影响：现有链末端 Saturate 后接 UE Metallic。 输入：无量纲标量，输出 0–1。 范围／默认：本母材质默认：1.0。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "Metallic",
+      "group": "04 Specular / 高光",
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_23",
+      "precise": {
+        "DefaultValue": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_19",
+      "class": "Add",
+      "class_full": "MaterialExpressionAdd",
+      "pos_x": 680,
+      "pos_y": 8290,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "Desc": "U4 29444: _173: _126 + 0.000000"
+      },
+      "inputs": [
+        "A",
+        "B"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_19",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_9",
+      "class": "Saturate",
+      "class_full": "MaterialExpressionSaturate",
+      "pos_x": 1240,
+      "pos_y": 8290,
+      "properties": {
+        "Desc": "U4 29444: _196: sat(_173)"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_9",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "class": "LinearInterpolate",
+      "class_full": "MaterialExpressionLinearInterpolate",
+      "pos_x": 680,
+      "pos_y": 8510,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "ConstAlpha": "0.500000",
+        "Desc": "UE 内置插值；Alpha 和外围 clamp 保持源连接。 U4 29444: _180: _177 + _179"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "class": "LinearInterpolate",
+      "class_full": "MaterialExpressionLinearInterpolate",
+      "pos_x": 1240,
+      "pos_y": 8510,
+      "properties": {
+        "ConstA": "0.000000",
+        "ConstB": "1.000000",
+        "ConstAlpha": "0.500000",
+        "Desc": "UE 内置插值；Alpha 和外围 clamp 保持源连接。 U4 29444: _183: _128 + _182"
+      },
+      "inputs": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "precise": {
+        "ConstA": 0.0,
+        "ConstB": 1.0
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_0",
+      "class": "VectorParameter",
+      "class_full": "MaterialExpressionVectorParameter",
+      "pos_x": 120,
+      "pos_y": 3850,
+      "properties": {
+        "DefaultValue": "(R=0.569000,G=0.569000,B=0.569000,A=1.000000)",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "ChannelNames": "()",
+        "SortPriority": "20",
+        "Desc": "用途：金属基础色的 RGB 染色倍率。影响：三个分量分别参与现有 RGB 乘法；改变对应通道，最终颜色按现有 Saturate 限制到 0–1。 输入：float3 RGB；保持导入时的数值约定，UE BaseColor 按线性解释；不在参数迁移时添加或移除颜色转换。 范围／默认：本母材质默认：[0.5690000057220459, 0.5690000057220459, 0.5690000057220459]。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColorTint",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_0",
+      "precise": {
+        "DefaultValue": [
+          0.5690000057220459,
+          0.5690000057220459,
+          0.5690000057220459,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_1",
+      "class": "VectorParameter",
+      "class_full": "MaterialExpressionVectorParameter",
+      "pos_x": 120,
+      "pos_y": 4130,
+      "properties": {
+        "DefaultValue": "(R=0.965000,G=0.824000,B=0.604000,A=1.000000)",
+        "bUseCustomPrimitiveData": "False",
+        "PrimitiveDataIndex": "0",
+        "ChannelNames": "()",
+        "SortPriority": "0",
+        "Desc": "用途：金属基础 RGB 颜色。影响：三个分量分别参与现有 RGB 乘法；改变对应通道，最终颜色按现有 Saturate 限制到 0–1。 输入：float3 RGB；保持导入时的数值约定，UE BaseColor 按线性解释；不在参数迁移时添加或移除颜色转换。 范围／默认：本母材质默认：[0.9649999737739563, 0.8240000009536743, 0.6039999723434448]。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+      },
+      "is_parameter": true,
+      "parameter_name": "BaseColor",
+      "group": "02 BaseColor / 基础色",
+      "inputs": [],
+      "outputs": [
+        "RGB",
+        "R",
+        "G",
+        "B",
+        "A",
+        "RGBA"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_1",
+      "precise": {
+        "DefaultValue": [
+          0.9649999737739563,
+          0.8240000009536743,
+          0.6039999723434448,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_0",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 4600,
+      "pos_y": 5670,
+      "properties": {
+        "Name": "L_Final_BaseColor",
+        "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_0",
+      "precise": {},
+      "variable_guid": "E9FC465B4B7F22059636088EF05617C6"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_1",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 1800,
+      "pos_y": 8290,
+      "properties": {
+        "Name": "L_Final_Metallic",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_1",
+      "precise": {},
+      "variable_guid": "01045BE14344F272FE736C88CD74D78C"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_2",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 3480,
+      "pos_y": 8290,
+      "properties": {
+        "Name": "L_Final_Roughness",
+        "NodeColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_2",
+      "precise": {},
+      "variable_guid": "C2C3AA234368D53DF8C4B1ABC4B8FCEF"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_3",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 3710,
+      "properties": {
+        "Name": "P_BaseColorTint_R",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_3",
+      "precise": {},
+      "variable_guid": "3C483D10482636150BC24795E1B272A9"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_4",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4370,
+      "properties": {
+        "Name": "P_BaseColor_R",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_4",
+      "precise": {},
+      "variable_guid": "138B2F9A4FE8A7852B38AAB237A177DD"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_5",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 1950,
+      "properties": {
+        "Name": "C_0",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_5",
+      "precise": {},
+      "variable_guid": "6B7833B347D9DBFD41B69D808314FCF5"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_6",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2170,
+      "properties": {
+        "Name": "P_BaseColorIntensity",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_6",
+      "precise": {},
+      "variable_guid": "1AFFB60E4CB9515734011D9DB04D450A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_7",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 3930,
+      "properties": {
+        "Name": "P_BaseColorTint_G",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_7",
+      "precise": {},
+      "variable_guid": "85458BA14B801B707AA95DA547911985"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_8",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4590,
+      "properties": {
+        "Name": "P_BaseColor_G",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_8",
+      "precise": {},
+      "variable_guid": "7497AF854B4F35DAA11184AC757D05F2"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_9",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4150,
+      "properties": {
+        "Name": "P_BaseColorTint_B",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_9",
+      "precise": {},
+      "variable_guid": "77FBED8B459F06E34AFFEB83E65A8CCF"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_10",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 4810,
+      "properties": {
+        "Name": "P_BaseColor_B",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_10",
+      "precise": {},
+      "variable_guid": "EAFE1F40483A15328CCD64A856948F7B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_11",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 3490,
+      "properties": {
+        "Name": "P_Metallic",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_11",
+      "precise": {},
+      "variable_guid": "883F07534BF6426D503DB0B477B69A96"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_12",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 3480,
+      "pos_y": 1730,
+      "properties": {
+        "Name": "S_RoughnessTexture_R_UV0Scaled",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_12",
+      "precise": {},
+      "variable_guid": "3ED03B6142A20B5C913002B6A088EE55"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_13",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 2360,
+      "pos_y": 1950,
+      "properties": {
+        "Name": "S_RoughnessTexture_R_FixedUV01",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_13",
+      "precise": {},
+      "variable_guid": "7BC0946F41E98C0A3B982CA4C4469F0A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_14",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2390,
+      "properties": {
+        "Name": "P_RoughnessAtBlack",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_14",
+      "precise": {},
+      "variable_guid": "1AD5DE234E1B79B3534B1C8A52D495E2"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_15",
+      "class": "NamedRerouteDeclaration",
+      "class_full": "MaterialExpressionNamedRerouteDeclaration",
+      "pos_x": 680,
+      "pos_y": 2830,
+      "properties": {
+        "Name": "P_RoughnessAtWhite",
+        "NodeColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+      },
+      "inputs": [
+        "Input"
+      ],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_15",
+      "precise": {},
+      "variable_guid": "AD2FA31B450DBE882AB591AF2AD6ED36"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_0",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 140,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_0",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_0",
+      "declaration_guid": "E9FC465B4B7F22059636088EF05617C6"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_1",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 360,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_1",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_1",
+      "declaration_guid": "01045BE14344F272FE736C88CD74D78C"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_2",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 580,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_2",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_2",
+      "declaration_guid": "C2C3AA234368D53DF8C4B1ABC4B8FCEF"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_3",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 5890,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_3",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_3",
+      "declaration_guid": "3C483D10482636150BC24795E1B272A9"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_4",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6110,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_4",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_4",
+      "declaration_guid": "138B2F9A4FE8A7852B38AAB237A177DD"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_5",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6330,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_5",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_5",
+      "declaration_guid": "6B7833B347D9DBFD41B69D808314FCF5"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_6",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6550,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_6",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_6",
+      "declaration_guid": "1AFFB60E4CB9515734011D9DB04D450A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_7",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6770,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_7",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_7",
+      "declaration_guid": "85458BA14B801B707AA95DA547911985"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_8",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 6990,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_8",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_8",
+      "declaration_guid": "7497AF854B4F35DAA11184AC757D05F2"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_9",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7210,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_9",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_9",
+      "declaration_guid": "77FBED8B459F06E34AFFEB83E65A8CCF"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_10",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 7430,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_10",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_10",
+      "declaration_guid": "EAFE1F40483A15328CCD64A856948F7B"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_11",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8730,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_11",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_11",
+      "declaration_guid": "883F07534BF6426D503DB0B477B69A96"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_12",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 8950,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_12",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_5",
+      "declaration_guid": "6B7833B347D9DBFD41B69D808314FCF5"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_13",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9170,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_13",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_12",
+      "declaration_guid": "3ED03B6142A20B5C913002B6A088EE55"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_14",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9390,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_14",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_13",
+      "declaration_guid": "7BC0946F41E98C0A3B982CA4C4469F0A"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_15",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9610,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_15",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_14",
+      "declaration_guid": "1AD5DE234E1B79B3534B1C8A52D495E2"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_16",
+      "class": "NamedRerouteUsage",
+      "class_full": "MaterialExpressionNamedRerouteUsage",
+      "pos_x": 120,
+      "pos_y": 9830,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_16",
+      "precise": {},
+      "declaration": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_15",
+      "declaration_guid": "AD2FA31B450DBE882AB591AF2AD6ED36"
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_0",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 0,
+      "properties": {
+        "Text": "[00] 最终输出",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_0",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_1",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 1590,
+      "properties": {
+        "Text": "[01] 公共输入与采样",
+        "CommentColor": "(R=0.120000,G=0.240000,B=0.180000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_1",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_2",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 5530,
+      "properties": {
+        "Text": "[02] 基础色",
+        "CommentColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_2",
+      "precise": {}
+    },
+    {
+      "id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_3",
+      "class": "Comment",
+      "class_full": "MaterialExpressionComment",
+      "pos_x": 0,
+      "pos_y": 8150,
+      "properties": {
+        "Text": "[04] 镜面与粗糙度",
+        "CommentColor": "(R=0.100000,G=0.200000,B=0.320000,A=1.000000)",
+        "FontSize": "28",
+        "bCommentBubbleVisible_InDetailsPanel": "True",
+        "bColorCommentBubble": "True",
+        "bGroupMode": "True"
+      },
+      "inputs": [],
+      "outputs": [
+        "Output_0"
+      ],
+      "object_path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComment_3",
+      "precise": {}
+    }
+  ],
+  "connections": [
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_0",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "BaseColor"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Metallic"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1",
+      "target_input": "Roughness"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_13",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_13",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_10",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_10",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_14",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_14",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_15",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_15",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_5",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_16",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_16",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_11",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_11",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_17",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_17",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_18",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_18",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_6",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_19",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_10",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_19",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_12",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_12",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_20",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_20",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_21",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_21",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_4",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_4",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_5",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_5",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureCoordinate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_2",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureCoordinate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_2",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_22",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_22",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionComponentMask_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_23",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_21",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_23",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_2",
+      "target_input": "Coordinates"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_2",
+      "target_input": "MipBias"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_23",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMultiply_22",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_6",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_3",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_6",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_22",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_3",
+      "target_input": "Coordinates"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_3",
+      "target_input": "MipBias"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_4",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_7",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionOneMinus_4",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_7",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_17",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_6",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_17",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_17",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_18",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_7",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_18",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_18",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_11",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_19",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_19",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAdd_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_9",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_13",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_12",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "target_input": "Alpha"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_15",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "target_input": "A"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteUsage_16",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "target_input": "B"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_0",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionLinearInterpolate_1",
+      "target_input": "Alpha"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionAppendVector_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_0",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_9",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_1",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionSaturate_8",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_2",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_0",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_3",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_1",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_4",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionConstant_5",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_5",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_14",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_6",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_0",
+      "source_output_index": 2,
+      "source_output_name": "G",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_7",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_1",
+      "source_output_index": 2,
+      "source_output_name": "G",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_8",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_0",
+      "source_output_index": 3,
+      "source_output_name": "B",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_9",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionVectorParameter_1",
+      "source_output_index": 3,
+      "source_output_name": "B",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_10",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_23",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_11",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_2",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_12",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionTextureSampleParameter2D_3",
+      "source_output_index": 1,
+      "source_output_name": "R",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_13",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_19",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_14",
+      "target_input": "Input"
+    },
+    {
+      "source_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionScalarParameter_20",
+      "source_output_index": 0,
+      "source_output_name": "",
+      "target_id": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionNamedRerouteDeclaration_15",
+      "target_input": "Input"
+    }
+  ],
+  "output_connections": [],
+  "attributes_root": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal:MaterialExpressionMakeMaterialAttributes_1"
+}

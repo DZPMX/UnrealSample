@@ -1,0 +1,364 @@
+{
+  "scope": "Restore hardware sRGB decode for six source UNormSRGB views. RGB is decoded before existing mask math; alpha and all math/weights unchanged.",
+  "source_evidence": [
+    {
+      "eid": 29483,
+      "instance": "Shirt",
+      "binding": "Texture2D27",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_rips_mask",
+      "source_resource": "ResourceId::948750",
+      "fresh_resource": "ResourceId::948750",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_703",
+          "line": 779,
+          "expression": "_157.Sample(_185, _213, _214, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    },
+    {
+      "eid": 29483,
+      "instance": "Shirt",
+      "binding": "Texture2D29",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_blood_mask",
+      "source_resource": "ResourceId::948726",
+      "fresh_resource": "ResourceId::948726",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_1304",
+          "line": 1404,
+          "expression": "_155.Sample(_185, _213, _214, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    },
+    {
+      "eid": 29502,
+      "instance": "Arms",
+      "binding": "Texture2D27",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_sword_wound_blood2_blend",
+      "source_resource": "ResourceId::948652",
+      "fresh_resource": "ResourceId::948652",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_909",
+          "line": 1001,
+          "expression": "_134.Sample(_162, _187, _188, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    },
+    {
+      "eid": 29596,
+      "instance": "Face",
+      "binding": "Texture2D35",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_blend",
+      "source_resource": "ResourceId::948520",
+      "fresh_resource": "ResourceId::948520",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_618",
+          "line": 699,
+          "expression": "_147.Sample(_183, _208, _209, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    },
+    {
+      "eid": 29596,
+      "instance": "Face",
+      "binding": "Texture2D36",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_auction_nadine_fight_head_mask",
+      "source_resource": "ResourceId::948653",
+      "fresh_resource": "ResourceId::948653",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_713",
+          "line": 806,
+          "expression": "_146.Sample(_183, _208, _209, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    },
+    {
+      "eid": 29596,
+      "instance": "Face",
+      "binding": "Texture2D37",
+      "asset": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_blood_mask",
+      "source_resource": "ResourceId::948574",
+      "fresh_resource": "ResourceId::948574",
+      "fresh_view_type": "UNormSRGB",
+      "source_operations": [
+        {
+          "ssa": "_1275",
+          "line": 1392,
+          "expression": "_145.Sample(_183, _208, _209, Offset = {0, 0})"
+        }
+      ],
+      "ue_srgb": false
+    }
+  ],
+  "nodes": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_10",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_11",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_37",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_38",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_39",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_4",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_40",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_41",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_42",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_43",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_44",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_5",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_6",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_7",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_8",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_9",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_276",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_277",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_278",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_279",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_280",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_281",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_282",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_283",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_288",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_289",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_290",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_291",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_292",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_293",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_294",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_295",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_296",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_297",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_298",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_299",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR: 6>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    }
+  ],
+  "textures": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_sword_wound_blood2_blend.T_Nathan_arm_sword_wound_blood2_blend",
+      "before": false,
+      "after": true,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_auction_nadine_fight_head_mask.T_Nathan_auction_nadine_fight_head_mask",
+      "before": false,
+      "after": true,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_blend.T_Nathan_head_cut_island_blend",
+      "before": false,
+      "after": true,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_blood_mask.T_Nathan_new_blood_mask",
+      "before": false,
+      "after": true,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_blood_mask.T_Nathan_shirt_wound_blood_mask",
+      "before": false,
+      "after": true,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_rips_mask.T_Nathan_shirt_wound_rips_mask",
+      "before": false,
+      "after": true,
+      "saved": true
+    }
+  ],
+  "materials": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin",
+      "saved": true
+    }
+  ],
+  "instances": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms.MI_Nathan_Arms",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots.MI_Nathan_Boots",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants.MI_Nathan_Pants",
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt.MI_Nathan_Shirt",
+      "saved": true
+    }
+  ],
+  "dirty_content": []
+}

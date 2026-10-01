@@ -1,0 +1,6469 @@
+[
+  {
+    "old_event": 29454,
+    "event": 45930,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948672",
+        "resource": "ResourceId::600774",
+        "old_hashes": [
+          5166941494875132721
+        ],
+        "hashes": [
+          5166941494875132721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_belt_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948719",
+        "resource": "ResourceId::600973",
+        "old_hashes": [
+          13814043749334471852
+        ],
+        "hashes": [
+          13814043749334471852
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_new1k_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948596",
+        "resource": "ResourceId::600545",
+        "old_hashes": [
+          1977332046134209404
+        ],
+        "hashes": [
+          1977332046134209404
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_belt_wear_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948567",
+        "resource": "ResourceId::600485",
+        "old_hashes": [
+          10611194371241127072
+        ],
+        "hashes": [
+          10611194371241127072
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_belt_dirt_connie.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::951313",
+        "resource": "ResourceId::603849",
+        "old_hashes": [
+          11597250093683821401
+        ],
+        "hashes": [
+          11597250093683821401
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_smooth_plaster_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951313",
+        "resource": "ResourceId::603849",
+        "old_hashes": [
+          11597250093683821401
+        ],
+        "hashes": [
+          11597250093683821401
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_smooth_plaster_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948487",
+        "resource": "ResourceId::600087",
+        "old_hashes": [
+          9467883414575742115
+        ],
+        "hashes": [
+          9467883414575742115
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_belt_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948487",
+        "resource": "ResourceId::600087",
+        "old_hashes": [
+          9467883414575742115
+        ],
+        "hashes": [
+          9467883414575742115
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_belt_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::951323",
+        "resource": "ResourceId::603892",
+        "old_hashes": [
+          7617580014571822261
+        ],
+        "hashes": [
+          7617580014571822261
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_medium_rough_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951327",
+        "resource": "ResourceId::604065",
+        "old_hashes": [
+          16202922200301342982
+        ],
+        "hashes": [
+          16202922200301342982
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_small_big_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951326",
+        "resource": "ResourceId::603896",
+        "old_hashes": [
+          4398573720771871358
+        ],
+        "hashes": [
+          4398573720771871358
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_aging_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951318",
+        "resource": "ResourceId::603854",
+        "old_hashes": [
+          16229633155108382827
+        ],
+        "hashes": [
+          16229633155108382827
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_metal_aging_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29539,
+    "event": 45940,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948598",
+        "resource": "ResourceId::600547",
+        "old_hashes": [
+          16142006711291845609
+        ],
+        "hashes": [
+          16142006711291845609
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pouch_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948628",
+        "resource": "ResourceId::600576",
+        "old_hashes": [
+          15761035002973118608
+        ],
+        "hashes": [
+          15761035002973118608
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pouch_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948599",
+        "resource": "ResourceId::600548",
+        "old_hashes": [
+          12331873678153694306
+        ],
+        "hashes": [
+          12331873678153694306
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pouch_wear_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948481",
+        "resource": "ResourceId::599956",
+        "old_hashes": [
+          948758791479464725
+        ],
+        "hashes": [
+          948758791479464725
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mad_pouch_static_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948481",
+        "resource": "ResourceId::599956",
+        "old_hashes": [
+          948758791479464725
+        ],
+        "hashes": [
+          948758791479464725
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mad_pouch_static_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951718",
+        "resource": "ResourceId::603510",
+        "old_hashes": [
+          2705307319282462266
+        ],
+        "hashes": [
+          2705307319282462266
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_id_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::951720",
+        "resource": "ResourceId::603697",
+        "old_hashes": [
+          15671527878057232674
+        ],
+        "hashes": [
+          15671527878057232674
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::951322",
+        "resource": "ResourceId::603891",
+        "old_hashes": [
+          17198676287863076735
+        ],
+        "hashes": [
+          17198676287863076735
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_large_grain_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::951327",
+        "resource": "ResourceId::604065",
+        "old_hashes": [
+          16202922200301342982
+        ],
+        "hashes": [
+          16202922200301342982
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_small_big_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951326",
+        "resource": "ResourceId::603896",
+        "old_hashes": [
+          4398573720771871358
+        ],
+        "hashes": [
+          4398573720771871358
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_aging_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29444,
+    "event": 46054,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::951313",
+        "resource": "ResourceId::603849",
+        "old_hashes": [
+          11597250093683821401
+        ],
+        "hashes": [
+          11597250093683821401
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_smooth_plaster_blend.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29435,
+    "event": 46064,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948603",
+        "resource": "ResourceId::600543",
+        "old_hashes": [
+          7020656612590438992
+        ],
+        "hashes": [
+          7020656612590438992
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_os_drake_wristwatch_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948621",
+        "resource": "ResourceId::600597",
+        "old_hashes": [
+          3765694456267628327
+        ],
+        "hashes": [
+          3765694456267628327
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_os_drake_wristwatch_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948622",
+        "resource": "ResourceId::600598",
+        "old_hashes": [
+          3312766412017743282
+        ],
+        "hashes": [
+          3312766412017743282
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_os_drake_wristwatch_wear_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948603",
+        "resource": "ResourceId::600543",
+        "old_hashes": [
+          7020656612590438992
+        ],
+        "hashes": [
+          7020656612590438992
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_os_drake_wristwatch_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::951315",
+        "resource": "ResourceId::603852",
+        "old_hashes": [
+          16814673205903538561
+        ],
+        "hashes": [
+          16814673205903538561
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_splatter3_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951315",
+        "resource": "ResourceId::603852",
+        "old_hashes": [
+          16814673205903538561
+        ],
+        "hashes": [
+          16814673205903538561
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_splatter3_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::951315",
+        "resource": "ResourceId::603852",
+        "old_hashes": [
+          16814673205903538561
+        ],
+        "hashes": [
+          16814673205903538561
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_splatter3_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948602",
+        "resource": "ResourceId::600754",
+        "old_hashes": [
+          6473974194753066636
+        ],
+        "hashes": [
+          6473974194753066636
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_watch_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::948602",
+        "resource": "ResourceId::600754",
+        "old_hashes": [
+          6473974194753066636
+        ],
+        "hashes": [
+          6473974194753066636
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_watch_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::948602",
+        "resource": "ResourceId::600754",
+        "old_hashes": [
+          6473974194753066636
+        ],
+        "hashes": [
+          6473974194753066636
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_watch_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951312",
+        "resource": "ResourceId::603848",
+        "old_hashes": [
+          3716908684010706466
+        ],
+        "hashes": [
+          3716908684010706466
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_scratches3_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951324",
+        "resource": "ResourceId::603894",
+        "old_hashes": [
+          14069031116782351792
+        ],
+        "hashes": [
+          14069031116782351792
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_soft_1_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::951327",
+        "resource": "ResourceId::604065",
+        "old_hashes": [
+          16202922200301342982
+        ],
+        "hashes": [
+          16202922200301342982
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_small_big_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951326",
+        "resource": "ResourceId::603896",
+        "old_hashes": [
+          4398573720771871358
+        ],
+        "hashes": [
+          4398573720771871358
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_aging_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29529,
+    "event": 46092,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948363",
+        "resource": "ResourceId::599524",
+        "old_hashes": [
+          4202919991518131447
+        ],
+        "hashes": [
+          4202919991518131447
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_teeth_color_2.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948364",
+        "resource": "ResourceId::599580",
+        "old_hashes": [
+          9044660535752322194
+        ],
+        "hashes": [
+          9044660535752322194
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_teeth_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948338",
+        "resource": "ResourceId::559964",
+        "old_hashes": [
+          9083620920687326191
+        ],
+        "hashes": [
+          9083620920687326191
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_elena_teeth_ao.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29549,
+    "event": 46181,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::951317",
+        "resource": "ResourceId::603853",
+        "old_hashes": [
+          5662140546518411791
+        ],
+        "hashes": [
+          5662140546518411791
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_iron_color_075.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::951314",
+        "resource": "ResourceId::603851",
+        "old_hashes": [
+          9762721083103206745
+        ],
+        "hashes": [
+          9762721083103206745
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_splatter2_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "17"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29464,
+    "event": 46253,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948530",
+        "resource": "ResourceId::600446",
+        "old_hashes": [
+          16934613298957975039
+        ],
+        "hashes": [
+          16934613298957975039
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948565",
+        "resource": "ResourceId::600451",
+        "old_hashes": [
+          9754750292967792945
+        ],
+        "hashes": [
+          9754750292967792945
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948626",
+        "resource": "ResourceId::600575",
+        "old_hashes": [
+          16406521298955353205
+        ],
+        "hashes": [
+          16406521298955353205
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948562",
+        "resource": "ResourceId::600448",
+        "old_hashes": [
+          12816049024113352138
+        ],
+        "hashes": [
+          12816049024113352138
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_edge_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948531",
+        "resource": "ResourceId::600447",
+        "old_hashes": [
+          1809788824122803629
+        ],
+        "hashes": [
+          1809788824122803629
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_dirt_connie.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948564",
+        "resource": "ResourceId::600450",
+        "old_hashes": [
+          4180574582291651261
+        ],
+        "hashes": [
+          4180574582291651261
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948564",
+        "resource": "ResourceId::600450",
+        "old_hashes": [
+          4180574582291651261
+        ],
+        "hashes": [
+          4180574582291651261
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948563",
+        "resource": "ResourceId::600449",
+        "old_hashes": [
+          8237943787614104391
+        ],
+        "hashes": [
+          8237943787614104391
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::948563",
+        "resource": "ResourceId::600449",
+        "old_hashes": [
+          8237943787614104391
+        ],
+        "hashes": [
+          8237943787614104391
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_holster_metal_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::951718",
+        "resource": "ResourceId::603510",
+        "old_hashes": [
+          2705307319282462266
+        ],
+        "hashes": [
+          2705307319282462266
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_id_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951720",
+        "resource": "ResourceId::603697",
+        "old_hashes": [
+          15671527878057232674
+        ],
+        "hashes": [
+          15671527878057232674
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951324",
+        "resource": "ResourceId::603894",
+        "old_hashes": [
+          14069031116782351792
+        ],
+        "hashes": [
+          14069031116782351792
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_soft_1_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::951327",
+        "resource": "ResourceId::604065",
+        "old_hashes": [
+          16202922200301342982
+        ],
+        "hashes": [
+          16202922200301342982
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_small_big_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951326",
+        "resource": "ResourceId::603896",
+        "old_hashes": [
+          4398573720771871358
+        ],
+        "hashes": [
+          4398573720771871358
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_aging_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29473,
+    "event": 46314,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "18"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29586,
+    "event": 46417,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::948489",
+        "resource": "ResourceId::600080",
+        "old_hashes": [
+          5876510333857372684
+        ],
+        "hashes": [
+          5876510333857372684
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948488",
+        "resource": "ResourceId::600088",
+        "old_hashes": [
+          12209877917037286225
+        ],
+        "hashes": [
+          12209877917037286225
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "17"
+        ],
+        "old_resource": "ResourceId::948534",
+        "resource": "ResourceId::600089",
+        "old_hashes": [
+          2156663602447016290
+        ],
+        "hashes": [
+          2156663602447016290
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_wear_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "17"
+        ],
+        "old_resource": "ResourceId::948533",
+        "resource": "ResourceId::600083",
+        "old_hashes": [
+          11187917290909561012
+        ],
+        "hashes": [
+          11187917290909561012
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_mud_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "17"
+        ],
+        "old_resource": "ResourceId::948533",
+        "resource": "ResourceId::600083",
+        "old_hashes": [
+          11187917290909561012
+        ],
+        "hashes": [
+          11187917290909561012
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_mud_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "17"
+        ],
+        "old_resource": "ResourceId::948533",
+        "resource": "ResourceId::600083",
+        "old_hashes": [
+          11187917290909561012
+        ],
+        "hashes": [
+          11187917290909561012
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_mud_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "17"
+        ],
+        "old_resource": "ResourceId::948532",
+        "resource": "ResourceId::600081",
+        "old_hashes": [
+          7069342023069414249
+        ],
+        "hashes": [
+          7069342023069414249
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_boots_leather_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "17"
+        ],
+        "old_resource": "ResourceId::951726",
+        "resource": "ResourceId::603822",
+        "old_hashes": [
+          6255098172112811570
+        ],
+        "hashes": [
+          6255098172112811570
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_linen_1_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "17"
+        ],
+        "old_resource": "ResourceId::951730",
+        "resource": "ResourceId::603826",
+        "old_hashes": [
+          7086565578028222903
+        ],
+        "hashes": [
+          7086565578028222903
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_imperfect_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "17"
+        ],
+        "old_resource": "ResourceId::951729",
+        "resource": "ResourceId::603825",
+        "old_hashes": [
+          2501126949986046950
+        ],
+        "hashes": [
+          2501126949986046950
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_var_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "17"
+        ],
+        "old_resource": "ResourceId::951324",
+        "resource": "ResourceId::603894",
+        "old_hashes": [
+          14069031116782351792
+        ],
+        "hashes": [
+          14069031116782351792
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_soft_1_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "17"
+        ],
+        "old_resource": "ResourceId::951321",
+        "resource": "ResourceId::603888",
+        "old_hashes": [
+          7897297008651065746
+        ],
+        "hashes": [
+          7897297008651065746
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_leather_back_side_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "17"
+        ],
+        "old_resource": "ResourceId::951327",
+        "resource": "ResourceId::604065",
+        "old_hashes": [
+          16202922200301342982
+        ],
+        "hashes": [
+          16202922200301342982
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_small_big_dirt_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "17"
+        ],
+        "old_resource": "ResourceId::951326",
+        "resource": "ResourceId::603896",
+        "old_hashes": [
+          4398573720771871358
+        ],
+        "hashes": [
+          4398573720771871358
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_aging_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "17"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "17"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "17"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "17"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29502,
+    "event": 46436,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948650",
+        "resource": "ResourceId::600731",
+        "old_hashes": [
+          6886341923081300774
+        ],
+        "hashes": [
+          6886341923081300774
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arm_clean_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948335",
+        "resource": "ResourceId::600815",
+        "old_hashes": [
+          16035809746284626747
+        ],
+        "hashes": [
+          16035809746284626747
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_arms_island_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948649",
+        "resource": "ResourceId::600732",
+        "old_hashes": [
+          13157298380029875501
+        ],
+        "hashes": [
+          13157298380029875501
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arm_clean_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948694",
+        "resource": "ResourceId::600795",
+        "old_hashes": [
+          5858412070091632133
+        ],
+        "hashes": [
+          5858412070091632133
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_arms_island_detail_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948486",
+        "resource": "ResourceId::600086",
+        "old_hashes": [
+          16488565914222014939
+        ],
+        "hashes": [
+          16488565914222014939
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arms_spec_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948484",
+        "resource": "ResourceId::600084",
+        "old_hashes": [
+          5688107274385585396
+        ],
+        "hashes": [
+          5688107274385585396
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arms_dirt_blend_connie.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948485",
+        "resource": "ResourceId::600085",
+        "old_hashes": [
+          17032834969498604655
+        ],
+        "hashes": [
+          17032834969498604655
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arms_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948485",
+        "resource": "ResourceId::600085",
+        "old_hashes": [
+          17032834969498604655
+        ],
+        "hashes": [
+          17032834969498604655
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arms_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::948436",
+        "resource": "ResourceId::593948",
+        "old_hashes": [
+          4748354031484006485
+        ],
+        "hashes": [
+          4748354031484006485
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_rafe_arms_sweat_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::948652",
+        "resource": "ResourceId::600689",
+        "old_hashes": [
+          17438249583534380354
+        ],
+        "hashes": [
+          17438249583534380354
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arm_sword_wound_blood2_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::948336",
+        "resource": "ResourceId::604142",
+        "old_hashes": [
+          5405492356754224248
+        ],
+        "hashes": [
+          5405492356754224248
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_finger_ibl_thickness_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951341",
+        "resource": "ResourceId::604159",
+        "old_hashes": [
+          3970183739307275873
+        ],
+        "hashes": [
+          3970183739307275873
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_lip_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29483,
+    "event": 46503,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::948569",
+        "resource": "ResourceId::600552",
+        "old_hashes": [
+          10429580384162857891
+        ],
+        "hashes": [
+          10429580384162857891
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_shirt_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948725",
+        "resource": "ResourceId::601015",
+        "old_hashes": [
+          4283652694154443294
+        ],
+        "hashes": [
+          4283652694154443294
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_new_base1k_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "17"
+        ],
+        "old_resource": "ResourceId::948623",
+        "resource": "ResourceId::600599",
+        "old_hashes": [
+          2832548057951213320
+        ],
+        "hashes": [
+          2832548057951213320
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_and_bottons_bent_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "17"
+        ],
+        "old_resource": "ResourceId::948723",
+        "resource": "ResourceId::601017",
+        "old_hashes": [
+          10321176817136325789
+        ],
+        "hashes": [
+          10321176817136325789
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_base_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "17"
+        ],
+        "old_resource": "ResourceId::948751",
+        "resource": "ResourceId::601039",
+        "old_hashes": [
+          7584867594887180163
+        ],
+        "hashes": [
+          7584867594887180163
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_wound2_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "17"
+        ],
+        "old_resource": "ResourceId::948601",
+        "resource": "ResourceId::600516",
+        "old_hashes": [
+          9251727061677550908
+        ],
+        "hashes": [
+          9251727061677550908
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirts_sweat_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "17"
+        ],
+        "old_resource": "ResourceId::948572",
+        "resource": "ResourceId::600554",
+        "old_hashes": [
+          8554815637292957498
+        ],
+        "hashes": [
+          8554815637292957498
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_shirt_mud_revision.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "17"
+        ],
+        "old_resource": "ResourceId::948572",
+        "resource": "ResourceId::600554",
+        "old_hashes": [
+          8554815637292957498
+        ],
+        "hashes": [
+          8554815637292957498
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_shirt_mud_revision.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "17"
+        ],
+        "old_resource": "ResourceId::948571",
+        "resource": "ResourceId::600553",
+        "old_hashes": [
+          17372756512403579343
+        ],
+        "hashes": [
+          17372756512403579343
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_shirt_mud_revision_2.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "17"
+        ],
+        "old_resource": "ResourceId::948750",
+        "resource": "ResourceId::601038",
+        "old_hashes": [
+          1060932393431444618
+        ],
+        "hashes": [
+          1060932393431444618
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_wound_rips_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "17"
+        ],
+        "old_resource": "ResourceId::948600",
+        "resource": "ResourceId::600519",
+        "old_hashes": [
+          17241418831240330640
+        ],
+        "hashes": [
+          17241418831240330640
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_fabric_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "17"
+        ],
+        "old_resource": "ResourceId::948726",
+        "resource": "ResourceId::601016",
+        "old_hashes": [
+          9399429086315430016
+        ],
+        "hashes": [
+          9399429086315430016
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_shirt_wound_blood_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "17"
+        ],
+        "old_resource": "ResourceId::49679",
+        "resource": "ResourceId::48517",
+        "old_hashes": [
+          3838998393860077366
+        ],
+        "hashes": [
+          3838998393860077366
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_waves_wind.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "17"
+        ],
+        "old_resource": "ResourceId::49679",
+        "resource": "ResourceId::48517",
+        "old_hashes": [
+          3838998393860077366
+        ],
+        "hashes": [
+          3838998393860077366
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_waves_wind.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "17"
+        ],
+        "old_resource": "ResourceId::951733",
+        "resource": "ResourceId::604275",
+        "old_hashes": [
+          9639981872964980969
+        ],
+        "hashes": [
+          9639981872964980969
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_waves_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "17"
+        ],
+        "old_resource": "ResourceId::951725",
+        "resource": "ResourceId::603821",
+        "old_hashes": [
+          13735545773835418554
+        ],
+        "hashes": [
+          13735545773835418554
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_knit_plain_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "17"
+        ],
+        "old_resource": "ResourceId::951730",
+        "resource": "ResourceId::603826",
+        "old_hashes": [
+          7086565578028222903
+        ],
+        "hashes": [
+          7086565578028222903
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_imperfect_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "17"
+        ],
+        "old_resource": "ResourceId::951727",
+        "resource": "ResourceId::603824",
+        "old_hashes": [
+          10928350993482199353
+        ],
+        "hashes": [
+          10928350993482199353
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_small_wrinkles.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "19",
+          "17"
+        ],
+        "old_resource": "ResourceId::951729",
+        "resource": "ResourceId::603825",
+        "old_hashes": [
+          2501126949986046950
+        ],
+        "hashes": [
+          2501126949986046950
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_var_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "20",
+          "17"
+        ],
+        "old_resource": "ResourceId::951718",
+        "resource": "ResourceId::603510",
+        "old_hashes": [
+          2705307319282462266
+        ],
+        "hashes": [
+          2705307319282462266
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_id_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "21",
+          "17"
+        ],
+        "old_resource": "ResourceId::951720",
+        "resource": "ResourceId::603697",
+        "old_hashes": [
+          15671527878057232674
+        ],
+        "hashes": [
+          15671527878057232674
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "22",
+          "17"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "23",
+          "17"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "24",
+          "17"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "25",
+          "17"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29596,
+    "event": 46513,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948696",
+        "resource": "ResourceId::600817",
+        "old_hashes": [
+          1172156897000886727
+        ],
+        "hashes": [
+          1172156897000886727
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_head_clean_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948671",
+        "resource": "ResourceId::600773",
+        "old_hashes": [
+          3872407067802137125
+        ],
+        "hashes": [
+          3872407067802137125
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_new_ingame_smooth_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948435",
+        "resource": "ResourceId::560326",
+        "old_hashes": [
+          11384860628713189076
+        ],
+        "hashes": [
+          11384860628713189076
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_elena_head_sss_strength_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948671",
+        "resource": "ResourceId::600773",
+        "old_hashes": [
+          3872407067802137125
+        ],
+        "hashes": [
+          3872407067802137125
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_new_ingame_smooth_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948437",
+        "resource": "ResourceId::598795",
+        "old_hashes": [
+          1008742578027568112
+        ],
+        "hashes": [
+          1008742578027568112
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hero_island_head_distortion.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948552",
+        "resource": "ResourceId::600283",
+        "old_hashes": [
+          12782171510005054162
+        ],
+        "hashes": [
+          12782171510005054162
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_ao_mask_F7F83AD2.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948526",
+        "resource": "ResourceId::600539",
+        "old_hashes": [
+          7889691592189750214
+        ],
+        "hashes": [
+          7889691592189750214
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_cut_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948527",
+        "resource": "ResourceId::600394",
+        "old_hashes": [
+          1342942684892064265
+        ],
+        "hashes": [
+          1342942684892064265
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_cut_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::948529",
+        "resource": "ResourceId::600444",
+        "old_hashes": [
+          8534855636223733887
+        ],
+        "hashes": [
+          8534855636223733887
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_thickness_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::948674",
+        "resource": "ResourceId::600755",
+        "old_hashes": [
+          16721334451000778622
+        ],
+        "hashes": [
+          16721334451000778622
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_new_ingame_detail_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951710",
+        "resource": "ResourceId::603381",
+        "old_hashes": [
+          3584169146989268246
+        ],
+        "hashes": [
+          3584169146989268246
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_example_head_secondary_spec_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::948525",
+        "resource": "ResourceId::600334",
+        "old_hashes": [
+          12254716307174868055
+        ],
+        "hashes": [
+          12254716307174868055
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_cut_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::948524",
+        "resource": "ResourceId::600551",
+        "old_hashes": [
+          11309858807559423826
+        ],
+        "hashes": [
+          11309858807559423826
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_blood_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::948523",
+        "resource": "ResourceId::600550",
+        "old_hashes": [
+          13465726081154818722
+        ],
+        "hashes": [
+          13465726081154818722
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_blood_direction_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::948528",
+        "resource": "ResourceId::600443",
+        "old_hashes": [
+          5625084650306491061
+        ],
+        "hashes": [
+          5625084650306491061
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_dirt_blend_connie.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::948573",
+        "resource": "ResourceId::600442",
+        "old_hashes": [
+          11232132295335950338
+        ],
+        "hashes": [
+          11232132295335950338
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951732",
+        "resource": "ResourceId::604235",
+        "old_hashes": [
+          3986737078937964657
+        ],
+        "hashes": [
+          3986737078937964657
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_goop03_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "16"
+        ],
+        "old_resource": "ResourceId::948520",
+        "resource": "ResourceId::600285",
+        "old_hashes": [
+          14596557327083087995
+        ],
+        "hashes": [
+          14596557327083087995
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_cut_island_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "16"
+        ],
+        "old_resource": "ResourceId::948653",
+        "resource": "ResourceId::600690",
+        "old_hashes": [
+          12805207741901678539
+        ],
+        "hashes": [
+          12805207741901678539
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_auction_nadine_fight_head_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "19",
+          "16"
+        ],
+        "old_resource": "ResourceId::948574",
+        "resource": "ResourceId::600445",
+        "old_hashes": [
+          2415770098253352523
+        ],
+        "hashes": [
+          2415770098253352523
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_blood_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "20",
+          "16"
+        ],
+        "old_resource": "ResourceId::948480",
+        "resource": "ResourceId::599500",
+        "old_hashes": [
+          13043380799835506935
+        ],
+        "hashes": [
+          13043380799835506935
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_dive_wet_mask_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "21",
+          "16"
+        ],
+        "old_resource": "ResourceId::951341",
+        "resource": "ResourceId::604159",
+        "old_hashes": [
+          3970183739307275873
+        ],
+        "hashes": [
+          3970183739307275873
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_lip_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "22",
+          "16"
+        ],
+        "old_resource": "ResourceId::951339",
+        "resource": "ResourceId::604151",
+        "old_hashes": [
+          14521305417286738741
+        ],
+        "hashes": [
+          14521305417286738741
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sweat_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "23",
+          "16"
+        ],
+        "old_resource": "ResourceId::951329",
+        "resource": "ResourceId::604066",
+        "old_hashes": [
+          17554013227641979840
+        ],
+        "hashes": [
+          17554013227641979840
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_blood_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "24",
+          "16"
+        ],
+        "old_resource": "ResourceId::951340",
+        "resource": "ResourceId::604152",
+        "old_hashes": [
+          3745357391456612389
+        ],
+        "hashes": [
+          3745357391456612389
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_wetness_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "25",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "26",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29615,
+    "event": 46532,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948673",
+        "resource": "ResourceId::600775",
+        "old_hashes": [
+          13422721860899802562
+        ],
+        "hashes": [
+          13422721860899802562
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_pants_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948717",
+        "resource": "ResourceId::600953",
+        "old_hashes": [
+          7287644703758126778
+        ],
+        "hashes": [
+          7287644703758126778
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_pants_adam_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948720",
+        "resource": "ResourceId::600974",
+        "old_hashes": [
+          17090827013736355979
+        ],
+        "hashes": [
+          17090827013736355979
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_wound_ao.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948718",
+        "resource": "ResourceId::600952",
+        "old_hashes": [
+          15657780915576031040
+        ],
+        "hashes": [
+          15657780915576031040
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_pants_adam_details_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948568",
+        "resource": "ResourceId::600486",
+        "old_hashes": [
+          11179367141654377930
+        ],
+        "hashes": [
+          11179367141654377930
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_island_pants_dirt_connie.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948597",
+        "resource": "ResourceId::600546",
+        "old_hashes": [
+          14195984953672790812
+        ],
+        "hashes": [
+          14195984953672790812
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948597",
+        "resource": "ResourceId::600546",
+        "old_hashes": [
+          14195984953672790812
+        ],
+        "hashes": [
+          14195984953672790812
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::948721",
+        "resource": "ResourceId::600994",
+        "old_hashes": [
+          9437603167031157474
+        ],
+        "hashes": [
+          9437603167031157474
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_pants_wound_tear_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::49679",
+        "resource": "ResourceId::48517",
+        "old_hashes": [
+          3838998393860077366
+        ],
+        "hashes": [
+          3838998393860077366
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_waves_wind.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::951726",
+        "resource": "ResourceId::603822",
+        "old_hashes": [
+          6255098172112811570
+        ],
+        "hashes": [
+          6255098172112811570
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_linen_1_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::951730",
+        "resource": "ResourceId::603826",
+        "old_hashes": [
+          7086565578028222903
+        ],
+        "hashes": [
+          7086565578028222903
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_imperfect_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::951727",
+        "resource": "ResourceId::603824",
+        "old_hashes": [
+          10928350993482199353
+        ],
+        "hashes": [
+          10928350993482199353
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_small_wrinkles.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::951729",
+        "resource": "ResourceId::603825",
+        "old_hashes": [
+          2501126949986046950
+        ],
+        "hashes": [
+          2501126949986046950
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_fabrics_var_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951718",
+        "resource": "ResourceId::603510",
+        "old_hashes": [
+          2705307319282462266
+        ],
+        "hashes": [
+          2705307319282462266
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_id_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951720",
+        "resource": "ResourceId::603697",
+        "old_hashes": [
+          15671527878057232674
+        ],
+        "hashes": [
+          15671527878057232674
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stitches_normal_1.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951337",
+        "resource": "ResourceId::604149",
+        "old_hashes": [
+          17086107246573414976
+        ],
+        "hashes": [
+          17086107246573414976
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "16"
+        ],
+        "old_resource": "ResourceId::951338",
+        "resource": "ResourceId::604150",
+        "old_hashes": [
+          793830346098126057
+        ],
+        "hashes": [
+          793830346098126057
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sand_dry_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "19",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29625,
+    "event": 46542,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948697",
+        "resource": "ResourceId::600837",
+        "old_hashes": [
+          4728920772387295464
+        ],
+        "hashes": [
+          4728920772387295464
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_head_sunburns_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948671",
+        "resource": "ResourceId::600773",
+        "old_hashes": [
+          3872407067802137125
+        ],
+        "hashes": [
+          3872407067802137125
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_new_ingame_smooth_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948435",
+        "resource": "ResourceId::560326",
+        "old_hashes": [
+          11384860628713189076
+        ],
+        "hashes": [
+          11384860628713189076
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_elena_head_sss_strength_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948553",
+        "resource": "ResourceId::600284",
+        "old_hashes": [
+          14233452221015094698
+        ],
+        "hashes": [
+          14233452221015094698
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_ao_mask_091975AA.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948521",
+        "resource": "ResourceId::600286",
+        "old_hashes": [
+          12970756182502858509
+        ],
+        "hashes": [
+          12970756182502858509
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_cut_island_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948522",
+        "resource": "ResourceId::600549",
+        "old_hashes": [
+          3749044652605185663
+        ],
+        "hashes": [
+          3749044652605185663
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_cut_island_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948529",
+        "resource": "ResourceId::600444",
+        "old_hashes": [
+          8534855636223733887
+        ],
+        "hashes": [
+          8534855636223733887
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_thickness_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948674",
+        "resource": "ResourceId::600755",
+        "old_hashes": [
+          16721334451000778622
+        ],
+        "hashes": [
+          16721334451000778622
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_new_ingame_detail_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::951710",
+        "resource": "ResourceId::603381",
+        "old_hashes": [
+          3584169146989268246
+        ],
+        "hashes": [
+          3584169146989268246
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_example_head_secondary_spec_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::948525",
+        "resource": "ResourceId::600334",
+        "old_hashes": [
+          12254716307174868055
+        ],
+        "hashes": [
+          12254716307174868055
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_cut_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "10",
+          "16"
+        ],
+        "old_resource": "ResourceId::948524",
+        "resource": "ResourceId::600551",
+        "old_hashes": [
+          11309858807559423826
+        ],
+        "hashes": [
+          11309858807559423826
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_blood_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "11",
+          "16"
+        ],
+        "old_resource": "ResourceId::948523",
+        "resource": "ResourceId::600550",
+        "old_hashes": [
+          13465726081154818722
+        ],
+        "hashes": [
+          13465726081154818722
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_head_demo_blood_direction_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "12",
+          "16"
+        ],
+        "old_resource": "ResourceId::948573",
+        "resource": "ResourceId::600442",
+        "old_hashes": [
+          11232132295335950338
+        ],
+        "hashes": [
+          11232132295335950338
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "13",
+          "16"
+        ],
+        "old_resource": "ResourceId::948573",
+        "resource": "ResourceId::600442",
+        "old_hashes": [
+          11232132295335950338
+        ],
+        "hashes": [
+          11232132295335950338
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "14",
+          "16"
+        ],
+        "old_resource": "ResourceId::951341",
+        "resource": "ResourceId::604159",
+        "old_hashes": [
+          3970183739307275873
+        ],
+        "hashes": [
+          3970183739307275873
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_lip_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "15",
+          "16"
+        ],
+        "old_resource": "ResourceId::951339",
+        "resource": "ResourceId::604151",
+        "old_hashes": [
+          14521305417286738741
+        ],
+        "hashes": [
+          14521305417286738741
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sweat_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "16",
+          "16"
+        ],
+        "old_resource": "ResourceId::951329",
+        "resource": "ResourceId::604066",
+        "old_hashes": [
+          17554013227641979840
+        ],
+        "hashes": [
+          17554013227641979840
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_blood_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "17",
+          "16"
+        ],
+        "old_resource": "ResourceId::951340",
+        "resource": "ResourceId::604152",
+        "old_hashes": [
+          3745357391456612389
+        ],
+        "hashes": [
+          3745357391456612389
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_wetness_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "18",
+          "16"
+        ],
+        "old_resource": "ResourceId::951333",
+        "resource": "ResourceId::604147",
+        "old_hashes": [
+          17617435035502644721
+        ],
+        "hashes": [
+          17617435035502644721
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "19",
+          "16"
+        ],
+        "old_resource": "ResourceId::951336",
+        "resource": "ResourceId::604148",
+        "old_hashes": [
+          7690405281343955776
+        ],
+        "hashes": [
+          7690405281343955776
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_mud_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29634,
+    "event": 46551,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::951711",
+        "resource": "ResourceId::603383",
+        "old_hashes": [
+          13513413582538521199
+        ],
+        "hashes": [
+          13513413582538521199
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_example_teeth_tongue_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948625",
+        "resource": "ResourceId::600595",
+        "old_hashes": [
+          11102579040798183415
+        ],
+        "hashes": [
+          11102579040798183415
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_tongue_bent_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29425,
+    "event": 46560,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948695",
+        "resource": "ResourceId::600816",
+        "old_hashes": [
+          17746654809850600317
+        ],
+        "hashes": [
+          17746654809850600317
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_eyes_053014_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948483",
+        "resource": "ResourceId::599957",
+        "old_hashes": [
+          7067114900659728074
+        ],
+        "hashes": [
+          7067114900659728074
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_prison_cry_eyes_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::951713",
+        "resource": "ResourceId::603505",
+        "old_hashes": [
+          17476882757198312344
+        ],
+        "hashes": [
+          17476882757198312344
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_eye_lash_height_highlight_ring_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::951714",
+        "resource": "ResourceId::603506",
+        "old_hashes": [
+          3611044318995876136
+        ],
+        "hashes": [
+          3611044318995876136
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_eye_sclera_ssao_spec_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951715",
+        "resource": "ResourceId::603507",
+        "old_hashes": [
+          11323957427545610664
+        ],
+        "hashes": [
+          11323957427545610664
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sclera_normal.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29492,
+    "event": 46757,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948359",
+        "resource": "ResourceId::599765",
+        "old_hashes": [
+          16452482186636676934
+        ],
+        "hashes": [
+          16452482186636676934
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_caruncle_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948535",
+        "resource": "ResourceId::600660",
+        "old_hashes": [
+          17791676178116763627
+        ],
+        "hashes": [
+          17791676178116763627
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_caruncle_ao.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29664,
+    "event": 46824,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948544",
+        "resource": "ResourceId::600686",
+        "old_hashes": [
+          6250406353823443240
+        ],
+        "hashes": [
+          6250406353823443240
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948549",
+        "resource": "ResourceId::600280",
+        "old_hashes": [
+          13660212187364753594
+        ],
+        "hashes": [
+          13660212187364753594
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_shadow_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948540",
+        "resource": "ResourceId::600665",
+        "old_hashes": [
+          16798947586515128144
+        ],
+        "hashes": [
+          16798947586515128144
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_46A3CF50.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29674,
+    "event": 46844,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948538",
+        "resource": "ResourceId::600663",
+        "old_hashes": [
+          1262754567496209490
+        ],
+        "hashes": [
+          1262754567496209490
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948539",
+        "resource": "ResourceId::600664",
+        "old_hashes": [
+          10039668123540666450
+        ],
+        "hashes": [
+          10039668123540666450
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_shadow_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948536",
+        "resource": "ResourceId::600661",
+        "old_hashes": [
+          15095256632450793501
+        ],
+        "hashes": [
+          15095256632450793501
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_ao_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29684,
+    "event": 46883,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948544",
+        "resource": "ResourceId::600686",
+        "old_hashes": [
+          6250406353823443240
+        ],
+        "hashes": [
+          6250406353823443240
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948540",
+        "resource": "ResourceId::600665",
+        "old_hashes": [
+          16798947586515128144
+        ],
+        "hashes": [
+          16798947586515128144
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_46A3CF50.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29694,
+    "event": 46893,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948541",
+        "resource": "ResourceId::600691",
+        "old_hashes": [
+          9288819167735825562
+        ],
+        "hashes": [
+          9288819167735825562
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_9BBBC49A.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "17"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29704,
+    "event": 46922,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948538",
+        "resource": "ResourceId::600663",
+        "old_hashes": [
+          1262754567496209490
+        ],
+        "hashes": [
+          1262754567496209490
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948539",
+        "resource": "ResourceId::600664",
+        "old_hashes": [
+          10039668123540666450
+        ],
+        "hashes": [
+          10039668123540666450
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_shadow_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948536",
+        "resource": "ResourceId::600661",
+        "old_hashes": [
+          15095256632450793501
+        ],
+        "hashes": [
+          15095256632450793501
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thick_ao_mask.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29644,
+    "event": 46941,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::948339",
+        "resource": "ResourceId::597346",
+        "old_hashes": [
+          8479796220168290411
+        ],
+        "hashes": [
+          8479796220168290411
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sully_hair_thin2_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948340",
+        "resource": "ResourceId::597367",
+        "old_hashes": [
+          6888407324108886919
+        ],
+        "hashes": [
+          6888407324108886919
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sully_hair_thin2_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "17"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 29654,
+    "event": 46960,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948548",
+        "resource": "ResourceId::600542",
+        "old_hashes": [
+          4453748983636522395
+        ],
+        "hashes": [
+          4453748983636522395
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948519",
+        "resource": "ResourceId::600692",
+        "old_hashes": [
+          4291297963972197399
+        ],
+        "hashes": [
+          4291297963972197399
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mud_mask_0FEB7C17.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948544",
+        "resource": "ResourceId::600686",
+        "old_hashes": [
+          6250406353823443240
+        ],
+        "hashes": [
+          6250406353823443240
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948540",
+        "resource": "ResourceId::600665",
+        "old_hashes": [
+          16798947586515128144
+        ],
+        "hashes": [
+          16798947586515128144
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_46A3CF50.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948551",
+        "resource": "ResourceId::600282",
+        "old_hashes": [
+          1218806131742809788
+        ],
+        "hashes": [
+          1218806131742809788
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_snow_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948546",
+        "resource": "ResourceId::600082",
+        "old_hashes": [
+          10014928830215916133
+        ],
+        "hashes": [
+          10014928830215916133
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_blend_AFD68A65.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32306,
+    "event": 51843,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "15"
+        ],
+        "old_resource": "ResourceId::948362",
+        "resource": "ResourceId::599521",
+        "old_hashes": [
+          1639882781437272609
+        ],
+        "hashes": [
+          1639882781437272609
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stubble2_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "15"
+        ],
+        "old_resource": "ResourceId::948361",
+        "resource": "ResourceId::599520",
+        "old_hashes": [
+          4781358794863206603
+        ],
+        "hashes": [
+          4781358794863206603
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_stubble_trans.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32316,
+    "event": 51863,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "15"
+        ],
+        "old_resource": null,
+        "resource": "ResourceId::612014",
+        "old_hashes": [],
+        "hashes": [],
+        "same_source": false,
+        "same_format": false,
+        "mips": [],
+        "files": []
+      },
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::951716",
+        "resource": "ResourceId::603508",
+        "old_hashes": [
+          16555783911575901957
+        ],
+        "hashes": [
+          16555783911575901957
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_tear_env_539BD705.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::951717",
+        "resource": "ResourceId::603509",
+        "old_hashes": [
+          14968119965157595458
+        ],
+        "hashes": [
+          14968119965157595458
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_tear_env_C6A69942.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32326,
+    "event": 51853,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948548",
+        "resource": "ResourceId::600542",
+        "old_hashes": [
+          4453748983636522395
+        ],
+        "hashes": [
+          4453748983636522395
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948545",
+        "resource": "ResourceId::600079",
+        "old_hashes": [
+          243329516937826182
+        ],
+        "hashes": [
+          243329516937826182
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_alpha.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948519",
+        "resource": "ResourceId::600692",
+        "old_hashes": [
+          4291297963972197399
+        ],
+        "hashes": [
+          4291297963972197399
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mud_mask_0FEB7C17.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948544",
+        "resource": "ResourceId::600686",
+        "old_hashes": [
+          6250406353823443240
+        ],
+        "hashes": [
+          6250406353823443240
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948543",
+        "resource": "ResourceId::600694",
+        "old_hashes": [
+          1248428048073594098
+        ],
+        "hashes": [
+          1248428048073594098
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948540",
+        "resource": "ResourceId::600665",
+        "old_hashes": [
+          16798947586515128144
+        ],
+        "hashes": [
+          16798947586515128144
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_46A3CF50.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948547",
+        "resource": "ResourceId::600540",
+        "old_hashes": [
+          17025769119527661325
+        ],
+        "hashes": [
+          17025769119527661325
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_blend_CD42EF0D.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "8",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32335,
+    "event": 51881,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "15"
+        ],
+        "old_resource": "ResourceId::948337",
+        "resource": "ResourceId::561165",
+        "old_hashes": [
+          4333802877499635534
+        ],
+        "hashes": [
+          4333802877499635534
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_lash_id_2.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32344,
+    "event": 51910,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948595",
+        "resource": "ResourceId::600518",
+        "old_hashes": [
+          883954006542493095
+        ],
+        "hashes": [
+          883954006542493095
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_brows2_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948592",
+        "resource": "ResourceId::600517",
+        "old_hashes": [
+          1897064628084409478
+        ],
+        "hashes": [
+          1897064628084409478
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_brows_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948360",
+        "resource": "ResourceId::599498",
+        "old_hashes": [
+          6231481870012275532
+        ],
+        "hashes": [
+          6231481870012275532
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_new_brows_trans.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32354,
+    "event": 51891,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::948339",
+        "resource": "ResourceId::597346",
+        "old_hashes": [
+          8479796220168290411
+        ],
+        "hashes": [
+          8479796220168290411
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sully_hair_thin2_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948340",
+        "resource": "ResourceId::597367",
+        "old_hashes": [
+          6888407324108886919
+        ],
+        "hashes": [
+          6888407324108886919
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sully_hair_thin2_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "17"
+        ],
+        "old_resource": "ResourceId::948341",
+        "resource": "ResourceId::597389",
+        "old_hashes": [
+          12189868909691657180
+        ],
+        "hashes": [
+          12189868909691657180
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_sully_hair_thin2_trans.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "17"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32364,
+    "event": 51920,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "16"
+        ],
+        "old_resource": "ResourceId::948548",
+        "resource": "ResourceId::600542",
+        "old_hashes": [
+          4453748983636522395
+        ],
+        "hashes": [
+          4453748983636522395
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "16"
+        ],
+        "old_resource": "ResourceId::948545",
+        "resource": "ResourceId::600079",
+        "old_hashes": [
+          243329516937826182
+        ],
+        "hashes": [
+          243329516937826182
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_mud_alpha.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "2",
+          "16"
+        ],
+        "old_resource": "ResourceId::948542",
+        "resource": "ResourceId::600693",
+        "old_hashes": [
+          1683501092810850041
+        ],
+        "hashes": [
+          1683501092810850041
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mud_mask_07F8FEF9.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "16"
+        ],
+        "old_resource": "ResourceId::948544",
+        "resource": "ResourceId::600686",
+        "old_hashes": [
+          6250406353823443240
+        ],
+        "hashes": [
+          6250406353823443240
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_color.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "4",
+          "16"
+        ],
+        "old_resource": "ResourceId::948543",
+        "resource": "ResourceId::600694",
+        "old_hashes": [
+          1248428048073594098
+        ],
+        "hashes": [
+          1248428048073594098
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "5",
+          "16"
+        ],
+        "old_resource": "ResourceId::948540",
+        "resource": "ResourceId::600665",
+        "old_hashes": [
+          16798947586515128144
+        ],
+        "hashes": [
+          16798947586515128144
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_46A3CF50.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "6",
+          "16"
+        ],
+        "old_resource": "ResourceId::948551",
+        "resource": "ResourceId::600282",
+        "old_hashes": [
+          1218806131742809788
+        ],
+        "hashes": [
+          1218806131742809788
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_snow_normal.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "7",
+          "16"
+        ],
+        "old_resource": "ResourceId::948550",
+        "resource": "ResourceId::600281",
+        "old_hashes": [
+          10354170263769890677
+        ],
+        "hashes": [
+          10354170263769890677
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_snow_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "9",
+          "16"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32383,
+    "event": 51901,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "17"
+        ],
+        "old_resource": "ResourceId::948543",
+        "resource": "ResourceId::600694",
+        "old_hashes": [
+          1248428048073594098
+        ],
+        "hashes": [
+          1248428048073594098
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_blend.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "1",
+          "17"
+        ],
+        "old_resource": "ResourceId::948541",
+        "resource": "ResourceId::600691",
+        "old_hashes": [
+          9288819167735825562
+        ],
+        "hashes": [
+          9288819167735825562
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_thin_ao_mask_9BBBC49A.dds"
+        ]
+      },
+      {
+        "binding": [
+          "t",
+          "3",
+          "17"
+        ],
+        "old_resource": "ResourceId::951731",
+        "resource": "ResourceId::603827",
+        "old_hashes": [
+          2271098713166555551
+        ],
+        "hashes": [
+          2271098713166555551
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_hair_shift_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32392,
+    "event": 51929,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "15"
+        ],
+        "old_resource": "ResourceId::948651",
+        "resource": "ResourceId::600688",
+        "old_hashes": [
+          3596142506316210689
+        ],
+        "hashes": [
+          3596142506316210689
+        ],
+        "same_source": true,
+        "same_format": true,
+        "mips": [
+          0
+        ],
+        "files": [
+          "T_Nathan_arm_hair_trans_mask.dds"
+        ]
+      }
+    ]
+  },
+  {
+    "old_event": 32401,
+    "event": 51938,
+    "textures": [
+      {
+        "binding": [
+          "t",
+          "0",
+          "15"
+        ],
+        "old_resource": null,
+        "resource": "ResourceId::612014",
+        "old_hashes": [],
+        "hashes": [],
+        "same_source": false,
+        "same_format": false,
+        "mips": [],
+        "files": []
+      }
+    ]
+  }
+]

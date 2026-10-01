@@ -1,0 +1,1121 @@
+{
+  "family": "SurfaceLayered",
+  "instances": [
+    "Watch",
+    "Belt",
+    "Holster",
+    "Pouch"
+  ],
+  "features": {
+    "UseScaledLeatherMicroAO": {
+      "title": "带强度的皮革微 AO",
+      "behavior": "True 使用 LeatherUVScale*0.6 的细节 B，并由 LeatherMicroStrength 调强度；False 使用未缩放的 LeatherUVScale 和固定 0.18 细节 AO。",
+      "default": false
+    },
+    "UseAgingMetalLayerMasks": {
+      "title": "老化金属层遮罩布局",
+      "behavior": "True 采用 MetalLayerMask.R 的金属与 1-R 的皮革组合；False 使用独立 ScratchLayerMask 范围及原皮革遮罩次序。",
+      "default": false
+    },
+    "UseMetalAgingColor": {
+      "title": "老化金属与皮革颜色",
+      "behavior": "True 组合金属老化／划痕、皮革及其染色；False 使用独立划痕层、MetalLightness 和皮革染色算法。",
+      "default": false
+    },
+    "UseTintedMudColor": {
+      "title": "带染色的泥颜色",
+      "behavior": "True 为泥颜色乘 MudTint 和源强度；False 直接取相应泥颜色贴图。",
+      "default": false
+    },
+    "UseAgingMetallic": {
+      "title": "老化金属的金属度",
+      "behavior": "True 使用金属层 Metallic 和对应遮罩；False 保留独立划痕层 ScratchMetallic 及皮革层混合。",
+      "default": false
+    },
+    "UseAgingMetalNormalMask": {
+      "title": "老化金属的法线遮罩",
+      "behavior": "True 使用 MetalLayerMask.R；False 使用 1-R。只选择法线层的权重约定，不改变纹理或 TBN 符号。",
+      "default": false
+    },
+    "UseAgingLeatherNormal": {
+      "title": "老化皮革法线组合",
+      "behavior": "True 加入皮革微法线、背面磨损和老化法线；False 使用基础、皮革细节与独立层的原组合。",
+      "default": false
+    },
+    "UseAgingMetalRoughness": {
+      "title": "老化金属的粗糙度层次",
+      "behavior": "True 组合皮革、老化金属和原层权重；False 使用独立划痕粗糙度与基础层次。天气层随后处理。",
+      "default": false
+    },
+    "UseUnmaskedLeatherAO": {
+      "title": "全表面皮革 AO",
+      "behavior": "True 全表面采用打包 AO.R 与皮革细节 B 的原分段混合；False 按金属遮罩在基础 AO 与皮革 AO 之间混合。",
+      "default": false
+    },
+    "UseUnmaskedLeatherColor": {
+      "title": "全表面皮革颜色",
+      "behavior": "True 使用全表面皮革老化染色；False 按金属／皮革遮罩混合基础与皮革颜色。",
+      "default": false
+    },
+    "UseZipperMetallic": {
+      "title": "拉链金属度",
+      "behavior": "True 使用 StitchAO_ZipperB.B 的拉链金属覆盖；False 保留基础表面层的金属度组合。",
+      "default": false
+    },
+    "UsePackedLeatherNormal": {
+      "title": "打包皮革法线输入",
+      "behavior": "True 采用 AO_NormalGB.GB 基础法线加皮革老化和缝线；False 使用独立 BaseNormalRG、微细节、天气与缝线法线的源组合。",
+      "default": false
+    },
+    "UseWeatherAfterStitches": {
+      "title": "天气在缝线之后的层次",
+      "behavior": "True 先使用缝线／拉链覆盖，再依次应用污垢、泥、湿润；False 保留污垢、泥、湿润、砂的基础层次，缝线可由末端覆盖功能加入。同步选择各层采样、权重、颜色／AO／高光与法线的配套运算，保留平方泥权重、0 哨兵和所有 Saturate。",
+      "default": false
+    },
+    "UseFinalStitchOverlay": {
+      "title": "末端缝线覆盖",
+      "behavior": "True 在天气层后叠加缝线 AO、颜色、法线、粗糙度／高光及金属度遮罩；False 采用基础或先缝线后天气的输出。不会改变缝线 UV2 约定。",
+      "default": false
+    },
+    "UseTextureBaseAO": {
+      "title": "含基础贴图的皮革 AO",
+      "behavior": "True 使用 BaseAOTexture／AO_NormalGB 的 R 与老化皮革、缝线和天气 AO；False 使用金属／皮革遮罩的程序微 AO。",
+      "default": false
+    },
+    "UseStitchedLeatherColor": {
+      "title": "有缝线输入的皮革颜色",
+      "behavior": "True 使用贴图基础色、皮革老化与配套缝线／天气层；False 使用可选独立划痕或老化金属颜色层。",
+      "default": false
+    },
+    "UseStitchedLeatherMetallic": {
+      "title": "有缝线输入的金属度",
+      "behavior": "True 使用皮革表面及可选拉链／缝线金属度；False 使用独立划痕或老化金属层。",
+      "default": false
+    },
+    "UseStitchedLeatherNormal": {
+      "title": "有缝线输入的皮革法线",
+      "behavior": "True 使用独立／打包皮革基础法线与缝线、天气组合；False 使用皮革与划痕／老化金属的法线层。",
+      "default": false
+    },
+    "UseStitchedLeatherRoughness": {
+      "title": "有缝线输入的粗糙度",
+      "behavior": "True 使用皮革与缝线／拉链、天气粗糙度；False 使用划痕或老化金属的层次。",
+      "default": false
+    },
+    "UseStitchedLeatherSpecular": {
+      "title": "有缝线输入的高光",
+      "behavior": "True 使用皮革与缝线／拉链、天气高光；False 使用基础皮革／金属的高光层次。",
+      "default": false
+    }
+  },
+  "nodes": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_0",
+      "old": "UseBelt",
+      "name": "UseScaledLeatherMicroAO",
+      "invert": false,
+      "native_index": 48
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_1",
+      "old": "UsePouch",
+      "name": "UseUnmaskedLeatherAO",
+      "invert": false,
+      "native_index": 121
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_2",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 213
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_3",
+      "old": "UseHolster_Pouch",
+      "name": "UseTextureBaseAO",
+      "invert": false,
+      "native_index": 215
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_4",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 216
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_5",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 217
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_6",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 240
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_7",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 306
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_8",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 307
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_9",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 314
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_10",
+      "old": "UseBelt",
+      "name": "UseAgingMetalLayerMasks",
+      "invert": false,
+      "native_index": 340
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_11",
+      "old": "UseBelt",
+      "name": "UseAgingMetalLayerMasks",
+      "invert": false,
+      "native_index": 345
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_12",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 382
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_13",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 391
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_14",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 393
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_15",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 398
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_16",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 402
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_17",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 412
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_18",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 424
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_19",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 461
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_20",
+      "old": "UsePouch",
+      "name": "UseUnmaskedLeatherColor",
+      "invert": false,
+      "native_index": 511
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_21",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 586
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_22",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherColor",
+      "invert": false,
+      "native_index": 588
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_23",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 589
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_24",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 590
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_25",
+      "old": "UseBelt",
+      "name": "UseTintedMudColor",
+      "invert": false,
+      "native_index": 596
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_26",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 598
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_27",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 627
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_28",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 637
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_29",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 665
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_30",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 677
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_31",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 682
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_32",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 694
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_33",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 698
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_34",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 700
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_35",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 703
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_36",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 709
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_37",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 721
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_38",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 723
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_39",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 725
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_40",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 727
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_41",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 729
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_42",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 737
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_43",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 744
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_44",
+      "old": "UsePouch",
+      "name": "UseUnmaskedLeatherColor",
+      "invert": false,
+      "native_index": 760
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_45",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 770
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_46",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherColor",
+      "invert": false,
+      "native_index": 772
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_47",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 773
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_48",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 774
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_49",
+      "old": "UseBelt",
+      "name": "UseTintedMudColor",
+      "invert": false,
+      "native_index": 778
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_50",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 780
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_51",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 786
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_52",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 789
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_53",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 791
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_54",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 796
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_55",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 798
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_56",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 802
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_57",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 804
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_58",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 807
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_59",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 813
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_60",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 826
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_61",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 828
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_62",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 830
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_63",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 832
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_64",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 834
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_65",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 842
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_66",
+      "old": "UseBelt",
+      "name": "UseMetalAgingColor",
+      "invert": false,
+      "native_index": 849
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_67",
+      "old": "UsePouch",
+      "name": "UseUnmaskedLeatherColor",
+      "invert": false,
+      "native_index": 865
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_68",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 875
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_69",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherColor",
+      "invert": false,
+      "native_index": 877
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_70",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 878
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_71",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 879
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_72",
+      "old": "UseBelt",
+      "name": "UseTintedMudColor",
+      "invert": false,
+      "native_index": 883
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_73",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 885
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_74",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 891
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_75",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 894
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_76",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 896
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_77",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 901
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_78",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 903
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_79",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 907
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_80",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 909
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_81",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 912
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_82",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 918
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_83",
+      "old": "UseBelt",
+      "name": "UseAgingMetallic",
+      "invert": false,
+      "native_index": 928
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_84",
+      "old": "UseBelt",
+      "name": "UseAgingMetallic",
+      "invert": false,
+      "native_index": 936
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_85",
+      "old": "UseBelt",
+      "name": "UseAgingMetallic",
+      "invert": false,
+      "native_index": 940
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_86",
+      "old": "UsePouch",
+      "name": "UseZipperMetallic",
+      "invert": false,
+      "native_index": 955
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_87",
+      "old": "UsePouch",
+      "name": "UseZipperMetallic",
+      "invert": false,
+      "native_index": 957
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_88",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherMetallic",
+      "invert": false,
+      "native_index": 959
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_89",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 961
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_90",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 966
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_91",
+      "old": "UseBelt",
+      "name": "UseAgingMetalNormalMask",
+      "invert": false,
+      "native_index": 969
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_92",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1022
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_93",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1030
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_94",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1040
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_95",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1047
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_96",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1050
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_97",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1078
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_98",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1123
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_99",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherNormal",
+      "invert": false,
+      "native_index": 1125
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_100",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1126
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_101",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1131
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_102",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1135
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_103",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1151
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_104",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1155
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_105",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1157
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_106",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 1159
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_107",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1185
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_108",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1188
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_109",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1196
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_110",
+      "old": "UseBelt",
+      "name": "UseAgingLeatherNormal",
+      "invert": false,
+      "native_index": 1200
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_111",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1203
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_112",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1219
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_113",
+      "old": "UsePouch",
+      "name": "UsePackedLeatherNormal",
+      "invert": false,
+      "native_index": 1243
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_114",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherNormal",
+      "invert": false,
+      "native_index": 1245
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_115",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1246
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_116",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1249
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_117",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1253
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_118",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1262
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_119",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1266
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_120",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1268
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_121",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 1270
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_122",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1292
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_123",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1297
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_124",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1300
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_125",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1311
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_126",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1318
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_127",
+      "old": "UseBelt",
+      "name": "UseAgingMetalRoughness",
+      "invert": false,
+      "native_index": 1330
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_128",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1357
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_129",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1363
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_130",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherRoughness",
+      "invert": false,
+      "native_index": 1365
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_131",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1366
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_132",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1367
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_133",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1370
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_134",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1371
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_135",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1372
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_136",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 1377
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_137",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1393
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_138",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1399
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_139",
+      "old": "UseHolster_Pouch",
+      "name": "UseStitchedLeatherSpecular",
+      "invert": false,
+      "native_index": 1401
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_140",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1402
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_141",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1403
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_142",
+      "old": "UsePouch",
+      "name": "UseWeatherAfterStitches",
+      "invert": false,
+      "native_index": 1406
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionStaticSwitchParameter_143",
+      "old": "UseHolster",
+      "name": "UseFinalStitchOverlay",
+      "invert": false,
+      "native_index": 1411
+    }
+  ]
+}

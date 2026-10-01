@@ -1,0 +1,3300 @@
+{
+  "original_frame": 1156,
+  "index": 11,
+  "ticks": 6,
+  "changed": 161433.953,
+  "rows": [
+    {
+      "frame": 0,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_535",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_535",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_534",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_536",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_536",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 286,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_544",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_544",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_543",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_545",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_545",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 287,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_562",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_562",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_561",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_563",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_563",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 1157,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_571",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_571",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_570",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_572",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_572",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 1923,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_589",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_589",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_588",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_590",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_590",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 3257,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_607",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_607",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_606",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_608",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_608",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 4500,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_625",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_625",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_624",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_626",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_626",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 5730,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_634",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_634",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_633",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_635",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_635",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 5731,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0,
+            "CutMaskRWeight": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_640",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0,
+            "CutMaskRWeight": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_640",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_639",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_641",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.0,
+            "DynamicMudLimit": 1.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_641",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 0,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_652",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_652",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_651",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_653",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_653",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    },
+    {
+      "frame": 1156,
+      "materials": [
+        {
+          "slot": 0,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_670",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 1,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Face_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0,
+            "CutMaskRWeight": 0.6000000238418579
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_670",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 2,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 3,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 4,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 5,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 6,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 7,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 8,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 9,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 10,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 11,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 12,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 13,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 14,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 15,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 16,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 17,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 18,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 19,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 20,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 21,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 22,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_2",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 23,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 24,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 25,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Shirt_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_669",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 26,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 27,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 28,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 29,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pants_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 30,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 31,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Boots_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 32,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Pouch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 33,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 34,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Belt_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 35,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Holster_Animated_3",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 36,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 37,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MI_Nathan_Watch_Animated_1",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          }
+        },
+        {
+          "slot": 38,
+          "path": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+          "class_name": "MaterialInstanceConstant",
+          "values": {}
+        },
+        {
+          "slot": 39,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_671",
+          "normal_class": "TextureRenderTarget2D"
+        },
+        {
+          "slot": 40,
+          "path": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.MID_MI_Nathan_Arms_0",
+          "class_name": "MaterialInstanceDynamic",
+          "values": {
+            "DirtAmount": 0.8999999761581421,
+            "DynamicMudLimit": 0.0
+          },
+          "normal_texture": "/Game/Demo/Character/Elena/Cinematics/L_Elena_Hotel_Preview.L_Elena_Hotel_Preview:PersistentLevel.SkeletalMeshActor_1.SkeletalMeshComponent0.TextureRenderTarget2D_671",
+          "normal_class": "TextureRenderTarget2D"
+        }
+      ]
+    }
+  ],
+  "final_frame": 1156,
+  "dirty_content": [],
+  "dirty_maps": []
+}

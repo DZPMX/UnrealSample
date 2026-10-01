@@ -1,0 +1,143 @@
+{
+  "log": "G:\\UnrealSample\\Saved\\Logs\\UnrealSample.log",
+  "matches": [
+    {
+      "line": 2617,
+      "text": "[2026.09.24-21.37.38:962][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2648,
+      "text": "[2026.09.24-21.37.38:967][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Face.uasset: Failed to compile Material Instance with Base M_Nathan_Skin for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2687,
+      "text": "[2026.09.24-21.37.39:118][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2718,
+      "text": "[2026.09.24-21.37.39:125][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Face.uasset: Failed to compile Material Instance with Base M_Nathan_Skin for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2757,
+      "text": "[2026.09.24-21.37.39:265][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2776,
+      "text": "[2026.09.24-21.37.39:271][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Face.uasset: Failed to compile Material Instance with Base M_Nathan_Skin for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2811,
+      "text": "[2026.09.24-21.37.39:571][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Cloth.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 2847,
+      "text": "[2026.09.24-21.37.39:577][ 77]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Shirt.uasset: Failed to compile Material Instance with Base M_Nathan_Cloth for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4000,
+      "text": "[2026.09.24-22.01.03:298][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaMapped.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4005,
+      "text": "[2026.09.24-22.01.03:300][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinNoShadow.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4010,
+      "text": "[2026.09.24-22.01.03:302][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThin.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4015,
+      "text": "[2026.09.24-22.01.03:304][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThickCutoff.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4020,
+      "text": "[2026.09.24-22.01.03:306][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThick.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4034,
+      "text": "[2026.09.24-22.01.03:440][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaMapped.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4039,
+      "text": "[2026.09.24-22.01.03:445][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaLayered.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4051,
+      "text": "[2026.09.24-22.01.03:449][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudSnow.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4065,
+      "text": "[2026.09.24-22.01.03:454][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudDithered.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4077,
+      "text": "[2026.09.24-22.01.03:458][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMud.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4088,
+      "text": "[2026.09.24-22.01.03:460][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinNoShadow.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4093,
+      "text": "[2026.09.24-22.01.03:462][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThin.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4107,
+      "text": "[2026.09.24-22.01.03:588][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaLayered.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4125,
+      "text": "[2026.09.24-22.01.03:591][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudSnow.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4141,
+      "text": "[2026.09.24-22.01.03:595][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMudDithered.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4159,
+      "text": "[2026.09.24-22.01.03:598][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinMud.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaLayered for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4190,
+      "text": "[2026.09.24-22.01.03:720][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaMapped.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4195,
+      "text": "[2026.09.24-22.01.03:723][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinNoShadow.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4200,
+      "text": "[2026.09.24-22.01.03:725][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThin.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4205,
+      "text": "[2026.09.24-22.01.03:727][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThickCutoff.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4210,
+      "text": "[2026.09.24-22.01.03:729][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThick.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4215,
+      "text": "[2026.09.24-22.01.03:731][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairAlphaThinDithered.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4220,
+      "text": "[2026.09.24-22.01.03:733][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairAlphaThin.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaMapped for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4234,
+      "text": "[2026.09.24-22.01.03:853][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaPacked.uasset: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4240,
+      "text": "[2026.09.24-22.01.03:855][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinAlphaDithered.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaPacked for platform PCD3D_SM6, Default Material will be used in game."
+    },
+    {
+      "line": 4246,
+      "text": "[2026.09.24-22.01.03:856][719]LogMaterial: Warning: [AssetLog] G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_HairThinAlpha.uasset: Failed to compile Material Instance with Base M_Nathan_HairKajiyaPacked for platform PCD3D_SM6, Default Material will be used in game."
+    }
+  ],
+  "note": "Text check only; stats for all 48 assets are separate. No long-duration GPU or render-pass proof.",
+  "assessment": "Logged Color/LinearColor failures occurred while texture sRGB settings changed before the matching sampler update; the latest is at local 06:01:03. Current 48-resource stats were obtained at about 07:55 after all material saves. The log is not claimed to have no historical errors."
+}

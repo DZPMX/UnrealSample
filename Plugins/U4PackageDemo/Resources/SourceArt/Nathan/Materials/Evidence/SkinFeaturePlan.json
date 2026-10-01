@@ -1,0 +1,442 @@
+{
+  "family": "Skin",
+  "instances": [
+    "Face",
+    "Chest",
+    "Arms"
+  ],
+  "features": {
+    "UseFingerMicroMask": {
+      "title": "指部遮罩微细节",
+      "behavior": "True 读取指部遮罩，微细节 XY 向 0.5、细节 B 向 0.6 混合，并采用配套 AO 编码；False 直接读取普通微细节。",
+      "default": false
+    },
+    "UseSwordWoundOverlay": {
+      "title": "剑伤或水膜覆盖",
+      "behavior": "True 使用剑伤 R/G 分布、染色、粗糙度及高光；False 使用水膜范围遮罩和对应表面参数。",
+      "default": false
+    },
+    "UseSweatOverlay": {
+      "title": "汗膜或新血迹覆盖",
+      "behavior": "True 使用汗膜范围和表面参数；False 使用新血迹颜色／粗糙度与原黏液高光阶段参数。两边保留 >0.001 有效层判断。",
+      "default": false
+    },
+    "UseSandWeatherInputs": {
+      "title": "含砂天气层计算",
+      "behavior": "True 使用污垢、泥、湿润、砂的 AO／颜色／粗糙度／高光层次；False 保留血流、污垢、泥、湿润及黏液的原层次。层范围、混合权重、平方泥权重、0 动态哨兵和各阶段 Saturate 均保留。法线计算由独立输入功能选择。",
+      "default": false
+    },
+    "UseUniformCutSurface": {
+      "title": "统一割伤的表面覆盖算法",
+      "behavior": "True 使用 CutLayerAmount 的统一割伤颜色、汗珠、血流及天气层计算颜色／粗糙度／高光；False 使用分阶段割伤、瘀伤及条件覆盖层算法。这里只选择表面层算法，微细节、法线输入及散射另选。",
+      "default": false
+    },
+    "UseDistortedCaptureAndFlowNormal": {
+      "title": "扭曲采样与流动覆盖法线",
+      "behavior": "True 使用 DistortionRG_BlendB 扭曲的捕获法线、阶段割伤、细节／微法线、血流／泥及双相位黏液法线；False 使用统一割伤或无扭曲捕获法线的天气组合。流动相位当前仍是截帧时间，不能称为运行时生成系统。",
+      "default": true
+    },
+    "UseCapturedNormalWithSand": {
+      "title": "捕获法线的含砂天气组合",
+      "behavior": "True 在基础法线上接入无扭曲捕获结果，加细节／微法线，再按泥、湿润和砂组合；False 使用统一割伤替换、汗珠、血流和泥／湿润组合。两边 XY 的中心偏置、混合顺序与平方覆盖均保持。仅在关闭扭曲捕获／流动法线分支时参与最终输出。",
+      "default": false
+    },
+    "UseProfileRadiusMask": {
+      "title": "按遮罩映射 UE 散射半径",
+      "behavior": "True 使用源散射强度开方乘 SubsurfaceMask 与 SubsurfaceBlurSize/UEProfileRadiusReference；False 使用直接散射强度开方。输出接 UE Profile Opacity，属于 UE 单 Profile 适配，不是透明覆盖。",
+      "default": true
+    },
+    "UseSweatBeadsAndBloodSpecular": {
+      "title": "汗珠与血流高光阶段",
+      "behavior": "True 在源双高光适配后加入汗珠及两层血流高光；False 保留普通双高光遮罩组合。天气层和表面覆盖仍在其后求值；这不是切换 UE Shading Model。",
+      "default": true
+    }
+  },
+  "nodes": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_55",
+      "old": "UseArms",
+      "name": "UseFingerMicroMask",
+      "invert": false,
+      "native_index": 38
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_73",
+      "old": "UseArms",
+      "name": "UseFingerMicroMask",
+      "invert": false,
+      "native_index": 1038
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_86",
+      "old": "UseArms",
+      "name": "UseFingerMicroMask",
+      "invert": false,
+      "native_index": 1193
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_60",
+      "old": "UseArms",
+      "name": "UseSwordWoundOverlay",
+      "invert": false,
+      "native_index": 239
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_61",
+      "old": "UseArms",
+      "name": "UseSweatOverlay",
+      "invert": false,
+      "native_index": 270
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_56",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 55
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_57",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 70
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_58",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 110
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_59",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 190
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_62",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 544
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_64",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 700
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_66",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 745
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_94",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1295
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_104",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1356
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_105",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1357
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_106",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1360
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_107",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1362
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_108",
+      "old": "UseArms",
+      "name": "UseSandWeatherInputs",
+      "invert": false,
+      "native_index": 1363
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_63",
+      "old": "UseChest",
+      "name": "UseUniformCutSurface",
+      "invert": false,
+      "native_index": 672
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_65",
+      "old": "UseChest",
+      "name": "UseUniformCutSurface",
+      "invert": false,
+      "native_index": 716
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_67",
+      "old": "UseChest",
+      "name": "UseUniformCutSurface",
+      "invert": false,
+      "native_index": 761
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_95",
+      "old": "UseChest",
+      "name": "UseUniformCutSurface",
+      "invert": false,
+      "native_index": 1315
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_109",
+      "old": "UseChest",
+      "name": "UseUniformCutSurface",
+      "invert": false,
+      "native_index": 1377
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_80",
+      "old": "UseChest_Arms",
+      "name": "UseDistortedCaptureAndFlowNormal",
+      "invert": true,
+      "native_index": 1076
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_92",
+      "old": "UseChest_Arms",
+      "name": "UseDistortedCaptureAndFlowNormal",
+      "invert": true,
+      "native_index": 1221
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_68",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 982
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_69",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 996
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_70",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1012
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_71",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1033
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_72",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1035
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_74",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1047
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_75",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1051
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_76",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1054
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_77",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1055
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_78",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1068
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_79",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1072
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_81",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1152
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_82",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1163
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_83",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1173
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_84",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1188
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_85",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1190
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_87",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1201
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_88",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1204
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_89",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1207
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_90",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1213
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_91",
+      "old": "UseArms",
+      "name": "UseCapturedNormalWithSand",
+      "invert": false,
+      "native_index": 1217
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_93",
+      "old": "UseArms",
+      "name": "UseProfileRadiusMask",
+      "invert": true,
+      "native_index": 1244
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_96",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1334
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_97",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1336
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_98",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1341
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_99",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1345
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_100",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1347
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_101",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1350
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_102",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1352
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionStaticSwitchParameter_103",
+      "old": "UseArms",
+      "name": "UseSweatBeadsAndBloodSpecular",
+      "invert": true,
+      "native_index": 1354
+    }
+  ]
+}

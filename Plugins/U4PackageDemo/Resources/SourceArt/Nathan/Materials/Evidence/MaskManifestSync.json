@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_sword_wound_blood2_blend",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_auction_nadine_fight_head_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_blend",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_blood_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_blood_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_rips_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_rips_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_shirt_wound_blood_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Body/T_Nathan_arm_sword_wound_blood2_blend",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_cut_island_blend",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_auction_nadine_fight_head_mask",
+    "before": false,
+    "after": true
+  },
+  {
+    "path": "/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_blood_mask",
+    "before": false,
+    "after": true
+  }
+]

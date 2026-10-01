@@ -1,0 +1,124 @@
+{
+  "textures": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thick_color.T_Nathan_hair_thick_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color.T_Nathan_hair_thin_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color.T_Nathan_hair_thin_mud_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_sully_hair_thin2_color.T_Nathan_sully_hair_thin2_color",
+      "before": true,
+      "after": false,
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_hair_thin_ao_mask_9BBBC49A_ColorData.T_Nathan_hair_thin_ao_mask_9BBBC49A_ColorData",
+      "before": true,
+      "after": false,
+      "saved": true
+    }
+  ],
+  "materials": [
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped",
+      "updated_sample_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionTextureSampleParameter2D_66",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionTextureSampleParameter2D_67",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionTextureSampleParameter2D_68",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionTextureSampleParameter2D_69"
+      ],
+      "decode_producers": 1,
+      "nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionSaturate_1",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped:MaterialExpressionSaturate_2"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked",
+      "updated_sample_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionTextureSampleParameter2D_24",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionTextureSampleParameter2D_25"
+      ],
+      "decode_producers": 1,
+      "nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionSaturate_1",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked:MaterialExpressionSaturate_2"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "saved": true
+    },
+    {
+      "path": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered",
+      "updated_sample_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_167",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_168",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_169",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_170",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_171",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_172",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_175",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_176",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_177",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_178",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_243",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionTextureSampleParameter2D_244"
+      ],
+      "decode_producers": 1,
+      "nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionSaturate_4",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionMultiply_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered:MaterialExpressionSaturate_5"
+      ],
+      "connections": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "saved": true
+    }
+  ],
+  "dirty_content": []
+}

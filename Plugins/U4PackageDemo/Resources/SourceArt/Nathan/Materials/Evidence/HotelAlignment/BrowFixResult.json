@@ -1,0 +1,1248 @@
+{
+  "connections": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "before": {
+    "scalar": {
+      "TextureMipBias": -1.5,
+      "BaseColorIntensity": 1.0,
+      "ColorSaturationBoost": 0.0,
+      "UEHairBacklit": 0.10000000149011612,
+      "UEHairScatter": 0.10000000149011612,
+      "CoverageNormalization": 1.0,
+      "ConstantAO": 0.8999999761581421,
+      "ColorLightness": 0.1899999976158142,
+      "BaseRoughness": 1.0,
+      "SpecularStrength": 0.0
+    },
+    "vector": {
+      "ColorOverlayTint": [
+        0.6430000066757202,
+        0.6430000066757202,
+        0.6430000066757202,
+        1.0
+      ],
+      "ConstantHairColor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "texture": {
+      "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color.T_Nathan_new_brows2_color",
+      "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_trans.T_Nathan_new_brows_trans",
+      "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask"
+    },
+    "switch": {
+      "UseConstantColor": false,
+      "UseFixedCoverageNormalization": false,
+      "UseRawCoverage": false,
+      "UseColorGrading": true,
+      "UseSpecularMask": true,
+      "UseSourceRoughness": true,
+      "UseConstantAO": true,
+      "UseRoughnessForScattering": true
+    }
+  },
+  "old_parent": "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair",
+  "texture_saved": true,
+  "guid_count": 11,
+  "material_saved": true,
+  "instance_saved": true,
+  "after": {
+    "scalar": {
+      "TextureMipBias": -1.5,
+      "BaseRoughness": 1.0,
+      "SpecularStrength": 0.0,
+      "PrimaryLobeShift": 0.0,
+      "CoverageNormalization": 1.0,
+      "BaseColorIntensity": 1.0,
+      "ColorLightness": 0.1899999976158142,
+      "ConstantAO": 0.8999999761581421,
+      "NormalStrength": 1.0,
+      "ShiftVariation": 0.2199999988079071,
+      "SecondaryLobeShift": 0.0
+    },
+    "vector": {
+      "ColorOverlayTint": [
+        0.6430000066757202,
+        0.6430000066757202,
+        0.6430000066757202,
+        1.0
+      ]
+    },
+    "texture": {
+      "NormalRG": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_normal.T_Nathan_new_brows_normal",
+      "SpecularMask": "/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_hair_shift_mask.T_Nathan_hair_shift_mask",
+      "CoverageTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows_trans.T_Nathan_new_brows_trans",
+      "BaseColorTexture": "/Game/Demo/Character/Nathan/Textures/Brow/T_Nathan_new_brows2_color.T_Nathan_new_brows2_color"
+    },
+    "switch": {}
+  },
+  "mapping": {
+    "n0": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_12",
+      "output": ""
+    },
+    "n1": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_15",
+      "output": ""
+    },
+    "n2": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionVectorParameter_1",
+      "output": "R"
+    },
+    "n3": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionComponentMask_2",
+      "output": ""
+    },
+    "n4": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionComponentMask_3",
+      "output": ""
+    },
+    "n5": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_16",
+      "output": ""
+    },
+    "n6": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_7",
+      "output": ""
+    },
+    "n7": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_7",
+      "output": "R"
+    },
+    "n8": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_8",
+      "output": ""
+    },
+    "n9": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_8",
+      "output": "R"
+    },
+    "n10": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_22",
+      "output": ""
+    },
+    "n11": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_52",
+      "output": ""
+    },
+    "n12": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_62",
+      "output": ""
+    },
+    "n13": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_13",
+      "output": ""
+    },
+    "n14": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAbs_1",
+      "output": ""
+    },
+    "n15": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_17",
+      "output": ""
+    },
+    "n16": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_53",
+      "output": ""
+    },
+    "n17": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_63",
+      "output": ""
+    },
+    "n18": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_23",
+      "output": ""
+    },
+    "n19": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_54",
+      "output": ""
+    },
+    "n20": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_64",
+      "output": ""
+    },
+    "n21": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_55",
+      "output": ""
+    },
+    "n22": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_18",
+      "output": ""
+    },
+    "n23": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_56",
+      "output": ""
+    },
+    "n24": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_65",
+      "output": ""
+    },
+    "n25": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_24",
+      "output": ""
+    },
+    "n26": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_66",
+      "output": ""
+    },
+    "n27": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_57",
+      "output": ""
+    },
+    "n28": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_58",
+      "output": ""
+    },
+    "n29": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_15",
+      "output": ""
+    },
+    "n64": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_19",
+      "output": ""
+    },
+    "n67": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_59",
+      "output": ""
+    },
+    "n30": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionVectorParameter_1",
+      "output": "G"
+    },
+    "n31": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_7",
+      "output": "G"
+    },
+    "n32": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_8",
+      "output": "G"
+    },
+    "n33": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_25",
+      "output": ""
+    },
+    "n34": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_60",
+      "output": ""
+    },
+    "n35": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_67",
+      "output": ""
+    },
+    "n36": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_26",
+      "output": ""
+    },
+    "n37": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_61",
+      "output": ""
+    },
+    "n38": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_68",
+      "output": ""
+    },
+    "n39": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_62",
+      "output": ""
+    },
+    "n40": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_63",
+      "output": ""
+    },
+    "n41": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_69",
+      "output": ""
+    },
+    "n42": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_27",
+      "output": ""
+    },
+    "n43": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_70",
+      "output": ""
+    },
+    "n44": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_64",
+      "output": ""
+    },
+    "n45": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_65",
+      "output": ""
+    },
+    "n46": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_16",
+      "output": ""
+    },
+    "n65": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_20",
+      "output": ""
+    },
+    "n68": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_66",
+      "output": ""
+    },
+    "n69": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_71",
+      "output": ""
+    },
+    "n47": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionVectorParameter_1",
+      "output": "B"
+    },
+    "n48": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_7",
+      "output": "B"
+    },
+    "n49": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_8",
+      "output": "B"
+    },
+    "n50": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_28",
+      "output": ""
+    },
+    "n51": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_67",
+      "output": ""
+    },
+    "n52": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_72",
+      "output": ""
+    },
+    "n53": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_29",
+      "output": ""
+    },
+    "n54": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_68",
+      "output": ""
+    },
+    "n55": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_73",
+      "output": ""
+    },
+    "n56": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_69",
+      "output": ""
+    },
+    "n57": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_70",
+      "output": ""
+    },
+    "n58": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_74",
+      "output": ""
+    },
+    "n59": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_30",
+      "output": ""
+    },
+    "n60": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_75",
+      "output": ""
+    },
+    "n61": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_71",
+      "output": ""
+    },
+    "n62": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_72",
+      "output": ""
+    },
+    "n63": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_17",
+      "output": ""
+    },
+    "n66": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_21",
+      "output": ""
+    },
+    "n70": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_73",
+      "output": ""
+    },
+    "n71": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_76",
+      "output": ""
+    },
+    "n72": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_31",
+      "output": ""
+    },
+    "n73": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_16",
+      "output": ""
+    },
+    "n74": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_14",
+      "output": ""
+    },
+    "n75": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_22",
+      "output": ""
+    },
+    "n76": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_77",
+      "output": ""
+    },
+    "n77": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_78",
+      "output": ""
+    },
+    "n78": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_32",
+      "output": ""
+    },
+    "n79": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_79",
+      "output": ""
+    },
+    "n80": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_18",
+      "output": ""
+    },
+    "n81": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_33",
+      "output": ""
+    },
+    "n82": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_74",
+      "output": ""
+    },
+    "n83": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_34",
+      "output": ""
+    },
+    "n84": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_75",
+      "output": ""
+    },
+    "n85": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_80",
+      "output": ""
+    },
+    "n86": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_35",
+      "output": ""
+    },
+    "n87": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_76",
+      "output": ""
+    },
+    "n88": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_81",
+      "output": ""
+    },
+    "n89": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_36",
+      "output": ""
+    },
+    "n90": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_77",
+      "output": ""
+    },
+    "n91": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_82",
+      "output": ""
+    },
+    "n152": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_15",
+      "output": ""
+    },
+    "n153": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_9",
+      "output": ""
+    },
+    "n154": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_9",
+      "output": "G"
+    },
+    "n155": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_10",
+      "output": ""
+    },
+    "n156": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_10",
+      "output": "G"
+    },
+    "n157": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_37",
+      "output": ""
+    },
+    "n158": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_78",
+      "output": ""
+    },
+    "n159": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_83",
+      "output": ""
+    },
+    "n160": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_79",
+      "output": ""
+    },
+    "n161": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_84",
+      "output": ""
+    },
+    "n169": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_80",
+      "output": ""
+    },
+    "n162": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_9",
+      "output": "R"
+    },
+    "n163": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_10",
+      "output": "R"
+    },
+    "n164": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_38",
+      "output": ""
+    },
+    "n165": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_81",
+      "output": ""
+    },
+    "n166": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_85",
+      "output": ""
+    },
+    "n167": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_82",
+      "output": ""
+    },
+    "n168": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_86",
+      "output": ""
+    },
+    "n170": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_87",
+      "output": ""
+    },
+    "n171": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_83",
+      "output": ""
+    },
+    "n172": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_88",
+      "output": ""
+    },
+    "n93": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_23",
+      "output": ""
+    },
+    "n173": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_89",
+      "output": ""
+    },
+    "n174": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_84",
+      "output": ""
+    },
+    "n175": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_90",
+      "output": ""
+    },
+    "n176": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_91",
+      "output": ""
+    },
+    "n177": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_92",
+      "output": ""
+    },
+    "n178": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_85",
+      "output": ""
+    },
+    "n179": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_93",
+      "output": ""
+    },
+    "n181": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_86",
+      "output": ""
+    },
+    "n180": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_87",
+      "output": ""
+    },
+    "n182": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_94",
+      "output": ""
+    },
+    "n183": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_88",
+      "output": ""
+    },
+    "n184": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_95",
+      "output": ""
+    },
+    "n185": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_96",
+      "output": ""
+    },
+    "n186": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_89",
+      "output": ""
+    },
+    "n187": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_97",
+      "output": ""
+    },
+    "n188": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_98",
+      "output": ""
+    },
+    "n189": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_99",
+      "output": ""
+    },
+    "n190": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_90",
+      "output": ""
+    },
+    "n191": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_100",
+      "output": ""
+    },
+    "n192": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_91",
+      "output": ""
+    },
+    "n193": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_92",
+      "output": ""
+    },
+    "n194": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_101",
+      "output": ""
+    },
+    "n195": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_39",
+      "output": ""
+    },
+    "n196": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_19",
+      "output": ""
+    },
+    "n197": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSquareRoot_1",
+      "output": ""
+    },
+    "n92": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_16",
+      "output": ""
+    },
+    "n94": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_102",
+      "output": ""
+    },
+    "n95": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_103",
+      "output": ""
+    },
+    "n96": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_20",
+      "output": ""
+    },
+    "n97": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_17",
+      "output": ""
+    },
+    "n98": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_104",
+      "output": ""
+    },
+    "n99": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_105",
+      "output": ""
+    },
+    "n100": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_24",
+      "output": ""
+    },
+    "n101": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_93",
+      "output": ""
+    },
+    "n102": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_94",
+      "output": ""
+    },
+    "n103": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_11",
+      "output": ""
+    },
+    "n104": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_11",
+      "output": "G"
+    },
+    "n105": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_95",
+      "output": ""
+    },
+    "n106": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_40",
+      "output": ""
+    },
+    "n107": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_106",
+      "output": ""
+    },
+    "n108": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_21",
+      "output": ""
+    },
+    "n109": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_107",
+      "output": ""
+    },
+    "n110": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_22",
+      "output": ""
+    },
+    "n111": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_11",
+      "output": "B"
+    },
+    "n112": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_96",
+      "output": ""
+    },
+    "n113": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_108",
+      "output": ""
+    },
+    "n114": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_23",
+      "output": ""
+    },
+    "n115": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_18",
+      "output": ""
+    },
+    "n116": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_19",
+      "output": ""
+    },
+    "n117": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_11",
+      "output": "R"
+    },
+    "n118": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_109",
+      "output": ""
+    },
+    "n119": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_25",
+      "output": ""
+    },
+    "n120": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_97",
+      "output": ""
+    },
+    "n121": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_98",
+      "output": ""
+    },
+    "n122": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_110",
+      "output": ""
+    },
+    "n123": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_99",
+      "output": ""
+    },
+    "n124": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_111",
+      "output": ""
+    },
+    "n125": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_112",
+      "output": ""
+    },
+    "n126": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_24",
+      "output": ""
+    },
+    "n127": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_20",
+      "output": ""
+    },
+    "n128": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_113",
+      "output": ""
+    },
+    "n129": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_100",
+      "output": ""
+    },
+    "n130": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_114",
+      "output": ""
+    },
+    "n131": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_115",
+      "output": ""
+    },
+    "n132": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_116",
+      "output": ""
+    },
+    "n133": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_25",
+      "output": ""
+    },
+    "n134": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_12",
+      "output": ""
+    },
+    "n135": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_12",
+      "output": "R"
+    },
+    "n136": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_13",
+      "output": ""
+    },
+    "n137": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionTextureSampleParameter2D_13",
+      "output": "R"
+    },
+    "n138": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSubtract_41",
+      "output": ""
+    },
+    "n139": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMultiply_101",
+      "output": ""
+    },
+    "n140": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_117",
+      "output": ""
+    },
+    "n141": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_118",
+      "output": ""
+    },
+    "n142": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_119",
+      "output": ""
+    },
+    "n143": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_26",
+      "output": ""
+    },
+    "n144": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionScalarParameter_21",
+      "output": ""
+    },
+    "n145": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_26",
+      "output": ""
+    },
+    "n146": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_120",
+      "output": ""
+    },
+    "n147": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionAdd_121",
+      "output": ""
+    },
+    "n148": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionConstant_27",
+      "output": ""
+    },
+    "n149": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionMax_1",
+      "output": ""
+    },
+    "n150": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionDivide_1",
+      "output": ""
+    },
+    "n151": {
+      "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine:MaterialExpressionSaturate_27",
+      "output": ""
+    }
+  },
+  "new_parent": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaFine.M_Nathan_HairKajiyaFine",
+  "node_count": 239
+}

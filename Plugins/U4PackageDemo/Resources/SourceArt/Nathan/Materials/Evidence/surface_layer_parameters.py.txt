@@ -1,0 +1,52 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered')
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in ['Watch','Belt','Holster','Pouch']}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/'SurfaceLayerParametersBefore.json').write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+connections=[];deleted=[];created={}
+def prop(o,k,v):o.set_editor_property(k,v,notify)
+def link(s,out,d,p):connections.append(lib.connect_material_expressions(s,out,d,input_pin(p)))
+for n in ns.values():
+ name=n.get('parameter_name');o=objects[n['id']]
+ if name in ['StitchAO_ZipperB','StitchNormalRG_MaskB']:
+  prop(o,'desc',o.get_editor_property('desc').replace('使用 UV1','使用 UV2'))
+ elif name=='CapturedWetMudState':prop(o,'desc',o.get_editor_property('desc').replace('G 在 UV2','G 在 UV1'))
+for channel,oldnames,values in [
+ ('Roughness',['Roughness_Value','Roughness_Value_2'],[1.,.4,.2]),
+ ('Specular',['Specular_Value','Specular_Value_2'],[.1,.2,.4])]:
+ for layer,value in zip(['Dirt','Mud','Wetness'],values):
+  name=layer+channel;o=lib.create_material_expression(mat,unreal.MaterialExpressionScalarParameter)
+  prop(o,'parameter_name',name);prop(o,'default_value',value);prop(o,'group','07 Layers / 天气高光')
+  prop(o,'desc','用途：'+{'Dirt':'污垢','Mud':'泥','Wetness':'湿润'}[layer]+'层'+{'Roughness':'粗糙度','Specular':'高光'}[channel]+'。影响：按本层有效权重替换此前分层结果，保持分层顺序。输入：无量纲标量。范围／默认：母材质默认 '+str(value)+'，末端 Saturate；原作此项来自固定层值。条件：相应天气层生效；图内原固定值路径继续保留原值。')
+  created[name]=o
+ for oldname,true_name,false_name in zip(oldnames,['Dirt'+channel,'Mud'+channel],['Mud'+channel,'Wetness'+channel]):
+  choose=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter)
+  prop(choose,'parameter_name','UseWeatherAfterStitches');prop(choose,'default_value',False);prop(choose,'group','00 Features / 输入功能')
+  prop(choose,'desc','用途：缝线与拉链基础层之后的天气高光顺序。影响：True 此两级依次为污垢和泥；False 此两级依次为泥和湿润，保留后续层。输入：编译期布尔。范围／默认：默认 false；当前实例按来源顺序设置。条件：与对应的缝线基础层布局一起使用，尚未完成所有布局开关的解耦验收。')
+  link(created[true_name],'',choose,'True');link(created[false_name],'',choose,'False')
+  for n in ns.values():
+   if n.get('parameter_name')!=oldname:continue
+   for e in cs[n['id']]:link(choose,'',objects[e['target_id']],e['target_input'])
+   deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+mat.modify();lib.recompile_material(mat)
+for m,mi in instances.items():
+ is_pouch=m=='Pouch'
+ lib.set_material_instance_static_switch_parameter_value(mi,'UseWeatherAfterStitches',is_pouch,unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+ for channel,oldnames,defaults in [('Roughness',['Roughness_Value','Roughness_Value_2'],[1.,.4,.2]),('Specular',['Specular_Value','Specular_Value_2'],[.1,.2,.4])]:
+  vals=list(defaults)
+  if is_pouch:vals[:2]=[old[m]['scalar'][x] for x in oldnames]
+  else:vals[1:]=[old[m]['scalar'][x] for x in oldnames]
+  for layer,value in zip(['Dirt','Mud','Wetness'],vals):lib.set_material_instance_scalar_parameter_value(mi,layer+channel,value)
+ prop(mi,'scalar_parameter_values',[p for p in mi.get_editor_property('scalar_parameter_values') if str(p.parameter_info.name) not in ['Roughness_Value','Roughness_Value_2','Specular_Value','Specular_Value_2']])
+ lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in instances}
+report={'graph':after,'values':new,'connections':connections,'deleted':deleted,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/'SurfaceLayerParametersAfter.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

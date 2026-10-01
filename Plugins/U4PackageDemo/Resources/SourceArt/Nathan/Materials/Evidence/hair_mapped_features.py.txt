@@ -1,0 +1,53 @@
+import unreal,pathlib,sys,json,importlib
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools,instance_graph_proof
+importlib.reload(graph_tools);importlib.reload(instance_graph_proof)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped')
+before,objects=read_graph(mat);ns,es,cs,_=graph_model(before)
+members=['HairThick','HairThickCutoff','HairThin','HairThinNoShadow','HairAlphaThinDithered','HairAlphaThin']
+instances={m:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+m) for m in members}
+old={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+(root/'HairMappedFeaturesBefore.json').write_text(json.dumps({'graph':before,'values':old},ensure_ascii=False,indent=2),encoding='utf-8')
+def prop(o,k,v):o.set_editor_property(k,v,unreal.PropertyAccessChangeNotifyMode.NEVER)
+switches={};connections=[];deleted=[]
+feature_desc={
+ 'UseTintedColor':'用途：启用基础色染色。影响：True 在编码颜色域乘 BaseColorTint；False 保留原始纹理色。',
+ 'UseSeparateNormalRG':'用途：选择切线法线来源。影响：True 使用 NormalRG.RG；False 复用 AO_NormalGB.GB。',
+ 'UseDynamicStateAO':'用途：选择来源 AO 计算。影响：True 使用状态纹理的 AO 路径；False 使用 AO_NormalGB.R 与烘焙自遮蔽组合。'}
+for n in ns.values():
+    if n.get('parameter_name')!='UseHairAlphaThinDithered_HairAlphaThin':continue
+    index=int(n['object_path'].split('_')[-1])
+    name='UseTintedColor' if index in [21,22,23] else 'UseSeparateNormalRG' if index in [24,25,26,27] else 'UseDynamicStateAO'
+    o=objects[n['id']]
+    prop(o,'parameter_name',name);prop(o,'group','00 Features / 输入功能')
+    prop(o,'desc',feature_desc[name]+' 输入：编译期布尔。范围／默认：母材质默认 false；每个实例保持源输入布局。条件：三项独立，均不负责开启半透明 Pass。')
+    switches[n['object_path']]=name
+def constant(v):
+    o=lib.create_material_expression(mat,unreal.MaterialExpressionConstant);prop(o,'r',v);return o
+constants={v:constant(v) for v in [-1.,0.,.5,1.]}
+for oldname,feature,t,f,explanation in [
+ ('AmbientOcclusion_Value','UseDynamicStateAO',-1.,1.,'来源 AO 中间值偏移；动态状态路径补 -1，打包 AO 路径补 +1，保持原加法顺序。'),
+ ('SpecularLobes_Value_4','UseForwardInputEncoding',.5,-1.,'来源 Shift 编码第一偏移；前向 +0.5，GBuffer -1，保留后续第二偏移与 Saturate。'),
+ ('SpecularLobes_Value_5','UseForwardInputEncoding',0.,1.,'来源 Shift 编码第二偏移；前向 +0，GBuffer +1，保留原求值顺序。')]:
+    nodes=[n for n in ns.values() if n.get('parameter_name')==oldname]
+    replacement=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter)
+    prop(replacement,'parameter_name',feature);prop(replacement,'default_value',False);prop(replacement,'group','00 Features / 输入功能')
+    desc=feature_desc.get(feature,'用途：来源前向载荷解码。影响：True 使用前向双瓣及独立第二粗糙度，False 使用 GBuffer 载荷；不切换 UE Blend Pass。')
+    prop(replacement,'desc',desc+' 输入：编译期布尔。范围／默认：默认 false；实例按实际来源设置。条件：'+explanation)
+    connections.append(lib.connect_material_expressions(constants[t],'',replacement,'True'));connections.append(lib.connect_material_expressions(constants[f],'',replacement,'False'))
+    for n in nodes:
+        for e in cs[n['id']]:connections.append(lib.connect_material_expressions(replacement,'',objects[e['target_id']],input_pin(e['target_input'])))
+        deleted.append(n['object_path']);lib.delete_material_expression(mat,objects[n['id']])
+mat.modify();lib.recompile_material(mat)
+for m,mi in instances.items():
+    enabled=old[m]['switch']['UseHairAlphaThinDithered_HairAlphaThin']
+    for feature in feature_desc:lib.set_material_instance_static_switch_parameter_value(mi,feature,enabled,unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+    prop(mi,'scalar_parameter_values',[v for v in mi.get_editor_property('scalar_parameter_values') if str(v.parameter_info.name) not in ['AmbientOcclusion_Value','SpecularLobes_Value_4','SpecularLobes_Value_5']])
+    lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat);new={m:instance_graph_proof.values(mi) for m,mi in instances.items()}
+proofs={m:instance_graph_proof.signature(before,old[m])==instance_graph_proof.signature(after,new[m]) for m in members}
+report={'graph':after,'values':new,'connections':connections,'switches':switches,'deleted':deleted,'instance_formula_identity':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False)}
+(root/'HairMappedFeaturesAfter.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'proofs':proofs,'connections':all(connections),'saved':report['saved']}))

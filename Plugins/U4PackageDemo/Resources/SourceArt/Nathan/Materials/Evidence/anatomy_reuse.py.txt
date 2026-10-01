@@ -1,0 +1,97 @@
+import unreal,json,pathlib,sys,importlib,functools
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools
+importlib.reload(graph_tools)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy')
+before,objects=read_graph(mat);nodes,edges,consumers,_=graph_model(before)
+instances={name:unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+name) for name in ['Teeth','Tongue','Caruncle']}
+old_values={name:{'scalar':{str(p):lib.get_material_instance_scalar_parameter_value(mi,p) for p in lib.get_scalar_parameter_names(mi)},'texture':{str(p):lib.get_material_instance_texture_parameter_value(mi,p).get_path_name() for p in lib.get_texture_parameter_names(mi)},'switch':{str(p):lib.get_material_instance_static_switch_parameter_value(mi,p) for p in lib.get_static_switch_parameter_names(mi)}} for name,mi in instances.items()}
+(root/'AnatomyReuseBefore.json').write_text(json.dumps({'graph':before,'values':old_values},ensure_ascii=False,indent=2),encoding='utf-8')
+translation={};connections=[]
+notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+def properties(obj,name,group,desc,sort):
+    for p,v in [('parameter_name',name),('group',group),('desc',desc),('sort_priority',sort)]:obj.set_editor_property(p,v,notify)
+def find(name):return [n for n in nodes.values() if n.get('parameter_name')==name]
+def rename(old,new,group,desc,sort):
+    for n in find(old):properties(objects[n['id']],new,group,desc,sort)
+    translation[old]=(new,0)
+specs={
+ 'BaseColor_Value':('BaseColorIntensity','02 BaseColor / 基础色','用途：最终基础色倍率。影响：乘在颜色链末端 Saturate 前，0 得到黑色。输入：无量纲标量。范围／默认：仅结果限制 0–1，母材质默认 1；原作者范围未提供。条件：所有实例。'),
+ 'Roughness_Value':('BaseRoughness','04 Specular / 高光','用途：基础粗糙度。影响：经过原 -0.5/+0.5 运算和 Saturate 后输入 UE Roughness。输入：无量纲标量。范围／默认：输出 0–1，母材质默认 0.18，实例值各自保留；原作者范围未提供。条件：所有实例。'),
+ 'Specular_Value':('SpecularStrength','04 Specular / 高光','用途：镜面反射输入。影响：经过原偏移和 Saturate 后输入 UE Specular。输入：无量纲标量。范围／默认：输出 0–1，母材质默认 0.66；各实例仍用自身源值。条件：所有实例；UE Default Lit 是已采用的光照适配。'),
+ 'SourceCB_020':('ConstantAO','06 Occlusion / 遮蔽','用途：常量环境遮蔽输入。影响：替代 AO 纹理 R，保留原 -1/+1 与 Saturate。输入：无量纲标量。范围／默认：输出 0–1，默认 0.47；0 最暗，1 无遮蔽。条件：UseConstantAO=true；否则使用 AO_NormalGB.R。'),
+ 'SourceCB_012':('ColorSaturationOffset','02 BaseColor / 基础色','用途：基础色饱和度偏移。影响：先取本值的负数，再按 0.3R+0.59G+0.11B 灰度插值；0 保持染色结果，-1 转灰，正值提高饱和度。输入：无量纲标量。范围／默认：不额外 clamp 插值因子，最终色 Saturate；默认 -0.48。条件：UseColorSaturation=true；否则直接使用染色结果。'),
+ 'AmbientOcclusion_Texture':('AO_NormalGB','01 Textures / 贴图','用途：环境遮蔽及可选打包法线。影响：R 是 AO；启用 UsePackedAONormalGB 时，GB 解码为切线法线 XY；A 未使用。输入：线性打包纹理，LinearColor 采样。范围／默认：默认牙齿 AO，泪阜实例使用自己的 AO/法线打包图；不添加通道转换。条件：AO 受 UseConstantAO 控制，GB 受 UsePackedAONormalGB 控制，两者独立。')}
+for j,(old,(new,group,desc)) in enumerate(specs.items()):rename(old,new,group,desc,j)
+
+color_names=[['SourceCB_000','SourceCB_000_2'],['SourceCB_004_2','SourceCB_004'],['SourceCB_008_2','SourceCB_008']]
+color=lib.create_material_expression(mat,unreal.MaterialExpressionVectorParameter)
+properties(color,'BaseColorTint','02 BaseColor / 基础色','用途：基础纹理 RGB 染色倍率。影响：分别乘到各颜色通道，之后可选饱和度计算和整体倍率。输入：float3 RGB，保持源实例数值，UE 基础色按线性解释。范围／默认：默认为牙齿 (0.824,0.761,0.737)，其它实例保留各自值；未增加 gamma 或 clamp。条件：所有颜色分支共用同一来源。',0)
+default=[old_values['Teeth']['scalar'][x[0]] for x in color_names]
+color.set_editor_property('default_value',unreal.LinearColor(*default,1),notify)
+for index,names in enumerate(color_names):
+    for old in names:
+        translation[old]=('BaseColorTint',index+1)
+        for n in find(old):
+            for edge in consumers[n['id']]:connections.append(lib.connect_material_expressions(color,['R','G','B'][index],objects[edge['target_id']],input_pin(edge['target_input'])))
+            lib.delete_material_expression(mat,objects[n['id']])
+
+texture_groups=[(['BaseColor_Texture','caruncle_color'],'BaseColorTexture','用途：基础 RGB 颜色。影响：RGB 乘共同 BaseColorTint，Alpha 未使用。输入：Color 采样，UE 标准 RGB 解码。范围／默认：母材质默认牙齿颜色；各实例按自己的来源绑定。条件：所有颜色分支复用同一采样输入。'),
+                (['teeth_normal','tongue_bent_normal'],'NormalTexture','用途：独立切线法线打包图。影响：默认 RG 为 XY，UseNormalBA=true 时 BA 为 XY；按原解码、正 Z 重建及 Y 方向适配。输入：线性打包数据，不能让 Normal 压缩重写通道。范围／默认：默认牙齿 RG 法线；舌头实例使用 BA 法线。条件：UsePackedAONormalGB=false 时生效，否则法线读取 AO_NormalGB.GB。')]
+for names,new,desc in texture_groups:
+    default_tex=unreal.load_asset(old_values['Teeth']['texture'][names[0]])
+    for old in names:
+        rename(old,new,'01 Textures / 贴图',desc,0)
+        for n in find(old):objects[n['id']].set_editor_property('texture',default_tex,notify)
+
+switch_nodes={}
+for n in nodes.values():
+    if n['class']!='StaticSwitchParameter':continue
+    number=int(n['object_path'].rsplit('_',1)[1])
+    if number==0:new='UseConstantAO';desc='用途：选择 AO 来源。True：ConstantAO；False：AO_NormalGB.R。只控制遮蔽，不改变法线通道。'
+    elif number in [1,2,3]:new='UseColorSaturation';desc='用途：启用灰度插值饱和度计算。True：应用 ColorSaturationOffset；False：直接使用已染色 RGB。只控制颜色，不改变 AO 或法线。'
+    elif number in [4,6,8,10]:new='UseNormalBA';desc='用途：独立法线纹理通道布局。True：NormalTexture.BA 为 XY；False：RG 为 XY。UsePackedAONormalGB=true 时本项不参与有效路径。'
+    else:new='UsePackedAONormalGB';desc='用途：是否从 AO 纹理复用法线。True：AO_NormalGB.GB 为 XY，复用同一次采样；False：独立 NormalTexture，通道由 UseNormalBA 指定。'
+    properties(objects[n['id']],new,'00 Features / 输入功能',desc+' 输入：编译期布尔。范围／默认：母材质默认 false；各实例按实际输入布局设置。',number)
+    switch_nodes[n['object_path']]=new
+mat.modify();lib.recompile_material(mat)
+expected={};readback=[]
+for name,mi in instances.items():
+    old=old_values[name];scalars={new:old['scalar'][key] for key,(new,group,desc) in specs.items() if key!='AmbientOcclusion_Texture'}
+    colors=[old['scalar'][names[1 if name=='Caruncle' else 0]] for names in color_names]
+    textures={'BaseColorTexture':old['texture']['caruncle_color' if name=='Caruncle' else 'BaseColor_Texture'],
+              'NormalTexture':old['texture']['tongue_bent_normal' if name=='Tongue' else 'teeth_normal'],
+              'AO_NormalGB':old['texture']['AmbientOcclusion_Texture']}
+    switches={'UseConstantAO':name=='Tongue','UseNormalBA':name=='Tongue','UseColorSaturation':name=='Caruncle','UsePackedAONormalGB':name=='Caruncle'}
+    for prop in ['scalar_parameter_values','texture_parameter_values']:
+        mi.set_editor_property(prop,[v for v in mi.get_editor_property(prop) if str(v.parameter_info.name) not in translation],notify)
+    for key,value in scalars.items():lib.set_material_instance_scalar_parameter_value(mi,key,value)
+    lib.set_material_instance_vector_parameter_value(mi,'BaseColorTint',unreal.LinearColor(*colors,1))
+    for key,value in textures.items():lib.set_material_instance_texture_parameter_value(mi,key,unreal.load_asset(value))
+    for key,value in switches.items():lib.set_material_instance_static_switch_parameter_value(mi,key,value,unreal.MaterialParameterAssociation.GLOBAL_PARAMETER,False)
+    lib.update_material_instance(mi)
+    row={'scalar':{k:lib.get_material_instance_scalar_parameter_value(mi,k) for k in scalars},'texture':{k:lib.get_material_instance_texture_parameter_value(mi,k).get_path_name() for k in textures},'switch':{k:lib.get_material_instance_static_switch_parameter_value(mi,k) for k in switches}}
+    value=lib.get_material_instance_vector_parameter_value(mi,'BaseColorTint');row['color']=[value.r,value.g,value.b]
+    expected[name]={'scalar':scalars,'texture':textures,'switch':switches,'color':colors}
+    readback.append({'instance':name,'actual':row,'matches':row==expected[name],'saved':unreal.EditorAssetLibrary.save_loaded_asset(mi,False)})
+after,_=read_graph(mat)
+def instance_proof(graph,member,is_before):
+    ns,es,cs,_=graph_model(graph)
+    @functools.lru_cache(None)
+    def sig(i,index=0):
+        n=ns[i];kind=n['class'];name=n.get('parameter_name')
+        if kind=='StaticSwitchParameter':
+            value=(old_values[member]['switch'] if is_before else expected[member]['switch'])[name]
+            s,o=es[i]['True' if value else 'False'];return sig(s,o)
+        if kind=='ScalarParameter':return digest(['Scalar',*(translation.get(name,(name,0)) if is_before else (name,0))])
+        if kind=='VectorParameter':return digest(['Scalar',name,index])
+        props={k:v for k,v in n['properties'].items() if k not in ['Desc','SortPriority','Name','NodeColor','Texture']};props.update(n.get('precise',{}))
+        target=translation.get(name,(name,0))[0] if is_before else name
+        return digest([kind,target,index,props,[(pin,sig(s,o)) for pin,(s,o) in sorted(es[i].items())]])
+    return [sig(i) for i,n in ns.items() if n['object_path']==graph['attributes_root']]
+proofs={name:instance_proof(before,name,True)==instance_proof(after,name,False) for name in instances}
+out={'connections':connections,'translation':translation,'switch_nodes':switch_nodes,'readback':readback,'formula_identity_per_source_layout':proofs,'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False),'graph':after}
+(root/'AnatomyReuseAfter.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'formula_identity':proofs,'readback':all(x['matches'] for x in readback),'connections':all(connections),'saved':out['saved']},ensure_ascii=False))

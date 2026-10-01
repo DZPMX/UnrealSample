@@ -1,0 +1,1227 @@
+{
+  "color_graphs": {
+    "Cloth": {
+      "added_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionComment_6",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionMultiply_0"
+      ],
+      "removed_nodes": [],
+      "changed_nodes": [
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_94",
+          "key": "properties",
+          "before": {
+            "SortPriority": "20",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：表面基础颜色。影响：RGB 用于基础色和布料老化亮度计算；Alpha 未使用。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "20",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_129",
+          "key": "properties",
+          "before": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色与法线扰动。影响：RGB 为砂色；另以双倍频率使用 R/G 居中作为法线扰动，保留源不同采样；A 未使用。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_95",
+          "key": "properties",
+          "before": {
+            "SortPriority": "20",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：表面基础颜色。影响：RGB 用于基础色和布料老化亮度计算；Alpha 未使用。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "20",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shirt/T_Nathan_island_shirt_color.T_Nathan_island_shirt_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_239",
+          "key": "properties",
+          "before": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色与法线扰动。影响：RGB 为砂色；另以双倍频率使用 R/G 居中作为法线扰动，保留源不同采样；A 未使用。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionNamedRerouteDeclaration_167",
+          "key": "properties",
+          "before": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+            "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+          },
+          "after": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.200000,G=0.120000,B=0.260000,A=1.000000)",
+            "Desc": "最终 UE 线性基础色；源编码颜色完成分层后按 gamma 2.2 转换一次。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_110",
+          "key": "properties",
+          "before": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥颜色与细覆盖。影响：RGB 泥／污垢色，A 在三倍频率细化自动泥覆盖；不同频率保留。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_118",
+          "key": "properties",
+          "before": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥颜色与细覆盖。影响：RGB 泥／污垢色，A 在三倍频率细化自动泥覆盖；不同频率保留。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth:MaterialExpressionTextureSampleParameter2D_120",
+          "key": "properties",
+          "before": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥颜色与细覆盖。影响：RGB 泥／污垢色，A 在三倍频率细化自动泥覆盖；不同频率保留。 输入：Color 采样；RGB 按当前 UE 颜色管理适配解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留每处原 UV、LOD、MipBias 和固定 UV 采样。"
+          },
+          "after": {
+            "SortPriority": "200",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        }
+      ],
+      "existing_edges_identical_after_removing_decode": true,
+      "settings_unchanged": true,
+      "added_chain": [
+        [
+          "Logarithm2",
+          {}
+        ],
+        [
+          "Multiply",
+          {
+            "ConstA": 0.0,
+            "ConstB": 2.200000047683716
+          }
+        ],
+        [
+          "Exponential2",
+          {}
+        ]
+      ],
+      "source_already_saturated_components": "AppendVector",
+      "saved": true,
+      "all_connections": true
+    },
+    "Skin": {
+      "added_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionComment_8",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionMultiply_0"
+      ],
+      "removed_nodes": [],
+      "changed_nodes": [
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_300",
+          "key": "properties",
+          "before": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：基础皮肤颜色。影响：RGB 进入基础色及后续切口、瘀伤、汗、血、泥等分层；A 未使用。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_302",
+          "key": "properties",
+          "before": {
+            "SortPriority": "120",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：切口层颜色。影响：RGB 按相应切口覆盖替换基础皮肤色，Alpha 未使用。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "120",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码伤口颜色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_317",
+          "key": "properties",
+          "before": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥／污垢色与动态细覆盖。影响：RGB 为颜色，A 在三倍频率用于自动泥覆盖；不同采样条件保留。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_319",
+          "key": "properties",
+          "before": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥／污垢色与动态细覆盖。影响：RGB 为颜色，A 在三倍频率用于自动泥覆盖；不同采样条件保留。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_301",
+          "key": "properties",
+          "before": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：基础皮肤颜色。影响：RGB 进入基础色及后续切口、瘀伤、汗、血、泥等分层；A 未使用。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_new_head_clean_color.T_Nathan_new_head_clean_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_438",
+          "key": "properties",
+          "before": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色与法线扰动。影响：RGB 为砂色；另以双倍频率用 R/G 作居中法线扰动；A 未使用，保留两类采样。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionNamedRerouteDeclaration_130",
+          "key": "properties",
+          "before": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+          },
+          "after": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "最终 UE 线性基础色；源编码颜色完成分层后按 gamma 2.2 转换一次。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_314",
+          "key": "properties",
+          "before": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥／污垢色与动态细覆盖。影响：RGB 为颜色，A 在三倍频率用于自动泥覆盖；不同采样条件保留。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "220",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_331",
+          "key": "properties",
+          "before": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色与法线扰动。影响：RGB 为砂色；另以双倍频率用 R/G 作居中法线扰动；A 未使用，保留两类采样。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "250",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_303",
+          "key": "properties",
+          "before": {
+            "SortPriority": "120",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：切口层颜色。影响：RGB 按相应切口覆盖替换基础皮肤色，Alpha 未使用。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "120",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_head_demo_cut_color.T_Nathan_head_demo_cut_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码伤口颜色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin:MaterialExpressionTextureSampleParameter2D_309",
+          "key": "properties",
+          "before": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：流血颜色。影响：RGB 在 UV0 固定 15 倍采样；按切口、血流和暗血层依次覆盖，暗血色额外乘 0.6；A 未使用。 输入：Color 采样，RGB 硬件 sRGB 解码，Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留原 UV、固定坐标、MipBias 和 LOD；颜色适配与原颜色空间差异见源台账。"
+          },
+          "after": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Face/T_Nathan_blood_color.T_Nathan_blood_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码血液颜色；A 保持数据值。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        }
+      ],
+      "existing_edges_identical_after_removing_decode": true,
+      "settings_unchanged": true,
+      "added_chain": [
+        [
+          "Logarithm2",
+          {}
+        ],
+        [
+          "Multiply",
+          {
+            "ConstA": 0.0,
+            "ConstB": 2.200000047683716
+          }
+        ],
+        [
+          "Exponential2",
+          {}
+        ]
+      ],
+      "source_already_saturated_components": "AppendVector",
+      "saved": true,
+      "all_connections": true
+    },
+    "SurfaceLayered": {
+      "added_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionComment_7",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionMultiply_0"
+      ],
+      "removed_nodes": [],
+      "changed_nodes": [
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionNamedRerouteDeclaration_128",
+          "key": "properties",
+          "before": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+          },
+          "after": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "最终 UE 线性基础色；源编码颜色完成分层后按 gamma 2.2 转换一次。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_106",
+          "key": "properties",
+          "before": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥色与细覆盖。影响：RGB 用于泥、污垢颜色；A 在三倍频率参与自动泥覆盖。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_78",
+          "key": "properties",
+          "before": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：表面基础颜色。影响：RGB 进入基础颜色及后续皮革／金属、老化、缝线和天气分层；Alpha 未使用。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_110",
+          "key": "properties",
+          "before": {
+            "SortPriority": "160",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色及原法线扰动输入。影响：RGB 是砂颜色；原输入图另在两倍频率用 R/G 作居中 XY 扰动，两种采样不能合并；A 未使用。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "160",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_201",
+          "key": "properties",
+          "before": {
+            "SortPriority": "160",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：砂颜色及原法线扰动输入。影响：RGB 是砂颜色；原输入图另在两倍频率用 R/G 作居中 XY 扰动，两种采样不能合并；A 未使用。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "160",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_sand_dry_color.T_Nathan_sand_dry_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码沙色；另一组坐标取 RG 作为法线 XY 数据，两个用途均按 UNorm 读取。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_77",
+          "key": "properties",
+          "before": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：表面基础颜色。影响：RGB 进入基础颜色及后续皮革／金属、老化、缝线和天气分层；Alpha 未使用。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "30",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Watch/T_Nathan_os_drake_wristwatch_color.T_Nathan_os_drake_wristwatch_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码基础色；A 不参与颜色解码。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_103",
+          "key": "properties",
+          "before": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥色与细覆盖。影响：RGB 用于泥、污垢颜色；A 在三倍频率参与自动泥覆盖。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered:MaterialExpressionTextureSampleParameter2D_107",
+          "key": "properties",
+          "before": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥色与细覆盖。影响：RGB 用于泥、污垢颜色；A 在三倍频率参与自动泥覆盖。 输入：Color 采样，RGB 按当前 UE 颜色适配解码；Alpha 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：保留所有不同 UV、固定坐标和 LOD/bias 采样条件。"
+          },
+          "after": {
+            "SortPriority": "130",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        }
+      ],
+      "existing_edges_identical_after_removing_decode": true,
+      "settings_unchanged": true,
+      "added_chain": [
+        [
+          "Logarithm2",
+          {}
+        ],
+        [
+          "Multiply",
+          {
+            "ConstA": 0.0,
+            "ConstB": 2.200000047683716
+          }
+        ],
+        [
+          "Exponential2",
+          {}
+        ]
+      ],
+      "source_already_saturated_components": "AppendVector",
+      "saved": true,
+      "all_connections": true
+    },
+    "Ring": {
+      "added_nodes": [
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionComment_5",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionExponential2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionLogarithm2_0",
+        "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionMultiply_0"
+      ],
+      "removed_nodes": [],
+      "changed_nodes": [
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_8",
+          "key": "properties",
+          "before": {
+            "SortPriority": "0",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：清洁金属基础色与粗糙度打包纹理。影响：RGB 进入 UE 基础色；A 驱动粗糙度两端点插值，Alpha 不做 sRGB 解码。 输入：Color 采样；当前导入采用 UE 颜色管理；完整采样条件见来源台账。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+          },
+          "after": {
+            "SortPriority": "0",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=由源 GBA 重排的编码金属颜色；A=源 R 粗糙度数据。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_11",
+          "key": "properties",
+          "before": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥层颜色及细覆盖打包纹理。影响：RGB 是泥色；A 在三倍细节频率参与动态覆盖；相同纹理的两种坐标采样不能合并。 输入：Color 采样；RGB 硬件解码，A 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+          },
+          "after": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionNamedRerouteDeclaration_0",
+          "key": "properties",
+          "before": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "共享一次计算的结果；使用节点仅引用本声明，不复制上游计算。"
+          },
+          "after": {
+            "Name": "L_Final_BaseColor",
+            "NodeColor": "(R=0.250000,G=0.180000,B=0.100000,A=1.000000)",
+            "Desc": "最终 UE 线性基础色；源编码颜色完成分层后按 gamma 2.2 转换一次。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_7",
+          "key": "properties",
+          "before": {
+            "SortPriority": "0",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：清洁金属基础色与粗糙度打包纹理。影响：RGB 进入 UE 基础色；A 驱动粗糙度两端点插值，Alpha 不做 sRGB 解码。 输入：Color 采样；当前导入采用 UE 颜色管理；完整采样条件见来源台账。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+          },
+          "after": {
+            "SortPriority": "0",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_iron_color_075_ColorData.T_Nathan_iron_color_075_ColorData'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=由源 GBA 重排的编码金属颜色；A=源 R 粗糙度数据。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        },
+        {
+          "node": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring:MaterialExpressionTextureSampleParameter2D_13",
+          "key": "properties",
+          "before": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_Color",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：泥层颜色及细覆盖打包纹理。影响：RGB 是泥色；A 在三倍细节频率参与动态覆盖；相同纹理的两种坐标采样不能合并。 输入：Color 采样；RGB 硬件解码，A 保持数据值。 范围／默认：本母材质默认：/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'。原作作者滑杆范围未提供；捕获值与原 PAK 值分别保存在台账。 条件：按当前连接始终参与计算。"
+          },
+          "after": {
+            "SortPriority": "10",
+            "MipValueMode": "TMVM_MipBias",
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "GatherMode": "TGM_None",
+            "AutomaticViewMipBias": "False",
+            "ChannelNames": "()",
+            "ConstCoordinate": "0",
+            "ConstMipValue": "-1",
+            "Texture": "/Script/Engine.Texture2D'/Game/Demo/Character/Nathan/Textures/Shared/T_Nathan_mud_color.T_Nathan_mud_color'",
+            "SamplerType": "SAMPLERTYPE_LinearColor",
+            "IsDefaultMeshpaintTexture": "False",
+            "Desc": "用途：RGB=源编码泥色；A=细覆盖数据，保留各次采样的坐标差异。 影响：保留分层、遮罩与染色的原运算顺序。输入：LinearColor 采样读取 UNorm 编码值；在全部颜色处理之后统一转线性。范围／默认：默认使用当前源纹理；原作者滑杆范围未提供。条件：沿用此节点原功能分支、UV、Mip 与采样上下文；非颜色数据不做 gamma 解码。"
+          }
+        }
+      ],
+      "existing_edges_identical_after_removing_decode": true,
+      "settings_unchanged": true,
+      "added_chain": [
+        [
+          "Logarithm2",
+          {}
+        ],
+        [
+          "Multiply",
+          {
+            "ConstA": 0.0,
+            "ConstB": 2.200000047683716
+          }
+        ],
+        [
+          "Exponential2",
+          {}
+        ]
+      ],
+      "source_already_saturated_components": "AppendVector",
+      "saved": true,
+      "all_connections": true
+    }
+  },
+  "profiles": {
+    "Face": {
+      "only_roughness1_changed": true,
+      "source_secondary": 0.452,
+      "reconstructed_secondary": 0.45200001060962675,
+      "saved": true
+    },
+    "Chest": {
+      "only_roughness1_changed": true,
+      "source_secondary": 0.47200000000000003,
+      "reconstructed_secondary": 0.4720000123977661,
+      "saved": true
+    },
+    "Arms": {
+      "only_roughness1_changed": true,
+      "source_secondary": 0.464,
+      "reconstructed_secondary": 0.4639999902248383,
+      "saved": true
+    }
+  },
+  "brow": {
+    "mapped_source_nodes": 198,
+    "expected_source_nodes": 198,
+    "arithmetic_mapping_issues": [],
+    "route_guids_match": true,
+    "all_connections": true,
+    "source_parameters": {
+      "0": [
+        "ColorOverlayTint",
+        "02 BaseColor",
+        "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+      ],
+      "4": [
+        "ColorOverlayTint",
+        "02 BaseColor",
+        "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+      ],
+      "8": [
+        "ColorOverlayTint",
+        "02 BaseColor",
+        "编码颜色域的 RGB 染色，随后乘 2；线性颜色转换在全部颜色处理之后。"
+      ],
+      "12": [
+        "ColorLightness",
+        "02 BaseColor",
+        "以 abs(x) 混合原颜色与 0.5*x+0.5，再参与 RGB 染色；不是线性亮度倍率。"
+      ],
+      "16": [
+        "NormalStrength",
+        "03 Normal",
+        "对解码后的切线 XY 进行缩放，随后重建正 Z；大值受 Z 的 saturate 限制。"
+      ],
+      "20": [
+        "SpecularStrength",
+        "04 Specular",
+        "同时缩放 SpecularMask.G 和 B，两者分别驱动第一和第二高光瓣；0 关闭这两瓣。"
+      ],
+      "24": [
+        "BaseRoughness",
+        "04 Specular",
+        "同时驱动两瓣指数 exp2(9-10*r)，输入按源路径 saturate；不驱动散射或背光。"
+      ],
+      "28": [
+        "CoverageNormalization",
+        "05 Coverage",
+        "覆盖纹理 R 除以 max(x,1e-7) 后 saturate；随后源裁剪阈值 0.05。"
+      ],
+      "32": [
+        "ConstantAO",
+        "06 Occlusion",
+        "经 saturate 后用于原高光可见度、环境遮挡和编码颜色饱和度处理。"
+      ],
+      "36": [
+        "ShiftVariation",
+        "04 Specular",
+        "缩放 (SpecularMask.R-0.5)*0.2 并加入两瓣偏移；不修改法线。"
+      ],
+      "40": [
+        "PrimaryLobeShift",
+        "04 Specular",
+        "第一瓣偏移；加上随机纹理变化后乘 0.5、加 0.5、saturate，再减 0.5 传入 Kajiya。"
+      ],
+      "44": [
+        "SecondaryLobeShift",
+        "04 Specular",
+        "第二瓣偏移；保留原两次抵消偏移、saturate，再减 0.5 传入 Kajiya。"
+      ],
+      "48": [
+        "BaseColorIntensity",
+        "02 BaseColor",
+        "原全局编码色倍率之后的材质颜色强度；在 clamp 和最终 gamma-2.2 解码之前。"
+      ]
+    },
+    "limits": [
+      "Existing Kajiya environment adapter differs from source ambient path.",
+      "UE masked temporal coverage remains adaptation to original continuous alpha.",
+      "No new renderer or engine source changes."
+    ],
+    "effective_values_preserved_by_cleanup": true
+  },
+  "assets": {
+    "changed": [
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\MI_Nathan_Eyebrows.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Cloth.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_HairKajiyaFine.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Ring.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_Skin.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\M_Nathan_SurfaceLayered.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\SP_Nathan_Arms.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\SP_Nathan_Chest.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Material\\SP_Nathan_Face.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Belt\\T_Nathan_island_belt_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Body\\T_Nathan_arm_clean_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Brow\\T_Nathan_new_brows2_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_blood_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_cut_island_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_head_demo_cut_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_clean_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Face\\T_Nathan_new_head_sunburns_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Holster\\T_Nathan_holster_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\MaterialAdaptation\\T_Nathan_iron_color_075_ColorData.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Pants\\T_Nathan_island_pants_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Pouch\\T_Nathan_pouch_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_mud_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shared\\T_Nathan_sand_dry_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shirt\\T_Nathan_island_shirt_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Shoes\\T_Nathan_boots_color.uasset",
+      "G:\\UnrealSample\\Content\\Demo\\Character\\Nathan\\Textures\\Watch\\T_Nathan_os_drake_wristwatch_color.uasset"
+    ],
+    "removed": [],
+    "meshes_unchanged": true,
+    "read_errors": [],
+    "dirty_content": [],
+    "dirty_maps": []
+  },
+  "shaders": {
+    "statistics_count": 16,
+    "nonzero_pixel_all": true
+  }
+}

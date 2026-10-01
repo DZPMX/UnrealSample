@@ -1,0 +1,674 @@
+[
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_Skin.M_Nathan_Skin",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 599,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 44,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterBorder.M_Nathan_HolsterBorder",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 210,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 1,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_HolsterMetal.M_Nathan_HolsterMetal",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 193,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 2,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_Ring.M_Nathan_Ring",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 230,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 7,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_Cloth.M_Nathan_Cloth",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 578,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 47,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_Tears.M_Nathan_Tears",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 1735,
+      "num_vertex_shader_instructions": 489,
+      "num_samplers": 6,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 2,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceAnatomy.M_Nathan_SurfaceAnatomy",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 6,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_SurfaceLayered.M_Nathan_SurfaceLayered",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 463,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 31,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_WatchLens.M_Nathan_WatchLens",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 1710,
+      "num_vertex_shader_instructions": 487,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 0,
+      "num_pixel_texture_samples": 3,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 0,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_FineHair.M_Nathan_FineHair",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 232,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 3,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 5,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaMapped.M_Nathan_HairKajiyaMapped",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 278,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 35,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked.M_Nathan_HairKajiyaPacked",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 238,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 22,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaLayered.M_Nathan_HairKajiyaLayered",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 413,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 64,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/M_Nathan_Eye.M_Nathan_Eye",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 277,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 7,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Arms.MI_Nathan_Arms",
+    "elapsed_seconds": 1.0789999999979045,
+    "stats": {
+      "num_pixel_shader_instructions": 471,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 34,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Chest.MI_Nathan_Chest",
+    "elapsed_seconds": 0.8439999999973224,
+    "stats": {
+      "num_pixel_shader_instructions": 433,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 32,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Face.MI_Nathan_Face",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 599,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 44,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterBorder.MI_Nathan_HolsterBorder",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 210,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 1,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HolsterMetal.MI_Nathan_HolsterMetal",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 193,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 2,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Ring.MI_Nathan_Ring",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 230,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 7,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Boots.MI_Nathan_Boots",
+    "elapsed_seconds": 0.7819999999919673,
+    "stats": {
+      "num_pixel_shader_instructions": 525,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 35,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pants.MI_Nathan_Pants",
+    "elapsed_seconds": 0.9220000000059372,
+    "stats": {
+      "num_pixel_shader_instructions": 505,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 39,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Shirt.MI_Nathan_Shirt",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 578,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 47,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tears.MI_Nathan_Tears",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 1735,
+      "num_vertex_shader_instructions": 489,
+      "num_samplers": 6,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 2,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Caruncle.MI_Nathan_Caruncle",
+    "elapsed_seconds": 0.5939999999973224,
+    "stats": {
+      "num_pixel_shader_instructions": 208,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 4,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Teeth.MI_Nathan_Teeth",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 6,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Tongue.MI_Nathan_Tongue",
+    "elapsed_seconds": 0.5320000000065193,
+    "stats": {
+      "num_pixel_shader_instructions": 202,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 4,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Belt.MI_Nathan_Belt",
+    "elapsed_seconds": 0.6410000000032596,
+    "stats": {
+      "num_pixel_shader_instructions": 464,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 31,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Holster.MI_Nathan_Holster",
+    "elapsed_seconds": 0.6409999999887077,
+    "stats": {
+      "num_pixel_shader_instructions": 454,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 33,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Pouch.MI_Nathan_Pouch",
+    "elapsed_seconds": 0.6100000000005821,
+    "stats": {
+      "num_pixel_shader_instructions": 384,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 23,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Watch.MI_Nathan_Watch",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 463,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 31,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_WatchLens.MI_Nathan_WatchLens",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 1710,
+      "num_vertex_shader_instructions": 487,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 0,
+      "num_pixel_texture_samples": 3,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 0,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_ArmHair.MI_Nathan_ArmHair",
+    "elapsed_seconds": 0.9529999999940628,
+    "stats": {
+      "num_pixel_shader_instructions": 221,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 3,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 3,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyebrows.MI_Nathan_Eyebrows",
+    "elapsed_seconds": 0.9379999999946449,
+    "stats": {
+      "num_pixel_shader_instructions": 246,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 3,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 6,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eyelashes.MI_Nathan_Eyelashes",
+    "elapsed_seconds": 0.8600000000005821,
+    "stats": {
+      "num_pixel_shader_instructions": 222,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 3,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 3,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Stubble.MI_Nathan_Stubble",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 232,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 3,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 5,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThin.MI_Nathan_HairAlphaThin",
+    "elapsed_seconds": 1.0929999999934807,
+    "stats": {
+      "num_pixel_shader_instructions": 246,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 29,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairAlphaThinDithered.MI_Nathan_HairAlphaThinDithered",
+    "elapsed_seconds": 0.7970000000059372,
+    "stats": {
+      "num_pixel_shader_instructions": 246,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 31,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThick.MI_Nathan_HairThick",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 278,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 35,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThickCutoff.MI_Nathan_HairThickCutoff",
+    "elapsed_seconds": 1.0789999999979045,
+    "stats": {
+      "num_pixel_shader_instructions": 266,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 4,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 34,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThin.MI_Nathan_HairThin",
+    "elapsed_seconds": 0.046999999991385266,
+    "stats": {
+      "num_pixel_shader_instructions": 278,
+      "num_vertex_shader_instructions": 296,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 35,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 6,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinNoShadow.MI_Nathan_HairThinNoShadow",
+    "elapsed_seconds": 1.014999999999418,
+    "stats": {
+      "num_pixel_shader_instructions": 256,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 32,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlpha.MI_Nathan_HairThinAlpha",
+    "elapsed_seconds": 0.75,
+    "stats": {
+      "num_pixel_shader_instructions": 238,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 20,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinAlphaDithered.MI_Nathan_HairThinAlphaDithered",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 238,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 22,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMud.MI_Nathan_HairThinMud",
+    "elapsed_seconds": 1.125,
+    "stats": {
+      "num_pixel_shader_instructions": 363,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 56,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudDithered.MI_Nathan_HairThinMudDithered",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 413,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 64,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_HairThinMudSnow.MI_Nathan_HairThinMudSnow",
+    "elapsed_seconds": 1.125,
+    "stats": {
+      "num_pixel_shader_instructions": 374,
+      "num_vertex_shader_instructions": 294,
+      "num_samplers": 5,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 58,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 4,
+      "num_interpolator_scalars": 0
+    }
+  },
+  {
+    "asset": "/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye.MI_Nathan_Eye",
+    "elapsed_seconds": 0.0,
+    "stats": {
+      "num_pixel_shader_instructions": 277,
+      "num_vertex_shader_instructions": 293,
+      "num_samplers": 2,
+      "num_vertex_texture_samples": 3,
+      "num_pixel_texture_samples": 7,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 2,
+      "num_interpolator_scalars": 0
+    }
+  }
+]

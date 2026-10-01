@@ -1,0 +1,62 @@
+[
+  {
+    "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_sully_hair_thin2_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thick_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\SourceArt\\Nathan\\TextureManifest.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_sully_hair_thin2_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_mud_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thin_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/Hair/T_Nathan_hair_thick_color",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\AssetMap.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_hair_thin_ao_mask_9BBBC49A_ColorData",
+    "old": true,
+    "new": false
+  },
+  {
+    "file": "G:\\UnrealSample\\Saved\\Codex\\Nathan_Materials_20260924\\DerivedImports.json",
+    "asset": "/Game/Demo/Character/Nathan/Textures/MaterialAdaptation/T_Nathan_hair_thin_ao_mask_9BBBC49A_ColorData",
+    "old": true,
+    "new": false
+  }
+]

@@ -1,0 +1,66 @@
+import unreal,json,pathlib,sys,importlib,functools
+root=pathlib.Path('G:/UnrealSample/Saved/Codex/Nathan_SkillFix_20260925');sys.path.insert(0,str(root))
+import graph_tools
+importlib.reload(graph_tools)
+from graph_tools import *
+lib=unreal.MaterialEditingLibrary;notify=unreal.PropertyAccessChangeNotifyMode.NEVER
+reports=[]
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_HairKajiyaPacked')
+before,objects=read_graph(mat);nodes,edges,consumers,_=graph_model(before)
+instances=[unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_'+s) for s in ['HairThinAlphaDithered','HairThinAlpha']]
+source_constants={'SpecularLobes_Value':(0.5,-1.0),'SpecularLobes_Value_2':(0.0,1.0)}
+values={mi.get_name():{name:lib.get_material_instance_scalar_parameter_value(mi,name) for name in source_constants} for mi in instances}
+switches={mi.get_name():lib.get_material_instance_static_switch_parameter_value(mi,'UseForwardInputEncoding') for mi in instances}
+connections=[]
+for name,(yes,no) in source_constants.items():
+    target=next(n for n in nodes.values() if n.get('parameter_name')==name)
+    switch=lib.create_material_expression(mat,unreal.MaterialExpressionStaticSwitchParameter,target['pos_x'],target['pos_y'])
+    switch.set_editor_property('parameter_name','UseForwardInputEncoding',notify)
+    switch.set_editor_property('default_value',False,notify)
+    switch.set_editor_property('group','00 Features / 输入布局',notify)
+    switch.set_editor_property('desc','固定的源 Shift 编码常量；按前向/GBuffer 输入布局选择。不是独立作者参数，保留原加法顺序。',notify)
+    for pin,value in [('True',yes),('False',no)]:
+        constant=lib.create_material_expression(mat,unreal.MaterialExpressionConstant)
+        constant.set_editor_property('r',value,notify)
+        constant.set_editor_property('desc','源 Shift 编码偏移 '+str(value)+'；与相邻偏移按原顺序执行。',notify)
+        connections.append(lib.connect_material_expressions(constant,'',switch,pin))
+    for edge in consumers[target['id']]:connections.append(lib.connect_material_expressions(switch,'',objects[edge['target_id']],input_pin(edge['target_input'])))
+    lib.delete_material_expression(mat,objects[target['id']])
+mat.modify();lib.recompile_material(mat)
+for mi in instances:
+    mi.set_editor_property('scalar_parameter_values',[v for v in mi.get_editor_property('scalar_parameter_values') if str(v.parameter_info.name) not in source_constants],notify)
+    lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat)
+def identity(graph,instance):
+    ns,es,cs,_=graph_model(graph)
+    @functools.lru_cache(None)
+    def sig(i):
+        n=ns[i];name=n.get('parameter_name')
+        if n['class']=='StaticSwitchParameter':
+            s,o=es[i]['True' if switches[instance] else 'False'];return sig(s)
+        if name in source_constants:return digest(['constant',values[instance][name]])
+        if n['class']=='Constant':return digest(['constant',n['precise']['R']])
+        props={k:v for k,v in n['properties'].items() if k not in ['Desc','SortPriority','Name','NodeColor']};props.update(n.get('precise',{}))
+        return digest([n['class'],name,props,[(pin,sig(s),o) for pin,(s,o) in sorted(es[i].items())]])
+    return [sig(i) for i,n in ns.items() if n['object_path']==graph['attributes_root'] or n['class']=='KajiyaHairOutput']
+reports.append({'material':mat.get_path_name(),'connections':connections,'previous_values':values,'layout_values':switches,'formula_identity':{name:identity(before,name)==identity(after,name) for name in switches},'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False),'before':before,'after':after})
+
+mat=unreal.load_asset('/Game/Demo/Character/Nathan/Material/M_Nathan_Eye')
+before,objects=read_graph(mat);nodes,edges,consumers,_=graph_model(before)
+reachable=set()
+def visit(i):
+    if i in reachable:return
+    reachable.add(i)
+    for s,o in edges[i].values():visit(s)
+for i,n in nodes.items():
+    if n['object_path']==before['attributes_root'] or n['class']=='TangentOutput':visit(i)
+orphans=[n for i,n in nodes.items() if i not in reachable]
+for n in orphans:lib.delete_material_expression(mat,objects[n['id']])
+mat.modify();lib.recompile_material(mat)
+mi=unreal.load_asset('/Game/Demo/Character/Nathan/Material/MI_Nathan_Eye')
+mi.set_editor_property('scalar_parameter_values',[v for v in mi.get_editor_property('scalar_parameter_values') if str(v.parameter_info.name)!='SourceCB_028'],notify)
+lib.update_material_instance(mi);unreal.EditorAssetLibrary.save_loaded_asset(mi,False)
+after,_=read_graph(mat)
+reports.append({'material':mat.get_path_name(),'deleted':[n['object_path'] for n in orphans],'reason':'g_lashAOStrength03 belongs to the old source roughness chain. That chain has no output consumers since the explicitly adopted UE Eye cornea roughness replacement. Project source/registry/Blueprint writer inspection found no Nathan writer for SourceCB_028.','formula_identity':root_signatures(before)==root_signatures(after),'saved':unreal.EditorAssetLibrary.save_loaded_asset(mat,False),'before':before,'after':after})
+(root/'ConfirmedInputCleanup.json').write_text(json.dumps(reports,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps([{k:v for k,v in r.items() if k not in ['before','after','reason']} for r in reports],ensure_ascii=False))

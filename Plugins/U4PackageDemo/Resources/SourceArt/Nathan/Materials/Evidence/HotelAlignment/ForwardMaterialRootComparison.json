@@ -1,0 +1,844 @@
+[
+  {
+    "name": "Stubble",
+    "old": 32306,
+    "new": 51843,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_336",
+          "new": [
+            "_356"
+          ]
+        },
+        {
+          "old": "_337",
+          "new": [
+            "_357"
+          ]
+        },
+        {
+          "old": "_338",
+          "new": [
+            "_358"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_324",
+          "new": [
+            "_344"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "Tears",
+    "old": 32316,
+    "new": 51863,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_364",
+          "new": [
+            "_407"
+          ]
+        },
+        {
+          "old": "_365",
+          "new": [
+            "_408"
+          ]
+        },
+        {
+          "old": "_366",
+          "new": [
+            "_409"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_367",
+          "new": [
+            "_410"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_368",
+          "new": [
+            "_411"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_372",
+          "new": [
+            "_415"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": [
+      {
+        "byte": 12,
+        "old": -3.350787401199341,
+        "new": 0.699999988079071
+      }
+    ]
+  },
+  {
+    "name": "HairThinMud",
+    "old": 32326,
+    "new": 51853,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_838",
+          "new": [
+            "_855"
+          ]
+        },
+        {
+          "old": "_839",
+          "new": [
+            "_856"
+          ]
+        },
+        {
+          "old": "_840",
+          "new": [
+            "_857"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_789",
+          "new": [
+            "_806"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_790",
+          "new": [
+            "_807"
+          ]
+        }
+      ],
+      "AmbientOcclusion": [
+        {
+          "old": "_791",
+          "new": [
+            "_808"
+          ]
+        }
+      ],
+      "Scatter": [
+        {
+          "old": "_792",
+          "new": [
+            "_809"
+          ]
+        }
+      ],
+      "SecondaryRoughness": [
+        {
+          "old": "_793",
+          "new": [
+            "_810"
+          ]
+        }
+      ],
+      "SecondaryWeight": [
+        {
+          "old": "_794",
+          "new": [
+            "_811"
+          ]
+        }
+      ],
+      "PrimaryShift": [
+        {
+          "old": "_795",
+          "new": [
+            "_812"
+          ]
+        }
+      ],
+      "SecondaryShift": [
+        {
+          "old": "_796",
+          "new": [
+            "_813"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_800",
+          "new": [
+            "_817"
+          ]
+        }
+      ],
+      "Normal": [
+        {
+          "old": "_807",
+          "new": [
+            "_824"
+          ]
+        },
+        {
+          "old": "_808",
+          "new": [
+            "_825"
+          ]
+        },
+        {
+          "old": "_812",
+          "new": [
+            "_829"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": [
+      {
+        "byte": 8,
+        "old": 1.0,
+        "new": 2.152394441202919e-41
+      },
+      {
+        "byte": 12,
+        "old": 0.03958015888929367,
+        "new": 0.0
+      }
+    ]
+  },
+  {
+    "name": "Eyelashes",
+    "old": 32335,
+    "new": 51881,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_323",
+          "new": [
+            "_343"
+          ]
+        },
+        {
+          "old": "_324",
+          "new": [
+            "_344"
+          ]
+        },
+        {
+          "old": "_325",
+          "new": [
+            "_345"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_311",
+          "new": [
+            "_331"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "Eyebrows",
+    "old": 32344,
+    "new": 51910,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_512",
+          "new": [
+            "_531"
+          ]
+        },
+        {
+          "old": "_513",
+          "new": [
+            "_532"
+          ]
+        },
+        {
+          "old": "_514",
+          "new": [
+            "_533"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_464",
+          "new": [
+            "_483"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_465",
+          "new": [
+            "_484"
+          ]
+        }
+      ],
+      "AmbientOcclusion": [
+        {
+          "old": "_466",
+          "new": [
+            "_485"
+          ]
+        }
+      ],
+      "Scatter": [
+        {
+          "old": "_467",
+          "new": [
+            "_486"
+          ]
+        }
+      ],
+      "SecondaryWeight": [
+        {
+          "old": "_468",
+          "new": [
+            "_487"
+          ]
+        }
+      ],
+      "PrimaryShift": [
+        {
+          "old": "_469",
+          "new": [
+            "_488"
+          ]
+        }
+      ],
+      "SecondaryShift": [
+        {
+          "old": "_470",
+          "new": [
+            "_489"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_474",
+          "new": [
+            "_493"
+          ]
+        }
+      ],
+      "Normal": [
+        {
+          "old": "_481",
+          "new": [
+            "_500"
+          ]
+        },
+        {
+          "old": "_482",
+          "new": [
+            "_501"
+          ]
+        },
+        {
+          "old": "_486",
+          "new": [
+            "_505"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "HairAlphaThin",
+    "old": 32354,
+    "new": 51891,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_579",
+          "new": [
+            "_597"
+          ]
+        },
+        {
+          "old": "_580",
+          "new": [
+            "_598"
+          ]
+        },
+        {
+          "old": "_581",
+          "new": [
+            "_599"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_530",
+          "new": [
+            "_548"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_531",
+          "new": [
+            "_549"
+          ]
+        }
+      ],
+      "AmbientOcclusion": [
+        {
+          "old": "_532",
+          "new": [
+            "_550"
+          ]
+        }
+      ],
+      "Scatter": [
+        {
+          "old": "_533",
+          "new": [
+            "_551"
+          ]
+        }
+      ],
+      "SecondaryRoughness": [
+        {
+          "old": "_534",
+          "new": [
+            "_552"
+          ]
+        }
+      ],
+      "SecondaryWeight": [
+        {
+          "old": "_535",
+          "new": [
+            "_553"
+          ]
+        }
+      ],
+      "PrimaryShift": [
+        {
+          "old": "_536",
+          "new": [
+            "_554"
+          ]
+        }
+      ],
+      "SecondaryShift": [
+        {
+          "old": "_537",
+          "new": [
+            "_555"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_541",
+          "new": [
+            "_559"
+          ]
+        }
+      ],
+      "Normal": [
+        {
+          "old": "_548",
+          "new": [
+            "_566"
+          ]
+        },
+        {
+          "old": "_549",
+          "new": [
+            "_567"
+          ]
+        },
+        {
+          "old": "_553",
+          "new": [
+            "_571"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "HairThinMudSnow",
+    "old": 32364,
+    "new": 51920,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_819",
+          "new": [
+            "_836"
+          ]
+        },
+        {
+          "old": "_820",
+          "new": [
+            "_837"
+          ]
+        },
+        {
+          "old": "_821",
+          "new": [
+            "_838"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_770",
+          "new": [
+            "_787"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_771",
+          "new": [
+            "_788"
+          ]
+        }
+      ],
+      "AmbientOcclusion": [
+        {
+          "old": "_772",
+          "new": [
+            "_789"
+          ]
+        }
+      ],
+      "Scatter": [
+        {
+          "old": "_773",
+          "new": [
+            "_790"
+          ]
+        }
+      ],
+      "SecondaryRoughness": [
+        {
+          "old": "_774",
+          "new": [
+            "_791"
+          ]
+        }
+      ],
+      "SecondaryWeight": [
+        {
+          "old": "_775",
+          "new": [
+            "_792"
+          ]
+        }
+      ],
+      "PrimaryShift": [
+        {
+          "old": "_776",
+          "new": [
+            "_793"
+          ]
+        }
+      ],
+      "SecondaryShift": [
+        {
+          "old": "_777",
+          "new": [
+            "_794"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_781",
+          "new": [
+            "_798"
+          ]
+        }
+      ],
+      "Normal": [
+        {
+          "old": "_788",
+          "new": [
+            "_805"
+          ]
+        },
+        {
+          "old": "_789",
+          "new": [
+            "_806"
+          ]
+        },
+        {
+          "old": "_793",
+          "new": [
+            "_810"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": [
+      {
+        "byte": 8,
+        "old": 0.007829484529793262,
+        "new": -1.3333333730697632
+      },
+      {
+        "byte": 12,
+        "old": -3.321091651916504,
+        "new": 2.370370388031006
+      },
+      {
+        "byte": 92,
+        "old": 1.0,
+        "new": 0.5602430701255798
+      },
+      {
+        "byte": 108,
+        "old": 0.019955527037382126,
+        "new": 0.0
+      }
+    ]
+  },
+  {
+    "name": "HairThinAlpha",
+    "old": 32383,
+    "new": 51901,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_495",
+          "new": [
+            "_514"
+          ]
+        },
+        {
+          "old": "_496",
+          "new": [
+            "_515"
+          ]
+        },
+        {
+          "old": "_497",
+          "new": [
+            "_516"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_469",
+          "new": [
+            "_488"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_470",
+          "new": [
+            "_489"
+          ]
+        }
+      ],
+      "AmbientOcclusion": [
+        {
+          "old": "_471",
+          "new": [
+            "_490"
+          ]
+        }
+      ],
+      "Scatter": [
+        {
+          "old": "_472",
+          "new": [
+            "_491"
+          ]
+        }
+      ],
+      "SecondaryRoughness": [
+        {
+          "old": "_473",
+          "new": [
+            "_492"
+          ]
+        }
+      ],
+      "SecondaryWeight": [
+        {
+          "old": "_474",
+          "new": [
+            "_493"
+          ]
+        }
+      ],
+      "PrimaryShift": [
+        {
+          "old": "_475",
+          "new": [
+            "_494"
+          ]
+        }
+      ],
+      "SecondaryShift": [
+        {
+          "old": "_476",
+          "new": [
+            "_495"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_480",
+          "new": [
+            "_499"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "ArmHair",
+    "old": 32392,
+    "new": 51929,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_317",
+          "new": [
+            "_337"
+          ]
+        },
+        {
+          "old": "_318",
+          "new": [
+            "_338"
+          ]
+        },
+        {
+          "old": "_319",
+          "new": [
+            "_339"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_305",
+          "new": [
+            "_325"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  },
+  {
+    "name": "WatchLens",
+    "old": 32401,
+    "new": 51938,
+    "old_entry": "MainPsCheapForward__Wrp",
+    "new_entry": "MainPsForward__Wrp",
+    "roots": {
+      "BaseColor": [
+        {
+          "old": "_301",
+          "new": [
+            "_345"
+          ]
+        },
+        {
+          "old": "_301",
+          "new": [
+            "_345"
+          ]
+        },
+        {
+          "old": "_301",
+          "new": [
+            "_345"
+          ]
+        }
+      ],
+      "Roughness": [
+        {
+          "old": "_302",
+          "new": [
+            "_346"
+          ]
+        }
+      ],
+      "Specular": [
+        {
+          "old": "_303",
+          "new": [
+            "_347"
+          ]
+        }
+      ],
+      "Opacity": [
+        {
+          "old": "_307",
+          "new": [
+            "_351"
+          ]
+        }
+      ]
+    },
+    "material_cb_changes": []
+  }
+]
