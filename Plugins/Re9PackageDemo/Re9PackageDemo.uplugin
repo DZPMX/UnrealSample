@@ -1,0 +1,23 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Re9PackageDemo",
+  "Description": "Grace character assets, source motion playback, original wrinkle sampling and client modules.",
+  "Category": "Project",
+  "CanContainContent": true,
+  "EnabledByDefault": true,
+  "Plugins": [
+    { "Name": "EnhancedInput", "Enabled": true },
+    { "Name": "ACLPlugin", "Enabled": true },
+    { "Name": "AnimationData", "Enabled": true },
+    { "Name": "ControlRig", "Enabled": true },
+    { "Name": "HairStrands", "Enabled": true },
+    { "Name": "AlembicHairImporter", "Enabled": true },
+    { "Name": "Niagara", "Enabled": true }
+  ],
+  "Modules": [
+    { "Name": "GraceAnimationRuntime", "Type": "Runtime", "LoadingPhase": "Default" },
+    { "Name": "GraceAnimationEditor", "Type": "Editor", "LoadingPhase": "Default" }
+  ]
+}

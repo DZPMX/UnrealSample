@@ -1,0 +1,224 @@
+{
+  "date": "2026-10-01",
+  "target": "UnrealSampleEditor Win64 Development",
+  "engine_version": "5.7.4",
+  "build": {
+    "initial_exit_code": 6,
+    "retry_exit_code": 0,
+    "result": "Succeeded",
+    "log": "Saved/Codex/Re9PackageDemo_BuildTest_20261001/build_retry_console.log",
+    "warnings": [
+      "VibeUE does not declare StructUtils and GameplayTagsEditor plugin dependencies."
+    ]
+  },
+  "engine_compile_fixes": [
+    {
+      "file": "G:\\UnrealSourceCode\\Engine\\Plugins\\Runtime\\LocalWind\\Source\\LocalWind\\Private\\LocalWindSubsystem.cpp",
+      "only_expected_compile_fix": true,
+      "diff": "--- before/LocalWindSubsystem.cpp\n+++ after/LocalWindSubsystem.cpp\n@@ -126,7 +126,7 @@\n \t\tconst TWeakObjectPtr<ULocalPlayer> Player(GameInstance->GetFirstGamePlayer());\n \t\tif (Player.IsValid())\n \t\t{\n-\t\t\tconst TWeakObjectPtr<APlayerController> Controller(Player->GetPlayerController());\n+\t\t\tconst TWeakObjectPtr<APlayerController> Controller(Player->GetPlayerController(&GetWorldRef()));\n \t\t\tif (Controller.IsValid())\n \t\t\t{\n \t\t\t\tconst TWeakObjectPtr<APlayerCameraManager> Camera(Controller->PlayerCameraManager);\n",
+      "sha256": "fb52b1d45775f15f93a08d2907255a59226cf49cc4a535330b6b2d9ce0debd8e"
+    },
+    {
+      "file": "G:\\UnrealSourceCode\\Engine\\Plugins\\Runtime\\LocalWind\\Source\\LocalWind\\Private\\LocalWindViewExtension.cpp",
+      "only_expected_compile_fix": true,
+      "diff": "--- before/LocalWindViewExtension.cpp\n+++ after/LocalWindViewExtension.cpp\n@@ -1,5 +1,6 @@\n #include \"LocalWindViewExtension.h\"\n #include \"RenderingThread.h\"\n+#include \"SceneView.h\"\n \n FLocalWindViewExtension::FLocalWindViewExtension(const FAutoRegister& AutoRegister, UWorld& World,\n \tULocalWindSubsystem& InOwner, TSharedRef<LocalWind::FRenderState, ESPMode::ThreadSafe> InState)\n",
+      "sha256": "56919b8782eb2ccacb24919532713742dadb36eb48006dba4296f5cabcfad91e"
+    }
+  ],
+  "smoke_test": {
+    "expected_packages": 533,
+    "loaded_packages": 533,
+    "load_errors": [],
+    "missing_dependencies": [],
+    "old_references": [],
+    "animation_skeleton_errors": [],
+    "blueprints": [
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Animation/ABP_Grace_Head",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Animation/ABP_Grace_Head.ABP_Grace_Head_C"
+      },
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Animation/Default/Lighting/ABP_Grace_Lighting",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Animation/Default/Lighting/ABP_Grace_Lighting.ABP_Grace_Lighting_C"
+      },
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Animation/Default/Lighting/BP_GraceLightingController",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Animation/Default/Lighting/BP_GraceLightingController.BP_GraceLightingController_C"
+      },
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Animation/Default/Locomotion/ABP_Grace_Locomotion",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Animation/Default/Locomotion/ABP_Grace_Locomotion.ABP_Grace_Locomotion_C"
+      },
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Control/BP_GraceCharacter",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Control/BP_GraceCharacter.BP_GraceCharacter_C"
+      },
+      {
+        "package": "/Re9PackageDemo/Character/Grace/Control/BP_GraceGameMode",
+        "compile_invoked": true,
+        "generated_class": "/Re9PackageDemo/Character/Grace/Control/BP_GraceGameMode.BP_GraceGameMode_C"
+      }
+    ],
+    "modules": {
+      "GraceAnimationRuntime": "G:\\UnrealSample\\Plugins\\Re9PackageDemo\\Binaries\\Win64\\UnrealEditor-GraceAnimationRuntime.dll",
+      "GraceAnimationEditor": "G:\\UnrealSample\\Plugins\\Re9PackageDemo\\Binaries\\Win64\\UnrealEditor-GraceAnimationEditor.dll",
+      "LocalWind": "G:\\UnrealSourceCode\\Engine\\Plugins\\Runtime\\LocalWind\\Binaries\\Win64\\UnrealEditor-LocalWind.dll"
+    },
+    "world": {
+      "package": "/Re9PackageDemo/Character/Grace/Preview/L_Grace_Default",
+      "loaded": true,
+      "grace_character_present": true,
+      "components": [
+        "Arrow",
+        "BillboardComponent_0",
+        "BillboardComponent_1",
+        "BillboardComponent_2",
+        "CameraBoom",
+        "CharMoveComp",
+        "CharacterMesh0",
+        "CollisionCylinder",
+        "FlashlightMesh",
+        "FlashlightSpotLight",
+        "FollowCamera",
+        "GraceHair",
+        "LighterFlame",
+        "LighterMesh",
+        "LighterPointLight",
+        "LighterSpotLight",
+        "LightingController"
+      ]
+    },
+    "registered_plugin_packages": 533
+  },
+  "blueprint_compile_errors": [],
+  "smoke_error_signatures": [
+    "LogInit: Display: LogOutputDevice: Error: Ensure condition failed: Node->ParentComponentOrVariableName.IsNone() || Node->ParentComponentOrVariableName != PendingParent->GetVariableName()  [File:G:\\UnrealSourceCode\\Engine\\Source\\Runtime\\Engine\\Private\\SimpleConstructionScript.cpp] [Line: 474] ",
+    "LogOutputDevice: Error: Ensure condition failed: Node->ParentComponentOrVariableName.IsNone() || Node->ParentComponentOrVariableName != PendingParent->GetVariableName()  [File:G:\\UnrealSourceCode\\Engine\\Source\\Runtime\\Engine\\Private\\SimpleConstructionScript.cpp] [Line: 474] "
+  ],
+  "import_failure_regressions": {
+    "package": "/Re9PackageDemo/Character/Grace/Animation/10_Head/AS_Grace_ch0200_10_DiffBaseMotion_15f263d220",
+    "before": {
+      "exported": true,
+      "object_sha256": "486446896222411ddc46486dbf05c25b2ba907f5c299581f14e0e8710ba98340",
+      "metadata": {
+        "RE9Source": "natives/stm/animation/ch/ch02/ch0200/facial/motlist/ch0200_10_face_mouth_lipsync.motlist.1047",
+        "RE9SourceSHA256": "9f436dfdfdb1e75ee67d88a5fd562ab546f0d76c48fa7f8acc8c877a48017c57",
+        "RE9PreparedData": "H:\\Grace_RE9\\animation_import\\prepared\\10_Head\\ch0200_10_DiffBaseMotion_15f263d220.json"
+      }
+    },
+    "cases": [
+      {
+        "case": "missing_file",
+        "snapshot": {
+          "exported": true,
+          "object_sha256": "486446896222411ddc46486dbf05c25b2ba907f5c299581f14e0e8710ba98340",
+          "metadata": {
+            "RE9Source": "natives/stm/animation/ch/ch02/ch0200/facial/motlist/ch0200_10_face_mouth_lipsync.motlist.1047",
+            "RE9SourceSHA256": "9f436dfdfdb1e75ee67d88a5fd562ab546f0d76c48fa7f8acc8c877a48017c57",
+            "RE9PreparedData": "H:\\Grace_RE9\\animation_import\\prepared\\10_Head\\ch0200_10_DiffBaseMotion_15f263d220.json"
+          }
+        },
+        "unchanged": true
+      },
+      {
+        "case": "invalid_json",
+        "snapshot": {
+          "exported": true,
+          "object_sha256": "486446896222411ddc46486dbf05c25b2ba907f5c299581f14e0e8710ba98340",
+          "metadata": {
+            "RE9Source": "natives/stm/animation/ch/ch02/ch0200/facial/motlist/ch0200_10_face_mouth_lipsync.motlist.1047",
+            "RE9SourceSHA256": "9f436dfdfdb1e75ee67d88a5fd562ab546f0d76c48fa7f8acc8c877a48017c57",
+            "RE9PreparedData": "H:\\Grace_RE9\\animation_import\\prepared\\10_Head\\ch0200_10_DiffBaseMotion_15f263d220.json"
+          }
+        },
+        "unchanged": true
+      }
+    ]
+  },
+  "module_files": [
+    {
+      "module": "GraceAnimationRuntime",
+      "path": "G:\\UnrealSample\\Plugins\\Re9PackageDemo\\Binaries\\Win64\\UnrealEditor-GraceAnimationRuntime.dll",
+      "sha256": "6571b1d5a56077ed3f8f2ddf9854789a67616cbd2ce04bafe03e5ad686290558"
+    },
+    {
+      "module": "GraceAnimationEditor",
+      "path": "G:\\UnrealSample\\Plugins\\Re9PackageDemo\\Binaries\\Win64\\UnrealEditor-GraceAnimationEditor.dll",
+      "sha256": "35669606f2ce00086612ecf9ea4831caa65347b1b2c082573bf958bcc65e66e7"
+    },
+    {
+      "module": "LocalWind",
+      "path": "G:\\UnrealSourceCode\\Engine\\Plugins\\Runtime\\LocalWind\\Binaries\\Win64\\UnrealEditor-LocalWind.dll",
+      "sha256": "5eb54b3335e1090677eebe333573bdf476b891c4cfd5823416c693bbdb5981ed"
+    }
+  ],
+  "latest_test_processes": {
+    "smoke_test": {
+      "test": "smoke_test",
+      "args": [
+        "G:/UnrealSourceCode/Engine/Binaries/Win64/UnrealEditor-Cmd.exe",
+        "G:/UnrealSample/UnrealSample.uproject",
+        "-run=PythonScript",
+        "-Script=G:\\UnrealSample\\Saved\\Codex\\Re9PackageDemo_BuildTest_20261001\\smoke_test.py",
+        "-EnablePlugins=PythonScriptPlugin,EditorScriptingUtilities",
+        "-NullRHI",
+        "-NoShaderCompile",
+        "-unattended",
+        "-nop4",
+        "-nosplash",
+        "-NoLogTimes",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-abslog=G:\\UnrealSample\\Saved\\Codex\\Re9PackageDemo_BuildTest_20261001\\smoke_test_ue.log"
+      ],
+      "exit_code": 1
+    },
+    "import_failure_test": {
+      "test": "import_failure_test",
+      "args": [
+        "G:/UnrealSourceCode/Engine/Binaries/Win64/UnrealEditor-Cmd.exe",
+        "G:/UnrealSample/UnrealSample.uproject",
+        "-run=PythonScript",
+        "-Script=G:\\UnrealSample\\Saved\\Codex\\Re9PackageDemo_BuildTest_20261001\\import_failure_test.py",
+        "-EnablePlugins=PythonScriptPlugin,EditorScriptingUtilities",
+        "-NullRHI",
+        "-NoShaderCompile",
+        "-unattended",
+        "-nop4",
+        "-nosplash",
+        "-NoLogTimes",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-abslog=G:\\UnrealSample\\Saved\\Codex\\Re9PackageDemo_BuildTest_20261001\\import_failure_test_ue.log"
+      ],
+      "exit_code": 1
+    }
+  },
+  "test_harness_note": "Initial smoke script could not read protected Blueprint.Status from Python. Replaced that inspection with explicit compilation, generated-class checks and compiler log review; reran smoke successfully to completion. No production API was changed for the test.",
+  "limitations": [
+    "Smoke process exit code 1 reflects the pre-existing SimpleConstructionScript.cpp:474 ensure and component reparenting warnings, despite successful asset/world checks. It is not a clean zero-error test run.",
+    "Negative import process exit code 1 reflects the two expected read/parse error logs; both full object snapshots and metadata are unchanged.",
+    "Tests used NullRHI and NoShaderCompile. No Shader compilation, rendered comparison, interactive PIE, first forced-reference-pose frame regression, LocalWind GPU simulation, performance measurement or packaging was performed."
+  ],
+  "post_implementation_review": {
+    "separate_review_completed": true,
+    "changed_grace_assets": [],
+    "changed_grace_source_files": [],
+    "git_diff_check_exit_code": 0,
+    "u4_worktree_changes": [],
+    "scope": "Two engine LocalWind compilation fixes, plugin build-test documentation/report, and ignored test scripts/logs. No new production assertions, failure gates, pointer storage, implicit lambda captures, shader files, or UAV/SRV bindings.",
+    "goal_review": {
+      "compile_editor_target": "satisfied",
+      "load_built_modules_and_533_assets": "satisfied",
+      "compile_six_blueprints_and_load_preview_world": "completed with pre-existing component-hierarchy diagnostics",
+      "test_invalid_import_preserves_asset": "satisfied",
+      "rendering_and_interactive_runtime": "not verified"
+    }
+  },
+  "evidence_directory": "Saved/Codex/Re9PackageDemo_BuildTest_20261001"
+}
