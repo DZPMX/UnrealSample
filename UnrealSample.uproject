@@ -33,6 +33,10 @@
 		{
 			"Name": "VibeUE",
 			"Enabled": true
+		},
+		{
+			"Name": "LocalWind",
+			"Enabled": true
 		}
 	]
 }
