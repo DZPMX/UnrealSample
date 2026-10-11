@@ -1,10 +1,13 @@
+// Copyright KuaiShou Games, Inc. All Rights Reserved.
+// Author: lizhicheng@kuaishou.com
+
 #pragma once
-
 #include "Components/SceneComponent.h"
-
 #include "CloudSeaComponent.generated.h"
 
 class UMaterialInstanceDynamic;
+class UMaterialInstanceConstant;
+class UMaterialInterface;
 class UStaticMeshComponent;
 
 #if WITH_EDITOR
@@ -18,12 +21,7 @@ enum class ECloudSeaVerticalRenderingMode : uint8
 	SingleLayerWithoutPrefill UMETA(DisplayName = "Single Layer without Prefill")
 };
 
-/**
- * Drives disk and camera-facing cloud-sea proxies whose material ray-marches
- * one fixed world-space cloud layer.
- *
- * Attach the proxy mesh beneath this component with an identity relative transform.
- */
+
 UCLASS(ClassGroup = (Rendering), BlueprintType, meta = (BlueprintSpawnableComponent))
 class CLOUDSEA_API UCloudSeaComponent : public USceneComponent
 {
@@ -31,6 +29,10 @@ class CLOUDSEA_API UCloudSeaComponent : public USceneComponent
 
 public:
 	UCloudSeaComponent();
+
+#if WITH_EDITOR
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 
 protected:
 	virtual void OnRegister() override;
@@ -46,8 +48,10 @@ private:
 		FRotator& OutViewRotation,
 		float& OutNearClipPlane) const;
 	void InitializeMaterialDriver();
+	void ApplyStaticMaterialParameters();
+	void UpdateProxyVisibility(bool bHideForFade);
 	void UpdateCloudSeaTransform();
-	void UpdateMaterialParameters(
+	void UpdateViewMaterialParameters(
 		const FVector& ViewLocation,
 		bool bUseFullScreenProxy,
 		double SignedCameraDepthBelowCloudTopMaterialUnits,
@@ -62,111 +66,146 @@ private:
 #endif
 
 	TWeakObjectPtr<UStaticMeshComponent> ProxyMeshComponent;
+	TWeakObjectPtr<UStaticMeshComponent> FadeHiddenProxyMeshComponent;
 
 	UPROPERTY(Transient)
 	TObjectPtr<UMaterialInstanceDynamic> DynamicMaterial;
 
+	UPROPERTY(Transient)
+	TObjectPtr<UMaterialInterface> OriginalProxyMaterial;
+
 public:
-	/** Local player whose camera drives this component in a game world. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Camera")
-	int32 CameraPlayerIndex = 0;
+	/** Fixed world-space height of the cloud layer base, in centimeters. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (DisplayName = "Cloud Layer Base World Height (cm)", Units = "cm", ForceUnits = "cm"))
+	double CloudLayerBaseWorldHeight = 15000;
 
-	/** Radius applied to the camera-facing full-screen proxy; the disk radius is derived per frame. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Proxy Transform")
-	double ProxyWorldRadius = 949966.6875;
+	/** Positive thickness in material units. World thickness in cm = CloudLayerHeight * WorldUnitsPerMaterialUnit. */
+	UPROPERTY(BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (ClampMin = "0.001", DisplayName = "Cloud Layer Thickness"))
+	float CloudLayerHeight = 50.0f;
 
-	/** Distance in front of the camera used by the full-screen proxy plane. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Proxy Transform")
-	double FullScreenProxyCameraDistance = 297.1015625;
+	/** Conversion from material distance to world cm. At 100, one material unit is 100 cm (1 meter). */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (ClampMin = "0.001", DisplayName = "World Unit Scale"))
+	float WorldUnitsPerMaterialUnit = 100.0;
 
-	/** Fixed world-space height of the cloud layer base. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|World Anchoring")
-	double CloudLayerBaseWorldHeight = 62595.295533;
-
-	/** World-units-to-material-units scale reconstructed from the RiderDuck constants. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|World Anchoring")
-	double WorldUnitsPerMaterialUnit = 100.0;
-
-	/** Camera XY at which the authored volume UV offsets are the reference values. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|World Anchoring")
+	/** Camera XY, in world centimeters, at which the authored UV offsets apply. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (DisplayName = "Volume Anchor Reference Camera XY (cm)", Units = "cm", ForceUnits = "cm"))
 	FVector2D VolumeAnchorReferenceCameraXY = FVector2D::ZeroVector;
 
-	/** Scalar material inputs that are not reconstructed from the active camera height. */
+	/** Maximum camera-centered quadratic sampling cells (16-64) across RayMarchActiveDistance. Clipped or opaque rays use fewer samples. */
 	UPROPERTY(
 		EditAnywhere,
-		BlueprintReadWrite,
-		Category = "Cloud Sea|Material|Ray March",
-		meta = (ClampMin = "16.0", ClampMax = "128.0", UIMin = "16.0", UIMax = "128.0"))
-	float RayMarchStepCount = 64.0f;
+		BlueprintReadOnly,
+		Category = "Cloud Sea|Ray March",
+		meta = (ClampMin = "16", ClampMax = "64", UIMin = "16", UIMax = "64", DisplayName = "Ray March Step Count"))
+	int32 RayMarchStepCount = 32;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
-	float NoiseVolumeUVScale = 0.009908398613333702f;
+	/** Selects a prepared MI; does not change the material's static UseRayMarchJitter parameter. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Use Ray March Jitter"))
+	bool bUseRaymarchDither = false;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
-	float NoiseWarpAmplitude = 14.206369400024414f;
+	/** MI with UseRayMarchJitter disabled. If unset, uses the proxy's original material. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Material Without Jitter"))
+	TObjectPtr<UMaterialInstanceConstant> MaterialWithoutDither;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
-	float DiskMarchFarDistance = 2047.33349609375f;
+	/** MI with UseRayMarchJitter enabled. If unset, uses the proxy's original material. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Material With Jitter"))
+	TObjectPtr<UMaterialInstanceConstant> MaterialWithDither;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
-	float SceneDepthFadeReciprocalDistance = 0.0009999999310821295f;
+	/** March limit before camera-dependent transitions, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (ClampMin = "100",ClampMax="3000",UIMin="100", UIMax="3000", DisplayName = "Ray March Max Distance"))
+	float RayMarchActiveDistance = 2500.0f;
 
-	/** Reference full-screen march distance at either edge of the layer transition. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
-	float FullScreenTransitionMarchDistance = 750.0f;
+	/** Inverse material-unit fade length at scene intersections. For positive values, fade length in cm = WorldUnitsPerMaterialUnit / value. Zero disables this fade. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (ClampMin = "0.0", DisplayName = "Scene Depth Fade Inverse Distance"))
+	float SceneDepthFadeReciprocalDistance = 0.05f;
 
-	/** World-space height above the cloud top over which the disk march distance reaches its configured limit. */
-	UPROPERTY(
-		EditAnywhere,
-		BlueprintReadWrite,
-		Category = "Cloud Sea|Material|Ray March",
-		meta = (ClampMin = "1.0", UIMin = "1.0"))
-	float DiskRayMarchTransitionWorldDistance = 1000.0f;
+	/** Extinction per material unit, multiplied by sampled density and ray length to obtain optical depth. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Density", meta = (ClampMin = "0.0",ClampMax="1.0",UIMin = "0.0", UIMax = "1.0", DisplayName = "Extinction Scale"))
+	float ExtinctionDensityScale = 0.05f;
 
-	/** Selects the reference mirrored transition or one physical cloud layer without screen prefill. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Ray March")
+	/** Density UV change per material unit along each axis; not a world distance. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Density", meta = (DisplayName = "Density UV Scale"))
+	FVector DensityVolumeUVScale = FVector(0.0015f, 0.0015f, 0.02f);
+
+	/** Density XY offset in material units, before applying DensityVolumeUVScale. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Density",meta=(ClampMin = "0.0",ClampMax = "10000.0",UIMin = "0.0", UIMax = "10000.0", DisplayName = "Density Offset"))
+	FVector2D DensityUVOffset = FVector2D(0.0f, 0.0f);
+
+	/** Noise UV change per material unit; not a world distance. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Noise", meta = (DisplayName = "Noise UV Scale"))
+	float NoiseVolumeUVScale = 0.01f;
+
+	/** Noise displacement amplitude in material units, before applying the sampled noise and height factor. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Noise", meta = (DisplayName = "Noise Warp Amplitude"))
+	float NoiseWarpAmplitude = 14.0f;
+
+	/** Noise XY offset in material units, before applying NoiseVolumeUVScale. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Noise",meta=(ClampMin = "0.0",ClampMax = "10000.0",UIMin = "0.0", UIMax = "10000.0", DisplayName = "Noise Offset"))
+	FVector2D NoiseUVOffset = FVector2D(0.0f, 0.0f);
+
+	/** RGB tint applied to atmosphere light 0 and both sky-light contributions. Alpha is unused. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Lighting", meta = (HideAlphaChannel, DisplayName = "Cloud Scattering Tint"))
+	FLinearColor CloudScatteringTint = FLinearColor(1.0f, 1.0f, 1.0f, 1.0f);
+
+	/** Sky-light scale for the density texture's G channel. Does not directly affect prefill color. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Lighting",meta=(ClampMin = "0.0",ClampMax = "1.0",UIMin = "0.0", UIMax = "1.0", DisplayName = "Ambient Light Scale"))
+	float CloudDiffuseWeight = 1.0f;
+
+	/** Sky-fill scale for the density texture's B channel, independent of the HG phase. Also affects prefill color. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Lighting",meta=(ClampMin="0.0",UIMin="0.0", DisplayName = "Fill Light Scale"))
+	float UnphasedLightWeight = 1.0f;
+
+	/** Sun-light scale for the density texture's B channel, multiplied by the dual HG phase. Also affects prefill color. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Lighting",meta=(ClampMin="0.0",UIMin="0.0", DisplayName = "Sun Light Scale"))
+	float PhaseLightWeight = 1.0f;
+
+	/** First HG lobe: positive G peaks toward the light; negative G peaks away from it. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Phase Function", meta = (ClampMin = "-0.99", ClampMax = "0.99", DisplayName = "Phase G"))
+	float PhaseG = 0.6f;
+
+	/** Second HG lobe, using the same atmosphere light direction as the first. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Phase Function", meta = (ClampMin = "-0.99", ClampMax = "0.99", DisplayName = "Phase G2"))
+	float PhaseG2 = -0.3f;
+
+	/** Blend between the two HG lobes: zero selects G; one selects G2. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Phase Function", meta = (ClampMin = "0.0", ClampMax = "1.0", DisplayName = "Phase Blend"))
+	float PhaseBlend = 0.2f;
+
+	/** Selects mirrored rendering with prefill or single-layer rendering without prefill. Below-cloud fading applies to both. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Transition")
 	ECloudSeaVerticalRenderingMode VerticalRenderingMode =
 		ECloudSeaVerticalRenderingMode::ReferenceMirrorWithPrefill;
 
-	/** RGBA: negative layer height, mode-space camera depth below cloud top, prefill opacity, proxy depth-restoration numerator. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Reference")
-	FLinearColor ReferenceCloudLayerRayMarchData = FLinearColor(-50.0f, -1.3785701990127563f, 0.0f, -12.407132148742676f);
+	/** Vertical distance in cm below CloudLayerBaseWorldHeight over which the complete cloud fades linearly to hidden in either rendering mode. Zero disables fading. Only scales final opacity; does not change cloud geometry, prefill or raymarch settings. */
+	UPROPERTY(
+		EditAnywhere,
+		BlueprintReadOnly,
+		Category = "Cloud Sea|Transition",
+		meta = (ClampMin = "0.0", UIMin = "0.0", Units = "cm", ForceUnits = "cm",
+			DisplayName = "Below Cloud Fade World Distance (cm)"))
+	float BelowCloudFadeWorldDistance = 5000.0f;
 
-	/** RG: maximum ray-march distance and the currently active distance limit. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Reference")
-	FLinearColor ReferenceRayMarchDistanceLimits = FLinearColor(1000.0f, 949.9676513671875f, 0.0f, 0.0f);
+	/** March distance at either edge of the mirrored full-screen transition, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Transition", meta = (DisplayName = "Full Screen Transition March Distance"))
+	float FullScreenTransitionMarchDistance = 750.0f;
 
-	/** RG offsets density UV; BA offsets noise UV at the reference camera position. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Reference")
-	FLinearColor ReferenceVolumeUVOffsets = FLinearColor(-18.425291061401367f, 243.47021484375f, -9.212645530700684f, 121.735107421875f);
+	/** Height above the cloud top over which the disk march distance reaches its limit, in centimeters. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Transition", meta = (ClampMin = "1.0", UIMin = "1.0", DisplayName = "Disk Ray March Transition World Distance (cm)", Units = "cm", ForceUnits = "cm"))
+	float DiskRayMarchTransitionWorldDistance = 1000.0f;
 
-	/** RGB tints both light radiances; A weights the density-volume secondary color channel. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Appearance")
-	FLinearColor CloudScatteringTintAndSecondaryWeight = FLinearColor(0.450980007648468f, 0.556863009929657f, 0.764706015586853f, 0.03921600058674812f);
+	/** Local player whose camera drives this component in a game world. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Camera Player Index"))
+	int32 CameraPlayerIndex = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Appearance")
-	FLinearColor CloudPhaseFunctionCoefficients = FLinearColor(0.015119723975658417f, 1.809999942779541f, 1.7999999523162842f, 0.0f);
+	/** Full-screen proxy radius in centimeters; the disk radius is derived per frame. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Proxy World Radius (cm)", Units = "cm", ForceUnits = "cm"))
+	double ProxyWorldRadius = 95000.0f;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Appearance")
-	FLinearColor DensityVolumeUVScale = FLinearColor(0.0014563801232725382f, 0.0014563801232725382f, 0.019999999552965164f, 0.0f);
+	/** Distance in front of the camera used by the full-screen plane, in centimeters. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Full Screen Proxy Camera Distance (cm)", Units = "cm", ForceUnits = "cm"))
+	float FullScreenProxyCameraDistance = 300.0f;
 
-	/** Converts sampled density and ray length into per-step optical depth. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Appearance")
-	float ExtinctionDensityScale = 0.10000000149011612f;
-
-	/** RG: unphased light weight and phase-function light weight. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Lighting")
-	FLinearColor CloudLightingWeights = FLinearColor(0.10000000149011612f, 1.0f, 0.0f, 0.0f);
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Lighting")
-	FLinearColor PrimaryLightDirection = FLinearColor(0.47468826174736023f, -0.7995903491973877f, -0.3678671717643738f, 0.0f);
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Lighting")
-	FLinearColor PrimaryLightRadiance = FLinearColor(6.375365734100342f, 4.829521656036377f, 2.932486057281494f, 0.0f);
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Lighting")
-	FLinearColor SecondaryLightDirection = FLinearColor(-0.7957783937454224f, 0.4902935326099396f, -0.35545602440834045f, 0.0f);
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cloud Sea|Material|Lighting")
-	FLinearColor SecondaryLightRadiance = FLinearColor(0.6158669590950012f, 0.4554755687713623f, 0.26222044229507446f, 0.0f);
+	/** Reference distance used only to position the disk proxy, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Disk March Far Distance"))
+	float DiskMarchFarDistance = 2050.0f;
 };

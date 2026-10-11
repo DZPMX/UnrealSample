@@ -1,3 +1,7 @@
+// Copyright KuaiShou Games, Inc. All Rights Reserved.
+// Author: lizhicheng@kuaishou.com
+// Adapted from DzPmx/UnrealSample, commit 2f065f5f72ee0e06099ea2a855f329070fcdf0cb.
+
 #include "CloudSeaComponent.h"
 
 #include "CoreGlobals.h"
@@ -6,6 +10,7 @@
 #include "GameFramework/Actor.h"
 #include "Engine/World.h"
 #include "Kismet/GameplayStatics.h"
+#include "Materials/MaterialInstanceConstant.h"
 #include "Materials/MaterialInstanceDynamic.h"
 
 #if WITH_EDITOR
@@ -39,12 +44,24 @@ void UCloudSeaComponent::OnRegister()
 		this,
 		&UCloudSeaComponent::HandleEditorCameraMoved);
 #endif
-	InitializeMaterialDriver();
+	// Rebind to the mesh's current material and reapply authored settings on registration.
+	DynamicMaterial = nullptr;
 	UpdateCloudSeaTransform();
 }
 
 void UCloudSeaComponent::OnUnregister()
 {
+	if (DynamicMaterial != nullptr)
+	{
+		DynamicMaterial->SetScalarParameterValue(TEXT("CloudOpacity"), 1.0f);
+	}
+	UpdateProxyVisibility(false);
+	if (ProxyMeshComponent.IsValid() && ProxyMeshComponent->GetMaterial(0) == DynamicMaterial.Get())
+	{
+		ProxyMeshComponent->SetMaterial(0, OriginalProxyMaterial);
+	}
+	DynamicMaterial = nullptr;
+	OriginalProxyMaterial = nullptr;
 #if WITH_EDITOR
 	FEditorDelegates::OnEditorCameraMoved.RemoveAll(this);
 #endif
@@ -61,6 +78,18 @@ void UCloudSeaComponent::TickComponent(
 }
 
 #if WITH_EDITOR
+void UCloudSeaComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
+{
+	if (IsRegistered())
+	{
+		ApplyStaticMaterialParameters();
+		UpdateCloudSeaTransform();
+	}
+
+	// Super can rerun construction scripts and replace this component.
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+}
+
 void UCloudSeaComponent::HandleEditorCameraMoved(
 	const FVector&,
 	const FRotator&,
@@ -120,6 +149,8 @@ void UCloudSeaComponent::InitializeMaterialDriver()
 {
 	if (!ProxyMeshComponent.IsValid())
 	{
+		DynamicMaterial = nullptr;
+		OriginalProxyMaterial = nullptr;
 		const TWeakObjectPtr<AActor> Owner = GetOwner();
 		if (Owner.IsValid())
 		{
@@ -129,18 +160,112 @@ void UCloudSeaComponent::InitializeMaterialDriver()
 
 	if (ProxyMeshComponent.IsValid() && ProxyMeshComponent->bSelectable)
 	{
+		// The cloud proxy is never selectable, including after this driver is removed.
 		ProxyMeshComponent->bSelectable = false;
 		ProxyMeshComponent->MarkRenderStateDirty();
 	}
 
-	if (ProxyMeshComponent.IsValid() && DynamicMaterial == nullptr)
+	if (ProxyMeshComponent.IsValid())
 	{
-		DynamicMaterial = ProxyMeshComponent->CreateDynamicMaterialInstance(0);
+		const TObjectPtr<UMaterialInterface> MeshMaterial = ProxyMeshComponent->GetMaterial(0);
+		if (MeshMaterial != DynamicMaterial.Get())
+		{
+			OriginalProxyMaterial = MeshMaterial;
+			DynamicMaterial = nullptr;
+		}
+
+		TObjectPtr<UMaterialInterface> SourceMaterial = bUseRaymarchDither
+			? MaterialWithDither.Get()
+			: MaterialWithoutDither.Get();
+		if (SourceMaterial == nullptr)
+		{
+			SourceMaterial = OriginalProxyMaterial;
+		}
+		if (DynamicMaterial == nullptr
+			|| (DynamicMaterial.Get() != SourceMaterial && DynamicMaterial->Parent != SourceMaterial))
+		{
+			DynamicMaterial = ProxyMeshComponent->CreateDynamicMaterialInstance(0, SourceMaterial.Get());
+			ApplyStaticMaterialParameters();
+		}
+	}
+}
+
+void UCloudSeaComponent::ApplyStaticMaterialParameters()
+{
+	if (DynamicMaterial == nullptr)
+	{
+		return;
+	}
+
+	DynamicMaterial->SetScalarParameterValue(
+		TEXT("RayMarchStepCount"),
+		static_cast<float>(FMath::Clamp(RayMarchStepCount, 16, 64)));
+	DynamicMaterial->SetScalarParameterValue(TEXT("NoiseUVScale"), NoiseVolumeUVScale);
+	DynamicMaterial->SetScalarParameterValue(TEXT("NoiseWarpAmplitude"), NoiseWarpAmplitude);
+	DynamicMaterial->SetScalarParameterValue(TEXT("ExtinctionScale"), ExtinctionDensityScale);
+	DynamicMaterial->SetScalarParameterValue(
+		TEXT("SceneDepthFadeInvDistance"),
+		SceneDepthFadeReciprocalDistance);
+	DynamicMaterial->SetVectorParameterValue(TEXT("CloudScatteringTint"), CloudScatteringTint);
+	DynamicMaterial->SetScalarParameterValue(TEXT("AmbientLightScale"), CloudDiffuseWeight);
+	DynamicMaterial->SetScalarParameterValue(TEXT("PhaseG"), PhaseG);
+	DynamicMaterial->SetScalarParameterValue(TEXT("PhaseG2"), PhaseG2);
+	DynamicMaterial->SetScalarParameterValue(TEXT("PhaseBlend"), PhaseBlend);
+	DynamicMaterial->SetVectorParameterValue(TEXT("DensityUVScale"), FLinearColor(DensityVolumeUVScale));
+	DynamicMaterial->SetScalarParameterValue(TEXT("FillLightScale"), UnphasedLightWeight);
+	DynamicMaterial->SetScalarParameterValue(TEXT("SunLightScale"), PhaseLightWeight);
+	DynamicMaterial->SetScalarParameterValue(TEXT("CloudLayerThickness"), CloudLayerHeight);
+	DynamicMaterial->SetScalarParameterValue(TEXT("WorldUnitScale"), WorldUnitsPerMaterialUnit);
+}
+
+void UCloudSeaComponent::UpdateProxyVisibility(bool bHideForFade)
+{
+	if (!bHideForFade || FadeHiddenProxyMeshComponent != ProxyMeshComponent)
+	{
+		if (FadeHiddenProxyMeshComponent.IsValid())
+		{
+#if WITH_EDITOR
+			const TObjectPtr<UWorld> ProxyWorld = FadeHiddenProxyMeshComponent->GetWorld();
+			if (ProxyWorld != nullptr && !ProxyWorld->IsGameWorld())
+			{
+				FadeHiddenProxyMeshComponent->SetIsTemporarilyHiddenInEditor(false);
+			}
+			else
+#endif
+			{
+				FadeHiddenProxyMeshComponent->SetVisibility(true);
+			}
+		}
+		FadeHiddenProxyMeshComponent.Reset();
+	}
+
+	if (bHideForFade && ProxyMeshComponent.IsValid())
+	{
+#if WITH_EDITOR
+		const TObjectPtr<UWorld> ProxyWorld = ProxyMeshComponent->GetWorld();
+		if (ProxyWorld != nullptr && !ProxyWorld->IsGameWorld())
+		{
+			// Camera-driven editor hiding must not be serialized into the level.
+			if (ProxyMeshComponent->ShouldRender())
+			{
+				ProxyMeshComponent->SetIsTemporarilyHiddenInEditor(true);
+				FadeHiddenProxyMeshComponent = ProxyMeshComponent;
+			}
+			return;
+		}
+#endif
+		if (ProxyMeshComponent->GetVisibleFlag())
+		{
+			ProxyMeshComponent->SetVisibility(false);
+			FadeHiddenProxyMeshComponent = ProxyMeshComponent;
+		}
 	}
 }
 
 void UCloudSeaComponent::UpdateCloudSeaTransform()
 {
+	InitializeMaterialDriver();
+
 	FVector ViewLocation;
 	FRotator ViewRotation;
 	float NearClipPlane;
@@ -149,11 +274,26 @@ void UCloudSeaComponent::UpdateCloudSeaTransform()
 		return;
 	}
 
-	InitializeMaterialDriver();
+	const float CloudOpacity = BelowCloudFadeWorldDistance > 0.0f
+		? static_cast<float>(1.0 - FMath::Clamp(
+			(CloudLayerBaseWorldHeight - ViewLocation.Z)
+				/ static_cast<double>(BelowCloudFadeWorldDistance),
+			0.0,
+			1.0))
+		: 1.0f;
+	if (DynamicMaterial != nullptr)
+	{
+		DynamicMaterial->SetScalarParameterValue(TEXT("CloudOpacity"), CloudOpacity);
+	}
+	if (CloudOpacity <= 0.0f)
+	{
+		UpdateProxyVisibility(true);
+		return;
+	}
 
 	const double CloudLayerTopWorldHeight =
 		CloudLayerBaseWorldHeight
-		- ReferenceCloudLayerRayMarchData.R * WorldUnitsPerMaterialUnit;
+		+ CloudLayerHeight * WorldUnitsPerMaterialUnit;
 	const double SignedCameraDepthBelowCloudTopMaterialUnits =
 		(CloudLayerTopWorldHeight - ViewLocation.Z) / WorldUnitsPerMaterialUnit;
 	const double CameraHeightAboveCloudTopWorldUnits =
@@ -167,10 +307,10 @@ void UCloudSeaComponent::UpdateCloudSeaTransform()
 	const float DiskTransitionStartMarchDistanceMaterialUnits =
 		bUseReferenceMirrorTransition
 		? FullScreenTransitionMarchDistance
-		: ReferenceRayMarchDistanceLimits.G;
+		: RayMarchActiveDistance;
 	const float ActiveDiskRayMarchDistanceMaterialUnits = FMath::Lerp(
 		DiskTransitionStartMarchDistanceMaterialUnits,
-		ReferenceRayMarchDistanceLimits.G,
+		RayMarchActiveDistance,
 		static_cast<float>(DiskRayMarchTransitionAlpha));
 	const bool bUseFullScreenProxy =
 		ViewLocation.Z <= CloudLayerTopWorldHeight;
@@ -182,7 +322,8 @@ void UCloudSeaComponent::UpdateCloudSeaTransform()
 	{
 		const FVector ViewForward = ViewRotation.Vector();
 		CloudSeaLocation = ViewLocation + ViewForward * FullScreenProxyCameraDistance;
-		CloudSeaRotation = FQuat::FindBetweenNormals(FVector::UpVector, ViewForward);
+		// The plane is in front of the camera; point its +Z normal back toward the camera.
+		CloudSeaRotation = FQuat::FindBetweenNormals(FVector::UpVector, -ViewForward);
 	}
 	else
 	{
@@ -213,14 +354,15 @@ void UCloudSeaComponent::UpdateCloudSeaTransform()
 	const FVector CloudSeaScale(CloudSeaWorldRadius, CloudSeaWorldRadius, 1.0);
 	const FTransform CloudSeaTransform(CloudSeaRotation, CloudSeaLocation, CloudSeaScale);
 	SetWorldTransform(CloudSeaTransform, false, nullptr, ETeleportType::TeleportPhysics);
-	UpdateMaterialParameters(
+	UpdateViewMaterialParameters(
 		ViewLocation,
 		bUseFullScreenProxy,
 		SignedCameraDepthBelowCloudTopMaterialUnits,
 		ActiveDiskRayMarchDistanceMaterialUnits);
+	UpdateProxyVisibility(false);
 }
 
-void UCloudSeaComponent::UpdateMaterialParameters(
+void UCloudSeaComponent::UpdateViewMaterialParameters(
 	const FVector& ViewLocation,
 	bool bUseFullScreenProxy,
 	double SignedCameraDepthBelowCloudTopMaterialUnits,
@@ -231,47 +373,22 @@ void UCloudSeaComponent::UpdateMaterialParameters(
 		return;
 	}
 
-	DynamicMaterial->SetScalarParameterValue(
-		TEXT("RayMarchStepCount"),
-		FMath::Clamp(RayMarchStepCount, 16.0f, 128.0f));
-	DynamicMaterial->SetScalarParameterValue(TEXT("NoiseVolumeUVScale"), NoiseVolumeUVScale);
-	DynamicMaterial->SetScalarParameterValue(TEXT("NoiseWarpAmplitude"), NoiseWarpAmplitude);
-	DynamicMaterial->SetScalarParameterValue(TEXT("DiskMarchFarDistance"), DiskMarchFarDistance);
-	DynamicMaterial->SetScalarParameterValue(TEXT("ExtinctionDensityScale"), ExtinctionDensityScale);
-	DynamicMaterial->SetScalarParameterValue(
-		TEXT("SceneDepthFadeReciprocalDistance"),
-		SceneDepthFadeReciprocalDistance);
-	DynamicMaterial->SetVectorParameterValue(
-		TEXT("CloudScatteringTintAndSecondaryWeight"),
-		CloudScatteringTintAndSecondaryWeight);
-	DynamicMaterial->SetVectorParameterValue(
-		TEXT("CloudPhaseFunctionCoefficients"),
-		CloudPhaseFunctionCoefficients);
-	DynamicMaterial->SetVectorParameterValue(TEXT("DensityVolumeUVScale"), DensityVolumeUVScale);
-	DynamicMaterial->SetVectorParameterValue(TEXT("CloudLightingWeights"), CloudLightingWeights);
-	DynamicMaterial->SetVectorParameterValue(TEXT("PrimaryLightDirection"), PrimaryLightDirection);
-	DynamicMaterial->SetVectorParameterValue(TEXT("PrimaryLightRadiance"), PrimaryLightRadiance);
-	DynamicMaterial->SetVectorParameterValue(TEXT("SecondaryLightDirection"), SecondaryLightDirection);
-	DynamicMaterial->SetVectorParameterValue(TEXT("SecondaryLightRadiance"), SecondaryLightRadiance);
-
 	const float CameraDepthBelowCloudTopMaterialUnits =
 		static_cast<float>(SignedCameraDepthBelowCloudTopMaterialUnits);
-	FLinearColor CameraRelativeCloudLayerRayMarchData(
-		ReferenceCloudLayerRayMarchData.R,
-		CameraDepthBelowCloudTopMaterialUnits,
-		0.0f,
-		0.0f);
-	FLinearColor CameraRelativeRayMarchDistanceLimits = ReferenceRayMarchDistanceLimits;
+	float CameraCloudTopDepth = CameraDepthBelowCloudTopMaterialUnits;
+	float CloudPrefillOpacity = 0.0f;
+	float CloudDepthReconstructionOffset = 0.0f;
+	float ActiveRayMarchDistance = RayMarchActiveDistance;
 	const bool bUseReferenceMirrorTransition =
 		VerticalRenderingMode == ECloudSeaVerticalRenderingMode::ReferenceMirrorWithPrefill;
 	const float CameraDepthBelowCloudBaseMaterialUnits =
-		CameraRelativeCloudLayerRayMarchData.R
+		-CloudLayerHeight
 		+ CameraDepthBelowCloudTopMaterialUnits;
 	if (bUseFullScreenProxy)
 	{
 		// Keep the mirrored layer and its prefill transition intact before compressing the gap below it.
 		const float FullScreenCompressionAnchorDepthBelowCloudBaseMaterialUnits =
-			bUseReferenceMirrorTransition ? -CameraRelativeCloudLayerRayMarchData.R : 0.0f;
+			bUseReferenceMirrorTransition ? CloudLayerHeight : 0.0f;
 		const float CameraDistanceBelowFullScreenCompressionAnchorMaterialUnits =
 			CameraDepthBelowCloudBaseMaterialUnits
 			- FullScreenCompressionAnchorDepthBelowCloudBaseMaterialUnits;
@@ -280,29 +397,28 @@ void UCloudSeaComponent::UpdateMaterialParameters(
 			const float CompressedCameraDistanceBelowAnchorMaterialUnits =
 				CameraDistanceBelowFullScreenCompressionAnchorMaterialUnits
 				/ static_cast<float>(DiskHeightCompressionFactor);
-			CameraRelativeCloudLayerRayMarchData.G =
-				-CameraRelativeCloudLayerRayMarchData.R
+			CameraCloudTopDepth =
+				CloudLayerHeight
 				+ FullScreenCompressionAnchorDepthBelowCloudBaseMaterialUnits
 				+ CompressedCameraDistanceBelowAnchorMaterialUnits;
-			CameraRelativeCloudLayerRayMarchData.A =
+			CloudDepthReconstructionOffset =
 				CameraDistanceBelowFullScreenCompressionAnchorMaterialUnits
 				- CompressedCameraDistanceBelowAnchorMaterialUnits;
 		}
 	}
 	else
 	{
-		CameraRelativeCloudLayerRayMarchData.G =
+		CameraCloudTopDepth =
 			SignedCameraDepthBelowCloudTopMaterialUnits / DiskHeightCompressionFactor;
-		CameraRelativeCloudLayerRayMarchData.A =
-			CameraRelativeCloudLayerRayMarchData.G * DiskHeightRemainderFactor;
-		CameraRelativeRayMarchDistanceLimits.G =
+		CloudDepthReconstructionOffset =
+			CameraCloudTopDepth * DiskHeightRemainderFactor;
+		ActiveRayMarchDistance =
 			ActiveDiskRayMarchDistanceMaterialUnits;
 	}
 
 	float DensityVolumeZSign = 1.0f;
 	if (bUseFullScreenProxy && bUseReferenceMirrorTransition)
 	{
-		const float CloudLayerHeight = -ReferenceCloudLayerRayMarchData.R;
 		const bool bCameraBelowLayer = CameraDepthBelowCloudBaseMaterialUnits > 0.0f;
 
 		float PrefillCoordinate;
@@ -312,7 +428,7 @@ void UCloudSeaComponent::UpdateMaterialParameters(
 				CameraDepthBelowCloudBaseMaterialUnits / CloudLayerHeight,
 				0.0f,
 				1.0f);
-			CameraRelativeRayMarchDistanceLimits.G =
+			ActiveRayMarchDistance =
 				FullScreenTransitionMarchDistance * NormalizedDepthBelowBase;
 			PrefillCoordinate = 1.0f - NormalizedDepthBelowBase;
 			DensityVolumeZSign = -1.0f;
@@ -323,7 +439,7 @@ void UCloudSeaComponent::UpdateMaterialParameters(
 				CameraDepthBelowCloudTopMaterialUnits / CloudLayerHeight,
 				0.0f,
 				1.0f);
-			CameraRelativeRayMarchDistanceLimits.G =
+			ActiveRayMarchDistance =
 				FullScreenTransitionMarchDistance * (1.0f - NormalizedDepthBelowTop);
 			PrefillCoordinate = NormalizedDepthBelowTop;
 		}
@@ -332,36 +448,32 @@ void UCloudSeaComponent::UpdateMaterialParameters(
 			1.5f * PrefillCoordinate,
 			0.0f,
 			1.0f);
-		CameraRelativeCloudLayerRayMarchData.B =
+		CloudPrefillOpacity =
 			FMath::Square(FMath::Square(PrefillBase));
 	}
 
-	DynamicMaterial->SetVectorParameterValue(
-		TEXT("CloudLayerRayMarchData"),
-		CameraRelativeCloudLayerRayMarchData);
-	DynamicMaterial->SetVectorParameterValue(
-		TEXT("RayMarchDistanceLimits"),
-		CameraRelativeRayMarchDistanceLimits);
+	DynamicMaterial->SetScalarParameterValue(TEXT("CloudTopOffsetZ"), CameraCloudTopDepth);
+	DynamicMaterial->SetScalarParameterValue(TEXT("CloudPrefillOpacity"), CloudPrefillOpacity);
+	DynamicMaterial->SetScalarParameterValue(TEXT("DepthReconstructionOffsetZ"), CloudDepthReconstructionOffset);
+	DynamicMaterial->SetScalarParameterValue(TEXT("RayMarchMaxDistance"), ActiveRayMarchDistance);
 
 	const FVector2D CameraDeltaMaterialUnits(
 		(ViewLocation.X - VolumeAnchorReferenceCameraXY.X) / WorldUnitsPerMaterialUnit,
 		(ViewLocation.Y - VolumeAnchorReferenceCameraXY.Y) / WorldUnitsPerMaterialUnit);
-	// All supplied RDCs share one camera XY. Applying the camera delta to the UV offsets
-	// is therefore an explicit reconstruction assumption; its sign follows the shader's
-	// camera-relative ray coordinates so a fixed world sample keeps a fixed volume UV.
-	FLinearColor CameraRelativeVolumeUVOffsets = ReferenceVolumeUVOffsets;
-	CameraRelativeVolumeUVOffsets.R += CameraDeltaMaterialUnits.X;
-	CameraRelativeVolumeUVOffsets.G += CameraDeltaMaterialUnits.Y;
-	CameraRelativeVolumeUVOffsets.B += CameraDeltaMaterialUnits.X * 0.5;
-	CameraRelativeVolumeUVOffsets.A += CameraDeltaMaterialUnits.Y * 0.5;
+	// Camera-relative ray coordinates require UV offsets to follow the camera delta.
+	const FVector2D CameraRelativeDensityUVOffset = DensityUVOffset + CameraDeltaMaterialUnits;
+	const FVector2D CameraRelativeNoiseUVOffset = NoiseUVOffset + CameraDeltaMaterialUnits;
 	DynamicMaterial->SetVectorParameterValue(
-		TEXT("VolumeUVOffsets"),
-		CameraRelativeVolumeUVOffsets);
+		TEXT("DensityOffset"),
+		FLinearColor(CameraRelativeDensityUVOffset.X, CameraRelativeDensityUVOffset.Y, 0.0f, 0.0f));
+	DynamicMaterial->SetVectorParameterValue(
+		TEXT("NoiseOffset"),
+		FLinearColor(CameraRelativeNoiseUVOffset.X, CameraRelativeNoiseUVOffset.Y, 0.0f, 0.0f));
 
 	DynamicMaterial->SetScalarParameterValue(
 		TEXT("UseFullScreenProxy"),
 		bUseFullScreenProxy ? 1.0f : 0.0f);
 	DynamicMaterial->SetScalarParameterValue(
-		TEXT("DensityVolumeZSign"),
+		TEXT("DensityZSign"),
 		DensityVolumeZSign);
 }
