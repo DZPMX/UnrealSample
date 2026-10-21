@@ -170,14 +170,23 @@ public:
 	ECloudSeaVerticalRenderingMode VerticalRenderingMode =
 		ECloudSeaVerticalRenderingMode::ReferenceMirrorWithPrefill;
 
-	/** Vertical distance in cm below CloudLayerBaseWorldHeight over which the complete cloud fades linearly to hidden in either rendering mode. Zero disables fading. Only scales final opacity; does not change cloud geometry, prefill or raymarch settings. */
+	/** Vertical distance in cm below CloudLayerBaseWorldHeight at which the complete cloud starts fading. Applies to both rendering modes; scales final premultiplied color and opacity. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadOnly,
 		Category = "Cloud Sea|Transition",
 		meta = (ClampMin = "0.0", UIMin = "0.0", Units = "cm", ForceUnits = "cm",
-			DisplayName = "Below Cloud Fade World Distance (cm)"))
-	float BelowCloudFadeWorldDistance = 5000.0f;
+			DisplayName = "Below Cloud Fade Start Distance (cm)"))
+	float BelowCloudFadeStartWorldDistance = 20000.0f;
+
+	/** Vertical distance in cm below CloudLayerBaseWorldHeight at which the complete cloud is hidden. Fades linearly from the start distance. Zero disables fading; an end at or before the start hides immediately at the end distance. */
+	UPROPERTY(
+		EditAnywhere,
+		BlueprintReadOnly,
+		Category = "Cloud Sea|Transition",
+		meta = (ClampMin = "0.0", UIMin = "0.0", Units = "cm", ForceUnits = "cm",
+			DisplayName = "Below Cloud Fade End Distance (cm)"))
+	float BelowCloudFadeEndWorldDistance = 30000.0f;
 
 	/** Local player whose camera drives this component in a game world. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Camera Player Index"))

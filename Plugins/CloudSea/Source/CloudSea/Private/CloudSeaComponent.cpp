@@ -265,13 +265,24 @@ void UCloudSeaComponent::UpdateCloudSeaTransform()
 	const FVector ViewLocation = ProjectionData.ViewOrigin;
 	const float NearClipPlane = ProjectionData.GetNearPlaneFromProjectionMatrix();
 
-	const float CloudOpacity = BelowCloudFadeWorldDistance > 0.0f
-		? static_cast<float>(1.0 - FMath::Clamp(
-			(CloudLayerBaseWorldHeight - ViewLocation.Z)
-				/ static_cast<double>(BelowCloudFadeWorldDistance),
-			0.0,
-			1.0))
-		: 1.0f;
+	float CloudOpacity = 1.0f;
+	if (BelowCloudFadeEndWorldDistance > 0.0f)
+	{
+		const double CameraDistanceBelowCloudBase = CloudLayerBaseWorldHeight - ViewLocation.Z;
+		if (BelowCloudFadeEndWorldDistance > BelowCloudFadeStartWorldDistance)
+		{
+			const double FadeWorldDistance =
+				static_cast<double>(BelowCloudFadeEndWorldDistance) - BelowCloudFadeStartWorldDistance;
+			CloudOpacity = static_cast<float>(1.0 - FMath::Clamp(
+				(CameraDistanceBelowCloudBase - BelowCloudFadeStartWorldDistance) / FadeWorldDistance,
+				0.0,
+				1.0));
+		}
+		else
+		{
+			CloudOpacity = CameraDistanceBelowCloudBase < BelowCloudFadeEndWorldDistance ? 1.0f : 0.0f;
+		}
+	}
 	if (DynamicMaterial != nullptr)
 	{
 		DynamicMaterial->SetScalarParameterValue(TEXT("CloudOpacity"), CloudOpacity);
