@@ -6,9 +6,9 @@
 #include "CloudSeaComponent.generated.h"
 
 class UMaterialInstanceDynamic;
-class UMaterialInstanceConstant;
 class UMaterialInterface;
 class UStaticMeshComponent;
+struct FSceneViewProjectionData;
 
 #if WITH_EDITOR
 enum ELevelViewportType : int;
@@ -43,10 +43,7 @@ protected:
 		FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
-	bool TryGetView(
-		FVector& OutViewLocation,
-		FRotator& OutViewRotation,
-		float& OutNearClipPlane) const;
+	bool TryGetView(FSceneViewProjectionData& OutProjectionData) const;
 	void InitializeMaterialDriver();
 	void ApplyStaticMaterialParameters();
 	void UpdateProxyVisibility(bool bHideForFade);
@@ -55,7 +52,7 @@ private:
 		const FVector& ViewLocation,
 		bool bUseFullScreenProxy,
 		double SignedCameraDepthBelowCloudTopMaterialUnits,
-		float ActiveDiskRayMarchDistanceMaterialUnits);
+		float RayMarchDistanceMaterialUnits);
 
 #if WITH_EDITOR
 	void HandleEditorCameraMoved(
@@ -66,26 +63,19 @@ private:
 #endif
 
 	TWeakObjectPtr<UStaticMeshComponent> ProxyMeshComponent;
-	TWeakObjectPtr<UStaticMeshComponent> FadeHiddenProxyMeshComponent;
+	bool bProxyHiddenForFade = false;
 
 	UPROPERTY(Transient)
 	TObjectPtr<UMaterialInstanceDynamic> DynamicMaterial;
-
-	UPROPERTY(Transient)
-	TObjectPtr<UMaterialInterface> OriginalProxyMaterial;
 
 public:
 	/** Fixed world-space height of the cloud layer base, in centimeters. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (DisplayName = "Cloud Layer Base World Height (cm)", Units = "cm", ForceUnits = "cm"))
 	double CloudLayerBaseWorldHeight = 15000;
 
-	/** Positive thickness in material units. World thickness in cm = CloudLayerHeight * WorldUnitsPerMaterialUnit. */
+	/** Positive thickness in material units. World thickness in cm = CloudLayerHeight * 100. */
 	UPROPERTY(BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (ClampMin = "0.001", DisplayName = "Cloud Layer Thickness"))
 	float CloudLayerHeight = 50.0f;
-
-	/** Conversion from material distance to world cm. At 100, one material unit is 100 cm (1 meter). */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (ClampMin = "0.001", DisplayName = "World Unit Scale"))
-	float WorldUnitsPerMaterialUnit = 100.0;
 
 	/** Camera XY, in world centimeters, at which the authored UV offsets apply. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Layer", meta = (DisplayName = "Volume Anchor Reference Camera XY (cm)", Units = "cm", ForceUnits = "cm"))
@@ -99,23 +89,23 @@ public:
 		meta = (ClampMin = "16", ClampMax = "64", UIMin = "16", UIMax = "64", DisplayName = "Ray March Step Count"))
 	int32 RayMarchStepCount = 32;
 
-	/** Selects a prepared MI; does not change the material's static UseRayMarchJitter parameter. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Use Ray March Jitter"))
+	/** PC only. Selects the assigned material; does not change the material's static UseRayMarchJitter parameter. Mobile shaders use a fixed sample offset regardless of this setting. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Use Ray March Jitter (PC Only)"))
 	bool bUseRaymarchDither = false;
 
-	/** MI with UseRayMarchJitter disabled. If unset, uses the proxy's original material. */
+	/** Source material or MI with UseRayMarchJitter disabled. Creates a transient component-owned MID. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Material Without Jitter"))
-	TObjectPtr<UMaterialInstanceConstant> MaterialWithoutDither;
+	TObjectPtr<UMaterialInterface> MaterialWithoutDither;
 
-	/** MI with UseRayMarchJitter enabled. If unset, uses the proxy's original material. */
+	/** Source material or MI with UseRayMarchJitter enabled. Creates a transient component-owned MID. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (DisplayName = "Material With Jitter"))
-	TObjectPtr<UMaterialInstanceConstant> MaterialWithDither;
+	TObjectPtr<UMaterialInterface> MaterialWithDither;
 
-	/** March limit before camera-dependent transitions, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (ClampMin = "100",ClampMax="3000",UIMin="100", UIMax="3000", DisplayName = "Ray March Max Distance"))
+	/** Fixed march limit shared by both proxy paths, in material units, with a runtime range of 1500-8000. Multiply by 100 for cm. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (ClampMin = "1500",ClampMax="8000",UIMin="1500", UIMax="8000", DisplayName = "Ray March Max Distance"))
 	float RayMarchActiveDistance = 2500.0f;
 
-	/** Inverse material-unit fade length at scene intersections. For positive values, fade length in cm = WorldUnitsPerMaterialUnit / value. Zero disables this fade. */
+	/** Inverse material-unit fade length at scene intersections. For positive values, fade length in cm = 100 / value. Zero disables this fade. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Ray March", meta = (ClampMin = "0.0", DisplayName = "Scene Depth Fade Inverse Distance"))
 	float SceneDepthFadeReciprocalDistance = 0.05f;
 
@@ -127,7 +117,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Density", meta = (DisplayName = "Density UV Scale"))
 	FVector DensityVolumeUVScale = FVector(0.0015f, 0.0015f, 0.02f);
 
-	/** Density XY offset in material units, before applying DensityVolumeUVScale. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	/** Density XY offset in material units, before applying DensityVolumeUVScale. Multiply by 100 for cm. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Density",meta=(ClampMin = "0.0",ClampMax = "10000.0",UIMin = "0.0", UIMax = "10000.0", DisplayName = "Density Offset"))
 	FVector2D DensityUVOffset = FVector2D(0.0f, 0.0f);
 
@@ -139,9 +129,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Noise", meta = (DisplayName = "Noise Warp Amplitude"))
 	float NoiseWarpAmplitude = 14.0f;
 
-	/** Noise XY offset in material units, before applying NoiseVolumeUVScale. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	/** Noise XY offset in material units, before applying NoiseVolumeUVScale. Multiply by 100 for cm. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Noise",meta=(ClampMin = "0.0",ClampMax = "10000.0",UIMin = "0.0", UIMax = "10000.0", DisplayName = "Noise Offset"))
 	FVector2D NoiseUVOffset = FVector2D(0.0f, 0.0f);
+
+	/** Visible cloud motion in world XY, shared by density and noise. Dimensionless and not normalized: each component sets material units per second. (1, 0) moves along +X; (0, 0) stops. Default (-1, -1) preserves the original motion. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Flow", meta = (DisplayName = "Flow Direction (World XY)"))
+	FVector2D FlowDirection = FVector2D(-1.0f, -1.0f);
 
 	/** RGB tint applied to atmosphere light 0 and both sky-light contributions. Alpha is unused. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Lighting", meta = (HideAlphaChannel, DisplayName = "Cloud Scattering Tint"))
@@ -185,27 +179,15 @@ public:
 			DisplayName = "Below Cloud Fade World Distance (cm)"))
 	float BelowCloudFadeWorldDistance = 5000.0f;
 
-	/** March distance at either edge of the mirrored full-screen transition, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Transition", meta = (DisplayName = "Full Screen Transition March Distance"))
-	float FullScreenTransitionMarchDistance = 750.0f;
-
-	/** Height above the cloud top over which the disk march distance reaches its limit, in centimeters. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Transition", meta = (ClampMin = "1.0", UIMin = "1.0", DisplayName = "Disk Ray March Transition World Distance (cm)", Units = "cm", ForceUnits = "cm"))
-	float DiskRayMarchTransitionWorldDistance = 1000.0f;
-
 	/** Local player whose camera drives this component in a game world. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Camera Player Index"))
 	int32 CameraPlayerIndex = 0;
 
-	/** Full-screen proxy radius in centimeters; the disk radius is derived per frame. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Proxy World Radius (cm)", Units = "cm", ForceUnits = "cm"))
-	double ProxyWorldRadius = 95000.0f;
-
-	/** Distance in front of the camera used by the full-screen plane, in centimeters. */
+	/** Requested distance in front of the camera for the full-screen plane, in centimeters. Increased to at least 1.5 times the effective near clip distance plus 10 cm when needed. Plane dimensions fit the current view projection automatically. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Full Screen Proxy Camera Distance (cm)", Units = "cm", ForceUnits = "cm"))
 	float FullScreenProxyCameraDistance = 300.0f;
 
-	/** Reference distance used only to position the disk proxy, in material units. Multiply by WorldUnitsPerMaterialUnit for cm. */
+	/** Reference distance used only to position the disk proxy, in material units. Multiply by 100 for cm. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Cloud Sea|Camera and Proxy", meta = (DisplayName = "Disk March Far Distance"))
 	float DiskMarchFarDistance = 2050.0f;
 };
