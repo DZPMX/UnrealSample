@@ -37,6 +37,10 @@
 		{
 			"Name": "LocalWind",
 			"Enabled": true
+		},
+		{
+			"Name": "CascadeLocalWind",
+			"Enabled": true
 		}
 	]
 }
