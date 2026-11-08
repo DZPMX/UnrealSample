@@ -15,6 +15,8 @@ public class CloudSea : ModuleRules
 			}
 		);
 
+		PrivateDependencyModuleNames.Add("RHI");
+
 		if (Target.bBuildEditor)
 		{
 			PrivateDependencyModuleNames.Add("UnrealEd");

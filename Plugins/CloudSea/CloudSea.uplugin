@@ -14,6 +14,11 @@
 			"Name": "CloudSea",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "CloudSeaEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
 		}
 	]
 }
