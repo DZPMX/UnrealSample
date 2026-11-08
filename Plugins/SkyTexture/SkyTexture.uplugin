@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Sky Texture",
+  "Description": "Flowing and panoramic sky materials, textures, meshes and example maps.",
+  "Category": "Rendering",
+  "CanContainContent": true,
+  "EnabledByDefault": true,
+  "Installed": false
+}
