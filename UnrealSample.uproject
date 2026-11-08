@@ -4,10 +4,14 @@
 	"Category": "",
 	"Description": "",
 	"Plugins": [
-    {
-      "Name": "U4PackageDemo",
-      "Enabled": true
-    },
+		{
+			"Name": "Re9PackageDemo",
+			"Enabled": true
+		},
+		{
+			"Name": "U4PackageDemo",
+			"Enabled": true
+		},
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true,
@@ -36,7 +40,10 @@
 		},
 		{
 			"Name": "LocalWind",
-			"Enabled": true
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
 		},
 		{
 			"Name": "CascadeLocalWind",
