@@ -19,12 +19,7 @@ Saved/
 # 系统、编辑器缓存
 .DS_Store
 Thumbs.db
-/Content/Fab/Tree/realistic_tree/StaticMeshes/NewMaterial.uasset
-/Content/Fab/Tree/realistic_tree/StaticMeshes/realistic_tree.uasset
 
-/Content/MountainGrassland/
-/Content/Demo/CloudSea/FT_Showcase_Cedar_1.uasset
-/Content/Demo/CloudSea/FT_Showcase_Cedar_2.uasset
-/Content/Demo/CloudSea/LV_CloudSea_MountainTerrain.umap
-/Content/Demo/CloudSea/LV_CloudSea_Showcase.umap
-/Content/Demo/CloudSea/Vegetation/
+# 项目 Content 仅存放本地测试内容；Plugins/*/Content 继续纳入版本管理。
+# 插件保持独立，由项目 Content 引用；插件不得反向依赖 /Game 内容。
+/Content/
