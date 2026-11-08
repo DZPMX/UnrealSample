@@ -3,6 +3,9 @@ Binaries/
 DerivedDataCache/
 Intermediate/
 Saved/
+# Codex 临时目录
+[Cc]odex[Ss]cratch/
+/tmp/
 # Visual Studio / Rider 等工程文件
 .vs/
 .vscode/
